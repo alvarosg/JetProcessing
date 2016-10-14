@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/mainwindowlive/play.png</file>
+        <file>icons/mainwindowlive/record.png</file>
+        <file>icons/mainwindowlive/stop.png</file>
+        <file>icons/mainwindow/StartLive.png</file>
+        <file>icons/mainwindow/CameraSettings.png</file>
+        <file>icons/mainwindow/LoadAlg.png</file>
+        <file>icons/mainwindow/LoadImageCamera.png</file>
+        <file>icons/mainwindow/LoadImageFile.png</file>
+        <file>icons/mainwindow/SaveAlg.png</file>
+        <file>icons/mainwindow/SetReference.png</file>
+        <file>icons/mainwindow/OutputFolder.png</file>
+        <file>icons/mainwindow/SaveAnimation.png</file>
+        <file>icons/mainwindow/SaveData.png</file>
+        <file>icons/mainwindow/SaveDataSeries.png</file>
+        <file>icons/mainwindow/SaveGraph.png</file>
+        <file>icons/mainwindow/SaveGraphSeries.png</file>
+        <file>icons/mainwindow/SaveVideo.png</file>
+        <file>icons/mainwindowlive/surfaceplot.png</file>
+        <file>icons/mainwindowlive/lineplot.png</file>
+        <file>icons/mainwindowlive/parametricplot.png</file>
+        <file>icons/mainwindowlive/spectrogram.png</file>
+        <file>icons/app/appicon.ico</file>
+        <file>icons/app/appicon.png</file>
+        <file>icons/mainwindow/LoadProject.png</file>
+        <file>icons/mainwindow/SaveProject.png</file>
+        <file>icons/dialoghelp/back.png</file>
+        <file>icons/dialoghelp/forward.png</file>
+        <file>icons/dialoghelp/home.png</file>
+    </qresource>
+</RCC>
