@@ -1,0 +1,1085 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase DialogSetRectangle</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dialog_set_rectangle.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Slots públicos</a> &#124;
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_dialog_set_rectangle-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase DialogSetRectangle</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase para el control del cuadro de diálogo que permite seleccionar un rectángulo o una recta, para los correspondientes algoritmos.  
+ <a href="class_dialog_set_rectangle.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-slots"></a>
+Slots públicos</h2></td></tr>
+<tr class="memitem:a5c02fee98731b8e2cb6b45b349360871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a5c02fee98731b8e2cb6b45b349360871">SpinBoxMinXChanged</a> ()</td></tr>
+<tr class="memitem:a01a2508a25b0419fbcf2ee37d0a36914"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a01a2508a25b0419fbcf2ee37d0a36914">SpinBoxMaxXChanged</a> ()</td></tr>
+<tr class="memitem:adfec9a5614bc026012d4919bc9976a62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#adfec9a5614bc026012d4919bc9976a62">SpinBoxMinYChanged</a> ()</td></tr>
+<tr class="memitem:a865ace3ae1ecd4f9de9b11335d58a22f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a865ace3ae1ecd4f9de9b11335d58a22f">SpinBoxMaxYChanged</a> ()</td></tr>
+<tr class="memitem:ab8715768ea384da2139227ec034a0e1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#ab8715768ea384da2139227ec034a0e1e">MouseLeftButtonPressed</a> (int x, int y)</td></tr>
+<tr class="memitem:a20a92a12a3ef0ef761800a4484caf06f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a20a92a12a3ef0ef761800a4484caf06f">MouseLeftButtonMoved</a> (int x, int y)</td></tr>
+<tr class="memitem:ae9dae1dd43cfb1ab7eedcc1efe6acfe4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#ae9dae1dd43cfb1ab7eedcc1efe6acfe4">MouseReleased</a> (int x, int y)</td></tr>
+<tr class="memitem:af22acc29198330771c6afbeddeb62375"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#af22acc29198330771c6afbeddeb62375">MouseMoved</a> (int x, int y)</td></tr>
+<tr class="memitem:a1861ddbc064dd3554eb6b45a3524f466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a1861ddbc064dd3554eb6b45a3524f466">MouseWheel</a> (int delta, int x, int y)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a15249a868a4bfa7d4390de239f098e23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a15249a868a4bfa7d4390de239f098e23">DialogSetRectangle</a> (QWidget *parent, <a class="el" href="class_main_controller.html">MainController</a> *mainController_in, QRect *rect_in, int nAlg=-1, int nImg=0, bool line=false)</td></tr>
+<tr class="memitem:ad41e0ac375b25adb2722498de0951275"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#ad41e0ac375b25adb2722498de0951275">~DialogSetRectangle</a> ()</td></tr>
+<tr class="memitem:a0f4ecee08a19662118cd59b5dec48a43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a0f4ecee08a19662118cd59b5dec48a43">UpdateControls</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:a02a74e182e4004d7c8b9e478d974ef7b"><td class="memItemLeft" align="right" valign="top">QPolygonF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a02a74e182e4004d7c8b9e478d974ef7b">GetPolygonCentered</a> (float x, float y)</td></tr>
+<tr class="memitem:ab48446b10c39b925a3bee04dffa520f2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#ab48446b10c39b925a3bee04dffa520f2">GetPointBeingMoved</a> (float x, float y)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a3d073b3ff42a461af5daf2eda3b1643f"><td class="memItemLeft" align="right" valign="top">Ui::DialogSetRectangle *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a></td></tr>
+<tr class="memitem:aa7617c51fefbcea139bc6414d769e328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_main_controller.html">MainController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#aa7617c51fefbcea139bc6414d769e328">mainController</a></td></tr>
+<tr class="memitem:a72c4fff4fda1fa5e588d8cdc8a10bba0"><td class="memItemLeft" align="right" valign="top">QRect *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a></td></tr>
+<tr class="memitem:adeafc129bddf05a7f04c885c7781f85b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_mask_selection_scene.html">MaskSelectionScene</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a></td></tr>
+<tr class="memitem:a6e959c57bf567301d78af5c671f36a49"><td class="memItemLeft" align="right" valign="top">QGraphicsPixmapItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a6e959c57bf567301d78af5c671f36a49">rectPixmap</a></td></tr>
+<tr class="memitem:a488936d63324588b641e138ed70e804d"><td class="memItemLeft" align="right" valign="top">QGraphicsRectItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a></td></tr>
+<tr class="memitem:a2757a3cb440ab3e49b5e2ca099eafb2a"><td class="memItemLeft" align="right" valign="top">QGraphicsLineItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a2757a3cb440ab3e49b5e2ca099eafb2a">rectLine</a></td></tr>
+<tr class="memitem:a36ed1d8a90873df358b84f9c045bd7c9"><td class="memItemLeft" align="right" valign="top">QGraphicsPolygonItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a36ed1d8a90873df358b84f9c045bd7c9">firstPointLine</a></td></tr>
+<tr class="memitem:a32c8b726b200eda9078d724bfad220b9"><td class="memItemLeft" align="right" valign="top">QGraphicsPolygonItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a32c8b726b200eda9078d724bfad220b9">secondPointLine</a></td></tr>
+<tr class="memitem:a4df5d04a1e79094349d9bc9ecd382cff"><td class="memItemLeft" align="right" valign="top">QGraphicsPolygonItem *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a4df5d04a1e79094349d9bc9ecd382cff">centerPointLine</a></td></tr>
+<tr class="memitem:aad502b2c6de7f3824b40c68ad832eb53"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#aad502b2c6de7f3824b40c68ad832eb53">dX</a></td></tr>
+<tr class="memitem:a858bdaa742db390d6e22adcf00c5c6c6"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a858bdaa742db390d6e22adcf00c5c6c6">dY</a></td></tr>
+<tr class="memitem:a7adc5a32d49a6633e24df4ced81cbbac"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a7adc5a32d49a6633e24df4ced81cbbac">minXValue</a></td></tr>
+<tr class="memitem:a52d89dcf2dcebcac06daff1ef60ba31e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a52d89dcf2dcebcac06daff1ef60ba31e">maxYValue</a></td></tr>
+<tr class="memitem:ab9d9101b6ee1c9a837f812cb013f594d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a></td></tr>
+<tr class="memitem:a9750cb0227009b85f58f7c4a056a10cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_rectangle.html#a9750cb0227009b85f58f7c4a056a10cc">pointBeingMoved</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase para el control del cuadro de diálogo que permite seleccionar un rectángulo o una recta, para los correspondientes algoritmos. </p>
+<p>Su principal cometido es devolver un rectángulo.</p>
+<p>Esta clase actúa de nexo entre el controlador principal y la clase que contiene los widgets: Ui::DialogSetRectangle. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00047">47</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a15249a868a4bfa7d4390de239f098e23"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DialogSetRectangle::DialogSetRectangle </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_main_controller.html">MainController</a> *&#160;</td>
+          <td class="paramname"><em>mainController_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QRect *&#160;</td>
+          <td class="paramname"><em>rect_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nAlg</em> = <code>-1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nImg</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>line</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Widget padre. </td></tr>
+    <tr><td class="paramname">mainController_in</td><td>Referencia el controlador principal. </td></tr>
+    <tr><td class="paramname">rect_in</td><td>Referencia al rectángulo. </td></tr>
+    <tr><td class="paramname">nAlg</td><td>Número de algoritmo hasta el que se está aplicando en el momento de tomar el rectángulo (-1 para todos). </td></tr>
+    <tr><td class="paramname">nImg</td><td>Número de imagen selccionada en la lista, para la vista previa. </td></tr>
+    <tr><td class="paramname">line</td><td>Verdadero para selcción de recta, false para selección de rectángulo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00014">14</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad41e0ac375b25adb2722498de0951275"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DialogSetRectangle::~DialogSetRectangle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00135">135</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="ab48446b10c39b925a3bee04dffa520f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DialogSetRectangle::GetPointBeingMoved </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que indica sobre qué parte de la recta se está pinchado si se ha pinchado en ciertas coordenadas. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Posición horizontal del click. </td></tr>
+    <tr><td class="paramname">y</td><td>Posición vertical del click. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Punto d el arecta pulsado. 0 para ninguno, 1 para extremo inicial, 2 para extremo final y 3 para punto central. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00259">259</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02a74e182e4004d7c8b9e478d974ef7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPolygonF DialogSetRectangle::GetPolygonCentered </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que devuelve un polígono centrado en un punto determinado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Posición horizontal del centro. </td></tr>
+    <tr><td class="paramname">y</td><td>Posición vertical del centro. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Polígono centrado. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00252">252</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a20a92a12a3ef0ef761800a4484caf06f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogSetRectangle::MouseLeftButtonMoved </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando se ha movido el raton con el botón izquierdo pulsado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Coordenada X. </td></tr>
+    <tr><td class="paramname">y</td><td>Coordenada Y. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00296">296</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8715768ea384da2139227ec034a0e1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogSetRectangle::MouseLeftButtonPressed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando se ha pulsado con el botón izquierdo del ratón en un punto de la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Coordenada X. </td></tr>
+    <tr><td class="paramname">y</td><td>Coordenada Y. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00274">274</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af22acc29198330771c6afbeddeb62375"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogSetRectangle::MouseMoved </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando se ha movido el ratón. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Coordenada X. </td></tr>
+    <tr><td class="paramname">y</td><td>Coordenada Y. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00348">348</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae9dae1dd43cfb1ab7eedcc1efe6acfe4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogSetRectangle::MouseReleased </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando se ha soltado un botón del ratón. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Coordenada X. </td></tr>
+    <tr><td class="paramname">y</td><td>Coordenada Y. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00343">343</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1861ddbc064dd3554eb6b45a3524f466"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogSetRectangle::MouseWheel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando se ha movido la rueda del ratón. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>Cantidad y sentido del movimiento. </td></tr>
+    <tr><td class="paramname">x</td><td>Coordenada X. </td></tr>
+    <tr><td class="paramname">y</td><td>Coordenada Y. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00361">361</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a01a2508a25b0419fbcf2ee37d0a36914"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogSetRectangle::SpinBoxMaxXChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor del "SpinBox" de la posición máxima en X del rectángulo ha variado. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00152">152</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a865ace3ae1ecd4f9de9b11335d58a22f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogSetRectangle::SpinBoxMaxYChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor del "SpinBox" de la posición máxima en Y del rectángulo ha variado. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00176">176</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c02fee98731b8e2cb6b45b349360871"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogSetRectangle::SpinBoxMinXChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor del "SpinBox" de la posición mínima en X del rectángulo ha variado. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00140">140</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adfec9a5614bc026012d4919bc9976a62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogSetRectangle::SpinBoxMinYChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor del "SpinBox" de la posición mínima en Y del rectángulo ha variado. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00164">164</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f4ecee08a19662118cd59b5dec48a43"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogSetRectangle::UpdateControls </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que actualiza los controles en función del rectángulo/recta selecionada. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8cpp_source.html#l00188">188</a> del archivo <a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="a4df5d04a1e79094349d9bc9ecd382cff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsPolygonItem* DialogSetRectangle::centerPointLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Punto central de la recta en caso de selección de una recta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00061">61</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9d9101b6ee1c9a837f812cb013f594d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data2_d.html">Data2D</a>* DialogSetRectangle::data2d</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Datos 2D que se estan representando, sobre los que se está aplicando la recta o el rectángulo. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00067">67</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad502b2c6de7f3824b40c68ad832eb53"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DialogSetRectangle::dX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Distancia en mm entre un pixel y el siguiente en el eje X. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00063">63</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a858bdaa742db390d6e22adcf00c5c6c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DialogSetRectangle::dY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Distancia en mm entre un pixel y el siguiente en el eje Y. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00064">64</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36ed1d8a90873df358b84f9c045bd7c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsPolygonItem* DialogSetRectangle::firstPointLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Extremo inicial de la recta en caso de selección de una recta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00059">59</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7617c51fefbcea139bc6414d769e328"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_main_controller.html">MainController</a>* DialogSetRectangle::mainController</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al controlador principal. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00053">53</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52d89dcf2dcebcac06daff1ef60ba31e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DialogSetRectangle::maxYValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Valor máximo en mm del rectángulo para el eje Y de la imagen actual. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00066">66</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7adc5a32d49a6633e24df4ced81cbbac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float DialogSetRectangle::minXValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Valor mínimo en mm del rectángulo para el eje X de la imagen actual. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00065">65</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9750cb0227009b85f58f7c4a056a10cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int DialogSetRectangle::pointBeingMoved</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Punto que se está arrastrando con el ratón. 0 para ninguno, 1 para extremo inicial, 2 para extremo final y 3 para punto central. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00069">69</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72c4fff4fda1fa5e588d8cdc8a10bba0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect* DialogSetRectangle::rect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al rectángulo. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00054">54</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2757a3cb440ab3e49b5e2ca099eafb2a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsLineItem* DialogSetRectangle::rectLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Recta para dibujar en la escena en caso de selección de un recta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00058">58</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e959c57bf567301d78af5c671f36a49"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsPixmapItem* DialogSetRectangle::rectPixmap</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Pixmap para dibujar el fondo en la escena. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00056">56</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a488936d63324588b641e138ed70e804d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsRectItem* DialogSetRectangle::rectRect</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Rectángulo para dibujar en la escena en caso de selección de un rectangulo. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00057">57</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adeafc129bddf05a7f04c885c7781f85b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_mask_selection_scene.html">MaskSelectionScene</a>* DialogSetRectangle::rectScene</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Escena donde se selecciona el rectángulo o la recta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00055">55</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a32c8b726b200eda9078d724bfad220b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QGraphicsPolygonItem* DialogSetRectangle::secondPointLine</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Extremo final de la recta en caso de selección de una recta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00060">60</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d073b3ff42a461af5daf2eda3b1643f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::DialogSetRectangle* DialogSetRectangle::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a la clase que contiene la interfaz gráfica. Esta clase es generada automáticamente por Qt Designer. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetrectangle_8h_source.html#l00052">52</a> del archivo <a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a></li>
+<li>sources/<a class="el" href="dialogsetrectangle_8cpp_source.html">dialogsetrectangle.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_dialog_set_rectangle.html">DialogSetRectangle</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

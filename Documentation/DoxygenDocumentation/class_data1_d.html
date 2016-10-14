@@ -1,0 +1,1035 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase Data1D</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_data1_d.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_data1_d-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase Data1D</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que que contiene una información de fase unidimensional.  
+ <a href="class_data1_d.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="data1d_8h_source.html">data1d.h</a>&quot;</code></p>
+<div class="dynheader">
+Diagrama de herencias de Data1D</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_data1_d.png" usemap="#Data1D_map" alt=""/>
+  <map id="Data1D_map" name="Data1D_map">
+<area href="class_data_result.html" title="Clase abstracta que sirve para almacenar informacion de la fase una vez que se han aplicado todos los..." alt="DataResult" shape="rect" coords="0,0,72,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ada6f7ffcdf3bb3ddd4efaffca03068af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#ada6f7ffcdf3bb3ddd4efaffca03068af">Data1D</a> (float *buffer=NULL, int sizeXin=0)</td></tr>
+<tr class="memitem:a9c26b0b423de9db4d51c371be874f64e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a9c26b0b423de9db4d51c371be874f64e">Data1D</a> (const <a class="el" href="class_data1_d.html">Data1D</a> &amp;input)</td></tr>
+<tr class="memitem:a2e52fce7d7ca731995a98e4d7f27b64f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a2e52fce7d7ca731995a98e4d7f27b64f">~Data1D</a> ()</td></tr>
+<tr class="memitem:a9f3d658c5b06a9ee9de112d93f9a3a55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a9f3d658c5b06a9ee9de112d93f9a3a55">SetData</a> (float *buffer, int sizeXin)</td></tr>
+<tr class="memitem:a2e21b8d58ebf3d6eb04a9c3bc65a320c"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a2e21b8d58ebf3d6eb04a9c3bc65a320c">GetBuffer</a> ()</td></tr>
+<tr class="memitem:a0b9977c96e9c32eb8ef54bce194ece9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a0b9977c96e9c32eb8ef54bce194ece9f">GetSizeX</a> ()</td></tr>
+<tr class="memitem:aaef7062619bd4a9b65c54d327eee2ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#aaef7062619bd4a9b65c54d327eee2ba0">SetLabelX</a> (QString string)</td></tr>
+<tr class="memitem:a5b2a432598368351958c1d3f2ba29521"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a5b2a432598368351958c1d3f2ba29521">GetLabelX</a> ()</td></tr>
+<tr class="memitem:a89b9557a8112df3e6c9fdbcc34345574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a89b9557a8112df3e6c9fdbcc34345574">SetMaxXValue</a> (float value)</td></tr>
+<tr class="memitem:af50eec85ec8b998e9238e2232a29c35c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#af50eec85ec8b998e9238e2232a29c35c">GetMaxXValue</a> ()</td></tr>
+<tr class="memitem:a731f1c981eedd93199f6837326ed1fa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a731f1c981eedd93199f6837326ed1fa3">SetMinXValue</a> (float value)</td></tr>
+<tr class="memitem:a51a0243594fa0ae53bf6c3addbe9529c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a51a0243594fa0ae53bf6c3addbe9529c">GetMinXValue</a> ()</td></tr>
+<tr class="memitem:a5ee2587dac1182904c32b70b443d91d4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a5ee2587dac1182904c32b70b443d91d4">GetRatioPixelValueX</a> ()</td></tr>
+<tr class="memitem:a35451fd4a56135d6c6d5c34310138ef3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a35451fd4a56135d6c6d5c34310138ef3">GetInitXPoint</a> ()</td></tr>
+<tr class="memitem:a0212ce04c8018682e4df6e0e9a31f716"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a0212ce04c8018682e4df6e0e9a31f716">SetInitXPoint</a> (float value)</td></tr>
+<tr class="memitem:ae2179d794eb205e91458f317751d20b3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#ae2179d794eb205e91458f317751d20b3">GetInitYPoint</a> ()</td></tr>
+<tr class="memitem:af8e35d9fbe5e26c8caf593a7de7a5593"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#af8e35d9fbe5e26c8caf593a7de7a5593">SetInitYPoint</a> (float value)</td></tr>
+<tr class="memitem:adbca19356e97407afa000e9242cf467c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#adbca19356e97407afa000e9242cf467c">GetEndXPoint</a> ()</td></tr>
+<tr class="memitem:a7986fc79ac7a267e8646573e85bdcb1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a7986fc79ac7a267e8646573e85bdcb1f">SetEndXPoint</a> (float value)</td></tr>
+<tr class="memitem:a878fbb9418409dfa247b463c67ad9311"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a878fbb9418409dfa247b463c67ad9311">GetEndYPoint</a> ()</td></tr>
+<tr class="memitem:ae11195a6dc657ab48df6543d65537809"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#ae11195a6dc657ab48df6543d65537809">SetEndYPoint</a> (float value)</td></tr>
+<tr class="memitem:aa9aa457586bfb0e81949341473c10a98"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#aa9aa457586bfb0e81949341473c10a98">SaveToFile</a> (QString filePath)</td></tr>
+<tr class="inherit_header pub_methods_class_data_result"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_data_result')"><img src="closed.png" alt="-"/>&nbsp;Métodos públicos heredados desde <a class="el" href="class_data_result.html">DataResult</a></td></tr>
+<tr class="memitem:af58221b888b3563d2a710c42ab361699 inherit pub_methods_class_data_result"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_result.html#af58221b888b3563d2a710c42ab361699">DataResult</a> ()</td></tr>
+<tr class="memitem:a868bd090ebae6e61113a7dddb0950d48 inherit pub_methods_class_data_result"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_result.html#a868bd090ebae6e61113a7dddb0950d48">SetLabelZ</a> (QString string)</td></tr>
+<tr class="memitem:af6789534c3aeb8c325368369beacb101 inherit pub_methods_class_data_result"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_result.html#af6789534c3aeb8c325368369beacb101">GetLabelZ</a> ()</td></tr>
+<tr class="memitem:a2dc7034058e200345e0fa47955d3fd92 inherit pub_methods_class_data_result"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_result.html#a2dc7034058e200345e0fa47955d3fd92">GetMinZValue</a> ()</td></tr>
+<tr class="memitem:af9d383dddf628cceb386772d410902c3 inherit pub_methods_class_data_result"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_result.html#af9d383dddf628cceb386772d410902c3">GetMaxZValue</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:ae93e14c121adef0f8bcff5988a3bf99a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#ae93e14c121adef0f8bcff5988a3bf99a">SetDefaults</a> ()</td></tr>
+<tr class="memitem:aabb7128c94d60c66aa625d5938403018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#aabb7128c94d60c66aa625d5938403018">CalculateRatios</a> ()</td></tr>
+<tr class="memitem:a2aae20dd4367bbe8beadae81f7daa8bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a2aae20dd4367bbe8beadae81f7daa8bd">CalculateMaxMinZ</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a59865b77202205fa00e91a2e28033c72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a59865b77202205fa00e91a2e28033c72">sizeX</a></td></tr>
+<tr class="memitem:aa007098c4884d35308564c830ed68d47"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#aa007098c4884d35308564c830ed68d47">linearBuffer</a></td></tr>
+<tr class="memitem:a83341b495147893ba1226acb4cc84915"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a83341b495147893ba1226acb4cc84915">labelX</a></td></tr>
+<tr class="memitem:ad3d4d2fe660c70634c17a0e45759c833"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#ad3d4d2fe660c70634c17a0e45759c833">maxXValue</a></td></tr>
+<tr class="memitem:a9769eca44c6074b681d16a803bf2f418"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a9769eca44c6074b681d16a803bf2f418">minXValue</a></td></tr>
+<tr class="memitem:afa6cdbaa9596d7d20cd82ee539aaef80"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#afa6cdbaa9596d7d20cd82ee539aaef80">ratioPixelValueX</a></td></tr>
+<tr class="memitem:a420ecc0c04fb9b6418351d7a351a641b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a420ecc0c04fb9b6418351d7a351a641b">initXPoint</a></td></tr>
+<tr class="memitem:ab4a4f492d5d5a75626142fd232cface3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#ab4a4f492d5d5a75626142fd232cface3">initYPoint</a></td></tr>
+<tr class="memitem:a53426611655d23e336e2550b84c80224"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#a53426611655d23e336e2550b84c80224">endXPoint</a></td></tr>
+<tr class="memitem:aeea194114931734c28aaf3fbc5689637"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data1_d.html#aeea194114931734c28aaf3fbc5689637">endYPoint</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Otros miembros heredados</h2></td></tr>
+<tr class="inherit_header pro_methods_class_data_result"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_data_result')"><img src="closed.png" alt="-"/>&nbsp;Métodos protegidos heredados desde <a class="el" href="class_data_result.html">DataResult</a></td></tr>
+<tr class="memitem:a571d735dad376f31e697ce8831b68ef5 inherit pro_methods_class_data_result"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_result.html#a571d735dad376f31e697ce8831b68ef5">CalculateMaxMinZ</a> ()=0</td></tr>
+<tr class="inherit_header pro_attribs_class_data_result"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_data_result')"><img src="closed.png" alt="-"/>&nbsp;Atributos protegidos heredados desde <a class="el" href="class_data_result.html">DataResult</a></td></tr>
+<tr class="memitem:a7213712345aef8d8bc2be8885f73b66c inherit pro_attribs_class_data_result"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_result.html#a7213712345aef8d8bc2be8885f73b66c">labelZ</a></td></tr>
+<tr class="memitem:a5e6f6b337a410dfd74a8ff041c912d4c inherit pro_attribs_class_data_result"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_result.html#a5e6f6b337a410dfd74a8ff041c912d4c">maxZValue</a></td></tr>
+<tr class="memitem:af1072312e26b52b4d59205d4ee98e453 inherit pro_attribs_class_data_result"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_result.html#af1072312e26b52b4d59205d4ee98e453">minZValue</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase que que contiene una información de fase unidimensional. </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00025">25</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="ada6f7ffcdf3bb3ddd4efaffca03068af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Data1D::Data1D </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>buffer</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeXin</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crea un objeto del tipo <a class="el" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Puntero a área de memoria con la información. Esta memoria pasa a ser propiedad del objeto creado. </td></tr>
+    <tr><td class="paramname">sizeXin</td><td>Número de muestras de la información. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00013">13</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c26b0b423de9db4d51c371be874f64e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Data1D::Data1D </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_data1_d.html">Data1D</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor de copia del objeto. Crea una copia del objeto pasado como argumento. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Objeto a copiar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00026">26</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e52fce7d7ca731995a98e4d7f27b64f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Data1D::~Data1D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00047">47</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a2aae20dd4367bbe8beadae81f7daa8bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::CalculateMaxMinZ </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Recorre los datos para calcular el valor máximo y mínimo de la variable dependiente. </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00166">166</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aabb7128c94d60c66aa625d5938403018"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::CalculateRatios </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Calcula el atributo ratioPixelValueX en función de los valores mínimos y máximos. </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00162">162</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2e21b8d58ebf3d6eb04a9c3bc65a320c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float * Data1D::GetBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera un puntero a los datos. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a la zona de memoria con los datos. Debe usarse sólo para lectura. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00077">77</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adbca19356e97407afa000e9242cf467c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::GetEndXPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo endXPoint. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00146">146</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a878fbb9418409dfa247b463c67ad9311"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::GetEndYPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo endYPoint. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00154">154</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a35451fd4a56135d6c6d5c34310138ef3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::GetInitXPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo initXPoint. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00130">130</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2179d794eb205e91458f317751d20b3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::GetInitYPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo initYPoint. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00138">138</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b2a432598368351958c1d3f2ba29521"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Data1D::GetLabelX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo labelZ. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00089">89</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af50eec85ec8b998e9238e2232a29c35c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::GetMaxXValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo maxXValue. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00098">98</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a51a0243594fa0ae53bf6c3addbe9529c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::GetMinXValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo minXValue. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00107">107</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5ee2587dac1182904c32b70b443d91d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::GetRatioPixelValueX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo ratioPixelValueX. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00111">111</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0b9977c96e9c32eb8ef54bce194ece9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Data1D::GetSizeX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo sizeX. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00081">81</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9aa457586bfb0e81949341473c10a98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Data1D::SaveToFile </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Guarda la lista los datos en un fichero de texto, incluyendo en cada línea valores sepadarados por tabuladores de las variables independientes con su correspondiente valor de variable dependiente. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>ruta y nombre del fichero donde se deben guardar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se guardó corectamente. </dd></dl>
+
+<p>Implementa <a class="el" href="class_data_result.html#a57735033f941b0831e18d6355267f1ce">DataResult</a>.</p>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00181">181</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f3d658c5b06a9ee9de112d93f9a3a55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::SetData </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeXin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece los datos del objeto. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Puntero a área de memoria con la información. Esta memoria pasa a ser propiedad del objeto creado. </td></tr>
+    <tr><td class="paramname">sizeXin</td><td>Número de muestras de la información. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00052">52</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae93e14c121adef0f8bcff5988a3bf99a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::SetDefaults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Establece los valores por defecto para los atributos. </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00115">115</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7986fc79ac7a267e8646573e85bdcb1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::SetEndXPoint </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo endXPoint. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor del atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00150">150</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae11195a6dc657ab48df6543d65537809"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::SetEndYPoint </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo endYPoint. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor del atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00158">158</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0212ce04c8018682e4df6e0e9a31f716"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::SetInitXPoint </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo initXPoint. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor del atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00134">134</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8e35d9fbe5e26c8caf593a7de7a5593"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::SetInitYPoint </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo initYPoint. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor del atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00142">142</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaef7062619bd4a9b65c54d327eee2ba0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::SetLabelX </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo labelX. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">string</td><td>Valor del atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00085">85</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a89b9557a8112df3e6c9fdbcc34345574"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::SetMaxXValue </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo maxXValue. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor del atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00093">93</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a731f1c981eedd93199f6837326ed1fa3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Data1D::SetMinXValue </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo minXValue. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor del atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="data1d_8cpp_source.html#l00102">102</a> del archivo <a class="el" href="data1d_8cpp_source.html">data1d.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="a53426611655d23e336e2550b84c80224"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::endXPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Punto final horizontal en unidades de eje X donde acababa la recta extraída para los datos </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00037">37</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeea194114931734c28aaf3fbc5689637"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::endYPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Punto final vertical en unidades de eje Y donde acababa la recta extraída para los datos </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00038">38</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a420ecc0c04fb9b6418351d7a351a641b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::initXPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Punto inicial horizontal en unidades de eje X donde comenzaba la recta extraída para los datos </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00035">35</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab4a4f492d5d5a75626142fd232cface3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::initYPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Punto inicial vertical en unidades de eje Y donde comenzaba la recta extraída para los datos </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00036">36</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83341b495147893ba1226acb4cc84915"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString Data1D::labelX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Etiqueta para la variable independiente </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00030">30</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa007098c4884d35308564c830ed68d47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* Data1D::linearBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero que apunta a la zona de memoria donde se encuentran los datos </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00028">28</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3d4d2fe660c70634c17a0e45759c833"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::maxXValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Mínimo valor tomado por la variable independiente. Correspondiente al índice sizeX-1. </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00031">31</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9769eca44c6074b681d16a803bf2f418"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::minXValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Máximo valor tomado por la variable independiente. Correspondiente al índice 0. </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00032">32</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa6cdbaa9596d7d20cd82ee539aaef80"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Data1D::ratioPixelValueX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Devuelve la distancia en mm que hay entre pixel y pixel en el eje X. </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00033">33</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a59865b77202205fa00e91a2e28033c72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Data1D::sizeX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Longitud en muestras de la recta. </p>
+
+<p>Definición en la línea <a class="el" href="data1d_8h_source.html#l00027">27</a> del archivo <a class="el" href="data1d_8h_source.html">data1d.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="data1d_8h_source.html">data1d.h</a></li>
+<li>sources/<a class="el" href="data1d_8cpp_source.html">data1d.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_data1_d.html">Data1D</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

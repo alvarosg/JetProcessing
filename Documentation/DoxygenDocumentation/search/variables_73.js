@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['savecamerapictures',['saveCameraPictures',['../class_program_settings.html#afd67c0f1d5cf8dd0ecb1592db08687d9',1,'ProgramSettings']]],
+  ['savegraphicsviewsize',['saveGraphicsViewSize',['../class_program_settings.html#a642e85e9179a47b71ce3062ed31e1f48',1,'ProgramSettings']]],
+  ['secondpointline',['secondPointLine',['../class_dialog_set_rectangle.html#a32c8b726b200eda9078d724bfad220b9',1,'DialogSetRectangle']]],
+  ['semaphoreconsumer',['semaphoreConsumer',['../class_camera_controller.html#a57baa5c1b9ba8269e5ee85865ce55fa3',1,'CameraController']]],
+  ['semaphoreending',['semaphoreEnding',['../class_camera_controller.html#abb71d3c86912bf03dad00a545d4ba1ae',1,'CameraController']]],
+  ['semaphoreproducer',['semaphoreProducer',['../class_camera_controller.html#a77144e9d99d4ea2e4870da9f08291822',1,'CameraController']]],
+  ['semreadytoproduce',['semReadyToProduce',['../class_main_window_live.html#a6d42468aa42ac2af4081735806b234f3',1,'MainWindowLive']]],
+  ['sequencefps',['sequenceFPS',['../class_main_controller.html#ab5b407446ad3685308034cc062bf1e31',1,'MainController']]],
+  ['sequencems',['sequenceMs',['../class_main_window.html#aafd0ad525b64f06b922cbd358e8edf89',1,'MainWindow']]],
+  ['sequencetimer',['sequenceTimer',['../class_main_window.html#a1fcc72d5356058a46c8ae5c4ba40ac7d',1,'MainWindow']]],
+  ['serieslabel',['seriesLabel',['../class_graphics_exporter.html#aa0ccaddd3629d9c7bd6e813bf68cc24f',1,'GraphicsExporter']]],
+  ['size',['size',['../class_phase_line.html#a533219cde18c4b10a615d6a4fcd3d096',1,'PhaseLine']]],
+  ['sizex',['sizeX',['../class_camera_parameters.html#adaf8be77bfd384c171b4766cf73ccac7',1,'CameraParameters::sizeX()'],['../class_data1_d.html#a59865b77202205fa00e91a2e28033c72',1,'Data1D::sizeX()'],['../class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4',1,'Data2D::sizeX()'],['../class_full_image.html#a57defbf7eb43af92266acffb179a7337',1,'FullImage::sizeX()'],['../class_graph1_d.html#adca3d700e486e2853d22b6b2a616923f',1,'Graph1D::sizeX()'],['../class_parametric_surface_function.html#ac187dad7c36d4810b72d35994040fa5b',1,'ParametricSurfaceFunction::sizeX()'],['../class_phase_image.html#a0c616e5df2c2f6705cc5eb2cf0de35aa',1,'PhaseImage::sizeX()'],['../class_surface_function.html#a688605c335e745dfdb048b5e6059a3e7',1,'SurfaceFunction::sizeX()'],['../class_spectrogram_data.html#ae97c7078e18c7b17939f92e57e27943b',1,'SpectrogramData::sizeX()']]],
+  ['sizey',['sizeY',['../class_camera_parameters.html#a7de74d8e586f6913119db9397f2ad592',1,'CameraParameters::sizeY()'],['../class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1',1,'Data2D::sizeY()'],['../class_full_image.html#a248c1849fb385f77cb711a957f0641ae',1,'FullImage::sizeY()'],['../class_parametric_surface_function.html#a58db0c7b9e81f53b43b7d4f225bc5816',1,'ParametricSurfaceFunction::sizeY()'],['../class_phase_image.html#a14e96fa2ebadee59efd9cdb97c6f953c',1,'PhaseImage::sizeY()'],['../class_surface_function.html#a3e0d21861b3a05a54192433e3c07360b',1,'SurfaceFunction::sizeY()'],['../class_spectrogram_data.html#aa93d69622b7d8ebe3127374003131948',1,'SpectrogramData::sizeY()']]],
+  ['sourcedata',['sourceData',['../class_parametric_surface_function.html#aa53f74b3ae786ebd2668a84af2c0cb8a',1,'ParametricSurfaceFunction::sourceData()'],['../class_surface_function.html#a205184f6fdbf0ae0cc325eb1dc69f652',1,'SurfaceFunction::sourceData()'],['../class_spectrogram_data.html#aef6c749b96a5cb48154f06e6d09585fb',1,'SpectrogramData::sourceData()']]],
+  ['sourcehmirror',['sourceHMirror',['../class_main_controller.html#a794c6a8248e0a77a35d8fe0d387fb65e',1,'MainController']]],
+  ['sourcerotation',['sourceRotation',['../class_main_controller.html#a3b8329cc3fcfa9a00fc81580ec6260b7',1,'MainController']]],
+  ['sourcevmirror',['sourceVMirror',['../class_main_controller.html#a215692c93b0df4246cf9fd64a99e5dec',1,'MainController']]],
+  ['spectrogram',['spectrogram',['../class_spectrogram_plot.html#aea10feea3b3f32f54eedda735e5fa720',1,'SpectrogramPlot']]],
+  ['statuslabel',['statusLabel',['../class_main_window_live.html#ab684270e2d401490011b1d37abc2ff8d',1,'MainWindowLive']]],
+  ['step',['step',['../class_dialog_set_reference.html#a54348974c96f7221a6f27921efd10799',1,'DialogSetReference']]],
+  ['surface',['surface',['../class_parametric_surface3_d_plot.html#a58fdd716a92337f77a6fe785a33689a1',1,'ParametricSurface3DPlot::surface()'],['../class_surface3_d_plot.html#a260cd9209643b0911d577d29597290f0',1,'Surface3DPlot::surface()']]]
+];

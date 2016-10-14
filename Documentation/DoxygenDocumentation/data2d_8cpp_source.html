@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Fichero Fuente sources/data2d.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('data2d_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">data2d.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="data2d_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data2d_8h.html" title="Clase que que contiene una estructura de datos bidimensional.">data2d.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_data2_d.html#afc0859e6d6b7b03531fc9796ac033887">   13</a></span>&#160;<a class="code" href="class_data2_d.html#afc0859e6d6b7b03531fc9796ac033887">Data2D::Data2D</a>(<span class="keywordtype">float</span> *buffer, <span class="keywordtype">int</span> sizeXin, <span class="keywordtype">int</span> sizeYin){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">//Inicio el resto de atributos a los valores por defecto</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#a5b14f809c60b51e34839ae87b546ee5c">SetDefaults</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//Inicio a NULL los punteros de memoria</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>=NULL;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>=NULL;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//Establezco los datos</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#a93ba7eb825ae8657b03cee155964dd63">SetData</a>(buffer,sizeXin,sizeYin);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_data2_d.html#a9a418d49cf604ce9d2a0d41e609e9716">   26</a></span>&#160;<a class="code" href="class_data2_d.html#afc0859e6d6b7b03531fc9796ac033887">Data2D::Data2D</a>(<span class="keyword">const</span> <a class="code" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a> &amp;input){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">float</span> * buffer=NULL;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//Creo una copia de los datos</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>=NULL;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>=NULL;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span>(input.<a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>!=NULL){</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        buffer = (<span class="keywordtype">float</span> *) malloc(<span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)*(input.<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>)*(input.<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>));</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        memcpy(buffer,input.<a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>,<span class="keyword">sizeof</span>(<span class="keywordtype">float</span>)*(input.<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>)*(input.<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#a93ba7eb825ae8657b03cee155964dd63">SetData</a>(buffer,(input.<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>),(input.<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//Asigno el resto de parámetros</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    this-&gt;<a class="code" href="class_data_result.html#a868bd090ebae6e61113a7dddb0950d48">SetLabelZ</a>(input.<a class="code" href="class_data_result.html#a7213712345aef8d8bc2be8885f73b66c">labelZ</a>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#ae8d9330c114aebcde5eb4ae321512538">SetLabelX</a>(input.<a class="code" href="class_data2_d.html#a65ef3ec95566b7108280c0305442d30b">labelX</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#aff6d569f1c9be10e85c9bf0bf3ecef54">SetMinXValue</a>(input.<a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#abb0c5c997312d22cca50d07c3e2ee102">SetMaxXValue</a>(input.<a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">maxXValue</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#a88aea9e1fd0f88dda2c8ab1dc82f3a21">SetLabelY</a>(input.<a class="code" href="class_data2_d.html#abfb9438c2f10e1421d1b929d4cb22067">labelY</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#aafd794c6b7db2cb2ae955fdff2a3b686">SetMinYValue</a>(input.<a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#a7e3768abd850a3c0e838cc95c1c1425c">SetMaxYValue</a>(input.<a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">maxYValue</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_data2_d.html#a94ac31e6df6453b4cf6d27c09d26d7c8">   50</a></span>&#160;<a class="code" href="class_data2_d.html#a94ac31e6df6453b4cf6d27c09d26d7c8">Data2D::~Data2D</a>(){</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    free(<a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    free(<a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="class_data2_d.html#a93ba7eb825ae8657b03cee155964dd63">   56</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#a93ba7eb825ae8657b03cee155964dd63">Data2D::SetData</a>(<span class="keywordtype">float</span> * buffer, <span class="keywordtype">int</span> sizeXin, <span class="keywordtype">int</span> sizeYin){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">int</span> i;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//Si tenía algo antes, lo libero</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>!=NULL)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        free(<a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>!=NULL)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        free(<a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//Si no han metido nada, lo dejamos vacío</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">if</span>(buffer==NULL){</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>=0;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>=0;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>=NULL;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>=NULL;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//Cojo el tamaño de la original</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>=sizeXin;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>=sizeYin;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">//Asigno el buffer lineal</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>=buffer;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">//Reservo memoria para la matriz de puntero a punteros, para poder trabajar con índices,</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//manteniendo la ventaja de tener la imagen en solamente un área de memoria</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>=(<span class="keywordtype">float</span> **) malloc(<span class="keyword">sizeof</span>( <span class="keywordtype">float</span> *) * <a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">for</span>(i=0;i&lt;<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>;i++){</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>[i]=&amp;(<a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>[i*<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>]);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#a7857924871e7c2a79b7987f7cdfcb623">CalculateMaxMinZ</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#abecc86b92e71a7315415826d5a897d27">CalculateRatios</a>();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="class_data2_d.html#a818ce127070d095954e45eb3f91dd0fd">   96</a></span>&#160;<span class="keywordtype">float</span> ** <a class="code" href="class_data2_d.html#a818ce127070d095954e45eb3f91dd0fd">Data2D::GetBuffer</a>(){</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="code" href="class_data2_d.html#aa228e79bae12a07436914c613b526728">  100</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_data2_d.html#aa228e79bae12a07436914c613b526728">Data2D::GetSizeX</a>(){</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="code" href="class_data2_d.html#a3464496d3842b25b63d09abe1800becb">  104</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_data2_d.html#a3464496d3842b25b63d09abe1800becb">Data2D::GetSizeY</a>(){</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="class_data2_d.html#ae8d9330c114aebcde5eb4ae321512538">  108</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#ae8d9330c114aebcde5eb4ae321512538">Data2D::SetLabelX</a>(QString <span class="keywordtype">string</span>){</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="class_data2_d.html#a65ef3ec95566b7108280c0305442d30b">labelX</a>=string;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="code" href="class_data2_d.html#a3c423f6a36a261d14993e8c8f8fb0da6">  112</a></span>&#160;QString <a class="code" href="class_data2_d.html#a3c423f6a36a261d14993e8c8f8fb0da6">Data2D::GetLabelX</a>(){</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#a65ef3ec95566b7108280c0305442d30b">labelX</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="class_data2_d.html#abb0c5c997312d22cca50d07c3e2ee102">  116</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#abb0c5c997312d22cca50d07c3e2ee102">Data2D::SetMaxXValue</a>(<span class="keywordtype">float</span> value){</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">maxXValue</a>=value;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#abecc86b92e71a7315415826d5a897d27">CalculateRatios</a>();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="class_data2_d.html#a848a3ee3503b8864844895e924d6d657">  121</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a848a3ee3503b8864844895e924d6d657">Data2D::GetMaxXValue</a>(){</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">maxXValue</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="code" href="class_data2_d.html#aff6d569f1c9be10e85c9bf0bf3ecef54">  125</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#aff6d569f1c9be10e85c9bf0bf3ecef54">Data2D::SetMinXValue</a>(<span class="keywordtype">float</span> value){</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>=value;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#abecc86b92e71a7315415826d5a897d27">CalculateRatios</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="code" href="class_data2_d.html#a6cac51ab41b5e703c8851d78fdd83eb4">  130</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a6cac51ab41b5e703c8851d78fdd83eb4">Data2D::GetMinXValue</a>(){</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="class_data2_d.html#a586415efc2a9ace3f521bbe103ce1da3">  134</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a586415efc2a9ace3f521bbe103ce1da3">Data2D::GetRatioPixelValueX</a>(){</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#a4b7385dbf5eeae959ccee2f320a19bc9">ratioPixelValueX</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="code" href="class_data2_d.html#a88aea9e1fd0f88dda2c8ab1dc82f3a21">  138</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#a88aea9e1fd0f88dda2c8ab1dc82f3a21">Data2D::SetLabelY</a>(QString <span class="keywordtype">string</span>){</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="class_data2_d.html#abfb9438c2f10e1421d1b929d4cb22067">labelY</a>=string;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="code" href="class_data2_d.html#ae23450d3cf58cf91d45c83541ef9c09f">  142</a></span>&#160;QString <a class="code" href="class_data2_d.html#ae23450d3cf58cf91d45c83541ef9c09f">Data2D::GetLabelY</a>(){</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#abfb9438c2f10e1421d1b929d4cb22067">labelY</a>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno"><a class="code" href="class_data2_d.html#a7e3768abd850a3c0e838cc95c1c1425c">  146</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#a7e3768abd850a3c0e838cc95c1c1425c">Data2D::SetMaxYValue</a>(<span class="keywordtype">float</span> value){</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">maxYValue</a>=value;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#abecc86b92e71a7315415826d5a897d27">CalculateRatios</a>();</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno"><a class="code" href="class_data2_d.html#a5f590ee2429ed0a5e69be0436f126baf">  151</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a5f590ee2429ed0a5e69be0436f126baf">Data2D::GetMaxYValue</a>(){</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">maxYValue</a>;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="code" href="class_data2_d.html#aafd794c6b7db2cb2ae955fdff2a3b686">  155</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#aafd794c6b7db2cb2ae955fdff2a3b686">Data2D::SetMinYValue</a>(<span class="keywordtype">float</span> value){</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>=value;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#abecc86b92e71a7315415826d5a897d27">CalculateRatios</a>();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;}</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="code" href="class_data2_d.html#a647a1636c7d543746c416d8e49a7af3e">  160</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a647a1636c7d543746c416d8e49a7af3e">Data2D::GetMinYValue</a>(){</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="code" href="class_data2_d.html#a405e4743ed5d4823df87604b0e69cf94">  164</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a405e4743ed5d4823df87604b0e69cf94">Data2D::GetRatioPixelValueY</a>(){</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_data2_d.html#a8cee1c252cb1918d3d79115d1fff5f1e">ratioPixelValueY</a>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno"><a class="code" href="class_data2_d.html#a5b14f809c60b51e34839ae87b546ee5c">  169</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#a5b14f809c60b51e34839ae87b546ee5c">Data2D::SetDefaults</a>(){</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <a class="code" href="class_data_result.html#a7213712345aef8d8bc2be8885f73b66c">labelZ</a>=<span class="stringliteral">&quot;UnknownZ&quot;</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <a class="code" href="class_data2_d.html#a65ef3ec95566b7108280c0305442d30b">labelX</a>=<span class="stringliteral">&quot;UnknownX&quot;</span>;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">maxXValue</a>=10;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>=-10;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="class_data2_d.html#abfb9438c2f10e1421d1b929d4cb22067">labelY</a>=<span class="stringliteral">&quot;UnknownY&quot;</span>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">maxYValue</a>=10;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>=-10;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    this-&gt;<a class="code" href="class_data2_d.html#abecc86b92e71a7315415826d5a897d27">CalculateRatios</a>();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="code" href="class_data2_d.html#abecc86b92e71a7315415826d5a897d27">  186</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#abecc86b92e71a7315415826d5a897d27">Data2D::CalculateRatios</a>(){</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>!=0 ? <a class="code" href="class_data2_d.html#a4b7385dbf5eeae959ccee2f320a19bc9">ratioPixelValueX</a>=(<a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">maxXValue</a>-<a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>)/(<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>-1) : (<a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">maxXValue</a>-<a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>!=0 ? <a class="code" href="class_data2_d.html#a8cee1c252cb1918d3d79115d1fff5f1e">ratioPixelValueY</a>=(<a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">maxYValue</a>-<a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>)/(<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>-1) : (<a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">maxYValue</a>-<a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="code" href="class_data2_d.html#a7857924871e7c2a79b7987f7cdfcb623">  191</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#a7857924871e7c2a79b7987f7cdfcb623">Data2D::CalculateMaxMinZ</a>(){</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">int</span> x,y;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">float</span> aux;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="class_data_result.html#a5e6f6b337a410dfd74a8ff041c912d4c">maxZValue</a>=-6000000;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="class_data_result.html#af1072312e26b52b4d59205d4ee98e453">minZValue</a>=6000000;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">for</span>(y=0;y&lt;<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>;y++){</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">for</span>(x=0;x&lt;<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>;x++){</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            aux=<a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>[y][x];</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_data_result.html#a5e6f6b337a410dfd74a8ff041c912d4c">maxZValue</a>&lt;aux)</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <a class="code" href="class_data_result.html#a5e6f6b337a410dfd74a8ff041c912d4c">maxZValue</a>=aux;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_data_result.html#af1072312e26b52b4d59205d4ee98e453">minZValue</a>&gt;aux)</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                <a class="code" href="class_data_result.html#af1072312e26b52b4d59205d4ee98e453">minZValue</a>=aux;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;}</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="code" href="class_data2_d.html#a96d85a0343b5fb1228bf5833b84e75ae">  207</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_data2_d.html#a96d85a0343b5fb1228bf5833b84e75ae">Data2D::SaveToFile</a>(QString filePath){</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">int</span> x,y;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>==NULL)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    QFile file(filePath);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;     <span class="keywordflow">if</span> (!file.open(QIODevice::WriteOnly | QIODevice::Text))</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;         <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    QTextStream out(&amp;file);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    out &lt;&lt; scientific;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    <span class="keywordflow">for</span>(y=0;y&lt;<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>;y++){</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        <span class="keywordflow">for</span>(x=0;x&lt;<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>;x++){</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            out &lt;&lt; <a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>+x*(<a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">maxXValue</a>-<a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>)/(sizeX-1) &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>&lt;&lt; <a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>+y*(<a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">maxYValue</a>-<a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>)/(sizeY-1) &lt;&lt; <span class="stringliteral">&quot;\t&quot;</span>&lt;&lt; <a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>[y][x] &lt;&lt; endl;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;}</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#include &lt;qdebug&gt;</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno"><a class="code" href="class_data2_d.html#a1c79c8ae6ad3855064f1159f26f5ace5">  227</a></span>&#160;<a class="code" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> * <a class="code" href="class_data2_d.html#a1c79c8ae6ad3855064f1159f26f5ace5">Data2D::GetData1D</a>(QRect points){</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordtype">int</span> x1=points.left();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">int</span> x2=points.right();</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">int</span> y1=points.top();</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">int</span> y2=points.bottom();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keywordflow">if</span>(x1&lt;0) x1=0;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">if</span>(y1&lt;0) y1=0;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">if</span>(x2&lt;0) x2=0;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">if</span>(y2&lt;0) y2=0;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">if</span>(x1&gt;=<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>) x1=<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>-1;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">if</span>(y1&gt;=<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>) y1=<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>-1;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">if</span>(x2&gt;=<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>) x2=<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>-1;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <span class="keywordflow">if</span>(y2&gt;=<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>) y2=<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>-1;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="comment">//Obtengo y asigno los datos</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordtype">int</span> outputSize=sqrt((<span class="keywordtype">float</span>)((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)))+1;</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <span class="keywordtype">float</span> * outputBuffer;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span>(outputSize&gt;1)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        outputBuffer=<a class="code" href="cpuphaseinterface_8h.html#a36b6ad92b8303f8c666985609da16f1b">GetPhaseLineCPU</a>(<a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>,<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>,<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>,x1,y1,x2,y2,outputSize);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        outputBuffer=NULL;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        outputSize=0;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> * data1d = <span class="keyword">new</span> <a class="code" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a>(outputBuffer,outputSize);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="comment">//Calculo el resto de atributos</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">float</span> initXValue=<a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>+x1*(<a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">maxXValue</a>-<a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>)/<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">float</span> endXValue=<a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>+x2*(<a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">maxXValue</a>-<a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>)/<a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">float</span> initYValue=<a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>+(<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>-y1)*(<a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">maxYValue</a>-<a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>)/<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">float</span> endYValue=<a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>+(<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>-y2)*(<a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">maxYValue</a>-<a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>)/<a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>;</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    data1d-&gt;<a class="code" href="class_data1_d.html#a0212ce04c8018682e4df6e0e9a31f716">SetInitXPoint</a>(initXValue);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    data1d-&gt;<a class="code" href="class_data1_d.html#a7986fc79ac7a267e8646573e85bdcb1f">SetEndXPoint</a>(endXValue);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    data1d-&gt;<a class="code" href="class_data1_d.html#af8e35d9fbe5e26c8caf593a7de7a5593">SetInitYPoint</a>(initYValue);</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    data1d-&gt;<a class="code" href="class_data1_d.html#ae11195a6dc657ab48df6543d65537809">SetEndYPoint</a>(endYValue);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordtype">float</span> length=sqrt((endXValue-initXValue)*(endXValue-initXValue)+(endYValue-initYValue)*(endYValue-initYValue));</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    data1d-&gt;<a class="code" href="class_data1_d.html#aaef7062619bd4a9b65c54d327eee2ba0">SetLabelX</a>(<a class="code" href="class_data2_d.html#a65ef3ec95566b7108280c0305442d30b">labelX</a>);</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    data1d-&gt;<a class="code" href="class_data_result.html#a868bd090ebae6e61113a7dddb0950d48">SetLabelZ</a>(<a class="code" href="class_data_result.html#a7213712345aef8d8bc2be8885f73b66c">labelZ</a>);</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    data1d-&gt;<a class="code" href="class_data1_d.html#a731f1c981eedd93199f6837326ed1fa3">SetMinXValue</a>(-length/2);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    data1d-&gt;<a class="code" href="class_data1_d.html#a89b9557a8112df3e6c9fdbcc34345574">SetMaxXValue</a>(length/2);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordflow">return</span> data1d;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="data2d_8cpp.html">data2d.cpp</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

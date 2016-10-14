@@ -1,0 +1,1183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase CameraUEye</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_camera_u_eye.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-types">Tipos privados</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_camera_u_eye-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase CameraUEye</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementación de <a class="el" href="class_abstract_camera.html" title="Clase abstracta que representa una cámara.">AbstractCamera</a> para cámaras uEye.  
+ <a href="class_camera_u_eye.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>&quot;</code></p>
+<div class="dynheader">
+Diagrama de herencias de CameraUEye</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_camera_u_eye.png" usemap="#CameraUEye_map" alt=""/>
+  <map id="CameraUEye_map" name="CameraUEye_map">
+<area href="class_abstract_camera.html" title="Clase abstracta que representa una cámara." alt="AbstractCamera" shape="rect" coords="0,0,103,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:aad5810287fd8e10893b36451592ca7ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#aad5810287fd8e10893b36451592ca7ae">CameraUEye</a> ()</td></tr>
+<tr class="memitem:a8dc12f50d278d82eef810131290b6ed9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a8dc12f50d278d82eef810131290b6ed9">~CameraUEye</a> ()</td></tr>
+<tr class="memitem:a15c2554e21989bd4ce47ad9056c957c8"><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a15c2554e21989bd4ce47ad9056c957c8">AcquireSourcePicture</a> ()</td></tr>
+<tr class="memitem:a35f5e6a32aaa164c187b2f349534d64c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a35f5e6a32aaa164c187b2f349534d64c">GetSize</a> (<a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command)</td></tr>
+<tr class="memitem:a846207bfc3d2aa20abf29675a92c6257"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a846207bfc3d2aa20abf29675a92c6257">GetMaxSize</a> (<a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command)</td></tr>
+<tr class="memitem:ac07d9445b2cc07e6c2e04a2b1a2675b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#ac07d9445b2cc07e6c2e04a2b1a2675b3">GetMinSize</a> (<a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command)</td></tr>
+<tr class="memitem:a43f97ac0fee37315a110865dae585b1b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a43f97ac0fee37315a110865dae585b1b">SetSize</a> (<a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command, int value)</td></tr>
+<tr class="memitem:a4bbc8ef3d2704fa6b2ca851bbb6a2b5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a4bbc8ef3d2704fa6b2ca851bbb6a2b5c">GetCurrentGain</a> (<a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command)</td></tr>
+<tr class="memitem:a9ad9ad5bda95aa20c14cc8b1b0db6b42"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a9ad9ad5bda95aa20c14cc8b1b0db6b42">GetDefaultGain</a> (<a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command)</td></tr>
+<tr class="memitem:a7052d3f775126c3ea097fb128ab0551a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a7052d3f775126c3ea097fb128ab0551a">SetGain</a> (<a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command, int value)</td></tr>
+<tr class="memitem:a650d3666a3a6f5937418d6cd66cf09da"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a650d3666a3a6f5937418d6cd66cf09da">GetExposure</a> (<a class="el" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3">ExposureParameter</a> command)</td></tr>
+<tr class="memitem:ad82c3f355a97cc746e51bdda68eb77c6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#ad82c3f355a97cc746e51bdda68eb77c6">SetExposure</a> (double value)</td></tr>
+<tr class="memitem:aa49c86b557b8fc46dc0657e305b44f21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#aa49c86b557b8fc46dc0657e305b44f21">GetPixelClock</a> (<a class="el" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049">PixelClockParameter</a> command)</td></tr>
+<tr class="memitem:a8e96c1953aeae915dfdbc98cb2ca8f7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a8e96c1953aeae915dfdbc98cb2ca8f7e">GetDefaultPixelClock</a> ()</td></tr>
+<tr class="memitem:a421a264dc07f86edb32372a9cfa53651"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a421a264dc07f86edb32372a9cfa53651">SetPixelClock</a> (int value)</td></tr>
+<tr class="memitem:a86061e165b310518563e0a44af96374b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a86061e165b310518563e0a44af96374b">GetFrameRate</a> (<a class="el" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2">FramerateParameter</a> command)</td></tr>
+<tr class="memitem:aa3c5c514db33adb2a413387491caf919"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#aa3c5c514db33adb2a413387491caf919">GetDefaultFrameRate</a> ()</td></tr>
+<tr class="memitem:aea2a796e6ddaffcf090da8ca465abd91"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#aea2a796e6ddaffcf090da8ca465abd91">SetFrameRate</a> (double value)</td></tr>
+<tr class="memitem:a57721bcaa9d759a0362f4580337be4b8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a57721bcaa9d759a0362f4580337be4b8">IsOpen</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_abstract_camera"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_abstract_camera')"><img src="closed.png" alt="-"/>&nbsp;Métodos públicos heredados desde <a class="el" href="class_abstract_camera.html">AbstractCamera</a></td></tr>
+<tr class="memitem:a27acb5761b3a9f3f81a30aba36cee1ea inherit pub_methods_class_abstract_camera"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_camera.html#a27acb5761b3a9f3f81a30aba36cee1ea">GetMinGain</a> (<a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command)</td></tr>
+<tr class="memitem:a9e85d342c4b8e2616cb0d020ee363942 inherit pub_methods_class_abstract_camera"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_camera.html#a9e85d342c4b8e2616cb0d020ee363942">GetMaxGain</a> (<a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command)</td></tr>
+<tr class="memitem:a33e11595d9e93b50aae7684456a490af inherit pub_methods_class_abstract_camera"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_camera.html#a33e11595d9e93b50aae7684456a490af">GetDefaultExposure</a> ()</td></tr>
+<tr class="memitem:a8653c629f9ef0225364348e9240636be inherit pub_methods_class_abstract_camera"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_parameters.html">CameraParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_camera.html#a8653c629f9ef0225364348e9240636be">SetParameters</a> (<a class="el" href="class_camera_parameters.html">CameraParameters</a> parameters_in)</td></tr>
+<tr class="memitem:ae0baaeafa1e7fe97de95ced0b2a5a4c4 inherit pub_methods_class_abstract_camera"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_parameters.html">CameraParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_camera.html#ae0baaeafa1e7fe97de95ced0b2a5a4c4">GetParameters</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-types"></a>
+Tipos privados</h2></td></tr>
+<tr class="memitem:af765d5f29795cbda125a97e2a9676872"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#af765d5f29795cbda125a97e2a9676872">ConfigChanges</a> { <a class="el" href="class_camera_u_eye.html#af765d5f29795cbda125a97e2a9676872a90c55598f0bf28bc6276f8398f8086ce">KEEP_CONFIG</a>, 
+<a class="el" href="class_camera_u_eye.html#af765d5f29795cbda125a97e2a9676872a1de25ba5bff0b21a3724af2afbc1d09c">RESET_CONFIG</a>
+ }</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:aad5ca968c4f55151d0e911010eba5569"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#aad5ca968c4f55151d0e911010eba5569">OpenCamera</a> (<a class="el" href="class_camera_u_eye.html#af765d5f29795cbda125a97e2a9676872">ConfigChanges</a> config)</td></tr>
+<tr class="memitem:a9ba5a36a86938fbe628c47819d985916"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a9ba5a36a86938fbe628c47819d985916">SetDefaultConfigValues</a> ()</td></tr>
+<tr class="memitem:a618de2fd019e827389afa30582047507"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a618de2fd019e827389afa30582047507">LoadParameters</a> ()</td></tr>
+<tr class="memitem:a4496a0d5c6db9fde6ad0148f91941439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a4496a0d5c6db9fde6ad0148f91941439">CloseCamera</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a1f84bba6b7ac42724e42522eb564341d"><td class="memItemLeft" align="right" valign="top">HIDS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a1f84bba6b7ac42724e42522eb564341d">hCam</a></td></tr>
+<tr class="memitem:ae8cf35a12dc4c2e6be0f738208cf99d5"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#ae8cf35a12dc4c2e6be0f738208cf99d5">imageMemory</a></td></tr>
+<tr class="memitem:a05d420676b67210f72bd05ae8bf66ed5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a05d420676b67210f72bd05ae8bf66ed5">memoryId</a></td></tr>
+<tr class="memitem:a9e3a946a091c3bb53e80f7d35f8b2494"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#a9e3a946a091c3bb53e80f7d35f8b2494">colorMode</a></td></tr>
+<tr class="memitem:abc958809dc1fb2cc555f1cae8619d4d6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#abc958809dc1fb2cc555f1cae8619d4d6">bitsPerPixel</a></td></tr>
+<tr class="memitem:ac7be0e65da622f18bfeaa1c8b8af0378"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#ac7be0e65da622f18bfeaa1c8b8af0378">nColorCorrection</a></td></tr>
+<tr class="memitem:af8b9b2131a9d7d6925c9d576e5f989e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#af8b9b2131a9d7d6925c9d576e5f989e4">nBayerMode</a></td></tr>
+<tr class="memitem:abd50f98d872a80861e87df333fd3e51a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_u_eye.html#abd50f98d872a80861e87df333fd3e51a">renderMode</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Otros miembros heredados</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_abstract_camera"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_abstract_camera')"><img src="closed.png" alt="-"/>&nbsp;Atributos protegidos heredados desde <a class="el" href="class_abstract_camera.html">AbstractCamera</a></td></tr>
+<tr class="memitem:a33697f3386e444bfb6a14e74950d93bb inherit pro_attribs_class_abstract_camera"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_parameters.html">CameraParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_camera.html#a33697f3386e444bfb6a14e74950d93bb">parameters</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Implementación de <a class="el" href="class_abstract_camera.html" title="Clase abstracta que representa una cámara.">AbstractCamera</a> para cámaras uEye. </p>
+<p>Utiliza la API proporcionada por ids-imaging. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8h_source.html#l00027">27</a> del archivo <a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>.</p>
+</div><h2>Documentación de las enumeraciones miembro de la clase</h2>
+<a class="anchor" id="af765d5f29795cbda125a97e2a9676872"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="class_camera_u_eye.html#af765d5f29795cbda125a97e2a9676872">CameraUEye::ConfigChanges</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Mantiene o no la configuración al abrir una cámara. </p>
+<dl><dt><b>Valores de enumeraciones: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="af765d5f29795cbda125a97e2a9676872a90c55598f0bf28bc6276f8398f8086ce"></a>KEEP_CONFIG</em>&nbsp;</td><td>
+<p>La mantiene. </p>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="af765d5f29795cbda125a97e2a9676872a1de25ba5bff0b21a3724af2afbc1d09c"></a>RESET_CONFIG</em>&nbsp;</td><td>
+<p>La reinicia. </p>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8h_source.html#l00031">31</a> del archivo <a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>.</p>
+
+</div>
+</div>
+<h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="aad5810287fd8e10893b36451592ca7ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CameraUEye::CameraUEye </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. Crea y abre una cámara. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00015">15</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8dc12f50d278d82eef810131290b6ed9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CameraUEye::~CameraUEye </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00042">42</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a15c2554e21989bd4ce47ad9056c957c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage * CameraUEye::AcquireSourcePicture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Toma una imagen con la cámara. El cliente es responsable de la eliminación de dicha imagen. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Imagen tomada </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#ae269a03c21428ff05542a8e0622b32ec">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00101">101</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4496a0d5c6db9fde6ad0148f91941439"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraUEye::CloseCamera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Cierra la cámara. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00069">69</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bbc8ef3d2704fa6b2ca851bbb6a2b5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::GetCurrentGain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene el valor actual de la ganancia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar cuál de todas las ganancias. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la ganancia. </dd></dl>
+
+<p>Reimplementado de <a class="el" href="class_abstract_camera.html#adba4da72e20aab0cf6aa184735eb679b">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00237">237</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3c5c514db33adb2a413387491caf919"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraUEye::GetDefaultFrameRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene el valor por defecto para la tasa de toma de imágenes. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la de la tasa de toma de imágenes en imágenes por segundo. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#ab87e4a1e7384987f944ea5e068924067">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00474">474</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ad9ad5bda95aa20c14cc8b1b0db6b42"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::GetDefaultGain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene el valor por defecto de la ganancia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar cuál de todas las ganancias. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la ganancia por defecto. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#a87ac9f6902b9c1d7e890cb39df51424d">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00268">268</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8e96c1953aeae915dfdbc98cb2ca8f7e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::GetDefaultPixelClock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene el valor por defecto para el reloj de pixel. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del reloj de pixel en megahercios. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#a346554c300a09df4c6a7b0ef581f516f">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00427">427</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a650d3666a3a6f5937418d6cd66cf09da"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraUEye::GetExposure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3">ExposureParameter</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene un valor para la exposición. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar si el valor máximo, mínimo o actual. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la exposición en milisegundos. </dd></dl>
+
+<p>Reimplementado de <a class="el" href="class_abstract_camera.html#ad3e7708e62461238d1c1d49ae7bff973">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00175">175</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a86061e165b310518563e0a44af96374b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraUEye::GetFrameRate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2">FramerateParameter</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene un valor para la tasa de toma de imágenes. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar si el valor máximo, mínimo o actual. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la de la tasa de toma de imágenes en imágenes por segundo. </dd></dl>
+
+<p>Reimplementado de <a class="el" href="class_abstract_camera.html#a89e99becf41f99a25ca5bb0d87e670dc">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00449">449</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a846207bfc3d2aa20abf29675a92c6257"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::GetMaxSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene el tamaño máximo de la imagen a tomar. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>El alto o el ancho. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor en píxeles máximo de la dimensión solicitada. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#a6d070efa25c5e92d8d5d9531054d9912">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00296">296</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac07d9445b2cc07e6c2e04a2b1a2675b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::GetMinSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene el tamaño mínimo de la imagen a tomar. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>El alto o el ancho. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor en píxeles míximo de la dimensión solicitada. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#a59b013421800919602690b3ebf1173d0">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00336">336</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa49c86b557b8fc46dc0657e305b44f21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::GetPixelClock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049">PixelClockParameter</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene un valor para el reloj de pixel. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar si el valor máximo, mínimo o actual. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del reloj de pixel en megahercios. </dd></dl>
+
+<p>Reimplementado de <a class="el" href="class_abstract_camera.html#a61bd26bd1b9bd36c608e4cccc616c760">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00405">405</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a35f5e6a32aaa164c187b2f349534d64c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::GetSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene el tamaño actual de la imagen a tomar. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>El alto o el ancho. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor en píxeles de la dimensión solicitada. </dd></dl>
+
+<p>Reimplementado de <a class="el" href="class_abstract_camera.html#a7734e79ca0e26ef541de00b0ecd3c5d7">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00350">350</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a57721bcaa9d759a0362f4580337be4b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CameraUEye::IsOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si la cámara está correctamente abierta y en funcionamiento. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero, sí la cámara esta detectada y funcionando correctamente. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#a65dccc42d704431b22595ba933019493">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00026">26</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a618de2fd019e827389afa30582047507"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraUEye::LoadParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Configura la cámara con los valores encontrados en las variables. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00129">129</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad5ca968c4f55151d0e911010eba5569"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CameraUEye::OpenCamera </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_camera_u_eye.html#af765d5f29795cbda125a97e2a9676872">ConfigChanges</a>&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Abre la cámara. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>Indica si debe mantener o reiniciar la configuración. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se abrió correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00078">78</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ba5a36a86938fbe628c47819d985916"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraUEye::SetDefaultConfigValues </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Establece las variables a los valores por defecto. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00047">47</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad82c3f355a97cc746e51bdda68eb77c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraUEye::SetExposure </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Configura el valor para la exposición. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor en milisegundos a configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la exposición en milisegundos realmente configurado. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#a77b35e4b08a7e54f83cc467a5b7c2729">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00164">164</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea2a796e6ddaffcf090da8ca465abd91"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraUEye::SetFrameRate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Configura el valor para la tasa de toma de imágenes. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor en milisegundos a configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la de la tasa de toma de imágenes en imágenes por segundo realmente configurado. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#aeca7a900638a9c2b7ff95bce935f235f">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00484">484</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7052d3f775126c3ea097fb128ab0551a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::SetGain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a>&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Configura el valor de la ganancia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar cuál de todas las ganancias. </td></tr>
+    <tr><td class="paramname">value</td><td>Valor para configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor realmente configurado para la ganancia indicada. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#ab0dc0b5b131c0acae5cacdfe4a3a9a43">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00198">198</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a421a264dc07f86edb32372a9cfa53651"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::SetPixelClock </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Configura el valor para el reloj de pixel. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor en milisegundos a configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del reloj de pixel en megahercios realmente configurado. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#a54d9cf14d5fd355eb32853ccf4c518ba">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00437">437</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a43f97ac0fee37315a110865dae585b1b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::SetSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a>&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Configura el tamaño de la imagen a tomar. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>El alto o el ancho. </td></tr>
+    <tr><td class="paramname">value</td><td>Valor en píxeles a configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor en píxeles realmente configurado para la dimensión indicada. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_camera.html#a2cca25485b8ba40a6e272202d2f8e548">AbstractCamera</a>.</p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8cpp_source.html#l00380">380</a> del archivo <a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="abc958809dc1fb2cc555f1cae8619d4d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::bitsPerPixel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Bits de información por cada pixel. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8h_source.html#l00043">43</a> del archivo <a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e3a946a091c3bb53e80f7d35f8b2494"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::colorMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Modo de color. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8h_source.html#l00042">42</a> del archivo <a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f84bba6b7ac42724e42522eb564341d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HIDS CameraUEye::hCam</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Handle a la cámara actualmente abierta. 0 si ninguna. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8h_source.html#l00037">37</a> del archivo <a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8cf35a12dc4c2e6be0f738208cf99d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* CameraUEye::imageMemory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a la zona de memoria donde la cámara escribe la imagen. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8h_source.html#l00039">39</a> del archivo <a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05d420676b67210f72bd05ae8bf66ed5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::memoryId</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Identificador de la zona de memoria de la cámara. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8h_source.html#l00040">40</a> del archivo <a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8b9b2131a9d7d6925c9d576e5f989e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::nBayerMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Modo bayer. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8h_source.html#l00045">45</a> del archivo <a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac7be0e65da622f18bfeaa1c8b8af0378"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::nColorCorrection</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tipo de corrección de color. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8h_source.html#l00044">44</a> del archivo <a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abd50f98d872a80861e87df333fd3e51a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraUEye::renderMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Modo de renderización. </p>
+
+<p>Definición en la línea <a class="el" href="cameraueye_8h_source.html#l00046">46</a> del archivo <a class="el" href="cameraueye_8h_source.html">cameraueye.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="cameraueye_8h_source.html">cameraueye.h</a></li>
+<li>sources/<a class="el" href="cameraueye_8cpp_source.html">cameraueye.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_camera_u_eye.html">CameraUEye</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

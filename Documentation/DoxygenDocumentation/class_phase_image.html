@@ -1,0 +1,840 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase PhaseImage</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_phase_image.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pro-attribs">Atributos protegidos</a> &#124;
+<a href="class_phase_image-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase PhaseImage</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase abstracta que almacena la imagen de la fase.  
+ <a href="class_phase_image.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="phaseimage_8h_source.html">phaseimage.h</a>&quot;</code></p>
+<div class="dynheader">
+Diagrama de herencias de PhaseImage</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_phase_image.png" usemap="#PhaseImage_map" alt=""/>
+  <map id="PhaseImage_map" name="PhaseImage_map">
+<area href="class_phase_image_c_p_u.html" title="Implementación de PhaseImage utilizando la CPU." alt="PhaseImageCPU" shape="rect" coords="0,56,115,80"/>
+<area href="class_phase_image_c_u_d_a.html" title="Implementación de PhaseImage utilizando CUDA." alt="PhaseImageCUDA" shape="rect" coords="125,56,240,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:afd0f0189066e3652a0d6d02c72e380d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#afd0f0189066e3652a0d6d02c72e380d1">PhaseImage</a> (float *buffer, int sizeX_in, int sizeY_in)</td></tr>
+<tr class="memitem:aa1cd786fc3a9b6b3b747972762fb0a93"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#aa1cd786fc3a9b6b3b747972762fb0a93">~PhaseImage</a> ()</td></tr>
+<tr class="memitem:acb0da1df8692ab5b254e0dfeeae2640f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#acb0da1df8692ab5b254e0dfeeae2640f">GetSizeX</a> ()</td></tr>
+<tr class="memitem:ae830b9079f87f08684829970222e815f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#ae830b9079f87f08684829970222e815f">GetSizeY</a> ()</td></tr>
+<tr class="memitem:ad8c1c81bce9f8269c50c5b9db5448c9b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#ad8c1c81bce9f8269c50c5b9db5448c9b">LoadFromMemoryData</a> (float *buffer, int sizeX_in, int sizeY_in)=0</td></tr>
+<tr class="memitem:ac3305e8fd2e005b7d8dd1382424089a9"><td class="memItemLeft" align="right" valign="top">virtual float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#ac3305e8fd2e005b7d8dd1382424089a9">GetMemoryBuffer</a> ()=0</td></tr>
+<tr class="memitem:a8a8e4d6750cf09ff34842541c8f75038"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#a8a8e4d6750cf09ff34842541c8f75038">ScanPhase</a> ()=0</td></tr>
+<tr class="memitem:a152a265d636dd876a88260b1f79f52c9"><td class="memItemLeft" align="right" valign="top">virtual QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#a152a265d636dd876a88260b1f79f52c9">GetAsQImage</a> (int gain)=0</td></tr>
+<tr class="memitem:ac6399060738fcbac77e33ff19318b9f1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#ac6399060738fcbac77e33ff19318b9f1">GetData2D</a> (<a class="el" href="class_data2_d.html">Data2D</a> *data2dIn=NULL)=0</td></tr>
+<tr class="memitem:ab95d23f07a873cc146060fe0de25a9c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#ab95d23f07a873cc146060fe0de25a9c8">SubtractPhase</a> (<a class="el" href="class_phase_image.html">PhaseImage</a> *offset_in)=0</td></tr>
+<tr class="memitem:ab8c529c49d0e1f7d53ae69bd2c3f9204"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#ab8c529c49d0e1f7d53ae69bd2c3f9204">AdditiveInverse</a> ()=0</td></tr>
+<tr class="memitem:a9e3883eebd7a6db895954753423feb0b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#a9e3883eebd7a6db895954753423feb0b">RemoveHorizontalLinearTilt</a> ()=0</td></tr>
+<tr class="memitem:a34ad4493583130e7d20ec20c31345383"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#a34ad4493583130e7d20ec20c31345383">RemoveVerticalLinearTilt</a> ()=0</td></tr>
+<tr class="memitem:aa07db7f60e5cf427c84e4dfb823e82d6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#aa07db7f60e5cf427c84e4dfb823e82d6">SetGround</a> ()=0</td></tr>
+<tr class="memitem:a9fa96a95c2919b819ed17638f0fe54f4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#a9fa96a95c2919b819ed17638f0fe54f4">OffsetAndMultiply</a> (float offset, float factor)=0</td></tr>
+<tr class="memitem:ad1fc0444b16a496abfa3781410a85bd7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#ad1fc0444b16a496abfa3781410a85bd7">MakeSymmetric</a> ()=0</td></tr>
+<tr class="memitem:a0382035c77f2dd9ed5e2afa985fc475d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#a0382035c77f2dd9ed5e2afa985fc475d">AbelInversion</a> (float dx, int neighbours)=0</td></tr>
+<tr class="memitem:aa5c3de6c43f39369cb93951a9243219a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#aa5c3de6c43f39369cb93951a9243219a">CropRectangle</a> (QRect rect)=0</td></tr>
+<tr class="memitem:a8121dc49b5b6804e62726615725ade1d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_phase_line.html">PhaseLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#a8121dc49b5b6804e62726615725ade1d">GetPhaseLine</a> (QRect points)=0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pro-attribs"></a>
+Atributos protegidos</h2></td></tr>
+<tr class="memitem:a0c616e5df2c2f6705cc5eb2cf0de35aa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#a0c616e5df2c2f6705cc5eb2cf0de35aa">sizeX</a></td></tr>
+<tr class="memitem:a14e96fa2ebadee59efd9cdb97c6f953c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#a14e96fa2ebadee59efd9cdb97c6f953c">sizeY</a></td></tr>
+<tr class="memitem:add3fe9e0d993ac168fd75b0bbd57941f"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_image.html#add3fe9e0d993ac168fd75b0bbd57941f">linearBuffer</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase abstracta que almacena la imagen de la fase. </p>
+<p>Sobre objetos de esta clase se aplican los algoritmos elegidos por el usuario.</p>
+<p>Define una interfaz que debe ser implementada por cualquier sistema de cálculo (En este caso CUDA o CPU), que debe ser programada derivando una clase de ésta. </p>
+
+<p>Definición en la línea <a class="el" href="phaseimage_8h_source.html#l00031">31</a> del archivo <a class="el" href="phaseimage_8h_source.html">phaseimage.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="afd0f0189066e3652a0d6d02c72e380d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PhaseImage::PhaseImage </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Puntero a la zona de memoria de la implementación elegida con la imagen a cargar. El puntero y la zona de memoria pasará a ser responsabilidad del objeto creado. </td></tr>
+    <tr><td class="paramname">sizeX_in</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY_in</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="phaseimage_8cpp_source.html#l00013">13</a> del archivo <a class="el" href="phaseimage_8cpp_source.html">phaseimage.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1cd786fc3a9b6b3b747972762fb0a93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PhaseImage::~PhaseImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="phaseimage_8cpp_source.html#l00019">19</a> del archivo <a class="el" href="phaseimage_8cpp_source.html">phaseimage.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a0382035c77f2dd9ed5e2afa985fc475d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::AbelInversion </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>neighbours</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que calcula la Inversión de Abel horizontalmente de la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dx</td><td>Distancia entre dos pixeles. </td></tr>
+    <tr><td class="paramname">neighbours</td><td>Número de vecinos para calcular la derivada. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#aa46cd820d9482a198893a04bcf24d513">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#a6e79ac998bb830efddb35fcd7f3947ea">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab8c529c49d0e1f7d53ae69bd2c3f9204"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::AdditiveInverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que asigna a cada valor de la imagen de la fase su opuesto. </p>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#a4a21ef9260a6e9ace75385cbde7b4d81">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#a702977d38912360f9b7d990ff420d92c">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5c3de6c43f39369cb93951a9243219a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::CropRectangle </td>
+          <td>(</td>
+          <td class="paramtype">QRect&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que recorta parte de la imagen, dejando sólo la parte que se encuentre dentro de una máscara pasada como argumento. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>Máscara de recorte. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#a7ad660660d7a5d7a7d871a03c7d637b0">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#aee765e9607f4910f892ad79453fced85">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a152a265d636dd876a88260b1f79f52c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QImage* PhaseImage::GetAsQImage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Devuelve una imagen de la fase. Reescala los valores del modulo entre 0 y 255, y después les aplica la ganancia deseada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gain</td><td>Ganancia a aplicar después del reescalado entre 0 y 255. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a un objeto QImage. Responsabilidad del cliente. </dd></dl>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#a2d2c2c8544cc00e23013293e7434c194">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#a1f6cf0870d2ff70b9b32be0db54c41d8">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6399060738fcbac77e33ff19318b9f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_data2_d.html">Data2D</a>* PhaseImage::GetData2D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td>
+          <td class="paramname"><em>data2dIn</em> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene un objeto tipo <a class="el" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a> con los datos de la fase contenidos en el objeto <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data2dIn</td><td>Si este parámetro es nulo, se crea un objeto <a class="el" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a> nuevo. Si no lo es, se rellenan los datos en el objeto pasado como parámetro y se devuelve. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#a478341920615b6dec6616a12d410518a">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#a2b12ca0b249afc1ec37335a3428ba392">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3305e8fd2e005b7d8dd1382424089a9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual float* PhaseImage::GetMemoryBuffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Crea una copia en memoria principal del buffer y lo devuelve como argumento. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a la zona de memoria con el buffer, de tamaño sizeX*sizeY*sizeof(float). </dd></dl>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#a2a2bb5a0e475fdbc1bf6a44bf681bc55">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#ae7f0eb51dec8e2aabc85bd720e654fbc">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8121dc49b5b6804e62726615725ade1d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_phase_line.html">PhaseLine</a>* PhaseImage::GetPhaseLine </td>
+          <td>(</td>
+          <td class="paramtype">QRect&#160;</td>
+          <td class="paramname"><em>points</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Devuelve un objeto tipo <a class="el" href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase.">PhaseLine</a> responsabilidad del cliente, implementado de la misma forma que el objeto llamado con los datos desde los puntos indicados. El número de muestras de la recta se establece en proporción a la longitud del segmento. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">points</td><td>Rectángulo que indica los puntos inicial y final de la recta, desde la esquina superior izquierda del rectángulo hasta la inferior derecha. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Datos unidimensionales a lo largo de la recta indicada. </dd></dl>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#a798cf7e4f71c7a53be22eccbbc31e5c1">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#a30efeb9b0aab6be46f4fd071e17711f7">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acb0da1df8692ab5b254e0dfeeae2640f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PhaseImage::GetSizeX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo sizeX. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>El valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="phaseimage_8cpp_source.html#l00022">22</a> del archivo <a class="el" href="phaseimage_8cpp_source.html">phaseimage.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae830b9079f87f08684829970222e815f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PhaseImage::GetSizeY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo sizeY. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>El valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="phaseimage_8cpp_source.html#l00026">26</a> del archivo <a class="el" href="phaseimage_8cpp_source.html">phaseimage.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad8c1c81bce9f8269c50c5b9db5448c9b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::LoadFromMemoryData </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Carga los datos de la imagen desde datos en memoria principal. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Puntero a la zona de memoria principal con la imagen a cargar. El objeto creará una copia, por lo que la zona de memoria sigue siendo resposabilidad del padre. </td></tr>
+    <tr><td class="paramname">sizeX_in</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY_in</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#adca710e4605a1568f2c53a9a18d0899e">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#a1989fc4333fd44aa2a3bacf74bc08e95">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad1fc0444b16a496abfa3781410a85bd7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::MakeSymmetric </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que hace la imagen simétrica horizontalmente, respecto al valor máximo de cada fila, centrando dicho valor en la imagen. </p>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#adda23fb575bb3af3bd9f462ac6983357">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#a45497b0c7ac52d5e218da868ff8b3018">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9fa96a95c2919b819ed17638f0fe54f4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::OffsetAndMultiply </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que multiplica por un factor y suma un offset a la imagen. </p>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#aad57c0d8f7d3e4b8e299dad26fb812b8">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#ada565d4276e198ff27df2f3681e44034">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e3883eebd7a6db895954753423feb0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::RemoveHorizontalLinearTilt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que elimina la inclinación horizontal de la imagen mediante un ajuste de mínimos cuadrados. </p>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#a61dddedfaf0bd88593dbcbace7a9e6bd">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#a35e8ada04f5ec58ac2dd58cfd72280de">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34ad4493583130e7d20ec20c31345383"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::RemoveVerticalLinearTilt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que elimina la inclinación vertical de la imagen mediante un ajuste de mínimos cuadrados. </p>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#a23dcaa817cfb773405993d60bac54c07">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#afad64c8afc4b367f7509d8ec7314d971">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8a8e4d6750cf09ff34842541c8f75038"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::ScanPhase </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que escanea al fase para hacerla contínua. Esto es, dada una imagen con una fase variando entre 0 y 2Pi, se pasa a tener una imagen contínua de fase, es decir, a cada salto encontrado en la fase, se le suma/resta múltiplos de 2Pi hasta que no hay saltos. </p>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#a5e6b2fd272040d9134b131a8128ecb29">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#a5af14baf64625d7fd6034482941462e7">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa07db7f60e5cf427c84e4dfb823e82d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::SetGround </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que establece la base de la imagen, eliminando ruido, utilizando el promedio de los valores laterales. </p>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#ac05f88cf75297ed552fa6195db289018">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#a752494b3f7b8dc15f1ed0e0358a0e9cf">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab95d23f07a873cc146060fe0de25a9c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void PhaseImage::SubtractPhase </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_phase_image.html">PhaseImage</a> *&#160;</td>
+          <td class="paramname"><em>offset_in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Resta de la imagen contenida en el objeto <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a>, otra imagen de un objeto tipo <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> pasado como parámetro. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">offset_in</td><td>Objeto que se va a restar. Este objeto debe estar implementado de la misma forma que el objeto a cuyo método se llama. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="class_phase_image_c_p_u.html#a72396e370515032e41387cdf7a8b1b6c">PhaseImageCPU</a> y <a class="el" href="class_phase_image_c_u_d_a.html#ac358bfa6c12c7f5d8c4c7221ec13c2b5">PhaseImageCUDA</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="add3fe9e0d993ac168fd75b0bbd57941f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* PhaseImage::linearBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al buffer donde se encuentra la información de los píxeles de imagen, organizado fila tras fila. Este puntero puede apuntar tanto a memoria de la CPU como a memoria de la GPU. </p>
+
+<p>Definición en la línea <a class="el" href="phaseimage_8h_source.html#l00037">37</a> del archivo <a class="el" href="phaseimage_8h_source.html">phaseimage.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c616e5df2c2f6705cc5eb2cf0de35aa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PhaseImage::sizeX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ancho en píxeles de la imagen. </p>
+
+<p>Definición en la línea <a class="el" href="phaseimage_8h_source.html#l00035">35</a> del archivo <a class="el" href="phaseimage_8h_source.html">phaseimage.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14e96fa2ebadee59efd9cdb97c6f953c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int PhaseImage::sizeY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Alto en píxeles de la imagen. </p>
+
+<p>Definición en la línea <a class="el" href="phaseimage_8h_source.html#l00036">36</a> del archivo <a class="el" href="phaseimage_8h_source.html">phaseimage.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="phaseimage_8h_source.html">phaseimage.h</a></li>
+<li>sources/<a class="el" href="phaseimage_8cpp_source.html">phaseimage.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_phase_image.html">PhaseImage</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase FullImage</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_full_image.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-static-methods">Métodos públicos estáticos</a> &#124;
+<a href="#pro-attribs">Atributos protegidos</a> &#124;
+<a href="class_full_image-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase FullImage</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales.  
+ <a href="class_full_image.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="fullimage_8h_source.html">fullimage.h</a>&quot;</code></p>
+<div class="dynheader">
+Diagrama de herencias de FullImage</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_full_image.png" usemap="#FullImage_map" alt=""/>
+  <map id="FullImage_map" name="FullImage_map">
+<area href="class_full_image_c_p_u.html" title="Implementación de FullImage utilizando la CPU." alt="FullImageCPU" shape="rect" coords="0,56,101,80"/>
+<area href="class_full_image_c_u_d_a.html" title="Implementación de FullImage utilizando CUDA." alt="FullImageCUDA" shape="rect" coords="111,56,212,80"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a4bf3c4d9c0894d1be8cb6573b0d2e687"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#a4bf3c4d9c0894d1be8cb6573b0d2e687">FullImage</a> (QImage *source, int power2SizeX, int power2SizeY)</td></tr>
+<tr class="memitem:a9ff7f2e215378b37bf9fabd6771e76a3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#a9ff7f2e215378b37bf9fabd6771e76a3">~FullImage</a> ()</td></tr>
+<tr class="memitem:a3ff97ac50a6b01e732f088b8f4e363d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#a3ff97ac50a6b01e732f088b8f4e363d0">GetSizeX</a> ()</td></tr>
+<tr class="memitem:a0e0b0141b6bfe11a21428f0c0144679d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#a0e0b0141b6bfe11a21428f0c0144679d">GetSizeY</a> ()</td></tr>
+<tr class="memitem:a8c497ad68c80722313f84b0c266a33c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#a8c497ad68c80722313f84b0c266a33c4">ApplyMask</a> (QRect mask)=0</td></tr>
+<tr class="memitem:ab027b4aeea073381176e16e0133303b7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#ab027b4aeea073381176e16e0133303b7">ComplexFFT</a> (<a class="el" href="fullimage_8h.html#a7fda957fa84e2eb1168696555eb2ef41">DirFFT</a> dir)=0</td></tr>
+<tr class="memitem:a68c2b6c0873e88ef6f6ca4da86befed9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#a68c2b6c0873e88ef6f6ca4da86befed9">ReArrangeFT</a> ()=0</td></tr>
+<tr class="memitem:afcf126cf50ae3d7aed11cd26d1a32b68"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_phase_image.html">PhaseImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#afcf126cf50ae3d7aed11cd26d1a32b68">CropPhase</a> (QRect mask)=0</td></tr>
+<tr class="memitem:a1b69724de45e9c222b8aee4a36f8608c"><td class="memItemLeft" align="right" valign="top">virtual QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#a1b69724de45e9c222b8aee4a36f8608c">GetAbsoluteValueAsQImage</a> (int gain)=0</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-static-methods"></a>
+Métodos públicos estáticos</h2></td></tr>
+<tr class="memitem:aa54fbd2c616c35fce5bfe3223fc70019"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#aa54fbd2c616c35fce5bfe3223fc70019">NextPowerOf2</a> (int value)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pro-attribs"></a>
+Atributos protegidos</h2></td></tr>
+<tr class="memitem:a57defbf7eb43af92266acffb179a7337"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#a57defbf7eb43af92266acffb179a7337">sizeX</a></td></tr>
+<tr class="memitem:a248c1849fb385f77cb711a957f0641ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#a248c1849fb385f77cb711a957f0641ae">sizeY</a></td></tr>
+<tr class="memitem:a9d45b4a23c4fc67a6e0a8e022a5c8e93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcomplex.html">complex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_full_image.html#a9d45b4a23c4fc67a6e0a8e022a5c8e93">linearBuffer</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales. </p>
+<p>Es la estrutura de datos que se usa durante las primeras etapas del procesado de la imagen. Para cada pixel guarda dos valores: parte real y parte imaginaria, por lo que se puede considerar que contiene una imagen compleja.</p>
+<p>Define una interfaz que debe ser implementada por cualquier sistema de cálculo (En este caso CUDA o CPU), que debe ser programada derivando una clase de ésta. </p>
+
+<p>Definición en la línea <a class="el" href="fullimage_8h_source.html#l00037">37</a> del archivo <a class="el" href="fullimage_8h_source.html">fullimage.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a4bf3c4d9c0894d1be8cb6573b0d2e687"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">FullImage::FullImage </td>
+          <td>(</td>
+          <td class="paramtype">QImage *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>power2SizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>power2SizeY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Imagen de origen que se cargará en la parte real d ela imagen compleja. Dicha imagen sigue siendo responsabilidad del cliente. </td></tr>
+    <tr><td class="paramname">power2SizeX</td><td>Ancho deseado para la <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> creada. Debe ser una potencia de 2. Si no lo es, se redondeará a la siguiente potencia de 2. </td></tr>
+    <tr><td class="paramname">power2SizeY</td><td>Alto deseado para la <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> creada. Debe ser una potencia de 2. Si no lo es, se redondeará a la siguiente potencia de 2. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="fullimage_8cpp_source.html#l00013">13</a> del archivo <a class="el" href="fullimage_8cpp_source.html">fullimage.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ff7f2e215378b37bf9fabd6771e76a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FullImage::~FullImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="fullimage_8cpp_source.html#l00041">41</a> del archivo <a class="el" href="fullimage_8cpp_source.html">fullimage.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a8c497ad68c80722313f84b0c266a33c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void FullImage::ApplyMask </td>
+          <td>(</td>
+          <td class="paramtype">QRect&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que aplica una máscara (Coloca todo a cero excepto los puntos dentro de la máscara). </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mask</td><td>Rectángulo que representa la máscara. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="class_full_image_c_p_u.html#a4f2571320a52948af1b964a981f0eaeb">FullImageCPU</a> y <a class="el" href="class_full_image_c_u_d_a.html#a70c1dc218aaeb3a9a3374a4dc6e9edde">FullImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab027b4aeea073381176e16e0133303b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void FullImage::ComplexFFT </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fullimage_8h.html#a7fda957fa84e2eb1168696555eb2ef41">DirFFT</a>&#160;</td>
+          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que realiza la transformada de Fourier de la imagen compleja. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dir</td><td>Dirección de la transformada de fourier. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="class_full_image_c_p_u.html#a3654ea8b477edeb2f6f7e769749d8084">FullImageCPU</a> y <a class="el" href="class_full_image_c_u_d_a.html#a51a9a3e239a626edbe30cf0d1eb54e8d">FullImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afcf126cf50ae3d7aed11cd26d1a32b68"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="class_phase_image.html">PhaseImage</a>* FullImage::CropPhase </td>
+          <td>(</td>
+          <td class="paramtype">QRect&#160;</td>
+          <td class="paramname"><em>mask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Devuelve un puntero a un objeto tipo <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a>, con la fase de la parte dentro de la máscara pasada como parámatero de la imagen compleja contenida en <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a>, implementado con el mismo método de cálculo que el objeto al que se solicita, y responsabilidad del cliente. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mask</td><td>Rectángulo que delimitará la zona de la que se obtiene la fase. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a un objeto <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> con la fase. Responsabilidad del cliente. </dd></dl>
+
+<p>Implementado en <a class="el" href="class_full_image_c_p_u.html#ae6753d4bd1864acc48a04418ccc4a350">FullImageCPU</a> y <a class="el" href="class_full_image_c_u_d_a.html#a4a6497e7087e90a34a1ff8573969e3fd">FullImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b69724de45e9c222b8aee4a36f8608c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QImage* FullImage::GetAbsoluteValueAsQImage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Devuelve una imagen con el módulo en escala de grises de la imagen compleja. Reescala los valores del modulo entre 0 y 255, y después les aplica la ganancia deseada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gain</td><td>Ganancia a aplicar después del reescalado entre 0 y 255. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a un objeto QImage con el valor absoluto. Responsabilidad del cliente. </dd></dl>
+
+<p>Implementado en <a class="el" href="class_full_image_c_p_u.html#a039ea1de72daffa6c9d02bed86e6b288">FullImageCPU</a> y <a class="el" href="class_full_image_c_u_d_a.html#af4642a454df31760db6d4879e52de17d">FullImageCUDA</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ff97ac50a6b01e732f088b8f4e363d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FullImage::GetSizeX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo sizeX. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>El valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="fullimage_8cpp_source.html#l00044">44</a> del archivo <a class="el" href="fullimage_8cpp_source.html">fullimage.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0e0b0141b6bfe11a21428f0c0144679d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FullImage::GetSizeY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo sizeY. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>El valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="fullimage_8cpp_source.html#l00048">48</a> del archivo <a class="el" href="fullimage_8cpp_source.html">fullimage.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa54fbd2c616c35fce5bfe3223fc70019"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FullImage::NextPowerOf2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Dado un número, devuelve la siguiente potencia de 2 a ese número. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Numero introducido. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Siguiente potencia de 2 a partir del número introducido. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="fullimage_8cpp_source.html#l00052">52</a> del archivo <a class="el" href="fullimage_8cpp_source.html">fullimage.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a68c2b6c0873e88ef6f6ca4da86befed9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void FullImage::ReArrangeFT </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que recoloca la imagen tras realizar una transformada de fourier directa, para ver la frecuencia 0 en el centro de la imagen. </p>
+
+<p>Implementado en <a class="el" href="class_full_image_c_p_u.html#a271c5a9f4f987f36c8f6ba7fbffd5792">FullImageCPU</a> y <a class="el" href="class_full_image_c_u_d_a.html#a4bdede0fd9cf5066906b48da10ff7ee1">FullImageCUDA</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="a9d45b4a23c4fc67a6e0a8e022a5c8e93"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcomplex.html">complex</a>* FullImage::linearBuffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al buffer donde se encuentra la información de los píxeles de imagen compleja, organizado fila tras fila. Este puntero puede apuntar tanto a memoria de la CPU como a memoria de la GPU. </p>
+
+<p>Definición en la línea <a class="el" href="fullimage_8h_source.html#l00043">43</a> del archivo <a class="el" href="fullimage_8h_source.html">fullimage.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a57defbf7eb43af92266acffb179a7337"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FullImage::sizeX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ancho en píxeles de la imagen. Siempre será una potencia de 2. </p>
+
+<p>Definición en la línea <a class="el" href="fullimage_8h_source.html#l00041">41</a> del archivo <a class="el" href="fullimage_8h_source.html">fullimage.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a248c1849fb385f77cb711a957f0641ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int FullImage::sizeY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Alto en píxeles de la imagen. Siempre será una potencia de 2. </p>
+
+<p>Definición en la línea <a class="el" href="fullimage_8h_source.html#l00042">42</a> del archivo <a class="el" href="fullimage_8h_source.html">fullimage.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="fullimage_8h_source.html">fullimage.h</a></li>
+<li>sources/<a class="el" href="fullimage_8cpp_source.html">fullimage.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_full_image.html">FullImage</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,810 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia del Archivo headers/dialogsetreference.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dialogsetreference_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">'defines'</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo dialogsetreference.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase para el cuadro de diálogo que permite elegir y configurar la imagen de la fase de referencia.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;QDialog&gt;</code><br/>
+<code>#include &lt;QFileDialog&gt;</code><br/>
+<code>#include &lt;QMessageBox&gt;</code><br/>
+<code>#include &lt;QGraphicsRectItem&gt;</code><br/>
+<code>#include &lt;QGraphicsPixmapItem&gt;</code><br/>
+<code>#include &quot;<a class="el" href="maskselectionscene_8h_source.html">maskselectionscene.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialogconfigurecam_8h_source.html">dialogconfigurecam.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="sourcepicture_8h_source.html">sourcepicture.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="spectrogramplot_8h_source.html">spectrogramplot.h</a>&quot;</code><br/>
+</div>
+<p><a href="dialogsetreference_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_set_reference.html">DialogSetReference</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clase para el control del cuadro de diálogo que permite selecionar y procesar la imagen de referencia.  <a href="class_dialog_set_reference.html#details">Más...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr class="memitem:a7dedab0db3d397a76fca19dd724fb2bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a7dedab0db3d397a76fca19dd724fb2bd">SR_CAPTION</a>&#160;&#160;&#160;&quot;Set Reference&quot;</td></tr>
+<tr class="memitem:abf7fc0930f542620a0be36a96625fda6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#abf7fc0930f542620a0be36a96625fda6">SR_STEP0_LABEL</a>&#160;&#160;&#160;&quot;Getting Image&quot;</td></tr>
+<tr class="memitem:af04611c41858730dc3535b50890d34a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#af04611c41858730dc3535b50890d34a8">SR_STEP1_LABEL</a>&#160;&#160;&#160;&quot;Setting Size&quot;</td></tr>
+<tr class="memitem:aa89b4ad60899dc747e790e3c9e38051e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#aa89b4ad60899dc747e790e3c9e38051e">SR_STEP2_LABEL</a>&#160;&#160;&#160;&quot;Setting Mask&quot;</td></tr>
+<tr class="memitem:a435cf8eb7ddbdc52bdc824b020020e70"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a435cf8eb7ddbdc52bdc824b020020e70">SR_STEP3_LABEL</a>&#160;&#160;&#160;&quot;Setting Fourier Mask&quot;</td></tr>
+<tr class="memitem:a29ed4bdbe56cb75d15ea041c5539c3c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a29ed4bdbe56cb75d15ea041c5539c3c6">SR_STEP4_LABEL</a>&#160;&#160;&#160;&quot;Result&quot;</td></tr>
+<tr class="memitem:ac6437883a791a07f1b249724bda8e2de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#ac6437883a791a07f1b249724bda8e2de">SR_NEXT_LABEL</a>&#160;&#160;&#160;&quot;Next&quot;</td></tr>
+<tr class="memitem:ae8a8b021b18992495faafaecd6fc3b2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#ae8a8b021b18992495faafaecd6fc3b2d">SR_PREVIOUS_LABEL</a>&#160;&#160;&#160;&quot;Previous&quot;</td></tr>
+<tr class="memitem:a2f39981fa86286b52dd4358e7e16a521"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a2f39981fa86286b52dd4358e7e16a521">SR_FROMFILE_LABEL</a>&#160;&#160;&#160;&quot;Get Image From File&quot;</td></tr>
+<tr class="memitem:ad7d2b4fd9a395b386b2e58aac051a9a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#ad7d2b4fd9a395b386b2e58aac051a9a8">SR_FROMCAM_LABEL</a>&#160;&#160;&#160;&quot;Get Image From Camera&quot;</td></tr>
+<tr class="memitem:a035acc641736a0a5303145beaf4fb817"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a035acc641736a0a5303145beaf4fb817">SR_CAMSETTINGS_LABEL</a>&#160;&#160;&#160;&quot;Camera Settings&quot;</td></tr>
+<tr class="memitem:a403eeed123b1db5eb1902ace0cf86e7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a403eeed123b1db5eb1902ace0cf86e7f">SR_SAVEPIC_LABEL</a>&#160;&#160;&#160;&quot;Save Picture To File&quot;</td></tr>
+<tr class="memitem:aba159cf998ac4c48d3c819970c873234"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#aba159cf998ac4c48d3c819970c873234">SR_FAILSAVEPIC_LABEL</a>&#160;&#160;&#160;&quot;Cannot Save File: &quot;</td></tr>
+<tr class="memitem:aba6703b5e40a32ca192ffb94f37ccbe6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#aba6703b5e40a32ca192ffb94f37ccbe6">SR_REALSIZEX_LABEL</a>&#160;&#160;&#160;&quot;Width (mm): &quot;</td></tr>
+<tr class="memitem:a3e523df33187199dfbbdd5d85a846e25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a3e523df33187199dfbbdd5d85a846e25">SR_REALSIZEY_LABEL</a>&#160;&#160;&#160;&quot;Height (mm): &quot;</td></tr>
+<tr class="memitem:a08d5986c85b5eb74f6143dbcfe33d225"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a08d5986c85b5eb74f6143dbcfe33d225">SR_FAILLOADIMAGE_LABEL</a>&#160;&#160;&#160;&quot;Cannot load the image file: &quot;</td></tr>
+<tr class="memitem:a05f7814456a65683f0c33f37b04d0e27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a05f7814456a65683f0c33f37b04d0e27">SR_FAILCAMIMAGE_LABEL</a>&#160;&#160;&#160;&quot;Cannot take the picture&quot;</td></tr>
+<tr class="memitem:a2406d52c913bef7f968461b67dc9528a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a2406d52c913bef7f968461b67dc9528a">SR_SIZE_X_LABEL</a>&#160;&#160;&#160;&quot;Width (pixels): &quot;</td></tr>
+<tr class="memitem:a68ea60b01326123b0c04fa71788f5da1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a68ea60b01326123b0c04fa71788f5da1">SR_SIZE_Y_LABEL</a>&#160;&#160;&#160;&quot;Height (pixels): &quot;</td></tr>
+<tr class="memitem:aa2ed4b48b9edc37b188d332faa005b2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#aa2ed4b48b9edc37b188d332faa005b2c">SR_HMIRROR_LABEL</a>&#160;&#160;&#160;&quot;Horizontal Mirror&quot;</td></tr>
+<tr class="memitem:afb951711ecb5a1e1983a7b785200a309"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#afb951711ecb5a1e1983a7b785200a309">SR_VMIRROR_LABEL</a>&#160;&#160;&#160;&quot;Vertical Mirror&quot;</td></tr>
+<tr class="memitem:a154eba0872fa517b3c8207fe7960aa38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a154eba0872fa517b3c8207fe7960aa38">SR_ROTATE_0_LABEL</a>&#160;&#160;&#160;&quot;No Rotation&quot;</td></tr>
+<tr class="memitem:aadec8b1d8b5bbac45a956a3380c7f23c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#aadec8b1d8b5bbac45a956a3380c7f23c">SR_ROTATE_90_LABEL</a>&#160;&#160;&#160;&quot;Rotate 90º&quot;</td></tr>
+<tr class="memitem:a2d03c38c4278859b96dccd72b8701724"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a2d03c38c4278859b96dccd72b8701724">SR_ROTATE_180_LABEL</a>&#160;&#160;&#160;&quot;Rotate 180º&quot;</td></tr>
+<tr class="memitem:a512ebd7c1a0aba06da7f4c0a07e2a3ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a512ebd7c1a0aba06da7f4c0a07e2a3ae">SR_ROTATE_270_LABEL</a>&#160;&#160;&#160;&quot;Rotate 270º&quot;</td></tr>
+<tr class="memitem:a389ae8df94578c36f18817c16bddb43f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a389ae8df94578c36f18817c16bddb43f">SR_ORIGIN</a>&#160;&#160;&#160;&quot;Origin Coordinates (x,y):&quot;</td></tr>
+<tr class="memitem:ae19099bf96dbd6f2cbc4a116a0054c5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#ae19099bf96dbd6f2cbc4a116a0054c5c">SR_MASK</a>&#160;&#160;&#160;&quot;Mask Coordinates:&quot;</td></tr>
+<tr class="memitem:a3c2ac055132a7effdc1fc287b8904faf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a3c2ac055132a7effdc1fc287b8904faf">SR_MASK_XMIN</a>&#160;&#160;&#160;&quot;X min: &quot;</td></tr>
+<tr class="memitem:a56165df04b6c982d32aa021bd2688fbd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a56165df04b6c982d32aa021bd2688fbd">SR_MASK_XMAX</a>&#160;&#160;&#160;&quot;X max: &quot;</td></tr>
+<tr class="memitem:a12c634deeee290d5e7ecd76e07df1346"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a12c634deeee290d5e7ecd76e07df1346">SR_MASK_YMIN</a>&#160;&#160;&#160;&quot;Y min: &quot;</td></tr>
+<tr class="memitem:aa6d2898758d9bf914a4632f85697708c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#aa6d2898758d9bf914a4632f85697708c">SR_MASK_YMAX</a>&#160;&#160;&#160;&quot;Y max: &quot;</td></tr>
+<tr class="memitem:aa6f5591c75eb86a6d9e7c38eec488db4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#aa6f5591c75eb86a6d9e7c38eec488db4">SR_MASK_HELPORIGIN</a>&#160;&#160;&#160;&quot;(Double-Click on the left image)&quot;</td></tr>
+<tr class="memitem:ab610bf29bb72bb3f6c4f733263371c6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#ab610bf29bb72bb3f6c4f733263371c6a">SR_MASK_HELPMASK</a>&#160;&#160;&#160;&quot;(Click-&amp;-Drag with the right mouse button on the left image)&quot;</td></tr>
+<tr class="memitem:a673882cb5f47d3299f48fbcbfe733640"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a673882cb5f47d3299f48fbcbfe733640">SR_SAVE_VALUES</a>&#160;&#160;&#160;&quot;Save Values to File&quot;</td></tr>
+<tr class="memitem:a9e3f3b93e568103f4b5f7097209d38bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a9e3f3b93e568103f4b5f7097209d38bc">SR_LOAD_VALUES</a>&#160;&#160;&#160;&quot;Load Values from File&quot;</td></tr>
+<tr class="memitem:a44f336612575e3d8dac6f4b1be52a3f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a44f336612575e3d8dac6f4b1be52a3f1">SR_GAIN_FOURIER_PREVIEW</a>&#160;&#160;&#160;&quot;Preview Gain: &quot;</td></tr>
+<tr class="memitem:a71a11aa895d53a5c6048b606194bd0a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a71a11aa895d53a5c6048b606194bd0a0">SR_SPECTROGRAM_TITLE</a>&#160;&#160;&#160;&quot;Reference Phase&quot;</td></tr>
+<tr class="memitem:ae505d033fb1d6d9df5a2e86a1ebf5d6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#ae505d033fb1d6d9df5a2e86a1ebf5d6d">SR_FINISH_BUTTON</a>&#160;&#160;&#160;&quot;Finish&quot;</td></tr>
+<tr class="memitem:af327ae7db31fcf0bec630ae07c59db4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#af327ae7db31fcf0bec630ae07c59db4e">SR_ERROR_LABEL</a>&#160;&#160;&#160;&quot;Error&quot;</td></tr>
+<tr class="memitem:a1e648720d256dfd624db05c43e148a77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#a1e648720d256dfd624db05c43e148a77">SR_ERROR_SAVE</a>&#160;&#160;&#160;&quot;Error Saving&quot;</td></tr>
+<tr class="memitem:ac155bb59b3ad2d491b018743fab77aec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dialogsetreference_8h.html#ac155bb59b3ad2d491b018743fab77aec">SR_ERROR_LOAD</a>&#160;&#160;&#160;&quot;Error Loading&quot;</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase para el cuadro de diálogo que permite elegir y configurar la imagen de la fase de referencia. </p>
+<dl class="section author"><dt>Autor</dt><dd>Álvaro Sánchez González <a href="#" onclick="location.href='mai'+'lto:'+'alv'+'ar'+'osg'+'@u'+'sal'+'.e'+'s'; return false;">alvar<span style="display: none;">.nosp@m.</span>osg@<span style="display: none;">.nosp@m.</span>usal.<span style="display: none;">.nosp@m.</span>es</a> </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>Mon Jul 23 2012</dd></dl>
+<p>Copyright (c) 2012 Álvaro Sánchez González </p>
+
+<p>Definición en el archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+</div><h2>Documentación de los 'defines'</h2>
+<a class="anchor" id="a035acc641736a0a5303145beaf4fb817"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_CAMSETTINGS_LABEL&#160;&#160;&#160;&quot;Camera Settings&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00040">40</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7dedab0db3d397a76fca19dd724fb2bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_CAPTION&#160;&#160;&#160;&quot;Set Reference&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00027">27</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af327ae7db31fcf0bec630ae07c59db4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_ERROR_LABEL&#160;&#160;&#160;&quot;Error&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00077">77</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac155bb59b3ad2d491b018743fab77aec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_ERROR_LOAD&#160;&#160;&#160;&quot;Error Loading&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00080">80</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e648720d256dfd624db05c43e148a77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_ERROR_SAVE&#160;&#160;&#160;&quot;Error Saving&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00079">79</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05f7814456a65683f0c33f37b04d0e27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_FAILCAMIMAGE_LABEL&#160;&#160;&#160;&quot;Cannot take the picture&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00046">46</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a08d5986c85b5eb74f6143dbcfe33d225"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_FAILLOADIMAGE_LABEL&#160;&#160;&#160;&quot;Cannot load the image file: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00045">45</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba159cf998ac4c48d3c819970c873234"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_FAILSAVEPIC_LABEL&#160;&#160;&#160;&quot;Cannot Save File: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00042">42</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae505d033fb1d6d9df5a2e86a1ebf5d6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_FINISH_BUTTON&#160;&#160;&#160;&quot;Finish&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00075">75</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad7d2b4fd9a395b386b2e58aac051a9a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_FROMCAM_LABEL&#160;&#160;&#160;&quot;Get Image From Camera&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00039">39</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f39981fa86286b52dd4358e7e16a521"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_FROMFILE_LABEL&#160;&#160;&#160;&quot;Get Image From File&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00038">38</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44f336612575e3d8dac6f4b1be52a3f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_GAIN_FOURIER_PREVIEW&#160;&#160;&#160;&quot;Preview Gain: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00072">72</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2ed4b48b9edc37b188d332faa005b2c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_HMIRROR_LABEL&#160;&#160;&#160;&quot;Horizontal Mirror&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00051">51</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e3f3b93e568103f4b5f7097209d38bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_LOAD_VALUES&#160;&#160;&#160;&quot;Load Values from File&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00070">70</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae19099bf96dbd6f2cbc4a116a0054c5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_MASK&#160;&#160;&#160;&quot;Mask Coordinates:&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00061">61</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab610bf29bb72bb3f6c4f733263371c6a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_MASK_HELPMASK&#160;&#160;&#160;&quot;(Click-&amp;-Drag with the right mouse button on the left image)&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00067">67</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6f5591c75eb86a6d9e7c38eec488db4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_MASK_HELPORIGIN&#160;&#160;&#160;&quot;(Double-Click on the left image)&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00066">66</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a56165df04b6c982d32aa021bd2688fbd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_MASK_XMAX&#160;&#160;&#160;&quot;X max: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00063">63</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c2ac055132a7effdc1fc287b8904faf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_MASK_XMIN&#160;&#160;&#160;&quot;X min: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00062">62</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6d2898758d9bf914a4632f85697708c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_MASK_YMAX&#160;&#160;&#160;&quot;Y max: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00065">65</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a12c634deeee290d5e7ecd76e07df1346"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_MASK_YMIN&#160;&#160;&#160;&quot;Y min: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00064">64</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac6437883a791a07f1b249724bda8e2de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_NEXT_LABEL&#160;&#160;&#160;&quot;Next&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00035">35</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a389ae8df94578c36f18817c16bddb43f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_ORIGIN&#160;&#160;&#160;&quot;Origin Coordinates (x,y):&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00059">59</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8a8b021b18992495faafaecd6fc3b2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_PREVIOUS_LABEL&#160;&#160;&#160;&quot;Previous&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00036">36</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aba6703b5e40a32ca192ffb94f37ccbe6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_REALSIZEX_LABEL&#160;&#160;&#160;&quot;Width (mm): &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00043">43</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e523df33187199dfbbdd5d85a846e25"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_REALSIZEY_LABEL&#160;&#160;&#160;&quot;Height (mm): &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00044">44</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a154eba0872fa517b3c8207fe7960aa38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_ROTATE_0_LABEL&#160;&#160;&#160;&quot;No Rotation&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00054">54</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d03c38c4278859b96dccd72b8701724"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_ROTATE_180_LABEL&#160;&#160;&#160;&quot;Rotate 180º&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00056">56</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a512ebd7c1a0aba06da7f4c0a07e2a3ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_ROTATE_270_LABEL&#160;&#160;&#160;&quot;Rotate 270º&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00057">57</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aadec8b1d8b5bbac45a956a3380c7f23c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_ROTATE_90_LABEL&#160;&#160;&#160;&quot;Rotate 90º&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00055">55</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a673882cb5f47d3299f48fbcbfe733640"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_SAVE_VALUES&#160;&#160;&#160;&quot;Save Values to File&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00069">69</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a403eeed123b1db5eb1902ace0cf86e7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_SAVEPIC_LABEL&#160;&#160;&#160;&quot;Save Picture To File&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00041">41</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2406d52c913bef7f968461b67dc9528a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_SIZE_X_LABEL&#160;&#160;&#160;&quot;Width (pixels): &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00048">48</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a68ea60b01326123b0c04fa71788f5da1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_SIZE_Y_LABEL&#160;&#160;&#160;&quot;Height (pixels): &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00049">49</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a71a11aa895d53a5c6048b606194bd0a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_SPECTROGRAM_TITLE&#160;&#160;&#160;&quot;Reference Phase&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00074">74</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abf7fc0930f542620a0be36a96625fda6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_STEP0_LABEL&#160;&#160;&#160;&quot;Getting Image&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00029">29</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af04611c41858730dc3535b50890d34a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_STEP1_LABEL&#160;&#160;&#160;&quot;Setting Size&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00030">30</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa89b4ad60899dc747e790e3c9e38051e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_STEP2_LABEL&#160;&#160;&#160;&quot;Setting Mask&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00031">31</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a435cf8eb7ddbdc52bdc824b020020e70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_STEP3_LABEL&#160;&#160;&#160;&quot;Setting Fourier Mask&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00032">32</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a29ed4bdbe56cb75d15ea041c5539c3c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_STEP4_LABEL&#160;&#160;&#160;&quot;Result&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00033">33</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb951711ecb5a1e1983a7b785200a309"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SR_VMIRROR_LABEL&#160;&#160;&#160;&quot;Vertical Mirror&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="dialogsetreference_8h_source.html#l00052">52</a> del archivo <a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="dialogsetreference_8h.html">dialogsetreference.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

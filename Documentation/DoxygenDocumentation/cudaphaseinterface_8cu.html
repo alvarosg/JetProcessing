@@ -1,0 +1,2154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia del Archivo sources/cudaphaseinterface.cu</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('cudaphaseinterface_8cu.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo cudaphaseinterface.cu</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementación de la cabecera <a class="el" href="cudaphaseinterface_8h.html" title="Cabecera para la interfaz de algoritmos aplicables a un objeto de la clase tipo PhaseImage implementa...">cudaphaseinterface.h</a>. Este fichero se compila con el compilador de CUDA.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="cudaphaseinterface_8h_source.html">cudaphaseinterface.h</a>&quot;</code><br/>
+</div>
+<p><a href="cudaphaseinterface_8cu_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ae87578ab47bcb0c35604257f75e18b60"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#ae87578ab47bcb0c35604257f75e18b60">ScanPhaseStep1Kernel</a> (float *source, int *accumulator, int sizeX, int sizeY)</td></tr>
+<tr class="memitem:a83830bfd41ca94b14ef7f4c2297ee408"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a83830bfd41ca94b14ef7f4c2297ee408">ScanPhaseStep2Kernel</a> (float *source, int *accumulator, int sizeX, int sizeY)</td></tr>
+<tr class="memitem:a6558b5c7af412f2182537747de59ce63"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a6558b5c7af412f2182537747de59ce63">ScanPhaseStep3Kernel</a> (float *source, int *accumulator, int sizeX, int sizeY)</td></tr>
+<tr class="memitem:a5b8a8a76dbc7180313d6a97ed8be73be"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a5b8a8a76dbc7180313d6a97ed8be73be">SubtractKernel</a> (float *source, float *offset, int sizeX, int sizeY)</td></tr>
+<tr class="memitem:afe39a7513576c85f38745af084488b26"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#afe39a7513576c85f38745af084488b26">AdditiveInverseKernel</a> (float *source, int sizeX, int sizeY)</td></tr>
+<tr class="memitem:a3f7dbf48d8e25061c438246888d571d0"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a3f7dbf48d8e25061c438246888d571d0">RemoveHorizontalLinearTiltBordersStep1Kernel</a> (float *source, int sizeX, int sizeY, float *avgSlope)</td></tr>
+<tr class="memitem:a733b424a68dc66a34d853cb659fc0a05"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a733b424a68dc66a34d853cb659fc0a05">RemoveHorizontalLinearTiltBordersStep2Kernel</a> (float *source, int sizeX, int sizeY, float *avgSlope)</td></tr>
+<tr class="memitem:a68a17d760e7d4478f7037be616681fa2"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a68a17d760e7d4478f7037be616681fa2">RemoveHorizontalLinearTiltStep1Kernel</a> (float *source, int sizeX, int sizeY, float *slopesArray)</td></tr>
+<tr class="memitem:afd97bb4982e3e52d1e2fa975976aa80e"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#afd97bb4982e3e52d1e2fa975976aa80e">RemoveHorizontalLinearTiltStep2Kernel</a> (float *source, int sizeX, int sizeY, float *avgSlope, float *slopesArray)</td></tr>
+<tr class="memitem:a1860d3baddd233bda23c1731c1bbfa35"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a1860d3baddd233bda23c1731c1bbfa35">RemoveHorizontalLinearTiltStep3Kernel</a> (float *source, int sizeX, int sizeY, float *avgSlope)</td></tr>
+<tr class="memitem:ae8dd48eae9d5da78dd118a16f1c699c4"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#ae8dd48eae9d5da78dd118a16f1c699c4">RemoveVerticalLinearTiltStep1Kernel</a> (float *source, int sizeX, int sizeY, float *slopesArray)</td></tr>
+<tr class="memitem:a7a2cd1c38057f0c9337c7b1e7943b5ec"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a7a2cd1c38057f0c9337c7b1e7943b5ec">RemoveVerticalLinearTiltStep2Kernel</a> (float *source, int sizeX, int sizeY, float *avgSlope, float *slopesArray)</td></tr>
+<tr class="memitem:a9a9dfef1bf01337732c984a75f2bc12b"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a9a9dfef1bf01337732c984a75f2bc12b">RemoveVerticalLinearTiltStep3Kernel</a> (float *source, int sizeX, int sizeY, float *avgSlope)</td></tr>
+<tr class="memitem:a9b3d0ae9f4ea1ee2e7df911a9089f5d7"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a9b3d0ae9f4ea1ee2e7df911a9089f5d7">SetGroundStep1Kernel</a> (float *source, int sizeX, int sizeY, float *avgValue)</td></tr>
+<tr class="memitem:aea16b20e49086a8e960c99d868b0cb91"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#aea16b20e49086a8e960c99d868b0cb91">SetGroundStep2Kernel</a> (float *source, int sizeX, int sizeY, float *avgValue)</td></tr>
+<tr class="memitem:a57e98136b2f28737d38783fda9578de4"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a57e98136b2f28737d38783fda9578de4">OffsetAndMultiplyKernel</a> (float *source, int sizeX, int sizeY, float offset, float factor)</td></tr>
+<tr class="memitem:a45f68f18da6c47757302cc9f72bd1093"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a45f68f18da6c47757302cc9f72bd1093">MakeSymmetricStep1Kernel</a> (float *source, int sizeX, int sizeY, int *maxPos)</td></tr>
+<tr class="memitem:ac57c0c44eff99ff4500a30bdca34f01b"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#ac57c0c44eff99ff4500a30bdca34f01b">MakeSymmetricStep2Kernel</a> (float *source, float *dest, int sizeX, int sizeY, int *maxPos)</td></tr>
+<tr class="memitem:a9fdd6e364083e8c49708f884c49bc267"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a9fdd6e364083e8c49708f884c49bc267">DerivateKernel</a> (float *source, float *dest, int sizeX, int sizeY, float dx, int points)</td></tr>
+<tr class="memitem:a193bc6ab1a3d231cca4859cd33abe702"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a193bc6ab1a3d231cca4859cd33abe702">AbelInversionKernel</a> (float *derivative, float *dest, int sizeX, int sizeY)</td></tr>
+<tr class="memitem:a4b50ff729c6f3b88b2ac798f4c488620"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a4b50ff729c6f3b88b2ac798f4c488620">CropRectangleKernel</a> (float *source, float *result, int sizeX, int sizeY, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="memitem:abee40be83ffc475e6c3e2287ef7baaec"><td class="memItemLeft" align="right" valign="top">__global__ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#abee40be83ffc475e6c3e2287ef7baaec">GetPhaseLineKernel</a> (float *source, int sizeX, int sizeY, int x1, int y1, int x2, int y2, float *output, int outputSize)</td></tr>
+<tr class="memitem:aa0f3f180c5be21602c6271514d5f7490"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#aa0f3f180c5be21602c6271514d5f7490">LoadInGPUCUDA</a> (float *hostPt, int width, int height)</td></tr>
+<tr class="memitem:a25a36ee4e27e9e11032d027ee822c38d"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a25a36ee4e27e9e11032d027ee822c38d">MemCpyCUDA</a> (float *devicePt, int width, int height)</td></tr>
+<tr class="memitem:aa7d7fb4d6d1a86954081c0d03dc84067"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#aa7d7fb4d6d1a86954081c0d03dc84067">FreeCUDA</a> (float *devicePt)</td></tr>
+<tr class="memitem:a899fc534b5003d3f9b3810bf35cf7c9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a899fc534b5003d3f9b3810bf35cf7c9a">GetBufferBackCUDA</a> (float *hostPt, float *devicePt, int width, int height)</td></tr>
+<tr class="memitem:a1a9d2ee1a20c50af61a015c6bf488a69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a1a9d2ee1a20c50af61a015c6bf488a69">ScanPhaseCUDA</a> (float *devicePt, int width, int height)</td></tr>
+<tr class="memitem:ab909089dc019b9cdca20af3f99feb0cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#ab909089dc019b9cdca20af3f99feb0cf">SubtractCUDA</a> (float *devicePt, float *offsetDevicePt, int width, int height)</td></tr>
+<tr class="memitem:a2bfe34c2ecb57c70b8a9224ae54a66c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a2bfe34c2ecb57c70b8a9224ae54a66c8">AdditiveInverseCUDA</a> (float *devicePt, int width, int height)</td></tr>
+<tr class="memitem:adbcc0e2ea856fbae6b101aae2b66e7e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#adbcc0e2ea856fbae6b101aae2b66e7e6">RemoveHorizontalLinearTiltBordersCUDA</a> (float *devicePt, int width, int height)</td></tr>
+<tr class="memitem:a54d2537de238c1fbd8e3cc94f46e2b8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a54d2537de238c1fbd8e3cc94f46e2b8c">RemoveHorizontalLinearTiltCUDA</a> (float *devicePt, int width, int height)</td></tr>
+<tr class="memitem:a85f1594ac1cece5b594d66e7b866df50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a85f1594ac1cece5b594d66e7b866df50">RemoveVerticalLinearTiltCUDA</a> (float *devicePt, int width, int height)</td></tr>
+<tr class="memitem:aa68ec1dada66cf39ab9ca6ba5a1f3f3c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#aa68ec1dada66cf39ab9ca6ba5a1f3f3c">SetGroundCUDA</a> (float *devicePt, int width, int height)</td></tr>
+<tr class="memitem:aabe8a6ebe1c207ffb77aac28d0185d3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#aabe8a6ebe1c207ffb77aac28d0185d3b">OffsetAndMultiplyCUDA</a> (float *devicePt, int width, int height, float offset, float factor)</td></tr>
+<tr class="memitem:a50d9e711f19559eae26afc0c25cae628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a50d9e711f19559eae26afc0c25cae628">MakeSymmetricCUDA</a> (float *devicePt, int width, int height)</td></tr>
+<tr class="memitem:a5c4e0b1d1ca22e57b026148e03186f06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a5c4e0b1d1ca22e57b026148e03186f06">AbelInversionCUDA</a> (float *devicePt, int width, int height, float dx, int neighbours)</td></tr>
+<tr class="memitem:aee64d36abe441c2147b71f64dbe3b897"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#aee64d36abe441c2147b71f64dbe3b897">CropRectangleCUDA</a> (float *devicePt, int width, int height, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="memitem:a943a21ab9121b280a8f4ecc9dc41fbd5"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudaphaseinterface_8cu.html#a943a21ab9121b280a8f4ecc9dc41fbd5">GetPhaseLineCUDA</a> (float *devicePt, int width, int height, int x1, int y1, int x2, int y2, int outputSize)</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Implementación de la cabecera <a class="el" href="cudaphaseinterface_8h.html" title="Cabecera para la interfaz de algoritmos aplicables a un objeto de la clase tipo PhaseImage implementa...">cudaphaseinterface.h</a>. Este fichero se compila con el compilador de CUDA. </p>
+<dl class="section author"><dt>Autor</dt><dd>Álvaro Sánchez González <a href="#" onclick="location.href='mai'+'lto:'+'alv'+'ar'+'osg'+'@u'+'sal'+'.e'+'s'; return false;">alvar<span style="display: none;">.nosp@m.</span>osg@<span style="display: none;">.nosp@m.</span>usal.<span style="display: none;">.nosp@m.</span>es</a> </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>Mon Jul 23 2012</dd></dl>
+<p>Copyright (c) 2012 Álvaro Sánchez González </p>
+
+<p>Definición en el archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+</div><h2>Documentación de las funciones</h2>
+<a class="anchor" id="a5c4e0b1d1ca22e57b026148e03186f06"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AbelInversionCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>neighbours</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que calcula la Inversión de Abel horizontalmente de la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">dx</td><td>Distancia entre dos pixeles. </td></tr>
+    <tr><td class="paramname">neighbours</td><td>Número de vecinos para calcular la derivada. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00774">774</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a193bc6ab1a3d231cca4859cd33abe702"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void AbelInversionKernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>derivative</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica para el cálculo de la inversión de Abel. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">derivative</td><td>Puntero a la matriz con la derivada en cada punto. </td></tr>
+    <tr><td class="paramname">dest</td><td>Puntero a la zona donde se debe escribir la salida. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00439">439</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2bfe34c2ecb57c70b8a9224ae54a66c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AdditiveInverseCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que asigna a cada valor de la imagen su opuesto. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00621">621</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe39a7513576c85f38745af084488b26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void AdditiveInverseKernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica para calcular el opuesto de la fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00143">143</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aee64d36abe441c2147b71f64dbe3b897"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* CropRectangleCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que extrae un rectángulo de la imagen de la fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">x1</td><td>Posición horizontal de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">x2</td><td>Posición horizontal de la esquina inferior derecha de la máscara. </td></tr>
+    <tr><td class="paramname">y1</td><td>Posición vertical de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">y2</td><td>Posición vertical de la esquina inferior derecha de la máscara. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Buffer en la memoria de la GPU con la zona seleccionada de tamaño {(x2-x1)+1}x{(y2-y1)+1} responsabilidad del cliente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00794">794</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4b50ff729c6f3b88b2ac798f4c488620"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void CropRectangleKernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica para la obtención de un rectángulo dentro de la imagen de la fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">result</td><td>Puntero a la zona donde se debe escribir la salida. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">x1</td><td>Posición horizontal de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">x2</td><td>Posición horizontal de la esquina inferior derecha de la máscara. </td></tr>
+    <tr><td class="paramname">y1</td><td>Posición vertical de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">y2</td><td>Posición vertical de la esquina inferior derecha de la máscara. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00508">508</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9fdd6e364083e8c49708f884c49bc267"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void DerivateKernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>points</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica para el cálculo de la derivada de la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">dest</td><td>Puntero a la zona donde se debe escribir la derivada. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">dx</td><td>Distancia en entre dos puntos. </td></tr>
+    <tr><td class="paramname">points</td><td>Número de vecinos utilizados para el cálculo de la derivada. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00411">411</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa7d7fb4d6d1a86954081c0d03dc84067"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FreeCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que libera una zona de memoria en la GPU. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Puntero a la zona de memoria d ela GPU a liberar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00571">571</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a899fc534b5003d3f9b3810bf35cf7c9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GetBufferBackCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>hostPt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que crea una copia de una imagen de la fase en la CPU a partir de otra en la GPU. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">hostPt</td><td>Buffer en la memoria de la CPU donde será copiada la imagen. Debe apuntar a una zona de memoria suficientemente grande. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00576">576</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a943a21ab9121b280a8f4ecc9dc41fbd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* GetPhaseLineCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outputSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que extrae una recta de la imagen de la fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">x1</td><td>Posición horizontal de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">x2</td><td>Posición horizontal de la esquina inferior derecha de la máscara. </td></tr>
+    <tr><td class="paramname">y1</td><td>Posición vertical de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">y2</td><td>Posición vertical de la esquina inferior derecha de la máscara. </td></tr>
+    <tr><td class="paramname">outputSize</td><td>Número de muestras para la recta. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Buffer en la memoria de la GPU con la zona seleccionada de tamaño outputSize responsabilidad del cliente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00811">811</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abee40be83ffc475e6c3e2287ef7baaec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void GetPhaseLineKernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outputSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica para la obtención de una línea de la fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">x1</td><td>Posición horizontal de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">x2</td><td>Posición horizontal de la esquina inferior derecha de la máscara. </td></tr>
+    <tr><td class="paramname">y1</td><td>Posición vertical de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">y2</td><td>Posición vertical de la esquina inferior derecha de la máscara. </td></tr>
+    <tr><td class="paramname">output</td><td>Puntero a la zona donde se debe escribir la salida. </td></tr>
+    <tr><td class="paramname">outputSize</td><td>Número de muestras para la recta. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00536">536</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0f3f180c5be21602c6271514d5f7490"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* LoadInGPUCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>hostPt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que carga una imagen de la fase en la memoria de la GPU. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hostPt</td><td>Buffer en la memoria de la CPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a la copia en la GPU. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00553">553</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50d9e711f19559eae26afc0c25cae628"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MakeSymmetricCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que hace la imagen simétrica horizontalmente, respecto al valor máximo de cada fila, centrando dicho valor en la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00747">747</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45f68f18da6c47757302cc9f72bd1093"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void MakeSymmetricStep1Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>maxPos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como primer paso (Buscar máximos) para simetrizar la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">maxPos</td><td>Puntero a la zona de memoria donde se excribirán las posiciones de los máximos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00352">352</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac57c0c44eff99ff4500a30bdca34f01b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void MakeSymmetricStep2Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>maxPos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como segundo paso para simetrizar la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">dest</td><td>Puntero a la zona donde se debe escribir la salida. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">maxPos</td><td>Puntero a la zona de memoria donde se encuentran las posiciones de los máximos. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00376">376</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a25a36ee4e27e9e11032d027ee822c38d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* MemCpyCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que crea una copia de la imagen de la fase en la GPU a partir de otra también en la GPU. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase a alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a la copia en la GPU. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00562">562</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aabe8a6ebe1c207ffb77aac28d0185d3b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OffsetAndMultiplyCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que multiplica por un factor y suma un offset a la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">offset</td><td>Valor para sumar. </td></tr>
+    <tr><td class="paramname">factor</td><td>Valor para multiplicar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00735">735</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a57e98136b2f28737d38783fda9578de4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void OffsetAndMultiplyKernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica para añadir un offset y aplicar una ganancia a la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">offset</td><td>Valor del offset a aplicar. </td></tr>
+    <tr><td class="paramname">factor</td><td>Valor de la ganancia a aplicar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00336">336</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adbcc0e2ea856fbae6b101aae2b66e7e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RemoveHorizontalLinearTiltBordersCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que elimina la inclinación horizontal de la imagen basándose en los valores de los bordes. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00633">633</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f7dbf48d8e25061c438246888d571d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void RemoveHorizontalLinearTiltBordersStep1Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>avgSlope</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como primer paso para eliminar la inclinación lineal horizontal usando los bordes. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">avgSlope</td><td>Puntero a la zona de memoria donde se escribirá la inclinación media. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00160">160</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a733b424a68dc66a34d853cb659fc0a05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void RemoveHorizontalLinearTiltBordersStep2Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>avgSlope</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como segundo paso para eliminar la inclinación lineal horizontal usando los bordes. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">avgSlope</td><td>Puntero a la zona de memoria con la inclinación media. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00175">175</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a54d2537de238c1fbd8e3cc94f46e2b8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RemoveHorizontalLinearTiltCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que elimina la inclinación horizontal de la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00656">656</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a68a17d760e7d4478f7037be616681fa2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void RemoveHorizontalLinearTiltStep1Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>slopesArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como primer paso para eliminar la inclinación lineal horizontal. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">slopesArray</td><td>Puntero a la zona de memoria donde se escribirá la inclinación de cada una de las rectas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00190">190</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd97bb4982e3e52d1e2fa975976aa80e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void RemoveHorizontalLinearTiltStep2Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>avgSlope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>slopesArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como segundo paso para eliminar la inclinación lineal horizontal. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">avgSlope</td><td>Puntero a la zona de memoria donde se escribirá la inclinación media. </td></tr>
+    <tr><td class="paramname">slopesArray</td><td>Puntero a la zona de memoria con la inclinación de cada una de las rectas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00215">215</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1860d3baddd233bda23c1731c1bbfa35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void RemoveHorizontalLinearTiltStep3Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>avgSlope</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como tercer paso para eliminar la inclinación lineal horizontal. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">avgSlope</td><td>Puntero a la zona de memoria con la inclinación media. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00231">231</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a85f1594ac1cece5b594d66e7b866df50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RemoveVerticalLinearTiltCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que elimina la inclinación vertical de la imagen. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00685">685</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae8dd48eae9d5da78dd118a16f1c699c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void RemoveVerticalLinearTiltStep1Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>slopesArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como primer paso para eliminar la inclinación lineal vertical. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">slopesArray</td><td>Puntero a la zona de memoria donde se escribirá la inclinación de cada una de las rectas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00246">246</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7a2cd1c38057f0c9337c7b1e7943b5ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void RemoveVerticalLinearTiltStep2Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>avgSlope</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>slopesArray</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como segundo paso para eliminar la inclinación lineal vertical. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">avgSlope</td><td>Puntero a la zona de memoria donde se escribirá la inclinación media. </td></tr>
+    <tr><td class="paramname">slopesArray</td><td>Puntero a la zona de memoria con la inclinación de cada una de las rectas. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00271">271</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9a9dfef1bf01337732c984a75f2bc12b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void RemoveVerticalLinearTiltStep3Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>avgSlope</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como tercer paso para eliminar la inclinación lineal vertical. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">avgSlope</td><td>Puntero a la zona de memoria con la inclinación media. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00287">287</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1a9d2ee1a20c50af61a015c6bf488a69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ScanPhaseCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que escanea la fase, para eliminar los saltos de 2Pi a 0 y hacerla contínua. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00582">582</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae87578ab47bcb0c35604257f75e18b60"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void ScanPhaseStep1Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>accumulator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como primer paso para escanear la fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">accumulator</td><td>Zona de memoria que contiene el número de saltos de fase encontrados hasta llegar a cada punto. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00023">23</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83830bfd41ca94b14ef7f4c2297ee408"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void ScanPhaseStep2Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>accumulator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como segundo paso para escanear la fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">accumulator</td><td>Zona de memoria que contiene el número de saltos de fase encontrados hasta llegar a cada punto. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00066">66</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6558b5c7af412f2182537747de59ce63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void ScanPhaseStep3Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>accumulator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como tercer paso para escanear la fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">accumulator</td><td>Zona de memoria que contiene el número de saltos de fase encontrados hasta llegar a cada punto. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00111">111</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa68ec1dada66cf39ab9ca6ba5a1f3f3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SetGroundCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que establece la base de la imagen, eliminando ruido. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00713">713</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b3d0ae9f4ea1ee2e7df911a9089f5d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void SetGroundStep1Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>avgValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como primer paso para fijar el suelo de la imagen y quitar ruido. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">avgValue</td><td>Puntero a la zona de memoria conde se escribirá el valor del suelo calculado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00301">301</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea16b20e49086a8e960c99d868b0cb91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void SetGroundStep2Kernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>avgValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica como segundo paso para fijar el suelo de la imagen y quitar ruido. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">avgValue</td><td>Puntero a la zona de memoria con el valor del suelo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00316">316</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab909089dc019b9cdca20af3f99feb0cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SubtractCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>offsetDevicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que resta a la imagen de la fase, otra imagen de la fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">offsetDevicePt</td><td>Buffer en la memoria de la GPU con con la imagen de la fase que se va a restar. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00610">610</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b8a8a76dbc7180313d6a97ed8be73be"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__global__ void SubtractKernel </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Kernel que se ejecuta en la tarjeta gráfica para restar la fase de la referencia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Buffer en la memoria de la GPU con la imagen de la fase alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">offset</td><td>Buffer con la imagen de la fase de la referencia alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">sizeX</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">sizeY</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudaphaseinterface_8cu_source.html#l00128">128</a> del archivo <a class="el" href="cudaphaseinterface_8cu_source.html">cudaphaseinterface.cu</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="cudaphaseinterface_8cu.html">cudaphaseinterface.cu</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

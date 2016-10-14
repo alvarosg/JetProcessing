@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase DataProducer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_data_producer.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Slots públicos</a> &#124;
+<a href="#signals">Señales</a> &#124;
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_data_producer-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase DataProducer</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que realiza en segundo plano los cálculos necesarios para el modo en vivo, sin bloquear la interfaz.  
+ <a href="class_data_producer.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-slots"></a>
+Slots públicos</h2></td></tr>
+<tr class="memitem:a3de62e3d284d5b510b80cdd929a62a63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_producer.html#a3de62e3d284d5b510b80cdd929a62a63">ProduceData1D</a> ()</td></tr>
+<tr class="memitem:aaa572b588d181d1dc2fca539cd2be853"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_producer.html#aaa572b588d181d1dc2fca539cd2be853">ProduceData2D</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="signals"></a>
+Señales</h2></td></tr>
+<tr class="memitem:a1ed38473a5175e580089a088ba490308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_producer.html#a1ed38473a5175e580089a088ba490308">Calculated2D</a> (<a class="el" href="class_data2_d.html">Data2D</a> *data2d)</td></tr>
+<tr class="memitem:ab3365262f1d8c0e40b0ea15c53f65609"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_producer.html#ab3365262f1d8c0e40b0ea15c53f65609">Calculated1D</a> (<a class="el" href="class_data1_d.html">Data1D</a> *data1d)</td></tr>
+<tr class="memitem:a5b7cb9b2e37969c7812bc0a5822487c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_producer.html#a5b7cb9b2e37969c7812bc0a5822487c9">Finished</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ae7f4e292ae27b315f1e28a7c332447a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_producer.html#ae7f4e292ae27b315f1e28a7c332447a6">DataProducer</a> (<a class="el" href="class_main_controller.html">MainController</a> *mainController_in=NULL, bool recording_in=false, bool applyAlgorithms_in=false)</td></tr>
+<tr class="memitem:ab9fd47fc1de42a9673e312057f2cb26f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_producer.html#ab9fd47fc1de42a9673e312057f2cb26f">~DataProducer</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a6a9b5f9c79621fce715a0e0e715a95de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_main_controller.html">MainController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_producer.html#a6a9b5f9c79621fce715a0e0e715a95de">mainController</a></td></tr>
+<tr class="memitem:a7591955c80318add7aabcceb3a6eb060"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_producer.html#a7591955c80318add7aabcceb3a6eb060">recording</a></td></tr>
+<tr class="memitem:a463664e96294a1aeef547a843d103e01"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_producer.html#a463664e96294a1aeef547a843d103e01">applyAlgorithms</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase que realiza en segundo plano los cálculos necesarios para el modo en vivo, sin bloquear la interfaz. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00153">153</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="ae7f4e292ae27b315f1e28a7c332447a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataProducer::DataProducer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_main_controller.html">MainController</a> *&#160;</td>
+          <td class="paramname"><em>mainController_in</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>recording_in</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>applyAlgorithms_in</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mainController_in</td><td>Referencia al controlador principal. </td></tr>
+    <tr><td class="paramname">recording_in</td><td>Si es verdadero, además de realizar los cálculos, guardará los datos. </td></tr>
+    <tr><td class="paramname">applyAlgorithms_in</td><td>Si es verdadero aplicará los algoritmos despues de procesar inicialmente la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00519">519</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9fd47fc1de42a9673e312057f2cb26f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataProducer::~DataProducer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00538">538</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="ab3365262f1d8c0e40b0ea15c53f65609"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataProducer::Calculated1D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_data1_d.html">Data1D</a> *&#160;</td>
+          <td class="paramname"><em>data1d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Señal para avisar al padre de que ya tenemos los datos 1d calculados. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data1d</td><td>Los datos calculados. Serán responsabilidad de quién recibe la señal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ed38473a5175e580089a088ba490308"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataProducer::Calculated2D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td>
+          <td class="paramname"><em>data2d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Señal para avisar al padre de que ya tenemos los datos 2d calculados. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data2d</td><td>Los datos calculados. Serán responsabilidad de quién recibe la señal. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b7cb9b2e37969c7812bc0a5822487c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataProducer::Finished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Señal para avisar al padre de hemos acabado nuestra vida útil. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3de62e3d284d5b510b80cdd929a62a63"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataProducer::ProduceData1D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot que se debe llamar cuando se desee que comencemos a producir los datos 1d. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00531">531</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa572b588d181d1dc2fca539cd2be853"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataProducer::ProduceData2D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot que se debe llamar cuando se desee que comencemos a producir los datos 2d. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00525">525</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="a463664e96294a1aeef547a843d103e01"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataProducer::applyAlgorithms</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Si es verdadero, aplica los algoritmos de la lista a la imagen. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00175">175</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6a9b5f9c79621fce715a0e0e715a95de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_main_controller.html">MainController</a>* DataProducer::mainController</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al controlador principal. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00173">173</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7591955c80318add7aabcceb3a6eb060"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DataProducer::recording</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si está grabando los datos que muestra. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00174">174</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a></li>
+<li>sources/<a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_data_producer.html">DataProducer</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

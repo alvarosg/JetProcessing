@@ -1,0 +1,3836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase MainController</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_main_controller.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_main_controller-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase MainController</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Controlador principal del programa.  
+ <a href="class_main_controller.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:afc816e394f59614efba13d0657a0a351"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#afc816e394f59614efba13d0657a0a351">MainController</a> ()</td></tr>
+<tr class="memitem:a8ed70b648628569c41bf45778ea0c1e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a8ed70b648628569c41bf45778ea0c1e7">~MainController</a> ()</td></tr>
+<tr class="memitem:af779f03ad5aa841227af3a5be7e5e2a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program_settings.html">ProgramSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#af779f03ad5aa841227af3a5be7e5e2a9">GetProgramSettings</a> ()</td></tr>
+<tr class="memitem:a5dfd822b0735c1c73d55f904b8a5cb0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a5dfd822b0735c1c73d55f904b8a5cb0b">SetProgramSettings</a> (<a class="el" href="class_program_settings.html">ProgramSettings</a> settings)</td></tr>
+<tr class="memitem:a5299c34d2a72ba5b4f1d12a5f03583cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a5299c34d2a72ba5b4f1d12a5f03583cf">GetFirstExecution</a> ()</td></tr>
+<tr class="memitem:af65880b5e3067d0b113a45b997e301dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#af65880b5e3067d0b113a45b997e301dd">SetMode</a> (<a class="el" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a> mode)</td></tr>
+<tr class="memitem:a4e11616b03b96052a3576acf6d16f7f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a4e11616b03b96052a3576acf6d16f7f1">GetMode</a> ()</td></tr>
+<tr class="memitem:a14d8a11166fd99c5a571e9b292319be8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a14d8a11166fd99c5a571e9b292319be8">SetDefaultMode</a> (bool value)</td></tr>
+<tr class="memitem:ada48d592e2914a15bb3860e833c91cfa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ada48d592e2914a15bb3860e833c91cfa">GetDefaultMode</a> ()</td></tr>
+<tr class="memitem:a24b05e12bab8df141c7879544f5aef15"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a24b05e12bab8df141c7879544f5aef15">GetApplyUntilCurrentAlgorithm</a> ()</td></tr>
+<tr class="memitem:aa494966f34ea1a68b6538960ab1c064e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa494966f34ea1a68b6538960ab1c064e">GetSaveGraphicsViewSize</a> ()</td></tr>
+<tr class="memitem:a35480704226cb116559dfda15aca39b2"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a35480704226cb116559dfda15aca39b2">GetSaveGraphicsCustomSize</a> ()</td></tr>
+<tr class="memitem:aae5099fb76d49d10edc0fe74717aee3c"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aae5099fb76d49d10edc0fe74717aee3c">GetSaveGraphicsDefaultFormat</a> ()</td></tr>
+<tr class="memitem:a7073aa48750200b636e2c9594c9afd6f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a7073aa48750200b636e2c9594c9afd6f">GetOutputFolder</a> ()</td></tr>
+<tr class="memitem:a0bcff87fd89bf8335f1c62265c9e8008"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a0bcff87fd89bf8335f1c62265c9e8008">GetCurrentProject</a> ()</td></tr>
+<tr class="memitem:a9d4156a2eaf9c31bc4a602c2ba9b3129"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a9d4156a2eaf9c31bc4a602c2ba9b3129">GetCurrentProjectSaved</a> ()</td></tr>
+<tr class="memitem:abb69619858db20b5f6ad9602ffc79a45"><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#abb69619858db20b5f6ad9602ffc79a45">GetRefSourceQImage</a> ()</td></tr>
+<tr class="memitem:af0dc1c4a0771471d9ee488d2ad57a6df"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#af0dc1c4a0771471d9ee488d2ad57a6df">GetZLabel</a> ()</td></tr>
+<tr class="memitem:a3bc506b4345e26409f59d64a91c70213"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a3bc506b4345e26409f59d64a91c70213">GetAutoScaleAxes</a> ()</td></tr>
+<tr class="memitem:a1926e11ebcb4bb427cccc5570118e8d2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a1926e11ebcb4bb427cccc5570118e8d2">GetMinZValue</a> ()</td></tr>
+<tr class="memitem:ae875d637fc69f6de090010223f9b6d9c"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ae875d637fc69f6de090010223f9b6d9c">GetMaxZValue</a> ()</td></tr>
+<tr class="memitem:aae71373a15d2dc6c343fddb66ed1c175"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aae71373a15d2dc6c343fddb66ed1c175">GetSequenceFPS</a> ()</td></tr>
+<tr class="memitem:af7c6fb99e0ad43418ae1f1a7a0659f85"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#af7c6fb99e0ad43418ae1f1a7a0659f85">GetViewLevelCurves</a> ()</td></tr>
+<tr class="memitem:a6bc6c86baf78f2aae47bf2411bca1be5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a6bc6c86baf78f2aae47bf2411bca1be5">GetThreshold</a> ()</td></tr>
+<tr class="memitem:a6b7dfac919b8d9aa036b4de39907dfdb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a6b7dfac919b8d9aa036b4de39907dfdb">GetApplyAlgorithmsLive</a> ()</td></tr>
+<tr class="memitem:ad4ddfc997ca7b10f8c46ce3ea7fcbcbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ad4ddfc997ca7b10f8c46ce3ea7fcbcbf">GetAutoScaleAxesLive</a> ()</td></tr>
+<tr class="memitem:a2f6c3ede624349e1da5bde1e548e3d76"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a2f6c3ede624349e1da5bde1e548e3d76">GetThresholdLive</a> ()</td></tr>
+<tr class="memitem:ae4b20d025c64bef7291ff3d9c86cd59d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ae4b20d025c64bef7291ff3d9c86cd59d">GetLiveFPS</a> ()</td></tr>
+<tr class="memitem:a5df10cf6339eaebcc5a701c79186778d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a5df10cf6339eaebcc5a701c79186778d">GetSourceHMirror</a> ()</td></tr>
+<tr class="memitem:a6e39145f13b075b9e122e6f62f2a55d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a6e39145f13b075b9e122e6f62f2a55d8">GetSourceVMirror</a> ()</td></tr>
+<tr class="memitem:af6126b0fc0a2ea939b767d4c311889fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#af6126b0fc0a2ea939b767d4c311889fc">GetSourceRotation</a> ()</td></tr>
+<tr class="memitem:afac2d2d2174cb75bd7914eb5d3383d8c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#afac2d2d2174cb75bd7914eb5d3383d8c">GetFullImageSizeX</a> ()</td></tr>
+<tr class="memitem:aa06218b794881ab0b735c4cf038e21e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa06218b794881ab0b735c4cf038e21e2">GetFullImageSizeY</a> ()</td></tr>
+<tr class="memitem:a06849947c07f86f631a7609b048ba3e3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a06849947c07f86f631a7609b048ba3e3">GetPixelsMmX</a> ()</td></tr>
+<tr class="memitem:a17916d2636071671f2d30ffa5ff57bdd"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a17916d2636071671f2d30ffa5ff57bdd">GetPixelsMmY</a> ()</td></tr>
+<tr class="memitem:aa9c0078503ce37b253d7703d3fe3ec97"><td class="memItemLeft" align="right" valign="top">QPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa9c0078503ce37b253d7703d3fe3ec97">GetOriginPoint</a> ()</td></tr>
+<tr class="memitem:aa67b9de8cd0a6f4f85e5472270e00bb3"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa67b9de8cd0a6f4f85e5472270e00bb3">GetFullImageMask</a> ()</td></tr>
+<tr class="memitem:a9bd4b4c17404fef3be596cd7ad1bfa6f"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a9bd4b4c17404fef3be596cd7ad1bfa6f">GetFullImageFourierMask</a> ()</td></tr>
+<tr class="memitem:a0f9c708a96d3a17575c0dfe93c8b49b2"><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a0f9c708a96d3a17575c0dfe93c8b49b2">GetRefFullImageFourier</a> (int gain)</td></tr>
+<tr class="memitem:a5728422eec50543dbf7fdd8a463a4e42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a5728422eec50543dbf7fdd8a463a4e42">GetRefPhaseData2D</a> ()</td></tr>
+<tr class="memitem:ae389114ab34062fdf513c9d45324e940"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_algorithm_sequence_controller.html">AlgorithmSequenceController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ae389114ab34062fdf513c9d45324e940">GetAlgorithmSequenceController</a> ()</td></tr>
+<tr class="memitem:a6c27439f4e6d42c3357afb9ba393321b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image_sequence_controller.html">ImageSequenceController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a6c27439f4e6d42c3357afb9ba393321b">GetImageSequenceController</a> ()</td></tr>
+<tr class="memitem:a121636f3d753f10e4794b18905f6a950"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a121636f3d753f10e4794b18905f6a950">GetPhaseData2D</a> (int index, int nAlg=-1)</td></tr>
+<tr class="memitem:af0a092f021d9d85e99cecb11e7e835af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data1_d.html">Data1D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#af0a092f021d9d85e99cecb11e7e835af">GetPhaseData1D</a> (int index, int nAlg=-1)</td></tr>
+<tr class="memitem:a315b627d21b644fbd657bb04c3474050"><td class="memItemLeft" align="right" valign="top">QImage&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a315b627d21b644fbd657bb04c3474050">GetPhaseQImage</a> (int index, int nAlg)</td></tr>
+<tr class="memitem:a9bf48337989b0172ba6a27376ac9400f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a9bf48337989b0172ba6a27376ac9400f">SetOutputFolder</a> (QString value)</td></tr>
+<tr class="memitem:aff0cb6afe9a3b45be077bab7cdb5e684"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aff0cb6afe9a3b45be077bab7cdb5e684">SetZLabel</a> (QString value)</td></tr>
+<tr class="memitem:ad954431f3e22789542abb4c65f338a5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ad954431f3e22789542abb4c65f338a5f">SetAutoScaleAxes</a> (bool value)</td></tr>
+<tr class="memitem:aaa191b23083fb8ec45764ccc04725eea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aaa191b23083fb8ec45764ccc04725eea">SetMinZValue</a> (float value)</td></tr>
+<tr class="memitem:a50469187791d3a37390bf8e3f883bb22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a50469187791d3a37390bf8e3f883bb22">SetMaxZValue</a> (float value)</td></tr>
+<tr class="memitem:a98c297f60e807c97b889c9bfdab127e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a98c297f60e807c97b889c9bfdab127e4">SetSequenceFPS</a> (float value)</td></tr>
+<tr class="memitem:ad889d9a64eec0b5813c1bf322acdf8f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ad889d9a64eec0b5813c1bf322acdf8f1">SetViewLevelCurves</a> (bool value)</td></tr>
+<tr class="memitem:a87685bb58ea65c7a4b99b633c3e19140"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a87685bb58ea65c7a4b99b633c3e19140">SetThreshold</a> (float value)</td></tr>
+<tr class="memitem:a7c346ea1c6557e7a9bec7f3906c03d93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a7c346ea1c6557e7a9bec7f3906c03d93">SetApplyAlgorithmsLive</a> (bool value)</td></tr>
+<tr class="memitem:a362ac3652c9bfcc692c9b109e2dfa835"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a362ac3652c9bfcc692c9b109e2dfa835">SetAutoScaleAxesLive</a> (bool value)</td></tr>
+<tr class="memitem:ab23450a3392a207475b0876e9bcb8bdc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ab23450a3392a207475b0876e9bcb8bdc">SetThresholdLive</a> (float value)</td></tr>
+<tr class="memitem:aa2726df2a2398cab36a95648b6f2e9c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa2726df2a2398cab36a95648b6f2e9c8">SetLiveFPS</a> (float value)</td></tr>
+<tr class="memitem:a0a8c2833fbdcfbf67c7cd5894ded187d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a0a8c2833fbdcfbf67c7cd5894ded187d">SetSourceHMirror</a> (bool value)</td></tr>
+<tr class="memitem:aaaadaf4ced7cb619d505316b2cb0699f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aaaadaf4ced7cb619d505316b2cb0699f">SetSourceVMirror</a> (bool value)</td></tr>
+<tr class="memitem:a34a96f766320945d24a3e602c8198f68"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a34a96f766320945d24a3e602c8198f68">SetSourceRotation</a> (int value)</td></tr>
+<tr class="memitem:ae0aff528fd43ebab2a1c9389f7d3bacf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ae0aff528fd43ebab2a1c9389f7d3bacf">SetFullImageSizeX</a> (int value)</td></tr>
+<tr class="memitem:aa3535336f818167abbc335b74bfe1034"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa3535336f818167abbc335b74bfe1034">SetFullImageSizeY</a> (int value)</td></tr>
+<tr class="memitem:a739cea34764476c4f2d56ebef3937983"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a739cea34764476c4f2d56ebef3937983">SetPixelsMmX</a> (float value)</td></tr>
+<tr class="memitem:abf6c1408a87a1bbb3df682fe879f4fe3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#abf6c1408a87a1bbb3df682fe879f4fe3">SetPixelsMmY</a> (float value)</td></tr>
+<tr class="memitem:aea7775ac353da6c2bce6015d80b35395"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aea7775ac353da6c2bce6015d80b35395">SetOriginPoint</a> (QPoint value)</td></tr>
+<tr class="memitem:a2dec3367805db438b1ccfe16e51c5602"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a2dec3367805db438b1ccfe16e51c5602">SetFullImageMask</a> (QRect value)</td></tr>
+<tr class="memitem:aece907a456e2d0f9c6d541e0d1a94cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aece907a456e2d0f9c6d541e0d1a94cf0">SetFullImageFourierMask</a> (QRect value)</td></tr>
+<tr class="memitem:aa5c0a216b1b8db1018ff7f317f047fdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa5c0a216b1b8db1018ff7f317f047fdf">SetAlgorithmSequenceController</a> (<a class="el" href="class_algorithm_sequence_controller.html">AlgorithmSequenceController</a> value, bool unSave=true)</td></tr>
+<tr class="memitem:a9f854db64f752a0db450e7d641c0aa92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a9f854db64f752a0db450e7d641c0aa92">SetImageSequenceController</a> (<a class="el" href="class_image_sequence_controller.html">ImageSequenceController</a> value, bool unSave=true)</td></tr>
+<tr class="memitem:afa611b1bff80b63ef5e3facc93127d13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#afa611b1bff80b63ef5e3facc93127d13">DeleteImage</a> (int index)</td></tr>
+<tr class="memitem:afc4d4f8536c57980d2981fd272260d7d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#afc4d4f8536c57980d2981fd272260d7d">CameraIsReady</a> ()</td></tr>
+<tr class="memitem:a0d70f9e83642b9b70c7cfff5a689f3d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_controller.html">CameraController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a0d70f9e83642b9b70c7cfff5a689f3d2">GetCameraController</a> ()</td></tr>
+<tr class="memitem:a2f2ad893ce7365d93c9ac3f0df340f12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a2f2ad893ce7365d93c9ac3f0df340f12">LoadRefImageFromFile</a> (QString filePath)</td></tr>
+<tr class="memitem:a7367c9ff901d350b5b733b15e428c4dd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a7367c9ff901d350b5b733b15e428c4dd">LoadRefImageFromCamera</a> ()</td></tr>
+<tr class="memitem:ad91b19833c8bd92ff0cc3948ccec7278"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ad91b19833c8bd92ff0cc3948ccec7278">AddImageFromFile</a> (QString filePath)</td></tr>
+<tr class="memitem:a06b365fd4d22caa272ae6cdc0bb3a429"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a06b365fd4d22caa272ae6cdc0bb3a429">AddImageFromCamera</a> ()</td></tr>
+<tr class="memitem:a17e3d677f323ab255635f150931d652a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a17e3d677f323ab255635f150931d652a">ProcessImageFromCamera</a> (bool save, bool applyAlg)</td></tr>
+<tr class="memitem:a9015804f134f86ad0d344a00c7e9f9ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data1_d.html">Data1D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a9015804f134f86ad0d344a00c7e9f9ac">ProcessImageFromCamera1D</a> (bool save)</td></tr>
+<tr class="memitem:a1b5514916909824a14f92ef70d1c66f1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a1b5514916909824a14f92ef70d1c66f1">LoadProject</a> (QString filePath)</td></tr>
+<tr class="memitem:a2b934fea7324960ea0c121dc22d374f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a2b934fea7324960ea0c121dc22d374f0">SaveProject</a> (QString filePath)</td></tr>
+<tr class="memitem:adf78f83d8248ca8a447cca197c8c7a67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#adf78f83d8248ca8a447cca197c8c7a67">MarkProjectUnsaved</a> ()</td></tr>
+<tr class="memitem:a1572377eec46ca6df659d1ebe06b15bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a1572377eec46ca6df659d1ebe06b15bd">LoadFullImageMaskOperationsAndSize</a> (QString filePath)</td></tr>
+<tr class="memitem:a0c487eb6ca29ed8f28f38c7ee5a05757"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a0c487eb6ca29ed8f28f38c7ee5a05757">SaveFullImageMaskOperationsAndSize</a> (QString filePath)</td></tr>
+<tr class="memitem:a01185a23115fe5d336663be7cb1b11f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a01185a23115fe5d336663be7cb1b11f3">LoadFullImageMaskParameters</a> (QString filePath)</td></tr>
+<tr class="memitem:ac5c8bea99ad6045fc6d5b7906bf9def0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ac5c8bea99ad6045fc6d5b7906bf9def0">SaveFullImageMaskParameters</a> (QString filePath)</td></tr>
+<tr class="memitem:a79d5c45de3bedaded9bb0f8af743709c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a79d5c45de3bedaded9bb0f8af743709c">LoadFullImageMaskFourierParameters</a> (QString filePath)</td></tr>
+<tr class="memitem:a980b4d86584f7643094e8bd204f6d309"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a980b4d86584f7643094e8bd204f6d309">SaveFullImageMaskFourierParameters</a> (QString filePath)</td></tr>
+<tr class="memitem:a22af4053eccc6af9023d8f71d642c4ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a22af4053eccc6af9023d8f71d642c4ce">LoadViewOptions</a> (QString filePath)</td></tr>
+<tr class="memitem:a456018a9d65a75d394d7e6ecf9992c18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a456018a9d65a75d394d7e6ecf9992c18">SaveViewOptions</a> (QString filePath)</td></tr>
+<tr class="memitem:a82837d7a394d44fbe9b86ae0f97f3540"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a82837d7a394d44fbe9b86ae0f97f3540">GetDefaultNameForExport2D</a> (int imgNum)</td></tr>
+<tr class="memitem:aa0417abd31a98b280bc22e430fa84e4d"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa0417abd31a98b280bc22e430fa84e4d">GetDefaultNameForExport1D</a> (int imgNum)</td></tr>
+<tr class="memitem:ad69008e56cd489f21a824472ab51d43e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ad69008e56cd489f21a824472ab51d43e">ExportSingleData2D</a> (QString filePath, int imgNum, int algNum)</td></tr>
+<tr class="memitem:a4bc4fdc06bd398d39e16d625063e650d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a4bc4fdc06bd398d39e16d625063e650d">ExportSingleData1D</a> (QString filePath, int imgNum, int algNum)</td></tr>
+<tr class="memitem:a791d1583055955c254fdeeef332fb52f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a791d1583055955c254fdeeef332fb52f">ExportSeriesData2D</a> (QString label, int algNum)</td></tr>
+<tr class="memitem:a8bbae82fcc6fe33f2da846e08a97e961"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a8bbae82fcc6fe33f2da846e08a97e961">ExportSeriesData1D</a> (QString label, int algNum)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:ab10de9ca7fd8db01def436056aabbf9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ab10de9ca7fd8db01def436056aabbf9e">LoadPersistentSettings</a> ()</td></tr>
+<tr class="memitem:a97c9d9b983dbce6b300828361e4a0151"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a97c9d9b983dbce6b300828361e4a0151">SavePersistentSettings</a> ()</td></tr>
+<tr class="memitem:a97a05bc8f2217ae20b87a589e0b4814e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a97a05bc8f2217ae20b87a589e0b4814e">CalculateRefFullImage</a> ()</td></tr>
+<tr class="memitem:adbf514143b0c4f01122e9998680506b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#adbf514143b0c4f01122e9998680506b8">CalculateRefFullImageFourier</a> ()</td></tr>
+<tr class="memitem:a60a61a75be6c21faf39409aeb3bf03b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a60a61a75be6c21faf39409aeb3bf03b5">CalculateRefFullImageFourierAbsolute</a> (int gainIn)</td></tr>
+<tr class="memitem:a1b1fb3fcee8c3661d45e31d6a5d9a0e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a1b1fb3fcee8c3661d45e31d6a5d9a0e2">CalculateRefFullImageInverse</a> ()</td></tr>
+<tr class="memitem:aa335b654c4f329a82c48b12cddcb663f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa335b654c4f329a82c48b12cddcb663f">CalculateRefPhaseImage</a> ()</td></tr>
+<tr class="memitem:aef02e7f3bb82a3f68257e8d522d6e7b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aef02e7f3bb82a3f68257e8d522d6e7b3">CalculatePhaseImage</a> (int index, int nAlg=-1)</td></tr>
+<tr class="memitem:aea245ce03e96c4d25fa5ea42cf66324d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_phase_image.html">PhaseImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aea245ce03e96c4d25fa5ea42cf66324d">ProcessSourcePictureImage</a> (QImage auxImage)</td></tr>
+<tr class="memitem:ac77c1167e494e429dfe3805b88d2c718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ac77c1167e494e429dfe3805b88d2c718">AddPhaseImage</a> (<a class="el" href="class_phase_image.html">PhaseImage</a> *phaseImage, QString label)</td></tr>
+<tr class="memitem:a18eeb17d6c84e6f888777e4ae46c2248"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a18eeb17d6c84e6f888777e4ae46c2248">SavePictureToFileDated</a> (QImage *auxImage, QString extraLabel=&quot;&quot;)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:ad9f642416c7aecbe4186894c702d886f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_controller.html">CameraController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ad9f642416c7aecbe4186894c702d886f">cameraController</a></td></tr>
+<tr class="memitem:adc068f312e03f898bd4e389908f56606"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_program_settings.html">ProgramSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#adc068f312e03f898bd4e389908f56606">programSettings</a></td></tr>
+<tr class="memitem:a748b76ac0f8371813be5ea7d3b42114e"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a748b76ac0f8371813be5ea7d3b42114e">currentProject</a></td></tr>
+<tr class="memitem:a40685e64d05e7ea5eb4dea8606f22d7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a40685e64d05e7ea5eb4dea8606f22d7a">currentProjectSaved</a></td></tr>
+<tr class="memitem:a93538fa18b9a27f3a31aec97b115c32d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_algorithm_sequence_controller.html">AlgorithmSequenceController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a93538fa18b9a27f3a31aec97b115c32d">algController</a></td></tr>
+<tr class="memitem:ae3a2f2b3114673bb721741aa3269f33a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_image_sequence_controller.html">ImageSequenceController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ae3a2f2b3114673bb721741aa3269f33a">imgController</a></td></tr>
+<tr class="memitem:afdc8679e38b995c3a96954b0e1ee8663"><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#afdc8679e38b995c3a96954b0e1ee8663">refSourceQImage</a></td></tr>
+<tr class="memitem:a794c6a8248e0a77a35d8fe0d387fb65e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a794c6a8248e0a77a35d8fe0d387fb65e">sourceHMirror</a></td></tr>
+<tr class="memitem:a215692c93b0df4246cf9fd64a99e5dec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a215692c93b0df4246cf9fd64a99e5dec">sourceVMirror</a></td></tr>
+<tr class="memitem:a3b8329cc3fcfa9a00fc81580ec6260b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a3b8329cc3fcfa9a00fc81580ec6260b7">sourceRotation</a></td></tr>
+<tr class="memitem:aa3af06399240e0a3d44aa52b8eae82a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa3af06399240e0a3d44aa52b8eae82a3">fullImageSizeX</a></td></tr>
+<tr class="memitem:a7f587fe22b71c6cc6180c8414815ad7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a7f587fe22b71c6cc6180c8414815ad7d">fullImageSizeY</a></td></tr>
+<tr class="memitem:aad36e7654cbb695f0139977b60569fa0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aad36e7654cbb695f0139977b60569fa0">pixelsMmX</a></td></tr>
+<tr class="memitem:a898b9cb14419eacf5689edf795d2eec3"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a898b9cb14419eacf5689edf795d2eec3">pixelsMmY</a></td></tr>
+<tr class="memitem:af8655f2cb57df1fcdfb67921a15bd5b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_image_factory.html">AbstractImageFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#af8655f2cb57df1fcdfb67921a15bd5b5">imageFactory</a></td></tr>
+<tr class="memitem:ab9cdb24dfd643f18117c82c0e039704d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_full_image.html">FullImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ab9cdb24dfd643f18117c82c0e039704d">refFullImage</a></td></tr>
+<tr class="memitem:aaea95a2ffaf2bfe25d287ba634b080c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aaea95a2ffaf2bfe25d287ba634b080c4">refFullImageUpdated</a></td></tr>
+<tr class="memitem:a93ea1095da007ced176bfcb055bed683"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_full_image.html">FullImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a93ea1095da007ced176bfcb055bed683">refFullImageFourier</a></td></tr>
+<tr class="memitem:a5f3fc39e52b2aa5b57ae18d03dcd2399"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a5f3fc39e52b2aa5b57ae18d03dcd2399">refFullImageFourierUpdated</a></td></tr>
+<tr class="memitem:a2cc0abc75091df773dcebd1e11cd6b6f"><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a2cc0abc75091df773dcebd1e11cd6b6f">refFullImageFourierAbsolute</a></td></tr>
+<tr class="memitem:a5f961ca5a4246674721b53f6f3799e13"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a5f961ca5a4246674721b53f6f3799e13">refFullImageFourierAbsoluteUpdated</a></td></tr>
+<tr class="memitem:a4c006da1ab9cabac102a2a559b3ee983"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_full_image.html">FullImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a4c006da1ab9cabac102a2a559b3ee983">refFullImageInverse</a></td></tr>
+<tr class="memitem:af931742a45e6d8312f28b0d2ef78e3a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#af931742a45e6d8312f28b0d2ef78e3a8">refFullImageInverseUpdated</a></td></tr>
+<tr class="memitem:a6ae195b2d27f1d9ba1c92eae6ab78256"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_phase_image.html">PhaseImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a6ae195b2d27f1d9ba1c92eae6ab78256">refPhaseImage</a></td></tr>
+<tr class="memitem:aa4d672e75406a29fa83959901cb80b8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_phase_image.html">PhaseImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa4d672e75406a29fa83959901cb80b8d">refPhaseImageScanned</a></td></tr>
+<tr class="memitem:ab2354e7ab5a6c03e9aa5da6e3db5a087"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ab2354e7ab5a6c03e9aa5da6e3db5a087">refPhaseImageUpdated</a></td></tr>
+<tr class="memitem:aa81b63a0e7402e09f606fe5e1c16cab4"><td class="memItemLeft" align="right" valign="top">QPoint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#aa81b63a0e7402e09f606fe5e1c16cab4">originPoint</a></td></tr>
+<tr class="memitem:a3773bdd6fa6667adf0936482f8a2a5a1"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a3773bdd6fa6667adf0936482f8a2a5a1">fullImageMask</a></td></tr>
+<tr class="memitem:a7ca30be396a7ee67cdc2532579db9526"><td class="memItemLeft" align="right" valign="top">QRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a7ca30be396a7ee67cdc2532579db9526">fullImageFourierMask</a></td></tr>
+<tr class="memitem:a853ef79a4f95ca75cf0bf4476d4e00fa"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a853ef79a4f95ca75cf0bf4476d4e00fa">zLabel</a></td></tr>
+<tr class="memitem:abdbbe8e29eff76f8c6d4f65929b5c388"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#abdbbe8e29eff76f8c6d4f65929b5c388">autoScaleAxes</a></td></tr>
+<tr class="memitem:a383117e847a453a0232e0ec816149612"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a383117e847a453a0232e0ec816149612">minZValue</a></td></tr>
+<tr class="memitem:ae08fd14074dca0d10ab7411e338ecced"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ae08fd14074dca0d10ab7411e338ecced">maxZValue</a></td></tr>
+<tr class="memitem:ab5b407446ad3685308034cc062bf1e31"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#ab5b407446ad3685308034cc062bf1e31">sequenceFPS</a></td></tr>
+<tr class="memitem:a9325cab7db8a1a42ace8796399fbb27a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a9325cab7db8a1a42ace8796399fbb27a">viewLevelCurves</a></td></tr>
+<tr class="memitem:acffb3a57574fb5bab0a071ce4412d1f5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#acffb3a57574fb5bab0a071ce4412d1f5">threshold</a></td></tr>
+<tr class="memitem:a42332a8acfa68b07914c564936bd721f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a42332a8acfa68b07914c564936bd721f">applyAlgorithmsLive</a></td></tr>
+<tr class="memitem:a1025d14979f37123a0d55bc84d244ebf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a1025d14979f37123a0d55bc84d244ebf">autoScaleAxesLive</a></td></tr>
+<tr class="memitem:a4326500beda9237487677e9ed602a573"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a4326500beda9237487677e9ed602a573">thresholdLive</a></td></tr>
+<tr class="memitem:a3ceaa87e0596285a6d3b9465c4445ec0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_controller.html#a3ceaa87e0596285a6d3b9465c4445ec0">liveFPS</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Controlador principal del programa. </p>
+<p>Es la clase central de toda la aplicación. Tiene acceso directo (Conoce los objetos entidad) o indirecto (Conoce los objetos controlador) que conocen a los objetos entidad) a toda la información y funcionalidad. Por lo tanto es a él al que se realizan tanto las peticiones de datos, como de cálculos. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00050">50</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="afc816e394f59614efba13d0657a0a351"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainController::MainController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. Se encargara de iniciar todos los parámetros, crear el resto de controladores,... </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00013">13</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ed70b648628569c41bf45778ea0c1e7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainController::~MainController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00077">77</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a06b365fd4d22caa272ae6cdc0bb3a429"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::AddImageFromCamera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Toma una imagen con la cámara para procesarla con la referencia hasta obtener una imagen de la fase que se guarda al final de la lista. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero en caso de éxito. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00924">924</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad91b19833c8bd92ff0cc3948ccec7278"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::AddImageFromFile </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carga una imagen de un archivo para procesarla con la referencia hasta obtener una imagen de la fase que se guarda al final de la lista. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>ruta de la imagen a cargar para su procesado. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero en caso de éxito. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00907">907</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac77c1167e494e429dfe3805b88d2c718"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::AddPhaseImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_phase_image.html">PhaseImage</a> *&#160;</td>
+          <td class="paramname"><em>phaseImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>label</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Añade al final de la lista una imagen d ela fase con la etiqueta indicada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">phaseImage</td><td>Puntero a la imagen que se va a añadir. </td></tr>
+    <tr><td class="paramname">label</td><td>Etiqueta que será el nombre de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01199">1199</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef02e7f3bb82a3f68257e8d522d6e7b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::CalculatePhaseImage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nAlg</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Aplica los algoritmos indicados a la imagen de la fase indicada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Índice de la imagen en la lista que se debe procesar. </td></tr>
+    <tr><td class="paramname">nAlg</td><td>Número de algoritmos que se deben aplicar secuencialmente (-1 para aplicar toda la lista). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01234">1234</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a97a05bc8f2217ae20b87a589e0b4814e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::CalculateRefFullImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Hace lo necesario para actualizar el atributo refFullImage. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00758">758</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adbf514143b0c4f01122e9998680506b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::CalculateRefFullImageFourier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Hace lo necesario para actualizar el atributo refFullImageFourier. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00778">778</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a60a61a75be6c21faf39409aeb3bf03b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::CalculateRefFullImageFourierAbsolute </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gainIn</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Hace lo necesario para actualizar el atributo refFullImageFourierAbsolute. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gainIn</td><td>Ganancia con la que lo debe actualizar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00797">797</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b1fb3fcee8c3661d45e31d6a5d9a0e2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::CalculateRefFullImageInverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Hace lo necesario para actualizar el atributo refFullImageInverse. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00812">812</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa335b654c4f329a82c48b12cddcb663f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::CalculateRefPhaseImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Hace lo necesario para actualizar los atributos refFaseImage y refPhaseImageScanned. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00830">830</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc4d4f8536c57980d2981fd272260d7d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::CameraIsReady </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indica si la cámara está lista. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si la cámara está iniciada y funcionando. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01219">1219</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afa611b1bff80b63ef5e3facc93127d13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::DeleteImage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Elimina la imagen de la fase en la posición indicada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Índice (0,total-1) de la imagen a eliminar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01209">1209</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8bbae82fcc6fe33f2da846e08a97e961"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::ExportSeriesData1D </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>algNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda tablas con los datos de todas las líneas de fase en ficheros de texto .txt en una carpeta creada en el directorio de salida. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Etiqueta para la serie. Será el nombre de la carpeta creada. </td></tr>
+    <tr><td class="paramname">algNum</td><td>Número de algoritmos que se deben aplicar secuencialmente (-1 para aplicar toda la lista). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero en caso de éxito. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01550">1550</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a791d1583055955c254fdeeef332fb52f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::ExportSeriesData2D </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>algNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda tablas con los datos de todas las imagenes de la fase en ficheros de texto .txt en una carpeta creada en el directorio de salida. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">label</td><td>Etiqueta para la serie. Será el nombre de la carpeta creada. </td></tr>
+    <tr><td class="paramname">algNum</td><td>Número de algoritmos que se deben aplicar secuencialmente (-1 para aplicar toda la lista). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero en caso de éxito. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01522">1522</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bc4fdc06bd398d39e16d625063e650d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::ExportSingleData1D </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>imgNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>algNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda una tabla con los datos de una línea de fase en un fichero de texto .txt. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre para el archivo de salida. </td></tr>
+    <tr><td class="paramname">imgNum</td><td>Índice de la imagen en la lista cuyos datos se deben guardar. </td></tr>
+    <tr><td class="paramname">algNum</td><td>Número de algoritmos que se deben aplicar secuencialmente (-1 para aplicar toda la lista). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero en caso de éxito. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01514">1514</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad69008e56cd489f21a824472ab51d43e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::ExportSingleData2D </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>imgNum</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>algNum</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda una tabla con los datos de una imagen de la fase en un fichero de texto .txt. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre para el archivo de salida. </td></tr>
+    <tr><td class="paramname">imgNum</td><td>Índice de la imagen en la lista cuyos datos se deben guardar. </td></tr>
+    <tr><td class="paramname">algNum</td><td>Número de algoritmos que se deben aplicar secuencialmente (-1 para aplicar toda la lista). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero en caso de éxito. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01505">1505</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae389114ab34062fdf513c9d45324e940"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_algorithm_sequence_controller.html">AlgorithmSequenceController</a> MainController::GetAlgorithmSequenceController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo algController, controlador de los algormitmos. Nótese que es sólo una copia, por lo que deberá enviarse otra vez al controlador si se desea conservar los cambios que haya realizado. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00256">256</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6b7dfac919b8d9aa036b4de39907dfdb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetApplyAlgorithmsLive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo applyAlgorithmsLive. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00174">174</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a24b05e12bab8df141c7879544f5aef15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetApplyUntilCurrentAlgorithm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve información acerca de si se debe aplicar sólo hasta el algoritmo selccionado, o por el contrario se debe aplicar siempre toda la lista. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se debe aplicar sólo hasta el algoritmo seleccionado. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00891">891</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3bc506b4345e26409f59d64a91c70213"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetAutoScaleAxes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo autoScaleAxes. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00150">150</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4ddfc997ca7b10f8c46ce3ea7fcbcbf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetAutoScaleAxesLive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo autoScaleAxesLive. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00178">178</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d70f9e83642b9b70c7cfff5a689f3d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera_controller.html">CameraController</a> * MainController::GetCameraController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve un puntero al controlador de la cámara. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero al controlador de la cámara, sigue siendo responsabilidad del controlador principal. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01230">1230</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0bcff87fd89bf8335f1c62265c9e8008"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainController::GetCurrentProject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo currentProject. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00138">138</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9d4156a2eaf9c31bc4a602c2ba9b3129"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetCurrentProjectSaved </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo currentProjectSaved. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00142">142</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada48d592e2914a15bb3860e833c91cfa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetDefaultMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve información acerca de si se debe usar el modo por defecto sin preguntar al usuario. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se debe usar el modo por defecto. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00883">883</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0417abd31a98b280bc22e430fa84e4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainController::GetDefaultNameForExport1D </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>imgNum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el nombre por defecto para datos 1D exportados. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imgNum</td><td>Número de imagen de la lista para la que se exportan los datos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Nombre por defecto para el archivo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01496">1496</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a82837d7a394d44fbe9b86ae0f97f3540"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainController::GetDefaultNameForExport2D </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>imgNum</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el nombre por defecto para datos 2D exportados. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">imgNum</td><td>Número de imagen de la lista para la que se exportan los datos. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Nombre por defecto para el archivo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01487">1487</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5299c34d2a72ba5b4f1d12a5f03583cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetFirstExecution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indica si es la primera vez que se ejecuta el programa. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si es la primera vez. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00855">855</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9bd4b4c17404fef3be596cd7ad1bfa6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect MainController::GetFullImageFourierMask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo fullImageFourierMask. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00226">226</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa67b9de8cd0a6f4f85e5472270e00bb3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect MainController::GetFullImageMask </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo fullImageMask. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00222">222</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afac2d2d2174cb75bd7914eb5d3383d8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainController::GetFullImageSizeX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo fullImageSizeX. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00202">202</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa06218b794881ab0b735c4cf038e21e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainController::GetFullImageSizeY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo fullImageSizeY. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00206">206</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6c27439f4e6d42c3357afb9ba393321b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_image_sequence_controller.html">ImageSequenceController</a> MainController::GetImageSequenceController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo imgController, controlador de los algormitmos. Nótese que es sólo una copia, por lo que deberá enviarse otra vez al controlador si se desea conservar los cambios que haya realizado. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00260">260</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae4b20d025c64bef7291ff3d9c86cd59d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::GetLiveFPS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo liveFPS. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00186">186</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae875d637fc69f6de090010223f9b6d9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::GetMaxZValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo maxZValue. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00158">158</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1926e11ebcb4bb427cccc5570118e8d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::GetMinZValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo minZValue. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00154">154</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e11616b03b96052a3576acf6d16f7f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a> MainController::GetMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el modo de funcionamiento del programa. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00872">872</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa9c0078503ce37b253d7703d3fe3ec97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPoint MainController::GetOriginPoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo originPoint. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00218">218</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7073aa48750200b636e2c9594c9afd6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainController::GetOutputFolder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve la ruta del directorio por defecto para la salida. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Cadena con la ruta, sin "/" al final. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00134">134</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0a092f021d9d85e99cecb11e7e835af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data1_d.html">Data1D</a> * MainController::GetPhaseData1D </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nAlg</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crea un objeto tipo <a class="el" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> procesando la imagen indicada en caso necesario, con los algoritmos indicados. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Índice de la imagen en la lista que se debe procesar. </td></tr>
+    <tr><td class="paramname">nAlg</td><td>Número de algoritmos que se deben aplicar secuencialmente (-1 para aplicar toda la lista). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Objeto tipo data1d con todos los atributos configurados para su representación, responsabilidad del cliente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00295">295</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a121636f3d753f10e4794b18905f6a950"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data2_d.html">Data2D</a> * MainController::GetPhaseData2D </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nAlg</em> = <code>-1</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Crea un objeto tipo <a class="el" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a> procesando la imagen indicada en caso necesario, con los algoritmos indicados. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Índice de la imagen en la lista que se debe procesar. </td></tr>
+    <tr><td class="paramname">nAlg</td><td>Número de algoritmos que se deben aplicar secuencialmente (-1 para aplicar toda la lista). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Objeto tipo data2d con todos los atributos configurados para su representación, responsabilidad del cliente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00264">264</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a315b627d21b644fbd657bb04c3474050"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage MainController::GetPhaseQImage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nAlg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve una imagen de la fase generada a partir de un spectrograma. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Índice de la imagen en la lista que se debe procesar. </td></tr>
+    <tr><td class="paramname">nAlg</td><td>Número de algoritmos que se deben aplicar secuencialmente (-1 para aplicar toda la lista). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Imagen del spectrograma. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00332">332</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a06849947c07f86f631a7609b048ba3e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::GetPixelsMmX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo pixelsMmX. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00210">210</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a17916d2636071671f2d30ffa5ff57bdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::GetPixelsMmY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo pixelsMmY. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00214">214</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af779f03ad5aa841227af3a5be7e5e2a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_program_settings.html">ProgramSettings</a> MainController::GetProgramSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el atributo <a class="el" href="class_program_settings.html" title="Clase que contiene las preferencias persistentes del programa.">ProgramSettings</a>. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00847">847</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0f9c708a96d3a17575c0dfe93c8b49b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage * MainController::GetRefFullImageFourier </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>gain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo refFullImageFourierAbsolute, recalculándolo si es necesario. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gain</td><td>Ganancia para el cálculo del módulo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00230">230</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5728422eec50543dbf7fdd8a463a4e42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data2_d.html">Data2D</a> * MainController::GetRefPhaseData2D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo refPhaseImage, recalculándolo si es necesario. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00236">236</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb69619858db20b5f6ad9602ffc79a45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage * MainController::GetRefSourceQImage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo refSourceQImage. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00754">754</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a35480704226cb116559dfda15aca39b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize MainController::GetSaveGraphicsCustomSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el tamaño personalizado para las imágenes. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Tamaño personalizado para el usuario. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00899">899</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aae5099fb76d49d10edc0fe74717aee3c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainController::GetSaveGraphicsDefaultFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el formato por defecto para las imágenes. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Cadena con las letras de la extensión del formato elegido, sin punto. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00903">903</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa494966f34ea1a68b6538960ab1c064e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetSaveGraphicsViewSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve información acerca de si las imágenes se deben guardar con el tamaño de la vista actual, o por el contrario con el tamaño personalizado. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se debe guardar en el tamaño actual. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00895">895</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aae71373a15d2dc6c343fddb66ed1c175"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::GetSequenceFPS </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo sequenceFPS. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00162">162</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5df10cf6339eaebcc5a701c79186778d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetSourceHMirror </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo sourceHMirror. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00190">190</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6126b0fc0a2ea939b767d4c311889fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainController::GetSourceRotation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo sourceRotation. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00198">198</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e39145f13b075b9e122e6f62f2a55d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetSourceVMirror </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo sourceVMirror. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00194">194</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6bc6c86baf78f2aae47bf2411bca1be5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::GetThreshold </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo threshold. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00170">170</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f6c3ede624349e1da5bde1e548e3d76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::GetThresholdLive </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo thresholdLive. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00182">182</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af7c6fb99e0ad43418ae1f1a7a0659f85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::GetViewLevelCurves </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo viewLevelCurves. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00166">166</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0dc1c4a0771471d9ee488d2ad57a6df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainController::GetZLabel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el valor del atributo zLabel. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00146">146</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a79d5c45de3bedaded9bb0f8af743709c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::LoadFullImageMaskFourierParameters </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carga un fichero .msk2 con la máscara que se aplica a la transformada de fourier de la referencia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero para cargar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se cargó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00524">524</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1572377eec46ca6df659d1ebe06b15bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::LoadFullImageMaskOperationsAndSize </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carga un fichero .ops con las operaciones a realizar sobre la referencia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero para cargar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se cargó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00471">471</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a01185a23115fe5d336663be7cb1b11f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::LoadFullImageMaskParameters </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carga un fichero .msk1 con la máscara que se aplica a la referencia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero para cargar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se cargó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00498">498</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab10de9ca7fd8db01def436056aabbf9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::LoadPersistentSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Carga las preferencias del programa de un archivo en la carpeta del usuario al iniciar la aplicación. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00099">99</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b5514916909824a14f92ef70d1c66f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::LoadProject </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carga un proyecto .jpp de la ruta indicada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero para cargar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se cargó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01304">1304</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7367c9ff901d350b5b733b15e428c4dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::LoadRefImageFromCamera </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Toma una imagen con la cámara para la referencia. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero en caso de éxito. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00736">736</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f2ad893ce7365d93c9ac3f0df340f12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::LoadRefImageFromFile </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carga una imagen de un archivo que será fijada como referencia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>ruta de la imagen a cargar para la referencia. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero en caso de éxito. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00718">718</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a22af4053eccc6af9023d8f71d642c4ce"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::LoadViewOptions </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carga un fichero .viw con las opciones de visualización. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero para cargar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se cargó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00446">446</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf78f83d8248ca8a447cca197c8c7a67"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::MarkProjectUnsaved </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fuerza el marcado de un proyecto como no guardado. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01483">1483</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a17e3d677f323ab255635f150931d652a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data2_d.html">Data2D</a> * MainController::ProcessImageFromCamera </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>save</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>applyAlg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Método para el modo "en vivo". Toma una imagen de la cámara y la procesa con la referencia, para obtener una imagen de la fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">save</td><td>Indica si además la imagen de la fase se debe salvar para la lista de imágenes. </td></tr>
+    <tr><td class="paramname">applyAlg</td><td>Indica si se debe aplicar la lista de algoritmos o no. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a un objeto tipo <a class="el" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a> responsabilidad del cliente con los datos calculados. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00950">950</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9015804f134f86ad0d344a00c7e9f9ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data1_d.html">Data1D</a> * MainController::ProcessImageFromCamera1D </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>save</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Método para el modo "en vivo". Toma una imagen de la cámara y la procesa con la referencia, para obtener una línea de fase. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">save</td><td>Indica si además la imagen de la fase se debe salvar para la lista de imágenes. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a un objeto tipo <a class="el" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> responsabilidad del cliente con los datos calculados. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01031">1031</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea245ce03e96c4d25fa5ea42cf66324d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_phase_image.html">PhaseImage</a> * MainController::ProcessSourcePictureImage </td>
+          <td>(</td>
+          <td class="paramtype">QImage&#160;</td>
+          <td class="paramname"><em>auxImage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Procesa una imagen con la referencia hasta obtener la imagen de la fase, sin todavia aplicar la lista de algoritmos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auxImage</td><td>Imagen que se debe procesar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Imagen de la fase procedente del procesado de la imagen pasada como argumento. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01167">1167</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a980b4d86584f7643094e8bd204f6d309"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::SaveFullImageMaskFourierParameters </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda un fichero .msk2 con la máscara que se aplica a la transformada de fourier de la referencia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero para guardar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se guardó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00381">381</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c487eb6ca29ed8f28f38c7ee5a05757"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::SaveFullImageMaskOperationsAndSize </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda un fichero .ops con las operaciones a realizar sobre la referencia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero para guardar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se guardó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00399">399</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac5c8bea99ad6045fc6d5b7906bf9def0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::SaveFullImageMaskParameters </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda un fichero .msk1 con la máscara que se aplica a la referencia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero para guardar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se guardó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00361">361</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a97c9d9b983dbce6b300828361e4a0151"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SavePersistentSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Guarda las preferencias del programa de un archivo en la carpeta del usuario al finalizar la aplicación. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00115">115</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a18eeb17d6c84e6f888777e4ae46c2248"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SavePictureToFileDated </td>
+          <td>(</td>
+          <td class="paramtype">QImage *&#160;</td>
+          <td class="paramname"><em>auxImage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>extraLabel</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Guarda una imagen de pasada como argumento en la carpeta de imágenes tomadas con la cámara, en el caso de tener actvada la opción en las preferencias, indicando en el nombre del archivo la fecha y hora de guardado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auxImage</td><td>Puntero a la imagen que se va a guardar. </td></tr>
+    <tr><td class="paramname">extraLabel</td><td>Etiqueta extra para el nombre del archivo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01148">1148</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b934fea7324960ea0c121dc22d374f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::SaveProject </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda un proyecto .jpp en la ruta indicada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero para guardar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se guardó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l01401">1401</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a456018a9d65a75d394d7e6ecf9992c18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::SaveViewOptions </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda un fichero .viw con las opciones de visualización. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero para guardar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se guardó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00421">421</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa5c0a216b1b8db1018ff7f317f047fdf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetAlgorithmSequenceController </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_algorithm_sequence_controller.html">AlgorithmSequenceController</a>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>unSave</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo algController. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+    <tr><td class="paramname">unSave</td><td>Indica si se debe marcar el proyecto como no guardado tras la llamada. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00697">697</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7c346ea1c6557e7a9bec7f3906c03d93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetApplyAlgorithmsLive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo applyAlgorithmsLive. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00588">588</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad954431f3e22789542abb4c65f338a5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetAutoScaleAxes </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo autoScaleAxes. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00552">552</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a362ac3652c9bfcc692c9b109e2dfa835"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetAutoScaleAxesLive </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo autoScaleAxesLive. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00594">594</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a14d8a11166fd99c5a571e9b292319be8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetDefaultMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece si se debe usar el modo por defecto sin preguntar al usuario la próxima vez. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Verdadero si se debe usar el modo por defecto. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00879">879</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aece907a456e2d0f9c6d541e0d1a94cf0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetFullImageFourierMask </td>
+          <td>(</td>
+          <td class="paramtype">QRect&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo fullImageFourierMask. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00689">689</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2dec3367805db438b1ccfe16e51c5602"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetFullImageMask </td>
+          <td>(</td>
+          <td class="paramtype">QRect&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo fullImageMask. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00681">681</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0aff528fd43ebab2a1c9389f7d3bacf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainController::SetFullImageSizeX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo fullImageSizeX. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00639">639</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3535336f818167abbc335b74bfe1034"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainController::SetFullImageSizeY </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo fullImageSizeY. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00649">649</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9f854db64f752a0db450e7d641c0aa92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetImageSequenceController </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_image_sequence_controller.html">ImageSequenceController</a>&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>unSave</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo imgController. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+    <tr><td class="paramname">unSave</td><td>Indica si se debe marcar el proyecto como no guardado tras la llamada. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00709">709</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2726df2a2398cab36a95648b6f2e9c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetLiveFPS </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo liveFPS. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00606">606</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50469187791d3a37390bf8e3f883bb22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetMaxZValue </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo maxZValue. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00564">564</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa191b23083fb8ec45764ccc04725eea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetMinZValue </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo minZValue. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00558">558</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af65880b5e3067d0b113a45b997e301dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a>&#160;</td>
+          <td class="paramname"><em>mode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el modo de funcionamiento creando la factoría concreta para las imágenes. Debe llamarse sólo una vez antes de realizar ningún cálculo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mode</td><td>Modo de cálculo del programa que se desee configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00859">859</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aea7775ac353da6c2bce6015d80b35395"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetOriginPoint </td>
+          <td>(</td>
+          <td class="paramtype">QPoint&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo originPoint. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00674">674</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9bf48337989b0172ba6a27376ac9400f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetOutputFolder </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece la ruta del directorio de salida por defecto para los archivos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Cadena con la ruta, sin "/" al final. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00357">357</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a739cea34764476c4f2d56ebef3937983"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::SetPixelsMmX </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo pixelsMmX. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00658">658</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abf6c1408a87a1bbb3df682fe879f4fe3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::SetPixelsMmY </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo pixelsMmY. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00666">666</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5dfd822b0735c1c73d55f904b8a5cb0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetProgramSettings </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_program_settings.html">ProgramSettings</a>&#160;</td>
+          <td class="paramname"><em>settings</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el atributo <a class="el" href="class_program_settings.html" title="Clase que contiene las preferencias persistentes del programa.">ProgramSettings</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">settings</td><td>Valor del atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00851">851</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a98c297f60e807c97b889c9bfdab127e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetSequenceFPS </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo sequenceFPS. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00570">570</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a8c2833fbdcfbf67c7cd5894ded187d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetSourceHMirror </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo sourceHMirror. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00613">613</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34a96f766320945d24a3e602c8198f68"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainController::SetSourceRotation </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo sourceRotation. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00629">629</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaaadaf4ced7cb619d505316b2cb0699f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetSourceVMirror </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo sourceVMirror. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00621">621</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a87685bb58ea65c7a4b99b633c3e19140"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetThreshold </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo threshold. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00582">582</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab23450a3392a207475b0876e9bcb8bdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetThresholdLive </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo thresholdLive. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00600">600</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad889d9a64eec0b5813c1bf322acdf8f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetViewLevelCurves </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo viewLevelCurves. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00576">576</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff0cb6afe9a3b45be077bab7cdb5e684"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainController::SetZLabel </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo zLabel. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8cpp_source.html#l00546">546</a> del archivo <a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="a93538fa18b9a27f3a31aec97b115c32d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_algorithm_sequence_controller.html">AlgorithmSequenceController</a> MainController::algController</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Controlador con acceso a las clases entidad con la lista de algoritmos. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00059">59</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a42332a8acfa68b07914c564936bd721f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::applyAlgorithmsLive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si se debe aplicar la lista de algoritmos en el modo "en vivo". </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00102">102</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abdbbe8e29eff76f8c6d4f65929b5c388"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::autoScaleAxes</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si se debe autoescalar los ejes de lso gráficos en la ventana principal. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00095">95</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1025d14979f37123a0d55bc84d244ebf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::autoScaleAxesLive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si la opción de autoescalado de ejes en el modo "en vivo" se está activada. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00103">103</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad9f642416c7aecbe4186894c702d886f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera_controller.html">CameraController</a>* MainController::cameraController</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al controlador de la cámara. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00053">53</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a748b76ac0f8371813be5ea7d3b42114e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainController::currentProject</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ruta del proyecto actual abierto. La cadena estará vacía si no hay ninguno abierto. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00056">56</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a40685e64d05e7ea5eb4dea8606f22d7a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::currentProjectSaved</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si el projecto abierto actual está guardado. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00057">57</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ca30be396a7ee67cdc2532579db9526"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect MainController::fullImageFourierMask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Máscara, respecto de la esquina superior izquierda de la imagen de la referencia, para aplicar a la transformada de fourier de la referencia. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00092">92</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3773bdd6fa6667adf0936482f8a2a5a1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QRect MainController::fullImageMask</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Máscara, respecto de la esquina superior izquierda de la imagen de la referencia, para aplicar a la referencia antes de realizar la transformada de fourier. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00091">91</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3af06399240e0a3d44aa52b8eae82a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainController::fullImageSizeX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ancho efectivo que tendrá el objeto <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a>. Será un número potencia de 2. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00066">66</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f587fe22b71c6cc6180c8414815ad7d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainController::fullImageSizeY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Alto efectivo que tendrá el objeto <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a>. Será un número potencia de 2. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00067">67</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8655f2cb57df1fcdfb67921a15bd5b5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_abstract_image_factory.html">AbstractImageFactory</a>* MainController::imageFactory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a la factoría concreta que se esté usando para crear o duplicar los objetos del tipo <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a>, <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> o <a class="el" href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase.">PhaseLine</a>. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00071">71</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3a2f2b3114673bb721741aa3269f33a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_image_sequence_controller.html">ImageSequenceController</a> MainController::imgController</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Controlador con acceso a las clases entidad con la lista de imágenes. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00060">60</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3ceaa87e0596285a6d3b9465c4445ec0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::liveFPS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica el número de imágenes que se desean procesar por segundo en el modo "en vivo". </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00105">105</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae08fd14074dca0d10ab7411e338ecced"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::maxZValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Máximo valor para el escalado no automático de la variable dependiente. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00097">97</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a383117e847a453a0232e0ec816149612"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::minZValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Mínimo valor para el escalado no automático de la variable dependiente. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00096">96</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa81b63a0e7402e09f606fe5e1c16cab4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPoint MainController::originPoint</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Punto, respecto de la esquina superior izquierda de la imagen de la referencia, donde se encuentra el origen de coordenadas. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00090">90</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aad36e7654cbb695f0139977b60569fa0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::pixelsMmX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Número de píxeles por milímetro en el eje horizontal. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00068">68</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a898b9cb14419eacf5689edf795d2eec3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::pixelsMmY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Número de píxeles por milímetro en el eje vertical. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00069">69</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc068f312e03f898bd4e389908f56606"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_program_settings.html">ProgramSettings</a> MainController::programSettings</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Objeto que contiene las preferencias del programa. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00055">55</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9cdb24dfd643f18117c82c0e039704d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_full_image.html">FullImage</a>* MainController::refFullImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al objeto tipo <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> de la referencia. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00073">73</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93ea1095da007ced176bfcb055bed683"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_full_image.html">FullImage</a>* MainController::refFullImageFourier</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al objeto tipo <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> de la transformada de fourier de la referencia. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00076">76</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2cc0abc75091df773dcebd1e11cd6b6f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage* MainController::refFullImageFourierAbsolute</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al objeto tipo QImage con la imagen del valor absoluto de la transformada de fourier. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00080">80</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f961ca5a4246674721b53f6f3799e13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::refFullImageFourierAbsoluteUpdated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag que indica si el objeto refFullImageFourierAbsolute está actualizado (Verdadero) o si por el contrario está obsoleto (Falso). </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00081">81</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f3fc39e52b2aa5b57ae18d03dcd2399"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::refFullImageFourierUpdated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag que indica si el objeto refFullImageFourier está actualizado (Verdadero) o si por el contrario está obsoleto (Falso). </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00077">77</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4c006da1ab9cabac102a2a559b3ee983"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_full_image.html">FullImage</a>* MainController::refFullImageInverse</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al objeto tipo <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> de la transformada inversa de fourier de la referencia después de haber aplicado las máscaras. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00083">83</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af931742a45e6d8312f28b0d2ef78e3a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::refFullImageInverseUpdated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag que indica si el objeto refFullImageInverse está actualizado (Verdadero) o si por el contrario está obsoleto (Falso). </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00084">84</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaea95a2ffaf2bfe25d287ba634b080c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::refFullImageUpdated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag que indica si el objeto refFullImage está actualizado (Verdadero) o si por el contrario está obsoleto (Falso). </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00074">74</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ae195b2d27f1d9ba1c92eae6ab78256"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_phase_image.html">PhaseImage</a>* MainController::refPhaseImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al objeto tipo <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> de la referecia ya recortada, con la fase sin escanear (0-2Pi). </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00086">86</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4d672e75406a29fa83959901cb80b8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_phase_image.html">PhaseImage</a>* MainController::refPhaseImageScanned</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al objeto tipo <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> de la referecia ya recortada, con la fase escaneada. Este objeto es el se usará para procesar las imágenes tomadas. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00087">87</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2354e7ab5a6c03e9aa5da6e3db5a087"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::refPhaseImageUpdated</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Flag que indica si los objetos refPhaseImage y refPhaseImageScanned estás actualizados (Verdadero) o si por el contrario está obsoletos (Falso). </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00088">88</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afdc8679e38b995c3a96954b0e1ee8663"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage* MainController::refSourceQImage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a un objeto que contiene la imagen original de la referencia. Será NULL si no se ha tomado ninguna. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00062">62</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab5b407446ad3685308034cc062bf1e31"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::sequenceFPS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Imágenes por segundo que se deben mostrar en el modo secuencia. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00098">98</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a794c6a8248e0a77a35d8fe0d387fb65e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::sourceHMirror</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atributo que indica si se debe aplicar una transformación de espejo horizontalmente a la imagen de la referencia antes de procesarla. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00063">63</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b8329cc3fcfa9a00fc81580ec6260b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainController::sourceRotation</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atributo que indica si se debe aplicar una rotación de 90*sourceRotation grados en sentido horario a la imagen de la referencia. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00065">65</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a215692c93b0df4246cf9fd64a99e5dec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::sourceVMirror</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atributo que indica si se debe aplicar una transformación de espejo verticalmente a la imagen de la referencia antes de procesarla. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00064">64</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acffb3a57574fb5bab0a071ce4412d1f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::threshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica el valor de corte para el gráfico paramétrico. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00100">100</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4326500beda9237487677e9ed602a573"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainController::thresholdLive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica el valor de corte para el gráfico paramétrico en el modo "en vivo". </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00104">104</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9325cab7db8a1a42ace8796399fbb27a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainController::viewLevelCurves</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si en el espectrograma se deben mostrar las curvas de nivel. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00099">99</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a853ef79a4f95ca75cf0bf4476d4e00fa"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString MainController::zLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Etiqueta para la el eje de la variable dependiente. </p>
+
+<p>Definición en la línea <a class="el" href="maincontroller_8h_source.html#l00094">94</a> del archivo <a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="maincontroller_8h_source.html">maincontroller.h</a></li>
+<li>sources/<a class="el" href="maincontroller_8cpp_source.html">maincontroller.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_main_controller.html">MainController</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

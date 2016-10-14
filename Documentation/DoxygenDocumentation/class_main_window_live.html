@@ -1,0 +1,1300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase MainWindowLive</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_main_window_live.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Slots públicos</a> &#124;
+<a href="#signals">Señales</a> &#124;
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_main_window_live-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase MainWindowLive</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase para el control de la ventana del modo "en vivo" del programa.  
+ <a href="class_main_window_live.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-slots"></a>
+Slots públicos</h2></td></tr>
+<tr class="memitem:a4e65e57c397f27098b77ca8327535798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a4e65e57c397f27098b77ca8327535798">Play</a> ()</td></tr>
+<tr class="memitem:aef44170b5d7654c2d9c4bacd510b9156"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#aef44170b5d7654c2d9c4bacd510b9156">Stop</a> ()</td></tr>
+<tr class="memitem:a178f7731f4f527297fc07f2ad21eb6f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a178f7731f4f527297fc07f2ad21eb6f2">Record</a> ()</td></tr>
+<tr class="memitem:ae43f12967ed549faaba631e0d4805c2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#ae43f12967ed549faaba631e0d4805c2b">UpdateGraph</a> ()</td></tr>
+<tr class="memitem:a72640245364254548737f41dfd9f1062"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a72640245364254548737f41dfd9f1062">PrintGraph</a> (<a class="el" href="class_data2_d.html">Data2D</a> *data2d, bool releaseSem=true)</td></tr>
+<tr class="memitem:a5915cf32a0c5fdbe0c485fefce9a857a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a5915cf32a0c5fdbe0c485fefce9a857a">PrintGraph</a> (<a class="el" href="class_data1_d.html">Data1D</a> *data1d, bool releaseSem=true)</td></tr>
+<tr class="memitem:ae2ad53d5679bffc0c1fbef59f2ed3afe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#ae2ad53d5679bffc0c1fbef59f2ed3afe">RenewReference</a> ()</td></tr>
+<tr class="memitem:a56d646d11d3e9d358765e4913617f566"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a56d646d11d3e9d358765e4913617f566">SpinFPSChanged</a> (double value)</td></tr>
+<tr class="memitem:ad0009d65701e99e79759364d1c083114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#ad0009d65701e99e79759364d1c083114">UpdateControls</a> ()</td></tr>
+<tr class="memitem:aebb155652686096435ea49c46248f9c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#aebb155652686096435ea49c46248f9c2">UpdateAxis</a> ()</td></tr>
+<tr class="memitem:a9650a31dae71369d3a02937b4e4b6466"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a9650a31dae71369d3a02937b4e4b6466">RestartZAxis</a> ()</td></tr>
+<tr class="memitem:ae1a7bf5db985a85cb78aa9eddf129bb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#ae1a7bf5db985a85cb78aa9eddf129bb6">SpectrogramClicked</a> ()</td></tr>
+<tr class="memitem:a106a0f67bea54ed9b5e21cd92e5209c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a106a0f67bea54ed9b5e21cd92e5209c4">Surface3DClicked</a> ()</td></tr>
+<tr class="memitem:a0032bce004b98b104d647d8693616487"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a0032bce004b98b104d647d8693616487">ParametricClicked</a> ()</td></tr>
+<tr class="memitem:ae2d0909462d004e5da4be4e98e0d351d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#ae2d0909462d004e5da4be4e98e0d351d">LineClicked</a> ()</td></tr>
+<tr class="memitem:af501f90146fb2c02f204eb518d3b5dc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#af501f90146fb2c02f204eb518d3b5dc1">GraphChanged</a> ()</td></tr>
+<tr class="memitem:a8ca5bb7cbb4185af76f5de4e893519c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a8ca5bb7cbb4185af76f5de4e893519c5">ThresholdChanged</a> ()</td></tr>
+<tr class="memitem:af86bcf3d3fae1f43ffa0fdd3a8e7fbc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#af86bcf3d3fae1f43ffa0fdd3a8e7fbc6">ApplyAlgorithmsChanged</a> ()</td></tr>
+<tr class="memitem:a1664b79178ac093afa74b90f0309ee4c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a1664b79178ac093afa74b90f0309ee4c">AutoUpdateAxisChanged</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="signals"></a>
+Señales</h2></td></tr>
+<tr class="memitem:a6e74cd1d927ce6dacd79f86460683c89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a6e74cd1d927ce6dacd79f86460683c89">Closed</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a9b96d00a443ffc8a2a32cf65cfb4c0c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a9b96d00a443ffc8a2a32cf65cfb4c0c6">MainWindowLive</a> (QWidget *parent, <a class="el" href="class_main_controller.html">MainController</a> *mainController_in)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:ab3f704982ab2b816e48b48b89d4ec7bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#ab3f704982ab2b816e48b48b89d4ec7bb">UpdateStatusBar</a> (float fps=0)</td></tr>
+<tr class="memitem:a76751ffedc9eb420cd05bd0c4a457027"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a76751ffedc9eb420cd05bd0c4a457027">showEvent</a> (QShowEvent *event)</td></tr>
+<tr class="memitem:afc0603f731f1fd461e7f7b3e20d4d13c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#afc0603f731f1fd461e7f7b3e20d4d13c">closeEvent</a> (QCloseEvent *event)</td></tr>
+<tr class="memitem:a8197752aa67ed58f0010eac5ad5299c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a8197752aa67ed58f0010eac5ad5299c1">ShowSelectedGraph</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a753ccef28c82f4408b1c3faaecb2ad98"><td class="memItemLeft" align="right" valign="top">Ui::MainWindowLive *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a753ccef28c82f4408b1c3faaecb2ad98">ui</a></td></tr>
+<tr class="memitem:ae93cfafe7fa0bbf86697c5ef2e4dcb06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_main_controller.html">MainController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#ae93cfafe7fa0bbf86697c5ef2e4dcb06">mainController</a></td></tr>
+<tr class="memitem:a286a86d3b2ba0742cf4aa6a6eaa4eb5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a286a86d3b2ba0742cf4aa6a6eaa4eb5a">currentGraph</a></td></tr>
+<tr class="memitem:a067d6fd7a6eeb94e704880a54c0d3e35"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a067d6fd7a6eeb94e704880a54c0d3e35">refreshTimer</a></td></tr>
+<tr class="memitem:a711a0b815941b6d0a4b7d26402153f51"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a711a0b815941b6d0a4b7d26402153f51">refreshTimeMs</a></td></tr>
+<tr class="memitem:a1f44961728931b2bd3f18cbc8de95fbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a1f44961728931b2bd3f18cbc8de95fbf">playing</a></td></tr>
+<tr class="memitem:ada98f716a4d9c653017440c33e42b380"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#ada98f716a4d9c653017440c33e42b380">recording</a></td></tr>
+<tr class="memitem:a8d225af75e4f9da26d6a12411bd6ebb0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a8d225af75e4f9da26d6a12411bd6ebb0">applyAlgorithms</a></td></tr>
+<tr class="memitem:a6d42468aa42ac2af4081735806b234f3"><td class="memItemLeft" align="right" valign="top">QSemaphore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a6d42468aa42ac2af4081735806b234f3">semReadyToProduce</a></td></tr>
+<tr class="memitem:ab684270e2d401490011b1d37abc2ff8d"><td class="memItemLeft" align="right" valign="top">QLabel *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#ab684270e2d401490011b1d37abc2ff8d">statusLabel</a></td></tr>
+<tr class="memitem:a2118dccee61b726f0a8327e68b7c5b26"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a2118dccee61b726f0a8327e68b7c5b26">paramThreshold</a></td></tr>
+<tr class="memitem:a19816fa4e20a087024448e1e53840e5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data1_d.html">Data1D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a19816fa4e20a087024448e1e53840e5c">lastData1D</a></td></tr>
+<tr class="memitem:a41658e6b319f1b5104f475af53c0249b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a41658e6b319f1b5104f475af53c0249b">lastData2D</a></td></tr>
+<tr class="memitem:abaa2faf0ab1486a994c0b8f94ea01ce1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#abaa2faf0ab1486a994c0b8f94ea01ce1">autoUpdateAxis</a></td></tr>
+<tr class="memitem:aaec5dbc2cb640f28f8a1851a4f8c0fff"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#aaec5dbc2cb640f28f8a1851a4f8c0fff">minZValue</a></td></tr>
+<tr class="memitem:a70c84322c6b97fcc32fc2a93c139bf6d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window_live.html#a70c84322c6b97fcc32fc2a93c139bf6d">maxZValue</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase para el control de la ventana del modo "en vivo" del programa. </p>
+<p>Esta clase actúa de nexo entre el controlador principal y la clase que contiene los widgets: Ui::MainWindowLive. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00052">52</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a9b96d00a443ffc8a2a32cf65cfb4c0c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MainWindowLive::MainWindowLive </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_main_controller.html">MainController</a> *&#160;</td>
+          <td class="paramname"><em>mainController_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Widget padre. </td></tr>
+    <tr><td class="paramname">mainController_in</td><td>Referencia al controlador principal. Destructor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00014">14</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="af86bcf3d3fae1f43ffa0fdd3a8e7fbc6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::ApplyAlgorithmsChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cada vez que cambia la opción de aplicar los algoritmos a la imagen procesada. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00431">431</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1664b79178ac093afa74b90f0309ee4c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::AutoUpdateAxisChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando se modifica la casilla de autoescalado de ejes. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00472">472</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e74cd1d927ce6dacd79f86460683c89"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::Closed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Señal enviada cuando se cierra la ventana, para que la madre sepa que se ha cerrado. </p>
+
+</div>
+</div>
+<a class="anchor" id="afc0603f731f1fd461e7f7b3e20d4d13c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::closeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QCloseEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Evento que se reimplementa para saber cuando la ventana se ha cerrado y poder enviar señales y parar la toma de imágenes. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Datos del evento. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00507">507</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af501f90146fb2c02f204eb518d3b5dc1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::GraphChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cada vez que ha cambiado el gráfico seleccionado, para actualizar los botones. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00373">373</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2d0909462d004e5da4be4e98e0d351d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::LineClicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cada vez que se selecciona la vist de la línea. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00368">368</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0032bce004b98b104d647d8693616487"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::ParametricClicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cada vez que se selecciona la vista paramétrica. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00363">363</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e65e57c397f27098b77ca8327535798"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::Play </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado en respuesta a la solicitud de comienzo de la muestra de imágenes. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00293">293</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72640245364254548737f41dfd9f1062"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::PrintGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td>
+          <td class="paramname"><em>data2d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>releaseSem</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado por el hilo de cálculo cuando los datos 2d se han acabado de calcular y por tanto se pueden representar. O bien en general para representar unos datos 2d en la gráfica seleccionada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data2d</td><td>Datos para representar. </td></tr>
+    <tr><td class="paramname">releaseSem</td><td>Si es verdadero, libera el semáforo de producción. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00156">156</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5915cf32a0c5fdbe0c485fefce9a857a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::PrintGraph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_data1_d.html">Data1D</a> *&#160;</td>
+          <td class="paramname"><em>data1d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>releaseSem</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado por el hilo de cálculo cuando los datos 1d se han acabado de calcular y por tanto se pueden representar. O bien en general para representar unos datos 1d en la gráfica seleccionada. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data1d</td><td>Datos para representar. </td></tr>
+    <tr><td class="paramname">releaseSem</td><td>Si es verdadero, libera el semáforo de producción. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00228">228</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a178f7731f4f527297fc07f2ad21eb6f2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::Record </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado en respuesta a la solicitud de comienzo o finalización del grabado de los datos. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00313">313</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2ad53d5679bffc0c1fbef59f2ed3afe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::RenewReference </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando se solicita una renovación instantánea de la referencia con la siguiente imagen tomada. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00094">94</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9650a31dae71369d3a02937b4e4b6466"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::RestartZAxis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cada vez que se quiera reiniciar la escala del eje Z. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00477">477</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a76751ffedc9eb420cd05bd0c4a457027"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::showEvent </td>
+          <td>(</td>
+          <td class="paramtype">QShowEvent *&#160;</td>
+          <td class="paramname"><em>event</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Evento que se reimplementa para poder actualizar el estado de los controles al mostrar la ventana. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Datos del evento. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00486">486</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8197752aa67ed58f0010eac5ad5299c1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::ShowSelectedGraph </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que se encarga de que el gráfico visible sea el que está seleccionado. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00408">408</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae1a7bf5db985a85cb78aa9eddf129bb6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::SpectrogramClicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cada vez que se selecciona la vista del espectrograma. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00353">353</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a56d646d11d3e9d358765e4913617f566"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::SpinFPSChanged </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor de las imágenes por segundo deseadas ha cambiado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Nuevo valor para las imágenes por segundo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00098">98</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef44170b5d7654c2d9c4bacd510b9156"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::Stop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado en respuesta a la solicitud de finalización de la muestra de imágenes. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00303">303</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a106a0f67bea54ed9b5e21cd92e5209c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::Surface3DClicked </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cada vez que se selecciona la vista de la superficie 3D. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00358">358</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ca5bb7cbb4185af76f5de4e893519c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::ThresholdChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cada vez que cambia el parámetro de la representación paramétrica. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00417">417</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aebb155652686096435ea49c46248f9c2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::UpdateAxis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cada vez que se desea que se actualicen los ejes del gráfico con los datos de la siguiente imagen tomada. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00453">453</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad0009d65701e99e79759364d1c083114"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::UpdateControls </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado para actualizar el estado de los botones de reproducir, parar y grabar. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00330">330</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae43f12967ed549faaba631e0d4805c2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::UpdateGraph </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado para actualizar la imagen. Es el que va conectado al temporizador. Se encargará de lanza un hilo independiente que tome y calcule los datos sin mantener la interfaz bloqueada. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00106">106</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3f704982ab2b816e48b48b89d4ec7bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainWindowLive::UpdateStatusBar </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fps</em> = <code>0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que actualiza la barra de estado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fps</td><td>Valor para las imágenes por segundo que debe mostrar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8cpp_source.html#l00437">437</a> del archivo <a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="a8d225af75e4f9da26d6a12411bd6ebb0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindowLive::applyAlgorithms</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Si es verdadero, aplica los algoritmos de la lista a la imagen obtenida. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00074">74</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abaa2faf0ab1486a994c0b8f94ea01ce1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindowLive::autoUpdateAxis</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si los ejes se deben actualizar automáticamente. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00080">80</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a286a86d3b2ba0742cf4aa6a6eaa4eb5a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int MainWindowLive::currentGraph</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indíca cuál de los cuatro gráficos (0-3) está visible actualmente. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00067">67</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19816fa4e20a087024448e1e53840e5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data1_d.html">Data1D</a>* MainWindowLive::lastData1D</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Último dato unidimensional representado. Si se quiere mostrar y está a NULL, se mostrará una pantalla en blanco. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00078">78</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41658e6b319f1b5104f475af53c0249b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data2_d.html">Data2D</a>* MainWindowLive::lastData2D</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Último dato bidimensional representado. Si se quiere mostrar y está a NULL, se mostrará una pantalla en blanco. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00079">79</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae93cfafe7fa0bbf86697c5ef2e4dcb06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_main_controller.html">MainController</a>* MainWindowLive::mainController</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al controlador principal. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00066">66</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a70c84322c6b97fcc32fc2a93c139bf6d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainWindowLive::maxZValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Valor máximo de la variable independiente para los gráficos. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00082">82</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaec5dbc2cb640f28f8a1851a4f8c0fff"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainWindowLive::minZValue</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Valor mínimo de la variable independiente para los gráficos. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00081">81</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2118dccee61b726f0a8327e68b7c5b26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainWindowLive::paramThreshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parámetro para el gráfico paramétrico. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00077">77</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f44961728931b2bd3f18cbc8de95fbf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindowLive::playing</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si el modo live está funcionando. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00072">72</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ada98f716a4d9c653017440c33e42b380"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainWindowLive::recording</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si está grabando los datos que muestra. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00073">73</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a711a0b815941b6d0a4b7d26402153f51"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float MainWindowLive::refreshTimeMs</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tiempo de refresco entre toma y y toma de imagen. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00070">70</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a067d6fd7a6eeb94e704880a54c0d3e35"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer* MainWindowLive::refreshTimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Temporizador para el refresco de la imagen. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00069">69</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d42468aa42ac2af4081735806b234f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSemaphore* MainWindowLive::semReadyToProduce</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Semáforo para que nunca se esté calculando más de un dato a la vez. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00075">75</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab684270e2d401490011b1d37abc2ff8d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLabel* MainWindowLive::statusLabel</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Etiqueta para la barra de estado. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00076">76</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a753ccef28c82f4408b1c3faaecb2ad98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::MainWindowLive* MainWindowLive::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a la clase que contiene la interfaz gráfica. Esta clase es generada automáticamente por Qt Designer. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindowlive_8h_source.html#l00065">65</a> del archivo <a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a></li>
+<li>sources/<a class="el" href="mainwindowlive_8cpp_source.html">mainwindowlive.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_main_window_live.html">MainWindowLive</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

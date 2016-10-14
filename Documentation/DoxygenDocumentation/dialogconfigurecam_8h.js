@@ -1,0 +1,25 @@
+var dialogconfigurecam_8h =
+[
+    [ "DialogConfigureCam", "class_dialog_configure_cam.html", "class_dialog_configure_cam" ],
+    [ "CC_AUTOREFRESH_LABEL", "dialogconfigurecam_8h.html#a3ab128db4a6f8a2238df41ab4b250c0c", null ],
+    [ "CC_BLUEGAIN_LABEL", "dialogconfigurecam_8h.html#a6d402bca4a6bfa22b5fecd0cef0d38b8", null ],
+    [ "CC_CAPTION", "dialogconfigurecam_8h.html#a0db97122119a814b55a14fe8b16e21b6", null ],
+    [ "CC_ERROR_LABEL", "dialogconfigurecam_8h.html#a3fbd969e5a4301d0525180ebacf4108d", null ],
+    [ "CC_EXPOSURE_LABEL", "dialogconfigurecam_8h.html#a2f40a587fc6ed9a346eb879d241cd69e", null ],
+    [ "CC_EXPOSURE_UNITS", "dialogconfigurecam_8h.html#a37c13e95e6a14d54b5506375618d514c", null ],
+    [ "CC_FAILLOAD_LABEL", "dialogconfigurecam_8h.html#a0e308d3b007a4bd497a8bcc9c67db126", null ],
+    [ "CC_FAILSAVE_LABEL", "dialogconfigurecam_8h.html#ae490e186ac6ffd61aed829f04cd208ef", null ],
+    [ "CC_FRAMERATE_LABEL", "dialogconfigurecam_8h.html#a752cbd9cfd5668b18448b292502bd46b", null ],
+    [ "CC_FRAMERATE_UNITS", "dialogconfigurecam_8h.html#ac8edca082800c6c9d28c9f03d7e194c2", null ],
+    [ "CC_GREENGAIN_LABEL", "dialogconfigurecam_8h.html#a69573406c77a2b43dadfd37b4ef2548d", null ],
+    [ "CC_HEIGHT_LABEL", "dialogconfigurecam_8h.html#a9e3a31096f2291c1a09afef17e852085", null ],
+    [ "CC_LOAD_LABEL", "dialogconfigurecam_8h.html#a42e53a5426d7f7aaf2b8742c2faa1bd7", null ],
+    [ "CC_MASTERGAIN_LABEL", "dialogconfigurecam_8h.html#a0aab8e51075afcb4cb9313ff73175f34", null ],
+    [ "CC_PIXELCLOCK_LABEL", "dialogconfigurecam_8h.html#a73cf24dcedf81fc90e5b38c0ed1b3f8d", null ],
+    [ "CC_PIXELCLOCK_UNITS", "dialogconfigurecam_8h.html#a2fe4596659c40ba3d2ead0bf33d15768", null ],
+    [ "CC_REDGAIN_LABEL", "dialogconfigurecam_8h.html#a423b4dee7a3677bb56480b31b6d50d0b", null ],
+    [ "CC_REFRESH_LABEL", "dialogconfigurecam_8h.html#af28dce784e29e7bb052760cfc754672b", null ],
+    [ "CC_RESET_LABEL", "dialogconfigurecam_8h.html#ab6272b8bdb916c1b9093aa8bca1deae1", null ],
+    [ "CC_SAVE_LABEL", "dialogconfigurecam_8h.html#a45342e20eac52459ac25c7fcf1eb4053", null ],
+    [ "CC_WIDTH_LABEL", "dialogconfigurecam_8h.html#a5a43ba8d16274bdc3a1c7d53de6684d3", null ]
+];

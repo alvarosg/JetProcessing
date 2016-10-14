@@ -1,0 +1,851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase CameraParameters</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_camera_parameters.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_camera_parameters-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase CameraParameters</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que contiene un set de parámetros para configuración de la cámara.  
+ <a href="class_camera_parameters.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:adf73697f1136028ab13ecf8a0b878f22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#adf73697f1136028ab13ecf8a0b878f22">CameraParameters</a> ()</td></tr>
+<tr class="memitem:a10ec2791efbd209e9afa91d63e44d341"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a10ec2791efbd209e9afa91d63e44d341">SetSizeX</a> (int value)</td></tr>
+<tr class="memitem:ad5c64ec26e169340c2b3b372ac880ad3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#ad5c64ec26e169340c2b3b372ac880ad3">SetSizeY</a> (int value)</td></tr>
+<tr class="memitem:a4a92f50f0156ab49f80ca46c39d9982f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a4a92f50f0156ab49f80ca46c39d9982f">SetPixelClock</a> (int value)</td></tr>
+<tr class="memitem:afb762647091f6eb620ccd9a3a75eb446"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#afb762647091f6eb620ccd9a3a75eb446">SetFrameRate</a> (double value)</td></tr>
+<tr class="memitem:ad40741c491483e0eca44416011918fe5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#ad40741c491483e0eca44416011918fe5">SetExposure</a> (double value)</td></tr>
+<tr class="memitem:a279fd656998c24fd70918476b65ef267"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a279fd656998c24fd70918476b65ef267">SetGainMaster</a> (int value)</td></tr>
+<tr class="memitem:a6f9e8b88c0f58a8c70c90b558fa6e756"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a6f9e8b88c0f58a8c70c90b558fa6e756">SetGainRed</a> (int value)</td></tr>
+<tr class="memitem:a77bf8b2f0814c0d8a713f118ef5cf4fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a77bf8b2f0814c0d8a713f118ef5cf4fe">SetGainGreen</a> (int value)</td></tr>
+<tr class="memitem:af844ff003924da7365df93c00c9a0b51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#af844ff003924da7365df93c00c9a0b51">SetGainBlue</a> (int value)</td></tr>
+<tr class="memitem:a7980836d68bb28db79ae10138c4261ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a7980836d68bb28db79ae10138c4261ab">GetSizeX</a> ()</td></tr>
+<tr class="memitem:a57eb5cb7bdd4c6b4c867faf9327fc2e2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a57eb5cb7bdd4c6b4c867faf9327fc2e2">GetSizeY</a> ()</td></tr>
+<tr class="memitem:a0896ec59cb69fe6003f5ad9be9a33a20"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a0896ec59cb69fe6003f5ad9be9a33a20">GetPixelClock</a> ()</td></tr>
+<tr class="memitem:ac75fbb48f417a0a0352d5e7745b7ccc3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#ac75fbb48f417a0a0352d5e7745b7ccc3">GetFrameRate</a> ()</td></tr>
+<tr class="memitem:a8fbecd18b361824523b452d599d6a9c9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a8fbecd18b361824523b452d599d6a9c9">GetExposure</a> ()</td></tr>
+<tr class="memitem:a2182de6e23bfc9e97af61b1fd3fa5e4b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a2182de6e23bfc9e97af61b1fd3fa5e4b">GetGainMaster</a> ()</td></tr>
+<tr class="memitem:afbafb4de59723199a3d006e4eb856a8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#afbafb4de59723199a3d006e4eb856a8f">GetGainRed</a> ()</td></tr>
+<tr class="memitem:af23e7ea4ea3198dbdc4047914724c975"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#af23e7ea4ea3198dbdc4047914724c975">GetGainGreen</a> ()</td></tr>
+<tr class="memitem:a5664d7262f5456aa14acf1ac7328952d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a5664d7262f5456aa14acf1ac7328952d">GetGainBlue</a> ()</td></tr>
+<tr class="memitem:addf89a86caece9b6971709b8515a22ca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#addf89a86caece9b6971709b8515a22ca">LoadFromFile</a> (QString filePath)</td></tr>
+<tr class="memitem:a83d9866f8afbc7068ccce5bb6879c24e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a83d9866f8afbc7068ccce5bb6879c24e">SaveToFile</a> (QString filePath)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:adaf8be77bfd384c171b4766cf73ccac7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#adaf8be77bfd384c171b4766cf73ccac7">sizeX</a></td></tr>
+<tr class="memitem:a7de74d8e586f6913119db9397f2ad592"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a7de74d8e586f6913119db9397f2ad592">sizeY</a></td></tr>
+<tr class="memitem:a9ae5440f80a54ce334c13787ac065fa5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a9ae5440f80a54ce334c13787ac065fa5">pixelClock</a></td></tr>
+<tr class="memitem:a36f1746ad82c02c1ed367c4e3d5f1af4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a36f1746ad82c02c1ed367c4e3d5f1af4">frameRate</a></td></tr>
+<tr class="memitem:a46ca8c3108f9cc747e75cb798f3ebe86"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a46ca8c3108f9cc747e75cb798f3ebe86">exposureTime</a></td></tr>
+<tr class="memitem:a4787b11b16d07ce3521e5416b127ab2b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a4787b11b16d07ce3521e5416b127ab2b">gainM</a></td></tr>
+<tr class="memitem:a6ada488e478add89f62bd0c8aec9be5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#a6ada488e478add89f62bd0c8aec9be5c">gainR</a></td></tr>
+<tr class="memitem:ad069934fc130d878ebe32746a1b64d79"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#ad069934fc130d878ebe32746a1b64d79">gainG</a></td></tr>
+<tr class="memitem:ab7c83124785171a29b12d3b2bc58f7c0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_parameters.html#ab7c83124785171a29b12d3b2bc58f7c0">gainB</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase que contiene un set de parámetros para configuración de la cámara. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8h_source.html#l00023">23</a> del archivo <a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="adf73697f1136028ab13ecf8a0b878f22"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CameraParameters::CameraParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00013">13</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a8fbecd18b361824523b452d599d6a9c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraParameters::GetExposure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo exposureTime. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00077">77</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac75fbb48f417a0a0352d5e7745b7ccc3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraParameters::GetFrameRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo framRate. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00073">73</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5664d7262f5456aa14acf1ac7328952d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::GetGainBlue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo gainB. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00092">92</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af23e7ea4ea3198dbdc4047914724c975"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::GetGainGreen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo gainG. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00088">88</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2182de6e23bfc9e97af61b1fd3fa5e4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::GetGainMaster </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo gainM. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00081">81</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afbafb4de59723199a3d006e4eb856a8f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::GetGainRed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo gainR. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00085">85</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0896ec59cb69fe6003f5ad9be9a33a20"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::GetPixelClock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo pixelClock. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00069">69</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7980836d68bb28db79ae10138c4261ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::GetSizeX </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo sizeX. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00061">61</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a57eb5cb7bdd4c6b4c867faf9327fc2e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::GetSizeY </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo sizeY. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00065">65</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="addf89a86caece9b6971709b8515a22ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CameraParameters::LoadFromFile </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carga los parámetros en un fichero. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero de donde se deben leer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se cargaron correctamente todos los parámetros. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00096">96</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a83d9866f8afbc7068ccce5bb6879c24e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CameraParameters::SaveToFile </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>filePath</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda los parámetros en un fichero. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>Ruta y nombre del fichero donde se deben guardar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se guardó corectamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00119">119</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad40741c491483e0eca44416011918fe5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraParameters::SetExposure </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo exposureTime. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00041">41</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb762647091f6eb620ccd9a3a75eb446"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraParameters::SetFrameRate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo frameRate. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00037">37</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af844ff003924da7365df93c00c9a0b51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraParameters::SetGainBlue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo gainB. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00057">57</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77bf8b2f0814c0d8a713f118ef5cf4fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraParameters::SetGainGreen </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo gainG. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00053">53</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a279fd656998c24fd70918476b65ef267"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraParameters::SetGainMaster </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo gainM. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00045">45</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f9e8b88c0f58a8c70c90b558fa6e756"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraParameters::SetGainRed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo gainR. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00049">49</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a92f50f0156ab49f80ca46c39d9982f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraParameters::SetPixelClock </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo pixelClock. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00033">33</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a10ec2791efbd209e9afa91d63e44d341"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraParameters::SetSizeX </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo sizeX. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00025">25</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad5c64ec26e169340c2b3b372ac880ad3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraParameters::SetSizeY </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo sizeY. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8cpp_source.html#l00029">29</a> del archivo <a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="a46ca8c3108f9cc747e75cb798f3ebe86"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraParameters::exposureTime</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tiempo de exposición en milisegundos. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8h_source.html#l00030">30</a> del archivo <a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36f1746ad82c02c1ed367c4e3d5f1af4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraParameters::frameRate</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tasa de toma de imágenes, en imágenes por segundo. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8h_source.html#l00029">29</a> del archivo <a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab7c83124785171a29b12d3b2bc58f7c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::gainB</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ganancia de azul. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8h_source.html#l00034">34</a> del archivo <a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad069934fc130d878ebe32746a1b64d79"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::gainG</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ganancia de verde. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8h_source.html#l00033">33</a> del archivo <a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4787b11b16d07ce3521e5416b127ab2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::gainM</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ganancia máster. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8h_source.html#l00031">31</a> del archivo <a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ada488e478add89f62bd0c8aec9be5c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::gainR</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ganancia de rojo. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8h_source.html#l00032">32</a> del archivo <a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ae5440f80a54ce334c13787ac065fa5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::pixelClock</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Reloj de pixel, en megahercios. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8h_source.html#l00028">28</a> del archivo <a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adaf8be77bfd384c171b4766cf73ccac7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::sizeX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Ancho en píxeles de la imagen a tomar. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8h_source.html#l00026">26</a> del archivo <a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7de74d8e586f6913119db9397f2ad592"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraParameters::sizeY</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Alto en píxeles de la imagen a tomar. </p>
+
+<p>Definición en la línea <a class="el" href="cameraparameters_8h_source.html#l00027">27</a> del archivo <a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="cameraparameters_8h_source.html">cameraparameters.h</a></li>
+<li>sources/<a class="el" href="cameraparameters_8cpp_source.html">cameraparameters.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_camera_parameters.html">CameraParameters</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase Graph1D</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_graph1_d.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_graph1_d-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase Graph1D</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que implementa <a class="el" href="class_plot_data1_d.html" title="Clase abstracta para la representación de una variable dependiente unidimensional usando un objeto de...">PlotData1D</a> usando la biblioteca QwtPlot.  
+ <a href="class_graph1_d.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="graph1d_8h_source.html">graph1d.h</a>&quot;</code></p>
+<div class="dynheader">
+Diagrama de herencias de Graph1D</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_graph1_d.png" usemap="#Graph1D_map" alt=""/>
+  <map id="Graph1D_map" name="Graph1D_map">
+<area href="class_plot_data1_d.html" title="Clase abstracta para la representación de una variable dependiente unidimensional usando un objeto de..." alt="PlotData1D" shape="rect" coords="0,56,80,80"/>
+<area href="class_abstract_plot.html" title="Clase abstracta para todo tipo de representaciones gráficas." alt="AbstractPlot" shape="rect" coords="0,0,80,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:aec637c1e83e8180173379881156647b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#aec637c1e83e8180173379881156647b2">Graph1D</a> (QWidget *parent)</td></tr>
+<tr class="memitem:a33274fb0a8691e9068ba3412ca59abb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#a33274fb0a8691e9068ba3412ca59abb8">~Graph1D</a> ()</td></tr>
+<tr class="memitem:a28f58f66c6dfcb0399c4185b3ddccc21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#a28f58f66c6dfcb0399c4185b3ddccc21">ConfigurePlot</a> (<a class="el" href="class_data1_d.html">Data1D</a> *data1d)</td></tr>
+<tr class="memitem:ad54e80d1e859b49b9e110230832d7d2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#ad54e80d1e859b49b9e110230832d7d2a">SetData1D</a> (<a class="el" href="class_data1_d.html">Data1D</a> *data1d)</td></tr>
+<tr class="memitem:a7548626b1f351c9bbf7795520158122d"><td class="memItemLeft" align="right" valign="top">QPixmap *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#a7548626b1f351c9bbf7795520158122d">GetAsQPixmap</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_plot_data1_d"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_plot_data1_d')"><img src="closed.png" alt="-"/>&nbsp;Métodos públicos heredados desde <a class="el" href="class_plot_data1_d.html">PlotData1D</a></td></tr>
+<tr class="memitem:a85ff3a10d926989a672cde770164a227 inherit pub_methods_class_plot_data1_d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_data1_d.html#a85ff3a10d926989a672cde770164a227">PlotData1D</a> ()</td></tr>
+<tr class="memitem:a8158199c0074b381f69176d3910d59ef inherit pub_methods_class_plot_data1_d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_data1_d.html#a8158199c0074b381f69176d3910d59ef">~PlotData1D</a> ()</td></tr>
+<tr class="inherit_header pub_methods_class_abstract_plot"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_abstract_plot')"><img src="closed.png" alt="-"/>&nbsp;Métodos públicos heredados desde <a class="el" href="class_abstract_plot.html">AbstractPlot</a></td></tr>
+<tr class="memitem:ad853f6438fd419b48c254067793e2c55 inherit pub_methods_class_abstract_plot"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_plot.html#ad853f6438fd419b48c254067793e2c55">AbstractPlot</a> ()</td></tr>
+<tr class="memitem:acebb6ce6305c5b0ac2ef352c996fc997 inherit pub_methods_class_abstract_plot"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_plot.html#acebb6ce6305c5b0ac2ef352c996fc997">~AbstractPlot</a> ()</td></tr>
+<tr class="memitem:a0459d4eaf4e648ab10154ef329136ec2 inherit pub_methods_class_abstract_plot"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_plot.html#a0459d4eaf4e648ab10154ef329136ec2">SetMinZValue</a> (float value)</td></tr>
+<tr class="memitem:a562c0429d879bfd6a904b5dc8cb53037 inherit pub_methods_class_abstract_plot"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_plot.html#a562c0429d879bfd6a904b5dc8cb53037">GetMinZValue</a> ()</td></tr>
+<tr class="memitem:ad8c1b797d98f4f7099c769351cb4c9c9 inherit pub_methods_class_abstract_plot"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_plot.html#ad8c1b797d98f4f7099c769351cb4c9c9">SetMaxZValue</a> (float value)</td></tr>
+<tr class="memitem:abf02f7de80fbfc81d77f612bf9754111 inherit pub_methods_class_abstract_plot"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_plot.html#abf02f7de80fbfc81d77f612bf9754111">GetMaxZValue</a> ()</td></tr>
+<tr class="memitem:a16d132fb7f237161151f877f19d849d5 inherit pub_methods_class_abstract_plot"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_plot.html#a16d132fb7f237161151f877f19d849d5">SetMinMaxZValue</a> (float minValue, float maxValue)</td></tr>
+<tr class="memitem:aa15a8b4fc052bba47af806639675bef2 inherit pub_methods_class_abstract_plot"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_plot.html#aa15a8b4fc052bba47af806639675bef2">SetInit</a> (bool value)</td></tr>
+<tr class="memitem:a1d52124408f6c4853b855beff0c58768 inherit pub_methods_class_abstract_plot"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_plot.html#a1d52124408f6c4853b855beff0c58768">GetInit</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:a70265acf8bebc1cad8d6546f3c022b75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#a70265acf8bebc1cad8d6546f3c022b75">Update</a> ()</td></tr>
+<tr class="memitem:ab904de2a8e57cbb75ca674ededd2c6be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#ab904de2a8e57cbb75ca674ededd2c6be">LoadData</a> (<a class="el" href="class_data1_d.html">Data1D</a> *data1d)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a5b4534bf03c3bf30f1a01d6987628d31"><td class="memItemLeft" align="right" valign="top">QwtPlotCurve *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#a5b4534bf03c3bf30f1a01d6987628d31">curve</a></td></tr>
+<tr class="memitem:a2f5966dda12bdefcce631d253dd5f2a3"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#a2f5966dda12bdefcce631d253dd5f2a3">zValues</a></td></tr>
+<tr class="memitem:a3e3a88b40b15827e3af9f6e766e0a6f9"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#a3e3a88b40b15827e3af9f6e766e0a6f9">xValues</a></td></tr>
+<tr class="memitem:adca3d700e486e2853d22b6b2a616923f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#adca3d700e486e2853d22b6b2a616923f">sizeX</a></td></tr>
+<tr class="memitem:add5a552cc9acb7e097aa4fb570106dbf"><td class="memItemLeft" align="right" valign="top">QwtPlotZoomer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#add5a552cc9acb7e097aa4fb570106dbf">zoomer</a> [2]</td></tr>
+<tr class="memitem:a77f3c2ca7c1802c5fbc714ef54884bab"><td class="memItemLeft" align="right" valign="top">QwtPlotPicker *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#a77f3c2ca7c1802c5fbc714ef54884bab">picker</a></td></tr>
+<tr class="memitem:a6bef494aefd003c58bc79b6bdc27a162"><td class="memItemLeft" align="right" valign="top">QwtPlotPanner *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph1_d.html#a6bef494aefd003c58bc79b6bdc27a162">panner</a></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Otros miembros heredados</h2></td></tr>
+<tr class="inherit_header pro_methods_class_abstract_plot"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_abstract_plot')"><img src="closed.png" alt="-"/>&nbsp;Métodos protegidos heredados desde <a class="el" href="class_abstract_plot.html">AbstractPlot</a></td></tr>
+<tr class="memitem:ac3863fbcd11fa19c2450fba7b941a0c6 inherit pro_methods_class_abstract_plot"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_plot.html#ac3863fbcd11fa19c2450fba7b941a0c6">Update</a> ()=0</td></tr>
+<tr class="inherit_header pro_attribs_class_plot_data1_d"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_plot_data1_d')"><img src="closed.png" alt="-"/>&nbsp;Atributos protegidos heredados desde <a class="el" href="class_plot_data1_d.html">PlotData1D</a></td></tr>
+<tr class="memitem:aafce021ad1a033e032621628de1700a9 inherit pro_attribs_class_plot_data1_d"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_data1_d.html#aafce021ad1a033e032621628de1700a9">labelX</a></td></tr>
+<tr class="memitem:ac2e02c4ff673e540c0c4ac9701ca9774 inherit pro_attribs_class_plot_data1_d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_data1_d.html#ac2e02c4ff673e540c0c4ac9701ca9774">minXValue</a></td></tr>
+<tr class="memitem:af991d27739c2d791d826776e0c4840ae inherit pro_attribs_class_plot_data1_d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plot_data1_d.html#af991d27739c2d791d826776e0c4840ae">maxXValue</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase que implementa <a class="el" href="class_plot_data1_d.html" title="Clase abstracta para la representación de una variable dependiente unidimensional usando un objeto de...">PlotData1D</a> usando la biblioteca QwtPlot. </p>
+<p>Representar un clásico gráfico variable indpendiente/variable dependiente.</p>
+<p>Utiliza la biblioteca QwtPlot. </p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8h_source.html#l00060">60</a> del archivo <a class="el" href="graph1d_8h_source.html">graph1d.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="aec637c1e83e8180173379881156647b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Graph1D::Graph1D </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Widget padre. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="graph1d_8cpp_source.html#l00027">27</a> del archivo <a class="el" href="graph1d_8cpp_source.html">graph1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a33274fb0a8691e9068ba3412ca59abb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Graph1D::~Graph1D </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8cpp_source.html#l00166">166</a> del archivo <a class="el" href="graph1d_8cpp_source.html">graph1d.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a28f58f66c6dfcb0399c4185b3ddccc21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Graph1D::ConfigurePlot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_data1_d.html">Data1D</a> *&#160;</td>
+          <td class="paramname"><em>data1d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que configura el gráfico con los datos pasados unidimensionales como argumento. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data1d</td><td>Puntero a datos unidimensionales. <a class="el" href="class_plot_data1_d.html" title="Clase abstracta para la representación de una variable dependiente unidimensional usando un objeto de...">PlotData1D</a> hace una copia de los datos, por lo que el padre sigue siendo repsonsable de el objeto pasado como argumento. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_plot_data1_d.html#ae1458c22fbc71e827e42640210a36fe8">PlotData1D</a>.</p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8cpp_source.html#l00070">70</a> del archivo <a class="el" href="graph1d_8cpp_source.html">graph1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7548626b1f351c9bbf7795520158122d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QPixmap * Graph1D::GetAsQPixmap </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene la imagen actual del gráfico como un objeto QPixmap. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>El objeto QPixmap con la imagen del gráfico. Este objeto será responsbilidad del cliente. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_plot.html#aa2ece70de10445d884bd87585bd6a0aa">AbstractPlot</a>.</p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8cpp_source.html#l00177">177</a> del archivo <a class="el" href="graph1d_8cpp_source.html">graph1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab904de2a8e57cbb75ca674ededd2c6be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Graph1D::LoadData </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_data1_d.html">Data1D</a> *&#160;</td>
+          <td class="paramname"><em>data1d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función auxiliar que carga los datos en el gráfico. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data1d</td><td>Datos unidimensionales que se quieren cargar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="graph1d_8cpp_source.html#l00106">106</a> del archivo <a class="el" href="graph1d_8cpp_source.html">graph1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad54e80d1e859b49b9e110230832d7d2a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Graph1D::SetData1D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_data1_d.html">Data1D</a> *&#160;</td>
+          <td class="paramname"><em>data1d</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que representa en el gráfico los datos unidimensionales. Si init estaba a falso, también configura el gráfico con ellos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data1d</td><td>Puntero a datos unidimensionales. <a class="el" href="class_plot_data1_d.html" title="Clase abstracta para la representación de una variable dependiente unidimensional usando un objeto de...">PlotData1D</a> hace una copia de los datos, por lo que el padre sigue siendo repsonsable de el objeto pasado como argumento. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_plot_data1_d.html#aab34af539b35a3895a4e3b75aa024e46">PlotData1D</a>.</p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8cpp_source.html#l00091">91</a> del archivo <a class="el" href="graph1d_8cpp_source.html">graph1d.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a70265acf8bebc1cad8d6546f3c022b75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Graph1D::Update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Redibuja con todos los posibles cambios de parámetros que haya habido en el gráfico. </p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8cpp_source.html#l00134">134</a> del archivo <a class="el" href="graph1d_8cpp_source.html">graph1d.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="a5b4534bf03c3bf30f1a01d6987628d31"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QwtPlotCurve* Graph1D::curve</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a la curva que se representa. </p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8h_source.html#l00076">76</a> del archivo <a class="el" href="graph1d_8h_source.html">graph1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6bef494aefd003c58bc79b6bdc27a162"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QwtPlotPanner* Graph1D::panner</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al objeto que permite mover y arrastrar el grafico. </p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8h_source.html#l00083">83</a> del archivo <a class="el" href="graph1d_8h_source.html">graph1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77f3c2ca7c1802c5fbc714ef54884bab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QwtPlotPicker* Graph1D::picker</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero al objeto que permite obtener datos acerca de un punto en el gráfico. </p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8h_source.html#l00082">82</a> del archivo <a class="el" href="graph1d_8h_source.html">graph1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adca3d700e486e2853d22b6b2a616923f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph1D::sizeX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Número de elementos en los buffer. </p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8h_source.html#l00079">79</a> del archivo <a class="el" href="graph1d_8h_source.html">graph1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3e3a88b40b15827e3af9f6e766e0a6f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double* Graph1D::xValues</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a un buffer con los valores de la variable independiente. </p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8h_source.html#l00078">78</a> del archivo <a class="el" href="graph1d_8h_source.html">graph1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="add5a552cc9acb7e097aa4fb570106dbf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QwtPlotZoomer* Graph1D::zoomer[2]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a los objetos para hacer zoom. </p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8h_source.html#l00081">81</a> del archivo <a class="el" href="graph1d_8h_source.html">graph1d.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f5966dda12bdefcce631d253dd5f2a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double* Graph1D::zValues</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a un buffer con los valores de la variable dependiente. </p>
+
+<p>Definición en la línea <a class="el" href="graph1d_8h_source.html#l00077">77</a> del archivo <a class="el" href="graph1d_8h_source.html">graph1d.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="graph1d_8h_source.html">graph1d.h</a></li>
+<li>sources/<a class="el" href="graph1d_8cpp_source.html">graph1d.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_graph1_d.html">Graph1D</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

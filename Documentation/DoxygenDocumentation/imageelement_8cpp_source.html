@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Fichero Fuente sources/imageelement.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('imageelement_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">imageelement.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imageelement_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imageelement_8h.html" title="Fichero que define la clase ImageElement. Clase entidad que guarda los datos de una imagen de la fase...">imageelement.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_image_element.html#afecbd075e88df39b53dc0399f845e4a6">   13</a></span>&#160;<a class="code" href="class_image_element.html#afecbd075e88df39b53dc0399f845e4a6">ImageElement::ImageElement</a>(<a class="code" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> * source_in,QString label_in, <span class="keywordtype">float</span> pixelsMmX_in, <span class="keywordtype">float</span> pixelsMmY_in,<span class="keywordtype">float</span> pixelsFromOriginX_in,<span class="keywordtype">float</span> pixelsFromOriginY_in){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="class_image_element.html#a946c2545c3e1497db48e0efe0b14ca92">phaseImageSource</a>=source_in;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_image_element.html#ac5ac5e728db193d70fe3c8f8a048f3d7">label</a>=label_in;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_image_element.html#aba0afae209c25e0885f6ba1fefbfd80a">phaseImage</a>=NULL;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_image_element.html#ac392dc1112a12b15506e7acf58959f27">phaseLine</a>=NULL;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_image_element.html#a6b1c7f45efdcfcfb0c6d8a31a3aae35f">data1d</a>=NULL;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a>=NULL;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>=NULL;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_image_element.html#ab60f38c42208a33a89ac1e6974ba87ef">updated</a>=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_image_element.html#a3547cb0929bf2dd5dcab53e13afd7edd">pixelsMmX</a>=pixelsMmX_in;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_image_element.html#a667715d4473806ac69fe487f96d31f06">pixelsMmY</a>=pixelsMmY_in;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_image_element.html#ad9b159533a1bf329b8def6e3fe139b26">pixelsFromOriginX</a>=pixelsFromOriginX_in;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_image_element.html#a10556b152311da935d5fbfee71073d79">pixelsFromOriginY</a>=pixelsFromOriginY_in;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_image_element.html#a81b8b2d06cb668413254f7bc399bcb97">   28</a></span>&#160;<a class="code" href="class_image_element.html#a81b8b2d06cb668413254f7bc399bcb97">ImageElement::~ImageElement</a>(){</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="class_image_element.html#a997a341404deb33e3bc1f89eee99ed96">   31</a></span>&#160;QString <a class="code" href="class_image_element.html#a997a341404deb33e3bc1f89eee99ed96">ImageElement::GetLabel</a>(){</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#ac5ac5e728db193d70fe3c8f8a048f3d7">label</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="class_image_element.html#aa2f2d5d585e943d8bcaa050df8e99fc6">   35</a></span>&#160;<a class="code" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> * <a class="code" href="class_image_element.html#aa2f2d5d585e943d8bcaa050df8e99fc6">ImageElement::GetPhaseImageSource</a>(){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#a946c2545c3e1497db48e0efe0b14ca92">phaseImageSource</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_image_element.html#a9a9409823fe727e060eb099d02db4055">   39</a></span>&#160;<a class="code" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> * <a class="code" href="class_image_element.html#a9a9409823fe727e060eb099d02db4055">ImageElement::GetPhaseImage</a>(){</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#aba0afae209c25e0885f6ba1fefbfd80a">phaseImage</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="class_image_element.html#aae09d8d143bf69f5b6cf1afef05e5f56">   43</a></span>&#160;<a class="code" href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase.">PhaseLine</a> * <a class="code" href="class_image_element.html#aae09d8d143bf69f5b6cf1afef05e5f56">ImageElement::GetPhaseLine</a>(){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#ac392dc1112a12b15506e7acf58959f27">phaseLine</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="class_image_element.html#a46e38734977f060f7897e5721acee181">   47</a></span>&#160;<a class="code" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a> * <a class="code" href="class_image_element.html#a46e38734977f060f7897e5721acee181">ImageElement::GetData2D</a>(){</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="class_image_element.html#ad0cd3c3b802fa4d48e00efba72c27d85">   51</a></span>&#160;<a class="code" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> * <a class="code" href="class_image_element.html#ad0cd3c3b802fa4d48e00efba72c27d85">ImageElement::GetData1D</a>(){</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#a6b1c7f45efdcfcfb0c6d8a31a3aae35f">data1d</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="class_image_element.html#a804ff3e334c7b92babcda3f4ead621e4">   54</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_image_element.html#a804ff3e334c7b92babcda3f4ead621e4">ImageElement::GetPixelsFromOriginX</a>(){</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#ad9b159533a1bf329b8def6e3fe139b26">pixelsFromOriginX</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="class_image_element.html#a616eb9df50b62fd5bffee07a30f90ea5">   57</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_image_element.html#a616eb9df50b62fd5bffee07a30f90ea5">ImageElement::GetPixelsFromOriginY</a>(){</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#a10556b152311da935d5fbfee71073d79">pixelsFromOriginY</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_image_element.html#a0bb7bf38a1939833254ddf8ec6373cbd">   61</a></span>&#160;QImage <a class="code" href="class_image_element.html#a0bb7bf38a1939833254ddf8ec6373cbd">ImageElement::GetPreview</a>(){</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    QImage previewOut;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QPixmap * auxPixmap;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//Si ya tengo vista previa, la devuelvo</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a> !=NULL){</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        previewOut=QImage::QImage(*<a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//Si es la primera vez y puedo, la calculo</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_image_element.html#a946c2545c3e1497db48e0efe0b14ca92">phaseImageSource</a>!=NULL){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="comment">//Calculo la vista previa y se la asigno</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a> * <a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a> = <a class="code" href="class_image_element.html#a946c2545c3e1497db48e0efe0b14ca92">phaseImageSource</a>-&gt;<a class="code" href="class_phase_image.html#ac6399060738fcbac77e33ff19318b9f1">GetData2D</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="class_spectrogram_plot.html" title="Clase que implementa PlotData2D para representar un spectrograma.">SpectrogramPlot</a> * spectrogram;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            spectrogram = <span class="keyword">new</span> <a class="code" href="class_spectrogram_plot.html" title="Clase que implementa PlotData2D para representar un spectrograma.">SpectrogramPlot</a>(NULL);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            spectrogram-&gt;<a class="code" href="class_spectrogram_plot.html#a4c2c665661159f15a9d5d30a9efe0047">SetData2D</a>(data2d);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            spectrogram-&gt;enableAxis(0,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            spectrogram-&gt;enableAxis(1,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            spectrogram-&gt;enableAxis(2,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            auxPixmap=spectrogram-&gt;<a class="code" href="class_spectrogram_plot.html#ac72d66ccc0f24652007817d0caee6b14">GetAsQPixmap</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            this-&gt;<a class="code" href="class_image_element.html#a6acf21a8c44c704426324588e3645265">SetPreview</a>(auxPixmap-&gt;toImage());</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <span class="keyword">delete</span> auxPixmap;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keyword">delete</span> spectrogram;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keyword">delete</span> <a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>-&gt;isNull()==<span class="keyword">false</span>){</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                previewOut=QImage::QImage(*<a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keyword">delete</span> <a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>=NULL;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                previewOut=QImage::QImage(40,40,QImage::Format_RGB32);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            previewOut=QImage::QImage(40,40,QImage::Format_RGB32);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            previewOut.fill(0);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> previewOut;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="class_image_element.html#ad7e19c161131079a02915b9fa6524900">  105</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_image_element.html#ad7e19c161131079a02915b9fa6524900">ImageElement::GetUpdated</a>(){</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#ab60f38c42208a33a89ac1e6974ba87ef">updated</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="class_image_element.html#afdeb98782ad5b5f8b466d5d8771c741d">  109</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_image_element.html#afdeb98782ad5b5f8b466d5d8771c741d">ImageElement::GetPixelsMmX</a>(){</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#a3547cb0929bf2dd5dcab53e13afd7edd">pixelsMmX</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="class_image_element.html#a0d930ac8cad5a53786726a2503921270">  113</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="class_image_element.html#a0d930ac8cad5a53786726a2503921270">ImageElement::GetPixelsMmY</a>(){</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="class_image_element.html#a667715d4473806ac69fe487f96d31f06">pixelsMmY</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="class_image_element.html#ac1cacfeffda84c2beefc73df3be695b1">  117</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_image_element.html#ac1cacfeffda84c2beefc73df3be695b1">ImageElement::SetLabel</a>(QString value){</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="class_image_element.html#ac5ac5e728db193d70fe3c8f8a048f3d7">label</a>=value;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="code" href="class_image_element.html#a2c0678c0a6805219e6979f92f827f51f">  121</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_image_element.html#a2c0678c0a6805219e6979f92f827f51f">ImageElement::SetPhaseImage</a>(<a class="code" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> * value){</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#aba0afae209c25e0885f6ba1fefbfd80a">phaseImage</a>!=NULL ) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#aba0afae209c25e0885f6ba1fefbfd80a">phaseImage</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="class_image_element.html#aba0afae209c25e0885f6ba1fefbfd80a">phaseImage</a>=value;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a>!=NULL ) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a>;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#aba0afae209c25e0885f6ba1fefbfd80a">phaseImage</a>!=NULL)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a>=<a class="code" href="class_image_element.html#aba0afae209c25e0885f6ba1fefbfd80a">phaseImage</a>-&gt;<a class="code" href="class_phase_image.html#ac6399060738fcbac77e33ff19318b9f1">GetData2D</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a>=NULL;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="code" href="class_image_element.html#a19ed052d5174815da96f215a44c96a8a">  132</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_image_element.html#a19ed052d5174815da96f215a44c96a8a">ImageElement::SetPhaseLine</a>(<a class="code" href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase.">PhaseLine</a> * value){</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#ac392dc1112a12b15506e7acf58959f27">phaseLine</a>!=NULL ) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#ac392dc1112a12b15506e7acf58959f27">phaseLine</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="class_image_element.html#ac392dc1112a12b15506e7acf58959f27">phaseLine</a>=value;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#a6b1c7f45efdcfcfb0c6d8a31a3aae35f">data1d</a>!=NULL ) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#a6b1c7f45efdcfcfb0c6d8a31a3aae35f">data1d</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#ac392dc1112a12b15506e7acf58959f27">phaseLine</a>!=NULL)</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="class_image_element.html#a6b1c7f45efdcfcfb0c6d8a31a3aae35f">data1d</a>=<a class="code" href="class_image_element.html#ac392dc1112a12b15506e7acf58959f27">phaseLine</a>-&gt;<a class="code" href="class_phase_line.html#a4f78925c48460c0606a8c9fab5d0ceae">GetData1D</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <a class="code" href="class_image_element.html#a6b1c7f45efdcfcfb0c6d8a31a3aae35f">data1d</a>=NULL;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;}</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno"><a class="code" href="class_image_element.html#a6acf21a8c44c704426324588e3645265">  143</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_image_element.html#a6acf21a8c44c704426324588e3645265">ImageElement::SetPreview</a>(QImage value){</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>!=NULL) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a> = <span class="keyword">new</span> QImage (value);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="code" href="class_image_element.html#ad90a19253203de2b855fbc4e7ea74c31">  148</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_image_element.html#ad90a19253203de2b855fbc4e7ea74c31">ImageElement::SetUpdated</a>(<span class="keywordtype">bool</span> value){</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="class_image_element.html#ab60f38c42208a33a89ac1e6974ba87ef">updated</a>=value;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="class_image_element.html#a21467f3c6a2e10df2879ca02d7fd867e">  152</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_image_element.html#a21467f3c6a2e10df2879ca02d7fd867e">ImageElement::FreePointers</a>(){</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#aba0afae209c25e0885f6ba1fefbfd80a">phaseImage</a>!=NULL ) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#aba0afae209c25e0885f6ba1fefbfd80a">phaseImage</a>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#ac392dc1112a12b15506e7acf58959f27">phaseLine</a>!=NULL ) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#ac392dc1112a12b15506e7acf58959f27">phaseLine</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#a6b1c7f45efdcfcfb0c6d8a31a3aae35f">data1d</a>!=NULL ) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#a6b1c7f45efdcfcfb0c6d8a31a3aae35f">data1d</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a>!=NULL ) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>!=NULL ) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="class_image_element.html#a946c2545c3e1497db48e0efe0b14ca92">phaseImageSource</a>!=NULL ) <span class="keyword">delete</span> <a class="code" href="class_image_element.html#a946c2545c3e1497db48e0efe0b14ca92">phaseImageSource</a>;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="class_image_element.html#aba0afae209c25e0885f6ba1fefbfd80a">phaseImage</a>=NULL;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="class_image_element.html#ac392dc1112a12b15506e7acf58959f27">phaseLine</a>=NULL;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="class_image_element.html#a6b1c7f45efdcfcfb0c6d8a31a3aae35f">data1d</a>=NULL;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="class_image_element.html#ae8ae3d42068ed124d5c8f52e7323c319">data2d</a>=NULL;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="class_image_element.html#a712368f3b4144b1df2c057770d4af5fd">preview</a>=NULL;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <a class="code" href="class_image_element.html#a946c2545c3e1497db48e0efe0b14ca92">phaseImageSource</a>=NULL;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="imageelement_8cpp.html">imageelement.cpp</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

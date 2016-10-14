@@ -1,0 +1,26 @@
+var class_abstract_camera =
+[
+    [ "AcquireSourcePicture", "class_abstract_camera.html#ae269a03c21428ff05542a8e0622b32ec", null ],
+    [ "GetCurrentGain", "class_abstract_camera.html#adba4da72e20aab0cf6aa184735eb679b", null ],
+    [ "GetDefaultExposure", "class_abstract_camera.html#a33e11595d9e93b50aae7684456a490af", null ],
+    [ "GetDefaultFrameRate", "class_abstract_camera.html#ab87e4a1e7384987f944ea5e068924067", null ],
+    [ "GetDefaultGain", "class_abstract_camera.html#a87ac9f6902b9c1d7e890cb39df51424d", null ],
+    [ "GetDefaultPixelClock", "class_abstract_camera.html#a346554c300a09df4c6a7b0ef581f516f", null ],
+    [ "GetExposure", "class_abstract_camera.html#ad3e7708e62461238d1c1d49ae7bff973", null ],
+    [ "GetFrameRate", "class_abstract_camera.html#a89e99becf41f99a25ca5bb0d87e670dc", null ],
+    [ "GetMaxGain", "class_abstract_camera.html#a9e85d342c4b8e2616cb0d020ee363942", null ],
+    [ "GetMaxSize", "class_abstract_camera.html#a6d070efa25c5e92d8d5d9531054d9912", null ],
+    [ "GetMinGain", "class_abstract_camera.html#a27acb5761b3a9f3f81a30aba36cee1ea", null ],
+    [ "GetMinSize", "class_abstract_camera.html#a59b013421800919602690b3ebf1173d0", null ],
+    [ "GetParameters", "class_abstract_camera.html#ae0baaeafa1e7fe97de95ced0b2a5a4c4", null ],
+    [ "GetPixelClock", "class_abstract_camera.html#a61bd26bd1b9bd36c608e4cccc616c760", null ],
+    [ "GetSize", "class_abstract_camera.html#a7734e79ca0e26ef541de00b0ecd3c5d7", null ],
+    [ "IsOpen", "class_abstract_camera.html#a65dccc42d704431b22595ba933019493", null ],
+    [ "SetExposure", "class_abstract_camera.html#a77b35e4b08a7e54f83cc467a5b7c2729", null ],
+    [ "SetFrameRate", "class_abstract_camera.html#aeca7a900638a9c2b7ff95bce935f235f", null ],
+    [ "SetGain", "class_abstract_camera.html#ab0dc0b5b131c0acae5cacdfe4a3a9a43", null ],
+    [ "SetParameters", "class_abstract_camera.html#a8653c629f9ef0225364348e9240636be", null ],
+    [ "SetPixelClock", "class_abstract_camera.html#a54d9cf14d5fd355eb32853ccf4c518ba", null ],
+    [ "SetSize", "class_abstract_camera.html#a2cca25485b8ba40a6e272202d2f8e548", null ],
+    [ "parameters", "class_abstract_camera.html#a33697f3386e444bfb6a14e74950d93bb", null ]
+];

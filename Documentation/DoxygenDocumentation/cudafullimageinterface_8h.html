@@ -1,0 +1,632 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia del Archivo headers/cudafullimageinterface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('cudafullimageinterface_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">'defines'</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo cudafullimageinterface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Cabecera para la interfaz de algoritmos aplicables a un objeto de la clase <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> implementada con CUDA.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;cuda.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="complex_8h_source.html">complex.h</a>&quot;</code><br/>
+<code>#include &quot;cufft.h&quot;</code><br/>
+<code>#include &quot;<a class="el" href="cudasafe_8h_source.html">cudasafe.h</a>&quot;</code><br/>
+</div>
+<p><a href="cudafullimageinterface_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr class="memitem:a6ddfdda7a062d10cff4a72b76b44aeb8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#a6ddfdda7a062d10cff4a72b76b44aeb8">FORWARD</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:ade269cc47cfaba70068f2586e898051d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#ade269cc47cfaba70068f2586e898051d">INVERSE</a>&#160;&#160;&#160;2</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:afe93eb057e8909f6cb44bef21090a603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcomplex.html">complex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#afe93eb057e8909f6cb44bef21090a603">LoadInGPUCUDA</a> (<a class="el" href="structcomplex.html">complex</a> *hostPt, int width, int height)</td></tr>
+<tr class="memitem:ae33d26fbf508fa4bd726a70ad2a58ef4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcomplex.html">complex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#ae33d26fbf508fa4bd726a70ad2a58ef4">MemCpyCUDA</a> (<a class="el" href="structcomplex.html">complex</a> *devicePt, int width, int height)</td></tr>
+<tr class="memitem:a1278b5b0ccb80e9fed8e36bc79eeae85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#a1278b5b0ccb80e9fed8e36bc79eeae85">FreeCUDA</a> (<a class="el" href="structcomplex.html">complex</a> *devicePt)</td></tr>
+<tr class="memitem:a62450135f0e6cca949c25a80bc2945ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#a62450135f0e6cca949c25a80bc2945ee">GetBufferBackCUDA</a> (<a class="el" href="structcomplex.html">complex</a> *hostPt, <a class="el" href="structcomplex.html">complex</a> *devicePt, int width, int height)</td></tr>
+<tr class="memitem:a3a1dfc1e3ed263743a366dc7826e14a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#a3a1dfc1e3ed263743a366dc7826e14a5">ApplyMaskCUDA</a> (<a class="el" href="structcomplex.html">complex</a> *devicePt, int width, int height, int x1, int y1, int x2, int y2)</td></tr>
+<tr class="memitem:a4218ad41f7c437450b6bba0efafdc296"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#a4218ad41f7c437450b6bba0efafdc296">FFTCUDA</a> (<a class="el" href="structcomplex.html">complex</a> *devicePt, int width, int height, int mode)</td></tr>
+<tr class="memitem:a058d9a41f2418c8b6cdad9399286ffa6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcomplex.html">complex</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#a058d9a41f2418c8b6cdad9399286ffa6">ReArrangeFTCUDA</a> (<a class="el" href="structcomplex.html">complex</a> *devicePt, int width, int height)</td></tr>
+<tr class="memitem:a244459c90c76f9b8da9c50347bfe1584"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#a244459c90c76f9b8da9c50347bfe1584">GetAbsoluteValueCUDA</a> (<a class="el" href="structcomplex.html">complex</a> *devicePt, int width, int height)</td></tr>
+<tr class="memitem:a5c55fd3553016de4158e15978d527f46"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cudafullimageinterface_8h.html#a5c55fd3553016de4158e15978d527f46">CropPhaseCUDA</a> (<a class="el" href="structcomplex.html">complex</a> *devicePt, int width, int height, int x1, int y1, int x2, int y2)</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Cabecera para la interfaz de algoritmos aplicables a un objeto de la clase <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> implementada con CUDA. </p>
+<dl class="section author"><dt>Autor</dt><dd>Álvaro Sánchez González <a href="#" onclick="location.href='mai'+'lto:'+'alv'+'ar'+'osg'+'@u'+'sal'+'.e'+'s'; return false;">alvar<span style="display: none;">.nosp@m.</span>osg@<span style="display: none;">.nosp@m.</span>usal.<span style="display: none;">.nosp@m.</span>es</a> </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>Mon Jul 23 2012</dd></dl>
+<p>Copyright (c) 2012 Álvaro Sánchez González </p>
+
+<p>Definición en el archivo <a class="el" href="cudafullimageinterface_8h_source.html">cudafullimageinterface.h</a>.</p>
+</div><h2>Documentación de los 'defines'</h2>
+<a class="anchor" id="a6ddfdda7a062d10cff4a72b76b44aeb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FORWARD&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Para la transformada de fourier directa. </p>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8h_source.html#l00021">21</a> del archivo <a class="el" href="cudafullimageinterface_8h_source.html">cudafullimageinterface.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade269cc47cfaba70068f2586e898051d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define INVERSE&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Para la transformada de fourier inversa. </p>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8h_source.html#l00023">23</a> del archivo <a class="el" href="cudafullimageinterface_8h_source.html">cudafullimageinterface.h</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones</h2>
+<a class="anchor" id="a3a1dfc1e3ed263743a366dc7826e14a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ApplyMaskCUDA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que aplica una máscara (Coloca todo a cero excepto los puntos dentro de la máscara). </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la estructura compleja alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">x1</td><td>Posición horizontal de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">x2</td><td>Posición horizontal de la esquina inferior derecha de la máscara. </td></tr>
+    <tr><td class="paramname">y1</td><td>Posición vertical de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">y2</td><td>Posición vertical de la esquina inferior derecha de la máscara. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8cu_source.html#l00144">144</a> del archivo <a class="el" href="cudafullimageinterface_8cu_source.html">cudafullimageinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c55fd3553016de4158e15978d527f46"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* CropPhaseCUDA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene la fase de una zona de la imagen delimitada por una máscara </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la estructura compleja alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">x1</td><td>Posición horizontal de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">x2</td><td>Posición horizontal de la esquina inferior derecha de la máscara. </td></tr>
+    <tr><td class="paramname">y1</td><td>Posición vertical de la esquina superior izquierda de la máscara. </td></tr>
+    <tr><td class="paramname">y2</td><td>Posición vertical de la esquina inferior derecha de la máscara. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Buffer en la memoria de la GPU con la fase de la zona seleccionada, de 0 a 2Pi y de tamaño {(x2-x1)+1}x{(y2-y1)+1} responsabilidad del cliente </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8cu_source.html#l00208">208</a> del archivo <a class="el" href="cudafullimageinterface_8cu_source.html">cudafullimageinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4218ad41f7c437450b6bba0efafdc296"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FFTCUDA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcula la transformada rápida de fourier para la imagen compleja. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la estructura compleja alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">mode</td><td>FORWARD o INVERSE. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8cu_source.html#l00156">156</a> del archivo <a class="el" href="cudafullimageinterface_8cu_source.html">cudafullimageinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1278b5b0ccb80e9fed8e36bc79eeae85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void FreeCUDA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>devicePt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que libera una zona de memoria en la GPU. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Puntero a la zona de memoria d ela GPU a liberar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8cu_source.html#l00132">132</a> del archivo <a class="el" href="cudafullimageinterface_8cu_source.html">cudafullimageinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a244459c90c76f9b8da9c50347bfe1584"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float* GetAbsoluteValueCUDA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Calcula el módulo del número complejo situado en cada punto. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la estructura compleja alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Buffer en la memoria de la CPU del mismo tamaño, con los valores absolutos de cada pixel, responsabilidad del cliente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8cu_source.html#l00187">187</a> del archivo <a class="el" href="cudafullimageinterface_8cu_source.html">cudafullimageinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62450135f0e6cca949c25a80bc2945ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GetBufferBackCUDA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>hostPt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que crea una copia de una matriz compleja en la CPU a partir de otra en la GPU. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la estructura compleja alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">hostPt</td><td>Buffer en la memoria de la CPU donde será copiada la estructura. Debe apuntar a una zona de memoria suficientemente grande. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8cu_source.html#l00138">138</a> del archivo <a class="el" href="cudafullimageinterface_8cu_source.html">cudafullimageinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe93eb057e8909f6cb44bef21090a603"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcomplex.html">complex</a>* LoadInGPUCUDA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>hostPt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que carga una matriz compleja en la memoria de la GPU. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">hostPt</td><td>Buffer en la memoria de la CPU con la estructura compleja alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a la copia en la GPU. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8cu_source.html#l00116">116</a> del archivo <a class="el" href="cudafullimageinterface_8cu_source.html">cudafullimageinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae33d26fbf508fa4bd726a70ad2a58ef4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcomplex.html">complex</a>* MemCpyCUDA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que crea una copia de una matriz compleja en la GPU a partir de otra también en la GPU. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la estructura compleja alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Puntero a la copia en la GPU. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8cu_source.html#l00125">125</a> del archivo <a class="el" href="cudafullimageinterface_8cu_source.html">cudafullimageinterface.cu</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a058d9a41f2418c8b6cdad9399286ffa6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structcomplex.html">complex</a>* ReArrangeFTCUDA </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcomplex.html">complex</a> *&#160;</td>
+          <td class="paramname"><em>devicePt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recoloca la transformada de fourier para su correcto visualizado, con las frecuencia 0 en el centro de la imagen, ya que el algoritmo FFT deja los valores colocados de una forma poco convencional. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">devicePt</td><td>Buffer en la memoria de la GPU con la estructura compleja alineada fila tras fila. </td></tr>
+    <tr><td class="paramname">width</td><td>Ancho en píxeles de la imagen. </td></tr>
+    <tr><td class="paramname">height</td><td>Alto en píxeles de la imagen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Buffer del mismo tamaño, con los píxeles recolocada, responsabilidad del cliente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cudafullimageinterface_8cu_source.html#l00170">170</a> del archivo <a class="el" href="cudafullimageinterface_8cu_source.html">cudafullimageinterface.cu</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="cudafullimageinterface_8h.html">cudafullimageinterface.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

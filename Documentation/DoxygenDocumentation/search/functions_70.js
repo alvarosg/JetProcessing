@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['parametricclicked',['ParametricClicked',['../class_main_window_live.html#a0032bce004b98b104d647d8693616487',1,'MainWindowLive']]],
+  ['parametricsurface3dplot',['ParametricSurface3DPlot',['../class_parametric_surface3_d_plot.html#a6fcb58a664aad50ed0d5298d5d6cc79b',1,'ParametricSurface3DPlot']]],
+  ['parametricsurfacefunction',['ParametricSurfaceFunction',['../class_parametric_surface_function.html#a4bceea29e17a1810137f53200211bcf8',1,'ParametricSurfaceFunction']]],
+  ['phaseimage',['PhaseImage',['../class_phase_image.html#afd0f0189066e3652a0d6d02c72e380d1',1,'PhaseImage']]],
+  ['phaseimagecpu',['PhaseImageCPU',['../class_phase_image_c_p_u.html#afe187a3b5ee139d3a951f059e6b5fa26',1,'PhaseImageCPU::PhaseImageCPU(float *buffer, int sizeX_in, int sizeY_in)'],['../class_phase_image_c_p_u.html#a428bdc3429d7d5d3d5e8712066ca44f7',1,'PhaseImageCPU::PhaseImageCPU(const PhaseImageCPU &amp;input)']]],
+  ['phaseimagecuda',['PhaseImageCUDA',['../class_phase_image_c_u_d_a.html#a47b405f4afac8a1115e210d8168cd1ac',1,'PhaseImageCUDA::PhaseImageCUDA(float *deviceBuffer, int sizeX_in, int sizeY_in)'],['../class_phase_image_c_u_d_a.html#a262eb5181d0cdc0a8ce3413237845304',1,'PhaseImageCUDA::PhaseImageCUDA(const PhaseImageCUDA &amp;input)']]],
+  ['phaseline',['PhaseLine',['../class_phase_line.html#acba398024277dc0d3125d549abd82403',1,'PhaseLine']]],
+  ['phaselinecpu',['PhaseLineCPU',['../class_phase_line_c_p_u.html#a874e581b39a4b6430629facd30235238',1,'PhaseLineCPU::PhaseLineCPU(float *buffer, int size_in)'],['../class_phase_line_c_p_u.html#aa08c02c04894cb0c41519affc400d65b',1,'PhaseLineCPU::PhaseLineCPU(const PhaseLineCPU &amp;input)']]],
+  ['phaselinecuda',['PhaseLineCUDA',['../class_phase_line_c_u_d_a.html#a8e622e636fa60b142704fca857e4ac3a',1,'PhaseLineCUDA::PhaseLineCUDA(float *deviceBuffer, int size_in)'],['../class_phase_line_c_u_d_a.html#a223ef6ebc292deb6ce99342145e0808d',1,'PhaseLineCUDA::PhaseLineCUDA(const PhaseLineCUDA &amp;input)']]],
+  ['pixelclockchanged',['PixelClockChanged',['../class_dialog_configure_cam.html#ae583bcc9db4de2abb47b7fcbb8711e5f',1,'DialogConfigureCam']]],
+  ['play',['Play',['../class_main_window_live.html#a4e65e57c397f27098b77ca8327535798',1,'MainWindowLive']]],
+  ['plot3ddata2d',['Plot3DData2D',['../class_plot3_d_data2_d.html#a430c51487ca1136c447226ca92358f97',1,'Plot3DData2D']]],
+  ['plotdata1d',['PlotData1D',['../class_plot_data1_d.html#a85ff3a10d926989a672cde770164a227',1,'PlotData1D']]],
+  ['plotdata2d',['PlotData2D',['../class_plot_data2_d.html#a3e6ae0ddee3a1cc339bcd8ce0e9e0e49',1,'PlotData2D']]],
+  ['previewgainchanged',['PreviewGainChanged',['../class_dialog_set_reference.html#a10036832165db93cee7bc80776c45f42',1,'DialogSetReference']]],
+  ['previousstep',['PreviousStep',['../class_dialog_set_reference.html#ad3b27a6977d823f7b0208f6584104f65',1,'DialogSetReference']]],
+  ['printgraph',['PrintGraph',['../class_main_window_live.html#a72640245364254548737f41dfd9f1062',1,'MainWindowLive::PrintGraph(Data2D *data2d, bool releaseSem=true)'],['../class_main_window_live.html#a5915cf32a0c5fdbe0c485fefce9a857a',1,'MainWindowLive::PrintGraph(Data1D *data1d, bool releaseSem=true)']]],
+  ['processimagefromcamera',['ProcessImageFromCamera',['../class_main_controller.html#a17e3d677f323ab255635f150931d652a',1,'MainController']]],
+  ['processimagefromcamera1d',['ProcessImageFromCamera1D',['../class_main_controller.html#a9015804f134f86ad0d344a00c7e9f9ac',1,'MainController']]],
+  ['processsourcepictureimage',['ProcessSourcePictureImage',['../class_main_controller.html#aea245ce03e96c4d25fa5ea42cf66324d',1,'MainController']]],
+  ['producedata1d',['ProduceData1D',['../class_data_producer.html#a3de62e3d284d5b510b80cdd929a62a63',1,'DataProducer']]],
+  ['producedata2d',['ProduceData2D',['../class_data_producer.html#aaa572b588d181d1dc2fca539cd2be853',1,'DataProducer']]],
+  ['programpreferences',['ProgramPreferences',['../class_main_window.html#ae615f350937bd40afac7aaa05cf89b41',1,'MainWindow']]],
+  ['programsettings',['ProgramSettings',['../class_program_settings.html#a21d001a5831b1de0850899095630cb1a',1,'ProgramSettings']]]
+];

@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Fichero Fuente headers/data2d.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('data2d_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">data2d.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="data2d_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef DATA2D_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DATA2D_H</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;QRect&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;QTextStream&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="data1d_8h.html" title="Clase que que contiene una información de fase unidimensional.">data1d.h</a>&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="dataresult_8h.html" title="Clase abstracta que para almacenar informacion de la fase una vez que se han aplicado todos los algor...">dataresult.h</a>&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cpuphaseinterface_8h.html" title="Cabecera para la interfaz de algoritmos aplicables a un objeto de la clase PhaseImage implementada co...">cpuphaseinterface.h</a>&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_data2_d.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a>: <span class="keyword">public</span> <a class="code" href="class_data_result.html" title="Clase abstracta que sirve para almacenar informacion de la fase una vez que se han aplicado todos los...">DataResult</a>{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_data2_d.html#a4d03ab0dde4034bf049d479f1198c1c4">sizeX</a>;              </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_data2_d.html#a9ef87b5edcd35b80866bc563a8c7cbb1">sizeY</a>;              </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">   35</a></span>&#160;    <span class="keywordtype">float</span> * <a class="code" href="class_data2_d.html#a8a0df7f512aef2624c3bda7dc0bc9e96">linearBuffer</a>;   </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">   36</a></span>&#160;    <span class="keywordtype">float</span> ** <a class="code" href="class_data2_d.html#a7011b29b6558bd22ceeb179c5b62dfeb">dbptBuffer</a>;    </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="class_data2_d.html#a65ef3ec95566b7108280c0305442d30b">   38</a></span>&#160;    QString <a class="code" href="class_data2_d.html#a65ef3ec95566b7108280c0305442d30b">labelX</a>;         </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">   39</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a3045274fcf0d4c7c2924a50935bc10e5">maxXValue</a>;        </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">   40</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#afba572d4b15cd8d5b858fc1a43386652">minXValue</a>;        </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="class_data2_d.html#a4b7385dbf5eeae959ccee2f320a19bc9">   41</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a4b7385dbf5eeae959ccee2f320a19bc9">ratioPixelValueX</a>; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="class_data2_d.html#abfb9438c2f10e1421d1b929d4cb22067">   43</a></span>&#160;    QString <a class="code" href="class_data2_d.html#abfb9438c2f10e1421d1b929d4cb22067">labelY</a>;         </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">   44</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#af3097104f7a4aa203de2b1b3e2b9b349">maxYValue</a>;        </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">   45</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#abce7dd353b240f429e4fce1deadb73ba">minYValue</a>;        </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_data2_d.html#a8cee1c252cb1918d3d79115d1fff5f1e">   46</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a8cee1c252cb1918d3d79115d1fff5f1e">ratioPixelValueY</a>; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_data2_d.html#afc0859e6d6b7b03531fc9796ac033887">Data2D</a>(<span class="keywordtype">float</span> * buffer=NULL, <span class="keywordtype">int</span> sizeXin=0, <span class="keywordtype">int</span> sizeYin=0);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_data2_d.html#afc0859e6d6b7b03531fc9796ac033887">Data2D</a>(<span class="keyword">const</span> <a class="code" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a>&amp; input);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="class_data2_d.html#a94ac31e6df6453b4cf6d27c09d26d7c8">~Data2D</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#a93ba7eb825ae8657b03cee155964dd63">SetData</a>(<span class="keywordtype">float</span> * buffer, <span class="keywordtype">int</span> sizeXin, <span class="keywordtype">int</span> sizeYin);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">float</span> ** <a class="code" href="class_data2_d.html#a818ce127070d095954e45eb3f91dd0fd">GetBuffer</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_data2_d.html#aa228e79bae12a07436914c613b526728">GetSizeX</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_data2_d.html#a3464496d3842b25b63d09abe1800becb">GetSizeY</a>();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#ae8d9330c114aebcde5eb4ae321512538">SetLabelX</a>(QString <span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QString <a class="code" href="class_data2_d.html#a3c423f6a36a261d14993e8c8f8fb0da6">GetLabelX</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#abb0c5c997312d22cca50d07c3e2ee102">SetMaxXValue</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a848a3ee3503b8864844895e924d6d657">GetMaxXValue</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#aff6d569f1c9be10e85c9bf0bf3ecef54">SetMinXValue</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a6cac51ab41b5e703c8851d78fdd83eb4">GetMinXValue</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a586415efc2a9ace3f521bbe103ce1da3">GetRatioPixelValueX</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#a88aea9e1fd0f88dda2c8ab1dc82f3a21">SetLabelY</a>(QString <span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    QString <a class="code" href="class_data2_d.html#ae23450d3cf58cf91d45c83541ef9c09f">GetLabelY</a>();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#a7e3768abd850a3c0e838cc95c1c1425c">SetMaxYValue</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a5f590ee2429ed0a5e69be0436f126baf">GetMaxYValue</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#aafd794c6b7db2cb2ae955fdff2a3b686">SetMinYValue</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a647a1636c7d543746c416d8e49a7af3e">GetMinYValue</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_data2_d.html#a405e4743ed5d4823df87604b0e69cf94">GetRatioPixelValueY</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_data2_d.html#a96d85a0343b5fb1228bf5833b84e75ae">SaveToFile</a>(QString filePath);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> * <a class="code" href="class_data2_d.html#a1c79c8ae6ad3855064f1159f26f5ace5">GetData1D</a>(QRect points);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#a5b14f809c60b51e34839ae87b546ee5c">SetDefaults</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#abecc86b92e71a7315415826d5a897d27">CalculateRatios</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_data2_d.html#a7857924871e7c2a79b7987f7cdfcb623">CalculateMaxMinZ</a>();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif // DATA2D_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="data2d_8h.html">data2d.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

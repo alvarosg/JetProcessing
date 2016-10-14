@@ -1,0 +1,401 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase SpectrogramData</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_spectrogram_data.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pub-attribs">Atributos públicos</a> &#124;
+<a href="class_spectrogram_data-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase SpectrogramData</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que contiene los datos que se van a representar en el espectrograma.  
+ <a href="class_spectrogram_data.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:ad0a904b6bf8f023e717af6d8fc7beb79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#ad0a904b6bf8f023e717af6d8fc7beb79">SpectrogramData</a> (const <a class="el" href="class_data2_d.html">Data2D</a> *data, float minZ, float maxZ)</td></tr>
+<tr class="memitem:afe709b6e448db73f8548bc2b76f27d19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#afe709b6e448db73f8548bc2b76f27d19">~SpectrogramData</a> ()</td></tr>
+<tr class="memitem:a60ae4405d7aef36825c2b67da42a6af7"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#a60ae4405d7aef36825c2b67da42a6af7">value</a> (double x, double y) const </td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-attribs"></a>
+Atributos públicos</h2></td></tr>
+<tr class="memitem:aef6c749b96a5cb48154f06e6d09585fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#aef6c749b96a5cb48154f06e6d09585fb">sourceData</a></td></tr>
+<tr class="memitem:ad01b27d29ec08542a901b09b272747ee"><td class="memItemLeft" align="right" valign="top">float **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#ad01b27d29ec08542a901b09b272747ee">buffer</a></td></tr>
+<tr class="memitem:ae97c7078e18c7b17939f92e57e27943b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#ae97c7078e18c7b17939f92e57e27943b">sizeX</a></td></tr>
+<tr class="memitem:aa93d69622b7d8ebe3127374003131948"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#aa93d69622b7d8ebe3127374003131948">sizeY</a></td></tr>
+<tr class="memitem:ac661c9e430ae5329fad518c1ab927ba0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#ac661c9e430ae5329fad518c1ab927ba0">ratioX</a></td></tr>
+<tr class="memitem:a28d76cba00590b7d806243da77d39819"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#a28d76cba00590b7d806243da77d39819">ratioY</a></td></tr>
+<tr class="memitem:a81bad795b09c4daa99bf7e3c25d25f4e"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#a81bad795b09c4daa99bf7e3c25d25f4e">minX</a></td></tr>
+<tr class="memitem:a4e5907c37f6ed04392cee9cd6406ce94"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_spectrogram_data.html#a4e5907c37f6ed04392cee9cd6406ce94">minY</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase que contiene los datos que se van a representar en el espectrograma. </p>
+<p>El método reimplementado "value" se encarga de responder a peticiones acerca de qué valor se debe representar en uan posición dada. </p>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00052">52</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="ad0a904b6bf8f023e717af6d8fc7beb79"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpectrogramData::SpectrogramData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_data2_d.html">Data2D</a> *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>minZ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>maxZ</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Puntero a datos bidimensionales. <a class="el" href="class_spectrogram_data.html" title="Clase que contiene los datos que se van a representar en el espectrograma.">SpectrogramData</a> hace una copia de los datos, por lo que el padre sigue siendo repsonsable de el objeto pasado como argumento. </td></tr>
+    <tr><td class="paramname">minZ</td><td>Mínimo valor para la variable dependiente. </td></tr>
+    <tr><td class="paramname">maxZ</td><td>Máximo valor para la variable dependiente. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00066">66</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afe709b6e448db73f8548bc2b76f27d19"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpectrogramData::~SpectrogramData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00084">84</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a60ae4405d7aef36825c2b67da42a6af7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double SpectrogramData::value </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función reimplementada para responder a qué valor debe asignarse a cierta posición del gráfico. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>Coordenada x para la que se solicita el valor. </td></tr>
+    <tr><td class="paramname">y</td><td>Coordenada y para la que se solicita el valor. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor que se debe representar. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00089">89</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="ad01b27d29ec08542a901b09b272747ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float** SpectrogramData::buffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Puntero a puntero que apunta al array en la zona de memoria donde están los datos. </p>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00057">57</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a81bad795b09c4daa99bf7e3c25d25f4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SpectrogramData::minX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mínimo valor tomado por la variable independiente X. Correspondiente al índice 0. </p>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00062">62</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e5907c37f6ed04392cee9cd6406ce94"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SpectrogramData::minY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Mínimo valor tomado por la variable independiente Y. Correspondiente al índice sizeY-1. </p>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00063">63</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac661c9e430ae5329fad518c1ab927ba0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SpectrogramData::ratioX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Número de píxeles por unidad para la variable independiente X. </p>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00060">60</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a28d76cba00590b7d806243da77d39819"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float SpectrogramData::ratioY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Número de píxeles por unidad para la variable independiente Y. </p>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00061">61</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae97c7078e18c7b17939f92e57e27943b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SpectrogramData::sizeX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Ancho de los datos. </p>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00058">58</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa93d69622b7d8ebe3127374003131948"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SpectrogramData::sizeY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Alto de los datos. </p>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00059">59</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef6c749b96a5cb48154f06e6d09585fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data2_d.html">Data2D</a>* SpectrogramData::sourceData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Datos 2d que se están representando. </p>
+
+<p>Definición en la línea <a class="el" href="spectrogramplot_8cpp_source.html#l00056">56</a> del archivo <a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
+<li>sources/<a class="el" href="spectrogramplot_8cpp_source.html">spectrogramplot.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_spectrogram_data.html">SpectrogramData</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

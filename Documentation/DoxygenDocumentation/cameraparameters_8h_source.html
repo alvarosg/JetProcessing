@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Fichero Fuente headers/cameraparameters.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('cameraparameters_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">cameraparameters.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="cameraparameters_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef CAMERAPARAMETERS_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define CAMERAPARAMETERS_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QSettings&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_camera_parameters.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_camera_parameters.html" title="Clase que contiene un set de parámetros para configuración de la cámara.">CameraParameters</a>{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_camera_parameters.html#adaf8be77bfd384c171b4766cf73ccac7">   26</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#adaf8be77bfd384c171b4766cf73ccac7">sizeX</a>;                          </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="class_camera_parameters.html#a7de74d8e586f6913119db9397f2ad592">   27</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#a7de74d8e586f6913119db9397f2ad592">sizeY</a>;                          </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_camera_parameters.html#a9ae5440f80a54ce334c13787ac065fa5">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#a9ae5440f80a54ce334c13787ac065fa5">pixelClock</a>;                     </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_camera_parameters.html#a36f1746ad82c02c1ed367c4e3d5f1af4">   29</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_camera_parameters.html#a36f1746ad82c02c1ed367c4e3d5f1af4">frameRate</a>;                   </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_camera_parameters.html#a46ca8c3108f9cc747e75cb798f3ebe86">   30</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_camera_parameters.html#a46ca8c3108f9cc747e75cb798f3ebe86">exposureTime</a>;                </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="class_camera_parameters.html#a4787b11b16d07ce3521e5416b127ab2b">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#a4787b11b16d07ce3521e5416b127ab2b">gainM</a>;                          </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="class_camera_parameters.html#a6ada488e478add89f62bd0c8aec9be5c">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#a6ada488e478add89f62bd0c8aec9be5c">gainR</a>;                          </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_camera_parameters.html#ad069934fc130d878ebe32746a1b64d79">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#ad069934fc130d878ebe32746a1b64d79">gainG</a>;                          </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_camera_parameters.html#ab7c83124785171a29b12d3b2bc58f7c0">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#ab7c83124785171a29b12d3b2bc58f7c0">gainB</a>;                          </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_camera_parameters.html#adf73697f1136028ab13ecf8a0b878f22">CameraParameters</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_parameters.html#a10ec2791efbd209e9afa91d63e44d341">SetSizeX</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_parameters.html#ad5c64ec26e169340c2b3b372ac880ad3">SetSizeY</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_parameters.html#a4a92f50f0156ab49f80ca46c39d9982f">SetPixelClock</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_parameters.html#afb762647091f6eb620ccd9a3a75eb446">SetFrameRate</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_parameters.html#ad40741c491483e0eca44416011918fe5">SetExposure</a>(<span class="keywordtype">double</span> value);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_parameters.html#a279fd656998c24fd70918476b65ef267">SetGainMaster</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_parameters.html#a6f9e8b88c0f58a8c70c90b558fa6e756">SetGainRed</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_parameters.html#a77bf8b2f0814c0d8a713f118ef5cf4fe">SetGainGreen</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_camera_parameters.html#af844ff003924da7365df93c00c9a0b51">SetGainBlue</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#a7980836d68bb28db79ae10138c4261ab">GetSizeX</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#a57eb5cb7bdd4c6b4c867faf9327fc2e2">GetSizeY</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#a0896ec59cb69fe6003f5ad9be9a33a20">GetPixelClock</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_camera_parameters.html#ac75fbb48f417a0a0352d5e7745b7ccc3">GetFrameRate</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_camera_parameters.html#a8fbecd18b361824523b452d599d6a9c9">GetExposure</a>();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#a2182de6e23bfc9e97af61b1fd3fa5e4b">GetGainMaster</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#afbafb4de59723199a3d006e4eb856a8f">GetGainRed</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#af23e7ea4ea3198dbdc4047914724c975">GetGainGreen</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_camera_parameters.html#a5664d7262f5456aa14acf1ac7328952d">GetGainBlue</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_camera_parameters.html#addf89a86caece9b6971709b8515a22ca">LoadFromFile</a>(QString filePath);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_camera_parameters.html#a83d9866f8afbc7068ccce5bb6879c24e">SaveToFile</a>(QString filePath);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif // CAMERAPARAMETERS_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="cameraparameters_8h.html">cameraparameters.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

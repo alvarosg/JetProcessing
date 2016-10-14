@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Fichero Fuente sources/dialogsetrectangle.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dialogsetrectangle_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dialogsetrectangle.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dialogsetrectangle_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dialogsetrectangle_8h.html" title="Clase para el cuadro de diálogo que seleccionar un rectángulo o una línea sobre la imagen de la fase...">dialogsetrectangle.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;ui_dialogsetrectangle.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#a15249a868a4bfa7d4390de239f098e23">   14</a></span>&#160;<a class="code" href="class_dialog_set_rectangle.html#a15249a868a4bfa7d4390de239f098e23">DialogSetRectangle::DialogSetRectangle</a>(QWidget *parent,<a class="code" href="class_main_controller.html" title="Controlador principal del programa.">MainController</a> * mainController_in,QRect * rect_in,<span class="keywordtype">int</span> nAlg,<span class="keywordtype">int</span> nImg,<span class="keywordtype">bool</span> line) :</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    QDialog(parent,Qt::CustomizeWindowHint | Qt::WindowTitleHint ),</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    ui(new Ui::<a class="code" href="class_dialog_set_rectangle.html" title="Clase para el control del cuadro de diálogo que permite seleccionar un rectángulo o una recta...">DialogSetRectangle</a>){</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;setupUi(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    this-&gt;setModal(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span>(line==<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        this-&gt;setWindowTitle(<a class="code" href="dialogsetrectangle_8h.html#a3796f78cf2a712cd2e0045f2b27bd744">CR_CAPTION_RECT</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        this-&gt;setWindowTitle(<a class="code" href="dialogsetrectangle_8h.html#aef330762ab8356c03e00993b20fe201f">CR_CAPTION_LINE</a>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//Inicio parámetros</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>=rect_in;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a9750cb0227009b85f58f7c4a056a10cc">pointBeingMoved</a>=0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#aa7617c51fefbcea139bc6414d769e328">mainController</a>=mainController_in;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//Desactivo el keyboard tracking de las SpinBox</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;setKeyboardTracking(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin-&gt;setKeyboardTracking(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;setKeyboardTracking(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin-&gt;setKeyboardTracking(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//Pido la imagen</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>=<a class="code" href="class_dialog_set_rectangle.html#aa7617c51fefbcea139bc6414d769e328">mainController</a>-&gt;<a class="code" href="class_main_controller.html#a121636f3d753f10e4794b18905f6a950">GetPhaseData2D</a>(nImg,nAlg);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QPixmap * phasePixmap;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//Sólo si había datos</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#aa228e79bae12a07436914c613b526728">GetSizeX</a>()!=0 || <a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#a3464496d3842b25b63d09abe1800becb">GetSizeY</a>()!=0){</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">//Obtengo los parámetros para averiguar las coordenadas de los puntos</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#aad502b2c6de7f3824b40c68ad832eb53">dX</a>=<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#a586415efc2a9ace3f521bbe103ce1da3">GetRatioPixelValueX</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a858bdaa742db390d6e22adcf00c5c6c6">dY</a>=<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#a405e4743ed5d4823df87604b0e69cf94">GetRatioPixelValueY</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a7adc5a32d49a6633e24df4ced81cbbac">minXValue</a>=<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#a6cac51ab41b5e703c8851d78fdd83eb4">GetMinXValue</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a52d89dcf2dcebcac06daff1ef60ba31e">maxYValue</a>=<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#a5f590ee2429ed0a5e69be0436f126baf">GetMaxYValue</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">//Creo la vista previa</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_spectrogram_plot.html" title="Clase que implementa PlotData2D para representar un spectrograma.">SpectrogramPlot</a> * spectrogram;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        spectrogram = <span class="keyword">new</span> <a class="code" href="class_spectrogram_plot.html" title="Clase que implementa PlotData2D para representar un spectrograma.">SpectrogramPlot</a>(NULL);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        spectrogram-&gt;<a class="code" href="class_spectrogram_plot.html#a4c2c665661159f15a9d5d30a9efe0047">SetData2D</a>(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        spectrogram-&gt;enableAxis(0,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        spectrogram-&gt;enableAxis(1,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        spectrogram-&gt;enableAxis(2,<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        spectrogram-&gt;setFixedSize(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#aa228e79bae12a07436914c613b526728">GetSizeX</a>(),<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#a3464496d3842b25b63d09abe1800becb">GetSizeY</a>());</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        phasePixmap=spectrogram-&gt;<a class="code" href="class_spectrogram_plot.html#ac72d66ccc0f24652007817d0caee6b14">GetAsQPixmap</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">delete</span> spectrogram;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">//Establezo valores máximos</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin-&gt;setMaximum(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#aa228e79bae12a07436914c613b526728">GetSizeX</a>()-1);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;setMaximum(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#aa228e79bae12a07436914c613b526728">GetSizeX</a>()-1);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin-&gt;setMaximum(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#a3464496d3842b25b63d09abe1800becb">GetSizeY</a>()-1);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;setMaximum(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#a3464496d3842b25b63d09abe1800becb">GetSizeY</a>()-1);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//Si no habia datos, pongo el tamaño de la máscara</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">delete</span> <a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>=NULL;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        QRect mask=<a class="code" href="class_dialog_set_rectangle.html#aa7617c51fefbcea139bc6414d769e328">mainController</a>-&gt;<a class="code" href="class_main_controller.html#ae389114ab34062fdf513c9d45324e940">GetAlgorithmSequenceController</a>().<a class="code" href="class_algorithm_sequence_controller.html#ab8e80512ff77c9bab5772ea9e21ab7d3">GetMinRectangleAbsolute</a>(nAlg);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">if</span> (mask==QRect(0,0,0,0))</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            mask=<a class="code" href="class_dialog_set_rectangle.html#aa7617c51fefbcea139bc6414d769e328">mainController</a>-&gt;<a class="code" href="class_main_controller.html#aa67b9de8cd0a6f4f85e5472270e00bb3">GetFullImageMask</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        phasePixmap=<span class="keyword">new</span> QPixmap(mask.width(),mask.height());</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        phasePixmap-&gt;fill(Qt::cyan);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">//Establezo valores máximos</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin-&gt;setMaximum(mask.width()-1);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;setMaximum(mask.width()-1);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin-&gt;setMaximum(mask.height()-1);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;setMaximum(mask.height()-1);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//La escena que necesitaré para el recuadro de dibujo del rectángulo, con sus ítems</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a> = <span class="keyword">new</span> <a class="code" href="class_mask_selection_scene.html" title="Escena sobre la que se dibujan las máscaras y las líneas.">MaskSelectionScene</a>(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;previewScene);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;previewScene-&gt;setScene(<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;previewScene-&gt;setMouseTracking(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a6e959c57bf567301d78af5c671f36a49">rectPixmap</a> =<span class="keyword">new</span> QGraphicsPixmapItem(*phasePixmap,0,<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">delete</span> phasePixmap;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span>(line==<span class="keyword">false</span>){</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a> = <span class="keyword">new</span> QGraphicsRectItem(0,<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a>-&gt;setPen(QPen::QPen(Qt::gray));</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a2757a3cb440ab3e49b5e2ca099eafb2a">rectLine</a>=NULL;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;graphLine-&gt;hide();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a2757a3cb440ab3e49b5e2ca099eafb2a">rectLine</a> = <span class="keyword">new</span> QGraphicsLineItem(0,<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a2757a3cb440ab3e49b5e2ca099eafb2a">rectLine</a>-&gt;setPen(QPen::QPen(Qt::gray));</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a36ed1d8a90873df358b84f9c045bd7c9">firstPointLine</a> = <span class="keyword">new</span> QGraphicsPolygonItem(0,<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>) ;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a36ed1d8a90873df358b84f9c045bd7c9">firstPointLine</a>-&gt;setBrush(QBrush::QBrush(Qt::gray));</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a32c8b726b200eda9078d724bfad220b9">secondPointLine</a> = <span class="keyword">new</span> QGraphicsPolygonItem(0,<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>) ;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a32c8b726b200eda9078d724bfad220b9">secondPointLine</a>-&gt;setBrush(QBrush::QBrush(Qt::gray));</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a4df5d04a1e79094349d9bc9ecd382cff">centerPointLine</a> = <span class="keyword">new</span> QGraphicsPolygonItem(0,<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>) ;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a4df5d04a1e79094349d9bc9ecd382cff">centerPointLine</a>-&gt;setBrush(QBrush::QBrush(Qt::gray));</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a>=NULL;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>!=NULL)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;graphLine-&gt;show();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;graphLine-&gt;hide();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">//Establezco etiquetas  de texto</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelRectPosition-&gt;setText(<a class="code" href="dialogsetrectangle_8h.html#aff05082cf6821ca155bc37bce85505c0">CR_RECT</a>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelHelpMask-&gt;setText(<a class="code" href="dialogsetrectangle_8h.html#a246192d5584962c4b6e8c4c8767eb1e4">CR_HELPMASK</a>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelXMin-&gt;setText(<a class="code" href="dialogsetrectangle_8h.html#ab88b4a6096a42c28d3222e082d76f001">CR_RECT_XMIN</a>);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelXMax-&gt;setText(<a class="code" href="dialogsetrectangle_8h.html#a80b029a0254cda8b761939c00db86f3f">CR_RECT_XMAX</a>);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelYMin-&gt;setText(<a class="code" href="dialogsetrectangle_8h.html#ab19044eebf0941165e5460da3411885a">CR_RECT_YMIN</a>);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelYMax-&gt;setText(<a class="code" href="dialogsetrectangle_8h.html#a033f40206a8d57936ac3e1d6605dc94a">CR_RECT_YMAX</a>);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin, SIGNAL(valueChanged(<span class="keywordtype">int</span>)),<span class="keyword">this</span>, SLOT(<a class="code" href="class_dialog_set_rectangle.html#a5c02fee98731b8e2cb6b45b349360871">SpinBoxMinXChanged</a>()));</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax, SIGNAL(valueChanged(<span class="keywordtype">int</span>)),<span class="keyword">this</span>, SLOT(<a class="code" href="class_dialog_set_rectangle.html#a01a2508a25b0419fbcf2ee37d0a36914">SpinBoxMaxXChanged</a>()));</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin, SIGNAL(valueChanged(<span class="keywordtype">int</span>)),<span class="keyword">this</span>, SLOT(<a class="code" href="class_dialog_set_rectangle.html#adfec9a5614bc026012d4919bc9976a62">SpinBoxMinYChanged</a>()));</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax, SIGNAL(valueChanged(<span class="keywordtype">int</span>)),<span class="keyword">this</span>, SLOT(<a class="code" href="class_dialog_set_rectangle.html#a865ace3ae1ecd4f9de9b11335d58a22f">SpinBoxMaxYChanged</a>()));</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>, SIGNAL(mouseLeftButtonPressed(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)),<span class="keyword">this</span>, SLOT(<a class="code" href="class_dialog_set_rectangle.html#ab8715768ea384da2139227ec034a0e1e">MouseLeftButtonPressed</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>, SIGNAL(mouseLeftButtonMoved(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)),<span class="keyword">this</span>, SLOT(<a class="code" href="class_dialog_set_rectangle.html#a20a92a12a3ef0ef761800a4484caf06f">MouseLeftButtonMoved</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>, SIGNAL(mouseMoved(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)),<span class="keyword">this</span>,SLOT(<a class="code" href="class_dialog_set_rectangle.html#af22acc29198330771c6afbeddeb62375">MouseMoved</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>, SIGNAL(mouseReleased(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)),<span class="keyword">this</span>, SLOT(<a class="code" href="class_dialog_set_rectangle.html#ae9dae1dd43cfb1ab7eedcc1efe6acfe4">MouseReleased</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#adeafc129bddf05a7f04c885c7781f85b">rectScene</a>, SIGNAL(mouseWheel(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)),<span class="keyword">this</span>, SLOT(<a class="code" href="class_dialog_set_rectangle.html#a1861ddbc064dd3554eb6b45a3524f466">MouseWheel</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>,<span class="keywordtype">int</span>)));</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;buttonBox, SIGNAL(accepted()),<span class="keyword">this</span>,SLOT(accept()));</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    connect(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;buttonBox, SIGNAL(rejected()),<span class="keyword">this</span>,SLOT(reject()));</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    this-&gt;<a class="code" href="class_dialog_set_rectangle.html#a0f4ecee08a19662118cd59b5dec48a43">UpdateControls</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#ad41e0ac375b25adb2722498de0951275">  135</a></span>&#160;<a class="code" href="class_dialog_set_rectangle.html#ad41e0ac375b25adb2722498de0951275">DialogSetRectangle::~DialogSetRectangle</a>(){</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>!=NULL) <span class="keyword">delete</span> <a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">delete</span> <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#a5c02fee98731b8e2cb6b45b349360871">  140</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dialog_set_rectangle.html#a5c02fee98731b8e2cb6b45b349360871">DialogSetRectangle::SpinBoxMinXChanged</a>(){</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;setLeft(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin-&gt;value());</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="comment">//Si es un rectángulo, hay que hacerlo la dirección adecuada (Si es una recta, no)</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a>!=NULL){</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right()&lt;<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left())</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;setRight(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left());</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    this-&gt;<a class="code" href="class_dialog_set_rectangle.html#a0f4ecee08a19662118cd59b5dec48a43">UpdateControls</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;}</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#a01a2508a25b0419fbcf2ee37d0a36914">  152</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dialog_set_rectangle.html#a01a2508a25b0419fbcf2ee37d0a36914">DialogSetRectangle::SpinBoxMaxXChanged</a>(){</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;setRight(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;value());</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">//Si es un rectángulo, hay que hacerlo la dirección adecuada (Si es una recta, no)</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a>!=NULL){</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right()&lt;<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left())</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;setRight(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left());</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    }</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    this-&gt;<a class="code" href="class_dialog_set_rectangle.html#a0f4ecee08a19662118cd59b5dec48a43">UpdateControls</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#adfec9a5614bc026012d4919bc9976a62">  164</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dialog_set_rectangle.html#adfec9a5614bc026012d4919bc9976a62">DialogSetRectangle::SpinBoxMinYChanged</a>(){</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;setTop(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin-&gt;value());</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">//Si es un rectángulo, hay que hacerlo la dirección adecuada (Si es una recta, no)</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a>!=NULL){</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom()&lt;<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top())</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;setBottom(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top());</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    this-&gt;<a class="code" href="class_dialog_set_rectangle.html#a0f4ecee08a19662118cd59b5dec48a43">UpdateControls</a>();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#a865ace3ae1ecd4f9de9b11335d58a22f">  176</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dialog_set_rectangle.html#a865ace3ae1ecd4f9de9b11335d58a22f">DialogSetRectangle::SpinBoxMaxYChanged</a>(){</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;setBottom(<a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;value());</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">//Si es un rectángulo, hay que hacerlo la dirección adecuada (Si es una recta, no)</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a>!=NULL){</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom()&lt;<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top())</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;setBottom(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top());</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    this-&gt;<a class="code" href="class_dialog_set_rectangle.html#a0f4ecee08a19662118cd59b5dec48a43">UpdateControls</a>();</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#a0f4ecee08a19662118cd59b5dec48a43">  188</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dialog_set_rectangle.html#a0f4ecee08a19662118cd59b5dec48a43">DialogSetRectangle::UpdateControls</a>(){</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    QString string;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">float</span> valueFloat;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">//Actualizo los spinbox</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin-&gt;setValue(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left());</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;setValue(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right());</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin-&gt;setValue(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top());</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;setValue(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom());</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">//Actualizo las etiquetas, poniendo cosas sólo si tengo una imagen</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a> != NULL){</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        valueFloat=<a class="code" href="class_dialog_set_rectangle.html#a7adc5a32d49a6633e24df4ced81cbbac">minXValue</a>+((float)<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left())*<a class="code" href="class_dialog_set_rectangle.html#aad502b2c6de7f3824b40c68ad832eb53">dX</a>;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordtype">string</span>.setNum(valueFloat,<span class="charliteral">&#39;g&#39;</span>,4);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keywordtype">string</span>=<span class="keywordtype">string</span>+<a class="code" href="dialogsetrectangle_8h.html#a9ccb77028148b1f3c8b04860049db5fe">CR_UNITS</a>;</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelXMinMm-&gt;setText(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        valueFloat=<a class="code" href="class_dialog_set_rectangle.html#a7adc5a32d49a6633e24df4ced81cbbac">minXValue</a>+((float)<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right())*<a class="code" href="class_dialog_set_rectangle.html#aad502b2c6de7f3824b40c68ad832eb53">dX</a>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordtype">string</span>.setNum(valueFloat,<span class="charliteral">&#39;g&#39;</span>,4);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="keywordtype">string</span>=<span class="keywordtype">string</span>+<a class="code" href="dialogsetrectangle_8h.html#a9ccb77028148b1f3c8b04860049db5fe">CR_UNITS</a>;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelXMaxMm-&gt;setText(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        valueFloat=<a class="code" href="class_dialog_set_rectangle.html#a52d89dcf2dcebcac06daff1ef60ba31e">maxYValue</a>-((float)<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom())*<a class="code" href="class_dialog_set_rectangle.html#a858bdaa742db390d6e22adcf00c5c6c6">dY</a>;</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordtype">string</span>.setNum(valueFloat,<span class="charliteral">&#39;g&#39;</span>,4);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordtype">string</span>=<span class="keywordtype">string</span>+<a class="code" href="dialogsetrectangle_8h.html#a9ccb77028148b1f3c8b04860049db5fe">CR_UNITS</a>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelYMinMm-&gt;setText(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        valueFloat=<a class="code" href="class_dialog_set_rectangle.html#a52d89dcf2dcebcac06daff1ef60ba31e">maxYValue</a>-((float)<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top())*<a class="code" href="class_dialog_set_rectangle.html#a858bdaa742db390d6e22adcf00c5c6c6">dY</a>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keywordtype">string</span>.setNum(valueFloat,<span class="charliteral">&#39;g&#39;</span>,4);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="keywordtype">string</span>=<span class="keywordtype">string</span>+<a class="code" href="dialogsetrectangle_8h.html#a9ccb77028148b1f3c8b04860049db5fe">CR_UNITS</a>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelYMaxMm-&gt;setText(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    }</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelXMinMm-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelXMaxMm-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelYMinMm-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelYMaxMm-&gt;setText(<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <span class="comment">//Pinto el rectángulo o la recta (y sus extremos)</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a>!=NULL)</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a>-&gt;setRect(*<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a2757a3cb440ab3e49b5e2ca099eafb2a">rectLine</a>-&gt;setLine(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left(),<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top(),<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right(),<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom());</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        QPolygonF polygon;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        polygon=<a class="code" href="class_dialog_set_rectangle.html#a02a74e182e4004d7c8b9e478d974ef7b">GetPolygonCentered</a>(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left(),<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top());</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a36ed1d8a90873df358b84f9c045bd7c9">firstPointLine</a>-&gt;setPolygon(polygon);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        polygon=<a class="code" href="class_dialog_set_rectangle.html#a02a74e182e4004d7c8b9e478d974ef7b">GetPolygonCentered</a>(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right(),<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom());</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a32c8b726b200eda9078d724bfad220b9">secondPointLine</a>-&gt;setPolygon(polygon);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        polygon=<a class="code" href="class_dialog_set_rectangle.html#a02a74e182e4004d7c8b9e478d974ef7b">GetPolygonCentered</a>((<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left()+<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right())/2,(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top()+<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom())/2);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a4df5d04a1e79094349d9bc9ecd382cff">centerPointLine</a>-&gt;setPolygon(polygon);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">//Pinto el gráfico de la recta</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>!=NULL){</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <a class="code" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> * data1d=<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data2_d.html#a1c79c8ae6ad3855064f1159f26f5ace5">GetData1D</a>(*<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;graphLine-&gt;SetInit(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;graphLine-&gt;SetData1D(data1d);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;graphLine-&gt;SetMinMaxZValue(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data_result.html#a2dc7034058e200345e0fa47955d3fd92">GetMinZValue</a>(),<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>-&gt;<a class="code" href="class_data_result.html#af9d383dddf628cceb386772d410902c3">GetMaxZValue</a>());</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keyword">delete</span> data1d;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#a02a74e182e4004d7c8b9e478d974ef7b">  252</a></span>&#160;QPolygonF <a class="code" href="class_dialog_set_rectangle.html#a02a74e182e4004d7c8b9e478d974ef7b">DialogSetRectangle::GetPolygonCentered</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y){</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    QPolygonF polygon;</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordtype">float</span> width=3;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    polygon &lt;&lt; QPointF(-width+x, 0+y) &lt;&lt; QPointF(0+x, width+y) &lt;&lt; QPointF(width+x, 0+y) &lt;&lt; QPointF(0+x, -width+y);</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">return</span> polygon;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#ab48446b10c39b925a3bee04dffa520f2">  259</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_dialog_set_rectangle.html#ab48446b10c39b925a3bee04dffa520f2">DialogSetRectangle::GetPointBeingMoved</a>(<span class="keywordtype">float</span> x, <span class="keywordtype">float</span> y){</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordtype">float</span> width=3;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordflow">if</span>( x &gt; (<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right()+<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left())/2-width &amp;&amp; x &lt; (<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right()+<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left())/2+width &amp;&amp;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;             y &gt; (<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom()+<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top())/2-width &amp;&amp; y &lt; (<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom()+<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top())/2+width )</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( x &gt; <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left()-width &amp;&amp; x &lt; <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left()+width &amp;&amp; y &gt; <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top()-width &amp;&amp; y &lt; <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top()+width )</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>( x &gt; <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right()-width &amp;&amp; x &lt; <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right()+width &amp;&amp; y &gt; <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom()-width &amp;&amp; y &lt; <a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom()+width )</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;}</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#ab8715768ea384da2139227ec034a0e1e">  274</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dialog_set_rectangle.html#ab8715768ea384da2139227ec034a0e1e">DialogSetRectangle::MouseLeftButtonPressed</a>(<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> y){</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="comment">//Téngase en cuenta que no hace falta redibujar nada, ya que  al cambiar los valores, automáticamente se actualiza la ventana</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="comment">//Si es un rectángulo</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a>!=NULL){</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin-&gt;setValue(x);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;setValue(x);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin-&gt;setValue(y);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;setValue(y);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="comment">//Si es una recta</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a9750cb0227009b85f58f7c4a056a10cc">pointBeingMoved</a>=<a class="code" href="class_dialog_set_rectangle.html#ab48446b10c39b925a3bee04dffa520f2">GetPointBeingMoved</a>(x,y);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="comment">//si he pinchado en el vacío</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a9750cb0227009b85f58f7c4a056a10cc">pointBeingMoved</a>==0){</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin-&gt;setValue(x);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;setValue(x);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin-&gt;setValue(y);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;setValue(y);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        }</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    }</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;}</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;</div>
+<div class="line"><a name="l00296"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#a20a92a12a3ef0ef761800a4484caf06f">  296</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dialog_set_rectangle.html#a20a92a12a3ef0ef761800a4484caf06f">DialogSetRectangle::MouseLeftButtonMoved</a>(<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> y){</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="comment">//Téngase en cuenta que no hace falta redibujar nada, ya que  al cambiar los valores, automáticamente se actualiza la ventana</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="comment">//Si es un rectángulo</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#a488936d63324588b641e138ed70e804d">rectRect</a>!=NULL){</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="keywordflow">if</span> (x&lt;ui-&gt;spinXMin-&gt;value())</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin-&gt;setValue(x);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="keywordflow">if</span> (y&lt;ui-&gt;spinYMin-&gt;value())</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin-&gt;setValue(y);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;setValue(x);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;setValue(y);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    }</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">//Si es una recta</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        <span class="keywordflow">switch</span>(<a class="code" href="class_dialog_set_rectangle.html#a9750cb0227009b85f58f7c4a056a10cc">pointBeingMoved</a>){</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="comment">//Si he pinchado donde no hay nada</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;setValue(x);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;setValue(y);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="comment">//Si he pinchado en el primer punto</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin-&gt;setValue(x);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin-&gt;setValue(y);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            <span class="comment">//Si he pinchado en el segundo punto</span></div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;setValue(x);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;                <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;setValue(y);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="comment">//Si he pinchado en el centro</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                QRect rectAux=*<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                rectAux.setLeft(x-(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right()-<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left())/2);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                rectAux.setRight(x+(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;right()-<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;left())/2);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;                rectAux.setTop(y-(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom()-<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top())/2);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;                rectAux.setBottom(y+(<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;bottom()-<a class="code" href="class_dialog_set_rectangle.html#a72c4fff4fda1fa5e588d8cdc8a10bba0">rect</a>-&gt;top())/2);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;                <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMin-&gt;setValue(rectAux.left());</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinXMax-&gt;setValue(rectAux.right());</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMin-&gt;setValue(rectAux.top());</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;spinYMax-&gt;setValue(rectAux.bottom());</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        }</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;}</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;</div>
+<div class="line"><a name="l00343"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#ae9dae1dd43cfb1ab7eedcc1efe6acfe4">  343</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dialog_set_rectangle.html#ae9dae1dd43cfb1ab7eedcc1efe6acfe4">DialogSetRectangle::MouseReleased</a>(<span class="keywordtype">int</span>,<span class="keywordtype">int</span>){</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    this-&gt;<a class="code" href="class_dialog_set_rectangle.html#a0f4ecee08a19662118cd59b5dec48a43">UpdateControls</a>();</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a9750cb0227009b85f58f7c4a056a10cc">pointBeingMoved</a>=0;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
+<div class="line"><a name="l00348"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#af22acc29198330771c6afbeddeb62375">  348</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dialog_set_rectangle.html#af22acc29198330771c6afbeddeb62375">DialogSetRectangle::MouseMoved</a>(<span class="keywordtype">int</span> x,<span class="keywordtype">int</span> y){</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    QString string;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordtype">float</span> mmX=<a class="code" href="class_dialog_set_rectangle.html#a7adc5a32d49a6633e24df4ced81cbbac">minXValue</a> + ((float)x)*<a class="code" href="class_dialog_set_rectangle.html#aad502b2c6de7f3824b40c68ad832eb53">dX</a>;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordtype">float</span> mmY=<a class="code" href="class_dialog_set_rectangle.html#a52d89dcf2dcebcac06daff1ef60ba31e">maxYValue</a> - ((float)y)*<a class="code" href="class_dialog_set_rectangle.html#a858bdaa742db390d6e22adcf00c5c6c6">dY</a>;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="comment">//Sólo incluyo los milímetros si estoy sobre una imagen</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="class_dialog_set_rectangle.html#ab9d9101b6ee1c9a837f812cb013f594d">data2d</a>!=NULL)</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        <span class="keywordtype">string</span>.sprintf(<span class="stringliteral">&quot;%5i (%4g%s), %5i (%4g%s)&quot;</span>,x,mmX,<a class="code" href="dialogsetrectangle_8h.html#a9ccb77028148b1f3c8b04860049db5fe">CR_UNITS</a>,y,mmY,<a class="code" href="dialogsetrectangle_8h.html#a9ccb77028148b1f3c8b04860049db5fe">CR_UNITS</a>);</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordtype">string</span>.sprintf(<span class="stringliteral">&quot;%5i , %5i&quot;</span>,x,y);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;labelCurrentCoords-&gt;setText(<span class="keywordtype">string</span>);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;}</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno"><a class="code" href="class_dialog_set_rectangle.html#a1861ddbc064dd3554eb6b45a3524f466">  361</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_dialog_set_rectangle.html#a1861ddbc064dd3554eb6b45a3524f466">DialogSetRectangle::MouseWheel</a>(<span class="keywordtype">int</span> delta, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>){</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">//Un parámetro para el zoom</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordtype">double</span> scaleFactor = 1.05;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordflow">if</span>(delta &gt; 0){</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="comment">//Zoom in</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;previewScene-&gt;scale(scaleFactor, scaleFactor);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="comment">//Zooming out</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <a class="code" href="class_dialog_set_rectangle.html#a3d073b3ff42a461af5daf2eda3b1643f">ui</a>-&gt;previewScene-&gt;scale(1.0 / scaleFactor, 1.0 / scaleFactor);</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    this-&gt;<a class="code" href="class_dialog_set_rectangle.html#a0f4ecee08a19662118cd59b5dec48a43">UpdateControls</a>();</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html">sources</a></li><li class="navelem"><a class="el" href="dialogsetrectangle_8cpp.html">dialogsetrectangle.cpp</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

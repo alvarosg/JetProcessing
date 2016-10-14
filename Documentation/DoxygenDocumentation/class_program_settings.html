@@ -1,0 +1,851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase ProgramSettings</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_program_settings.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_program_settings-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase ProgramSettings</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que contiene las preferencias persistentes del programa.  
+ <a href="class_program_settings.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="programsettings_8h_source.html">programsettings.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a21d001a5831b1de0850899095630cb1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a21d001a5831b1de0850899095630cb1a">ProgramSettings</a> ()</td></tr>
+<tr class="memitem:a12182ddfd6fe11a652a06830e59cbc36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a12182ddfd6fe11a652a06830e59cbc36">SetFirstExecution</a> (bool value)</td></tr>
+<tr class="memitem:a70bee7ba8ccb380baa5573b0489b2558"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a70bee7ba8ccb380baa5573b0489b2558">GetFirstExecution</a> ()</td></tr>
+<tr class="memitem:a548aa96942faa67be31408444c5bbaa6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a548aa96942faa67be31408444c5bbaa6">SetUseDefaultMode</a> (bool value)</td></tr>
+<tr class="memitem:a249531d420f9968e17490a422c7cfde4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a249531d420f9968e17490a422c7cfde4">GetUseDefaultMode</a> ()</td></tr>
+<tr class="memitem:a19a5868699d9eabf1bc6f459a261a0e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a19a5868699d9eabf1bc6f459a261a0e2">SetMode</a> (<a class="el" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a> value)</td></tr>
+<tr class="memitem:aafeed2b460efa949e7c4d68a120bfe8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#aafeed2b460efa949e7c4d68a120bfe8a">GetMode</a> ()</td></tr>
+<tr class="memitem:a7ad48ef14b82354b847f49d97ad755df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a7ad48ef14b82354b847f49d97ad755df">SetOutputFolder</a> (QString path)</td></tr>
+<tr class="memitem:ab9491aed07476ca189e056664457ba77"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#ab9491aed07476ca189e056664457ba77">GetOutputFolder</a> ()</td></tr>
+<tr class="memitem:a50de1d5d7af69f795017463550ac7d64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a50de1d5d7af69f795017463550ac7d64">SetSaveCameraPictures</a> (bool value)</td></tr>
+<tr class="memitem:aab72c80b4ce5d17910d278834c794a95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#aab72c80b4ce5d17910d278834c794a95">GetSaveCameraPictures</a> ()</td></tr>
+<tr class="memitem:aaf6b4841c9c26ae38c9bb6c3ac806aa3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#aaf6b4841c9c26ae38c9bb6c3ac806aa3">SetApplyUntilCurrentAlgorithm</a> (bool value)</td></tr>
+<tr class="memitem:aaff6f2545307caac911752651d62fe1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#aaff6f2545307caac911752651d62fe1a">GetApplyUntilCurrentAlgorithm</a> ()</td></tr>
+<tr class="memitem:a08afcbcc188ddc0d1f90917407c53648"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a08afcbcc188ddc0d1f90917407c53648">SetSaveGraphicsViewSize</a> (bool value)</td></tr>
+<tr class="memitem:a4a04cf8c7be096c6477282d13bc0f1c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a4a04cf8c7be096c6477282d13bc0f1c4">GetSaveGraphicsViewSize</a> ()</td></tr>
+<tr class="memitem:a3f21e2ef512a53ccfcdfcb680fb7a1c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a3f21e2ef512a53ccfcdfcb680fb7a1c3">SetCustomSize</a> (QSize size)</td></tr>
+<tr class="memitem:a0a730a8b6e834cc5ae9aaf07c2963e97"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a0a730a8b6e834cc5ae9aaf07c2963e97">GetCustomSize</a> ()</td></tr>
+<tr class="memitem:ad4f6f7e9c251532d0af59055d0d51f23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#ad4f6f7e9c251532d0af59055d0d51f23">SetDefaultImageFormat</a> (QString format)</td></tr>
+<tr class="memitem:af3d51f030a2c08bafa074a45f6b03ce3"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#af3d51f030a2c08bafa074a45f6b03ce3">GetDefaultImageFormat</a> ()</td></tr>
+<tr class="memitem:a31e8808f74f606a03ad94c49f4b6b412"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a31e8808f74f606a03ad94c49f4b6b412">LoadFromFile</a> (QString path=&quot;&quot;)</td></tr>
+<tr class="memitem:af965ae913f03b842830abb0e3ea47722"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#af965ae913f03b842830abb0e3ea47722">SaveToFile</a> (QString path=&quot;&quot;)</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a45d8c9d0b2cefd4d1ad7479a35a0b51d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a45d8c9d0b2cefd4d1ad7479a35a0b51d">firstExecution</a></td></tr>
+<tr class="memitem:ab716f9b9b5c67c2730c175b6c154a67d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#ab716f9b9b5c67c2730c175b6c154a67d">useDefaultMode</a></td></tr>
+<tr class="memitem:a8ca5ccd56a2fca81cefe69dc7df5b130"><td class="memItemLeft" align="right" valign="top"><a class="el" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a8ca5ccd56a2fca81cefe69dc7df5b130">mode</a></td></tr>
+<tr class="memitem:a441460f80681d8c542d95ce6e3649ee4"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a441460f80681d8c542d95ce6e3649ee4">outputFolder</a></td></tr>
+<tr class="memitem:afd67c0f1d5cf8dd0ecb1592db08687d9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#afd67c0f1d5cf8dd0ecb1592db08687d9">saveCameraPictures</a></td></tr>
+<tr class="memitem:ae3a590688c538c1a4077b5437aa4204c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#ae3a590688c538c1a4077b5437aa4204c">applyUntilCurrentAlgorithm</a></td></tr>
+<tr class="memitem:a642e85e9179a47b71ce3062ed31e1f48"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a642e85e9179a47b71ce3062ed31e1f48">saveGraphicsViewSize</a></td></tr>
+<tr class="memitem:acbbdfd795365084acd2c7f2675e14652"><td class="memItemLeft" align="right" valign="top">QSize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#acbbdfd795365084acd2c7f2675e14652">customSize</a></td></tr>
+<tr class="memitem:a59f2fb0b4dcf4cd978c2edf0f0062397"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_program_settings.html#a59f2fb0b4dcf4cd978c2edf0f0062397">defaultImageFormat</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase que contiene las preferencias persistentes del programa. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8h_source.html#l00030">30</a> del archivo <a class="el" href="programsettings_8h_source.html">programsettings.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a21d001a5831b1de0850899095630cb1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ProgramSettings::ProgramSettings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00013">13</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="aaff6f2545307caac911752651d62fe1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::GetApplyUntilCurrentAlgorithm </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo applyUntilCurrentAlgorithm. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00070">70</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0a730a8b6e834cc5ae9aaf07c2963e97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize ProgramSettings::GetCustomSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo customSize. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00086">86</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af3d51f030a2c08bafa074a45f6b03ce3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ProgramSettings::GetDefaultImageFormat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo defaultImageFormat. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00094">94</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a70bee7ba8ccb380baa5573b0489b2558"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::GetFirstExecution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo firstExecution. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00029">29</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aafeed2b460efa949e7c4d68a120bfe8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a> ProgramSettings::GetMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo mode. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00046">46</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9491aed07476ca189e056664457ba77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ProgramSettings::GetOutputFolder </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo outputFolder. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00054">54</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aab72c80b4ce5d17910d278834c794a95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::GetSaveCameraPictures </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo saveCameraPictures. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00062">62</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a04cf8c7be096c6477282d13bc0f1c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::GetSaveGraphicsViewSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo saveGraphicsViewSize. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00078">78</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a249531d420f9968e17490a422c7cfde4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::GetUseDefaultMode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recupera el atributo useDefaultMode. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del atributo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00038">38</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a31e8808f74f606a03ad94c49f4b6b412"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::LoadFromFile </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>path</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Carga la configuración en un fichero. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Ruta y nombre del fichero de donde se deben leer. Si esta vacío se guardarán en la ubicación automática proporcionada por Qt. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se cargaron correctamente todos los parámetros. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00098">98</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af965ae913f03b842830abb0e3ea47722"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::SaveToFile </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>path</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Guarda la configuració en un fichero. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Ruta y nombre del fichero donde se deben guardar. Si está vacío se guardarán en la ubicación automática proporcionada por Qt. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se guardó corectamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00122">122</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaf6b4841c9c26ae38c9bb6c3ac806aa3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProgramSettings::SetApplyUntilCurrentAlgorithm </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo applyUntilCurrentAlgorithm. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00066">66</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3f21e2ef512a53ccfcdfcb680fb7a1c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProgramSettings::SetCustomSize </td>
+          <td>(</td>
+          <td class="paramtype">QSize&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo customSize. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00082">82</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad4f6f7e9c251532d0af59055d0d51f23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProgramSettings::SetDefaultImageFormat </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>format</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo defaultImageFormat. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">format</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00090">90</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a12182ddfd6fe11a652a06830e59cbc36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProgramSettings::SetFirstExecution </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo firstExecution. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00025">25</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a19a5868699d9eabf1bc6f459a261a0e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProgramSettings::SetMode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo mode. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00042">42</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ad48ef14b82354b847f49d97ad755df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProgramSettings::SetOutputFolder </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo outputFolder. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00050">50</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a50de1d5d7af69f795017463550ac7d64"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProgramSettings::SetSaveCameraPictures </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo saveCameraPictures. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00058">58</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a08afcbcc188ddc0d1f90917407c53648"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProgramSettings::SetSaveGraphicsViewSize </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo saveGraphicsViewSize. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00074">74</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a548aa96942faa67be31408444c5bbaa6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ProgramSettings::SetUseDefaultMode </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Establece el valor del atributo useDefaultMode. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor para el atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="programsettings_8cpp_source.html#l00033">33</a> del archivo <a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="ae3a590688c538c1a4077b5437aa4204c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::applyUntilCurrentAlgorithm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si se debe aplicar sólo hasta el algoritmo seleccionado, o por el contrario toda la lista. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8h_source.html#l00039">39</a> del archivo <a class="el" href="programsettings_8h_source.html">programsettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acbbdfd795365084acd2c7f2675e14652"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSize ProgramSettings::customSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tamaño con el que se guardan los gráficos, en caso de seleccionar guardado personalizado. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8h_source.html#l00041">41</a> del archivo <a class="el" href="programsettings_8h_source.html">programsettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a59f2fb0b4dcf4cd978c2edf0f0062397"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ProgramSettings::defaultImageFormat</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica la extensión por defecto con la que se guardan las imágenes de los gráficos. Consiste en una cadena con las letras de la extensión sin el punto. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8h_source.html#l00042">42</a> del archivo <a class="el" href="programsettings_8h_source.html">programsettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a45d8c9d0b2cefd4d1ad7479a35a0b51d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::firstExecution</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si es la primera ejecución del programa en el ordenador. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8h_source.html#l00034">34</a> del archivo <a class="el" href="programsettings_8h_source.html">programsettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ca5ccd56a2fca81cefe69dc7df5b130"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a> ProgramSettings::mode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica el modo de cálculo que se está utilizando. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8h_source.html#l00036">36</a> del archivo <a class="el" href="programsettings_8h_source.html">programsettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a441460f80681d8c542d95ce6e3649ee4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString ProgramSettings::outputFolder</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica un directorio elegido por el usuario para la salida de los archivos. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8h_source.html#l00037">37</a> del archivo <a class="el" href="programsettings_8h_source.html">programsettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afd67c0f1d5cf8dd0ecb1592db08687d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::saveCameraPictures</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si se debenn guardar en un directorio las imágenes tomadas con la cámara. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8h_source.html#l00038">38</a> del archivo <a class="el" href="programsettings_8h_source.html">programsettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a642e85e9179a47b71ce3062ed31e1f48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::saveGraphicsViewSize</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si las imágenes de los gráficos se deben guardar con la resolución mostrada en pantalla o con una elegida por el usuario. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8h_source.html#l00040">40</a> del archivo <a class="el" href="programsettings_8h_source.html">programsettings.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab716f9b9b5c67c2730c175b6c154a67d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ProgramSettings::useDefaultMode</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indica si se debe usar el modo de cálculo por defecto o se debe preguntar al usuario. </p>
+
+<p>Definición en la línea <a class="el" href="programsettings_8h_source.html#l00035">35</a> del archivo <a class="el" href="programsettings_8h_source.html">programsettings.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="programsettings_8h_source.html">programsettings.h</a></li>
+<li>sources/<a class="el" href="programsettings_8cpp_source.html">programsettings.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_program_settings.html">ProgramSettings</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

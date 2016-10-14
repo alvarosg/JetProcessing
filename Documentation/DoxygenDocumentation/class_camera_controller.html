@@ -1,0 +1,1083 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase CameraController</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_camera_controller.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#signals">Señales</a> &#124;
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_camera_controller-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase CameraController</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que se encarga de manejar y gestionar la cámara, del tipo que sea.  
+ <a href="class_camera_controller.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="signals"></a>
+Señales</h2></td></tr>
+<tr class="memitem:ad85f957fec37b74f1962927d41053ea2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#ad85f957fec37b74f1962927d41053ea2">finished</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a8358e738a25a7e6726466dba257be381"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a8358e738a25a7e6726466dba257be381">CameraController</a> (<a class="el" href="cameracontroller_8h.html#af7eb92b45c5f7f64f02821f87c385ebb">CameraType</a> cameraType)</td></tr>
+<tr class="memitem:a9ecb9436179d1436803822196cd949e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a9ecb9436179d1436803822196cd949e6">~CameraController</a> ()</td></tr>
+<tr class="memitem:a0d83cb2f4c50cac72aeb11bc0ddb0ed2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a0d83cb2f4c50cac72aeb11bc0ddb0ed2">Initialize</a> ()</td></tr>
+<tr class="memitem:a9487abd64589abf7f3fca44746f86f4a"><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a9487abd64589abf7f3fca44746f86f4a">GetSourcePicture</a> ()</td></tr>
+<tr class="memitem:a418db52c8440824ec3f72fc43105a879"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a418db52c8440824ec3f72fc43105a879">RenewPicture</a> ()</td></tr>
+<tr class="memitem:a1f7b1b3ae473a422caeff1e5f19559bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a1f7b1b3ae473a422caeff1e5f19559bc">GetSize</a> (<a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command)</td></tr>
+<tr class="memitem:a01b90afa1d65135c1b6763db4fc2585f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a01b90afa1d65135c1b6763db4fc2585f">GetMaxSize</a> (<a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command)</td></tr>
+<tr class="memitem:af08c0537cf49027af2a10e17650e2873"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#af08c0537cf49027af2a10e17650e2873">GetMinSize</a> (<a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command)</td></tr>
+<tr class="memitem:afb915f1e9f0e56046d463d491833e9d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#afb915f1e9f0e56046d463d491833e9d4">SetSize</a> (<a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command, int value)</td></tr>
+<tr class="memitem:ad6c80268118fb97a1178dab795d8e3ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#ad6c80268118fb97a1178dab795d8e3ca">GetCurrentGain</a> (<a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command)</td></tr>
+<tr class="memitem:a0dce93caa981c0904b01d1558ed5d6e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a0dce93caa981c0904b01d1558ed5d6e1">GetDefaultGain</a> (<a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command)</td></tr>
+<tr class="memitem:af090431442dac42479d4436301529ede"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#af090431442dac42479d4436301529ede">GetMinGain</a> (<a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command)</td></tr>
+<tr class="memitem:aa2046004d527e8f79d058f166a3438f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#aa2046004d527e8f79d058f166a3438f8">GetMaxGain</a> (<a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command)</td></tr>
+<tr class="memitem:a8446da74a7650fc59c5714e7ca4d7db4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a8446da74a7650fc59c5714e7ca4d7db4">SetGain</a> (<a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command, int value)</td></tr>
+<tr class="memitem:aa6ff2080a8a1b79fb7a46adfc8cfe3d0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#aa6ff2080a8a1b79fb7a46adfc8cfe3d0">GetExposure</a> (<a class="el" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3">ExposureParameter</a> command)</td></tr>
+<tr class="memitem:ad6cf75275cc47e6929741e3a15db4fee"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#ad6cf75275cc47e6929741e3a15db4fee">GetDefaultExposure</a> ()</td></tr>
+<tr class="memitem:afb6781b65c6b3a7a10e83a6a4e07ffc9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#afb6781b65c6b3a7a10e83a6a4e07ffc9">SetExposure</a> (double value)</td></tr>
+<tr class="memitem:ad25965064812925b14cbaba33a5d0b23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#ad25965064812925b14cbaba33a5d0b23">GetPixelClock</a> (<a class="el" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049">PixelClockParameter</a> command)</td></tr>
+<tr class="memitem:a5bbfdaeb4a355bfb7983a657e7d30783"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a5bbfdaeb4a355bfb7983a657e7d30783">GetDefaultPixelClock</a> ()</td></tr>
+<tr class="memitem:a81d679f992d57e8310f5fbbf183c8135"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a81d679f992d57e8310f5fbbf183c8135">SetPixelClock</a> (int value)</td></tr>
+<tr class="memitem:a346f8bc2d9f80fa4b0109eaa01c44b66"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a346f8bc2d9f80fa4b0109eaa01c44b66">GetFrameRate</a> (<a class="el" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2">FramerateParameter</a> command)</td></tr>
+<tr class="memitem:a700576c0a542b9a9c2cdf3f512de061c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a700576c0a542b9a9c2cdf3f512de061c">GetDefaultFrameRate</a> ()</td></tr>
+<tr class="memitem:aecc93a0f5e0726c6999109c095dd81d0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#aecc93a0f5e0726c6999109c095dd81d0">SetFrameRate</a> (double value)</td></tr>
+<tr class="memitem:a60754c3409a323281fa7906315755c91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_parameters.html">CameraParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a60754c3409a323281fa7906315755c91">SetParameters</a> (<a class="el" href="class_camera_parameters.html">CameraParameters</a> parameters_in)</td></tr>
+<tr class="memitem:a8ceb9aa7cd64b14e025c0b15ea184679"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_parameters.html">CameraParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a8ceb9aa7cd64b14e025c0b15ea184679">GetParameters</a> ()</td></tr>
+<tr class="memitem:ae7aa8d82d16a0077642aee3ae50c8f58"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#ae7aa8d82d16a0077642aee3ae50c8f58">CameraIsReady</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:a435371c0df8bede67534571c045a549e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a435371c0df8bede67534571c045a549e">run</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:af2d1f910eff560aa7d7e1e726b68521e"><td class="memItemLeft" align="right" valign="top">QImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#af2d1f910eff560aa7d7e1e726b68521e">buffer</a></td></tr>
+<tr class="memitem:a77144e9d99d4ea2e4870da9f08291822"><td class="memItemLeft" align="right" valign="top">QSemaphore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a77144e9d99d4ea2e4870da9f08291822">semaphoreProducer</a></td></tr>
+<tr class="memitem:a57baa5c1b9ba8269e5ee85865ce55fa3"><td class="memItemLeft" align="right" valign="top">QSemaphore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a57baa5c1b9ba8269e5ee85865ce55fa3">semaphoreConsumer</a></td></tr>
+<tr class="memitem:abb71d3c86912bf03dad00a545d4ba1ae"><td class="memItemLeft" align="right" valign="top">QSemaphore *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#abb71d3c86912bf03dad00a545d4ba1ae">semaphoreEnding</a></td></tr>
+<tr class="memitem:a57633904ae35eb9be0283cc6661fc090"><td class="memItemLeft" align="right" valign="top">QMutex *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a57633904ae35eb9be0283cc6661fc090">mutexPicture</a></td></tr>
+<tr class="memitem:a1c365a460d73cf510be87b8c67cadb7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_camera.html">AbstractCamera</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a1c365a460d73cf510be87b8c67cadb7a">camera</a></td></tr>
+<tr class="memitem:a8408ddbcef64923ba256643d8714201a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_abstract_camera_factory.html">AbstractCameraFactory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a8408ddbcef64923ba256643d8714201a">cameraFactory</a></td></tr>
+<tr class="memitem:a72999848daaadb572cd39189c949667a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_parameters.html">CameraParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a72999848daaadb572cd39189c949667a">cameraParameters</a></td></tr>
+<tr class="memitem:a25a951221db67be844d21ac4a0f1784f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_camera_controller.html#a25a951221db67be844d21ac4a0f1784f">init</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase que se encarga de manejar y gestionar la cámara, del tipo que sea. </p>
+<p>Posee un hilo independiente que se encarga de tomar y almacenar una imagen en un buffer para tenerla siempre disponible y no hacer esperar al cliente. </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8h_source.html#l00038">38</a> del archivo <a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a8358e738a25a7e6726466dba257be381"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CameraController::CameraController </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="cameracontroller_8h.html#af7eb92b45c5f7f64f02821f87c385ebb">CameraType</a>&#160;</td>
+          <td class="paramname"><em>cameraType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cameraType</td><td>Tipo de cámara para la que se está creando el controlador. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00015">15</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ecb9436179d1436803822196cd949e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CameraController::~CameraController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00103">103</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="ae7aa8d82d16a0077642aee3ae50c8f58"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CameraController::CameraIsReady </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función para averiguar el estado actual de la cámara. Si no estaba inicializada intenta inicializarla antes de reponder. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si la cámara está funcionando correctamente o Falso si la cámara no funciona o no se detecta. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00078">78</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad85f957fec37b74f1962927d41053ea2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraController::finished </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Señal que se emite cuando el hilo de tomar imágenes finaliza su ejecución. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad6c80268118fb97a1178dab795d8e3ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::GetCurrentGain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el valor actual de la ganancia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar cuál de todas las ganancias. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la ganancia. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00209">209</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad6cf75275cc47e6929741e3a15db4fee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraController::GetDefaultExposure </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el valor por defecto para la exposición. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la exposición en milisegundos. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00280">280</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a700576c0a542b9a9c2cdf3f512de061c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraController::GetDefaultFrameRate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el valor por defecto para la tasa de toma de imágenes. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la de la tasa de toma de imágenes en imágenes por segundo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00350">350</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0dce93caa981c0904b01d1558ed5d6e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::GetDefaultGain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el valor mínimo de la ganancia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar cuál de todas las ganancias. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la ganancia mínima. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00220">220</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5bbfdaeb4a355bfb7983a657e7d30783"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::GetDefaultPixelClock </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el valor por defecto para el reloj de pixel. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del reloj de pixel en megahercios. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00316">316</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa6ff2080a8a1b79fb7a46adfc8cfe3d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraController::GetExposure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3">ExposureParameter</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene un valor para la exposición. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar si el valor máximo, mínimo o actual. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la exposición en milisegundos. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00268">268</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a346f8bc2d9f80fa4b0109eaa01c44b66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraController::GetFrameRate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2">FramerateParameter</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene un valor para la tasa de toma de imágenes. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar si el valor máximo, mínimo o actual. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la de la tasa de toma de imágenes en imágenes por segundo. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00339">339</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2046004d527e8f79d058f166a3438f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::GetMaxGain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el valor por defecto de la ganancia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar cuál de todas las ganancias. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la ganancia por defecto. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00244">244</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a01b90afa1d65135c1b6763db4fc2585f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::GetMaxSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el tamaño máximo de la imagen a tomar. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>El alto o el ancho. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor en píxeles máximo de la dimensión solicitada. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00175">175</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af090431442dac42479d4436301529ede"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::GetMinGain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el valor máximo de la ganancia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar cuál de todas las ganancias. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la ganancia máxima. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00232">232</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af08c0537cf49027af2a10e17650e2873"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::GetMinSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el tamaño mínimo de la imagen a tomar. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>El alto o el ancho. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor en píxeles míximo de la dimensión solicitada. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00186">186</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8ceb9aa7cd64b14e025c0b15ea184679"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera_parameters.html">CameraParameters</a> CameraController::GetParameters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve el set de parámetros. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Set de parámetros. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00383">383</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad25965064812925b14cbaba33a5d0b23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::GetPixelClock </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049">PixelClockParameter</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene un valor para el reloj de pixel. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar si el valor máximo, mínimo o actual. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del reloj de pixel en megahercios. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00305">305</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1f7b1b3ae473a422caeff1e5f19559bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::GetSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a>&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtiene el tamaño actual de la imagen a tomar. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>El alto o el ancho. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor en píxeles de la dimensión solicitada. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00162">162</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9487abd64589abf7f3fca44746f86f4a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage * CameraController::GetSourcePicture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Devuelve una imagen de la cámara. El controlador pasará a tomar otra. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Última imagen tomada. Siempre distinto de NULL. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00123">123</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0d83cb2f4c50cac72aeb11bc0ddb0ed2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CameraController::Initialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Función que intenta inicializar la cámara. Creando en caso de éxito el hilo independiente y que comienza a tomar la primera imagen. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>Verdadero si se inicializó correctamente. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00049">49</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a418db52c8440824ec3f72fc43105a879"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraController::RenewPicture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Renueva la imagen del buffer. Es decir desecha la actual y toma otra. </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00137">137</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a435371c0df8bede67534571c045a549e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CameraController::run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Método reimplementado de QThread que ejecuta el hilo independiente. </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00149">149</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb6781b65c6b3a7a10e83a6a4e07ffc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraController::SetExposure </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configura el valor para la exposición. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor en milisegundos a configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la exposición en milisegundos realmente configurado. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00293">293</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aecc93a0f5e0726c6999109c095dd81d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CameraController::SetFrameRate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configura el valor para la tasa de toma de imágenes. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor en milisegundos a configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor de la de la tasa de toma de imágenes en imágenes por segundo realmente configurado. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00361">361</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8446da74a7650fc59c5714e7ca4d7db4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::SetGain </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a>&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configura el valor de la ganancia. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>Para indicar cuál de todas las ganancias. </td></tr>
+    <tr><td class="paramname">value</td><td>Valor para configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor realmente configurado para la ganancia indicada. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00256">256</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a60754c3409a323281fa7906315755c91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera_parameters.html">CameraParameters</a> CameraController::SetParameters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_camera_parameters.html">CameraParameters</a>&#160;</td>
+          <td class="paramname"><em>parameters_in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configura un set completo de parámetros. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parameters_in</td><td>Set de parámetros. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Set de parámetros realmente configurado. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00373">373</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a81d679f992d57e8310f5fbbf183c8135"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::SetPixelClock </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configura el valor para el reloj de pixel. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Valor en milisegundos a configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor del reloj de pixel en megahercios realmente configurado. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00327">327</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afb915f1e9f0e56046d463d491833e9d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int CameraController::SetSize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a>&#160;</td>
+          <td class="paramname"><em>command</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Configura el tamaño de la imagen a tomar. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td>El alto o el ancho. </td></tr>
+    <tr><td class="paramname">value</td><td>Valor en píxeles a configurar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Valor en píxeles realmente configurado para la dimensión indicada. </dd></dl>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8cpp_source.html#l00197">197</a> del archivo <a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="af2d1f910eff560aa7d7e1e726b68521e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QImage* CameraController::buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Buffer con la última imagen tomada, se renueva, cada vez que la obtiene el cliente o se renueva explícitamente. </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8h_source.html#l00042">42</a> del archivo <a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c365a460d73cf510be87b8c67cadb7a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_abstract_camera.html">AbstractCamera</a>* CameraController::camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a la cámara que se está usando </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8h_source.html#l00047">47</a> del archivo <a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8408ddbcef64923ba256643d8714201a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_abstract_camera_factory.html">AbstractCameraFactory</a>* CameraController::cameraFactory</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Factoría para crear las cámaras siempre del mismo tipo. </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8h_source.html#l00048">48</a> del archivo <a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a72999848daaadb572cd39189c949667a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera_parameters.html">CameraParameters</a> CameraController::cameraParameters</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parámetros de configuración de la cámara. </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8h_source.html#l00049">49</a> del archivo <a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a25a951221db67be844d21ac4a0f1784f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CameraController::init</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Variable que indica si la cámara ha sido correctamente inicializada. </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8h_source.html#l00050">50</a> del archivo <a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a57633904ae35eb9be0283cc6661fc090"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QMutex* CameraController::mutexPicture</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Mutex para asegurar atomicidad cuando se trabaja sobre el buffer </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8h_source.html#l00046">46</a> del archivo <a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a57baa5c1b9ba8269e5ee85865ce55fa3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSemaphore* CameraController::semaphoreConsumer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Semáforo de espera para el consumidor, debera esperar a que haya una imagen disponible. </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8h_source.html#l00044">44</a> del archivo <a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abb71d3c86912bf03dad00a545d4ba1ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSemaphore* CameraController::semaphoreEnding</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Semáforo para acabar la ejecución del hilo. Las solicitudes a este semáforo se harán no bloqueantes. </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8h_source.html#l00045">45</a> del archivo <a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a77144e9d99d4ea2e4870da9f08291822"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QSemaphore* CameraController::semaphoreProducer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Semáforo de espera para el productor, deberá esperar a que el cliente haya obtenido la imagen anterior. </p>
+
+<p>Definición en la línea <a class="el" href="cameracontroller_8h_source.html#l00043">43</a> del archivo <a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="cameracontroller_8h_source.html">cameracontroller.h</a></li>
+<li>sources/<a class="el" href="cameracontroller_8cpp_source.html">cameracontroller.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_camera_controller.html">CameraController</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

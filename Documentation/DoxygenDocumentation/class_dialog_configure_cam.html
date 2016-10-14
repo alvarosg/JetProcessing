@@ -1,0 +1,852 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase DialogConfigureCam</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_dialog_configure_cam.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Slots públicos</a> &#124;
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pri-methods">Métodos privados</a> &#124;
+<a href="#pri-attribs">Atributos privados</a> &#124;
+<a href="class_dialog_configure_cam-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase DialogConfigureCam</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase para el control del cuadro de diálogo que permite configurar los parámetros de la cámara.  
+ <a href="class_dialog_configure_cam.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="dialogconfigurecam_8h_source.html">dialogconfigurecam.h</a>&quot;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-slots"></a>
+Slots públicos</h2></td></tr>
+<tr class="memitem:ae583bcc9db4de2abb47b7fcbb8711e5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#ae583bcc9db4de2abb47b7fcbb8711e5f">PixelClockChanged</a> (int value)</td></tr>
+<tr class="memitem:a0c804fdc6cb1ebd1cf04d52bc7370b04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a0c804fdc6cb1ebd1cf04d52bc7370b04">FrameRateChanged</a> (int value)</td></tr>
+<tr class="memitem:adc5bb9091d081fa468cb62956c6df70c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#adc5bb9091d081fa468cb62956c6df70c">ExposureChanged</a> (int value)</td></tr>
+<tr class="memitem:ac8d5710bb7bbe6ce181ddc280e699314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#ac8d5710bb7bbe6ce181ddc280e699314">MasterGainChanged</a> (int value)</td></tr>
+<tr class="memitem:a514e369b9a33c906dbfcfad735362f48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a514e369b9a33c906dbfcfad735362f48">RedGainChanged</a> (int value)</td></tr>
+<tr class="memitem:adf75e5a4ad794f3eca8a94de7efdd170"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#adf75e5a4ad794f3eca8a94de7efdd170">GreenGainChanged</a> (int value)</td></tr>
+<tr class="memitem:afaf3d744d175416f6bab3963e061916f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#afaf3d744d175416f6bab3963e061916f">BlueGainChanged</a> (int value)</td></tr>
+<tr class="memitem:aeefa5129a88d40e78cacc3f6805c05f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#aeefa5129a88d40e78cacc3f6805c05f0">SizeXChanged</a> ()</td></tr>
+<tr class="memitem:a2a11f90ef19e08eb0b35388e9bf706a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a2a11f90ef19e08eb0b35388e9bf706a5">SizeYChanged</a> ()</td></tr>
+<tr class="memitem:ad56f24f22befaaefeeae819cd8095024"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#ad56f24f22befaaefeeae819cd8095024">UpdatePreview</a> ()</td></tr>
+<tr class="memitem:a0310c7cc51be37d2c4e409acd2d8a289"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a0310c7cc51be37d2c4e409acd2d8a289">EnableAutoRefresh</a> ()</td></tr>
+<tr class="memitem:a52f2f954fc2687ee4e844fc3526acaba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a52f2f954fc2687ee4e844fc3526acaba">ResetDefaults</a> ()</td></tr>
+<tr class="memitem:a433c6b61f2851c847d87c7718ab2ef40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a433c6b61f2851c847d87c7718ab2ef40">LoadConfig</a> ()</td></tr>
+<tr class="memitem:a00eea7e32faea8133c59d471f066d49b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a00eea7e32faea8133c59d471f066d49b">SaveConfig</a> ()</td></tr>
+<tr class="memitem:a1fc512f906d84230281436e89b5b1571"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a1fc512f906d84230281436e89b5b1571">Accept</a> ()</td></tr>
+<tr class="memitem:a059dd8c59693282c28144f619d289027"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a059dd8c59693282c28144f619d289027">Cancel</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a0653e563765bf3a063c03ddd74a27544"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a0653e563765bf3a063c03ddd74a27544">DialogConfigureCam</a> (QWidget *parent, <a class="el" href="class_camera_controller.html">CameraController</a> *cameraController_in)</td></tr>
+<tr class="memitem:a36c084ef2f50c0e0cdf84e4196d3ce61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a36c084ef2f50c0e0cdf84e4196d3ce61">~DialogConfigureCam</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-methods"></a>
+Métodos privados</h2></td></tr>
+<tr class="memitem:af0e2d4fbe4e4850e045e28d5c24400c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#af0e2d4fbe4e4850e045e28d5c24400c4">InitControls</a> ()</td></tr>
+<tr class="memitem:a900b9671c08abdb1910fd82cc72b45f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a900b9671c08abdb1910fd82cc72b45f5">UpdateControls</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pri-attribs"></a>
+Atributos privados</h2></td></tr>
+<tr class="memitem:a9cc87223418d6d2b5c47e0ad1220cf1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_controller.html">CameraController</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a9cc87223418d6d2b5c47e0ad1220cf1c">cameraController</a></td></tr>
+<tr class="memitem:a5e38fd96928dce2b4f54a79b8d0b7ab0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_camera_parameters.html">CameraParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a5e38fd96928dce2b4f54a79b8d0b7ab0">initValues</a></td></tr>
+<tr class="memitem:aff4516e95a13f3eca68ed75e2cc2cb2f"><td class="memItemLeft" align="right" valign="top">QTimer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#aff4516e95a13f3eca68ed75e2cc2cb2f">timerAutoRefresh</a></td></tr>
+<tr class="memitem:a11e792904c4fd91021022813cff237cc"><td class="memItemLeft" align="right" valign="top">Ui::DialogConfigureCam *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dialog_configure_cam.html#a11e792904c4fd91021022813cff237cc">ui</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase para el control del cuadro de diálogo que permite configurar los parámetros de la cámara. </p>
+<p>Esta clase actúa de nexo entre el controlador de la cámara y la clase que contiene los widgets: Ui::DialogConfigureCam. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8h_source.html#l00062">62</a> del archivo <a class="el" href="dialogconfigurecam_8h_source.html">dialogconfigurecam.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a0653e563765bf3a063c03ddd74a27544"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DialogConfigureCam::DialogConfigureCam </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_camera_controller.html">CameraController</a> *&#160;</td>
+          <td class="paramname"><em>cameraController_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Widget padre. </td></tr>
+    <tr><td class="paramname">cameraController_in</td><td>Objeto controlador de la cámara. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00014">14</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36c084ef2f50c0e0cdf84e4196d3ce61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DialogConfigureCam::~DialogConfigureCam </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00060">60</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a1fc512f906d84230281436e89b5b1571"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::Accept </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el cuadro de diálogo ha sido aceptado. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00397">397</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afaf3d744d175416f6bab3963e061916f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::BlueGainChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor de la barra de la ganancia de azul ha variado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Nuevo valor en la barra. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00269">269</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a059dd8c59693282c28144f619d289027"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::Cancel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el cuadro de diálogo ha sido rechazado. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00401">401</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0310c7cc51be37d2c4e409acd2d8a289"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::EnableAutoRefresh </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando se cambia el valor de la "CheckBox" que permite actualizar automáticamente o no la vista previa. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00319">319</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adc5bb9091d081fa468cb62956c6df70c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::ExposureChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor de la barra de la exposición ha variado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Nuevo valor en la barra. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00233">233</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c804fdc6cb1ebd1cf04d52bc7370b04"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::FrameRateChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor de la barra de la tasa de toma d eimágenes ha variado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Nuevo valor en la barra. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00224">224</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf75e5a4ad794f3eca8a94de7efdd170"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::GreenGainChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor de la barra de la ganancia de verde ha variado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Nuevo valor en la barra. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00260">260</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af0e2d4fbe4e4850e045e28d5c24400c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::InitControls </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Inicia los controles durante la creación. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00064">64</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a433c6b61f2851c847d87c7718ab2ef40"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::LoadConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado para cargar los parámetros de un fichero. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00357">357</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac8d5710bb7bbe6ce181ddc280e699314"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::MasterGainChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor de la barra de la ganancia máster ha variado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Nuevo valor en la barra. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00242">242</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae583bcc9db4de2abb47b7fcbb8711e5f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::PixelClockChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor de la barra del reloj de pixel ha variado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Nuevo valor en la barra. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00215">215</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a514e369b9a33c906dbfcfad735362f48"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::RedGainChanged </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor de la barra de la ganancia de rojo ha variado. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>Nuevo valor en la barra. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00251">251</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a52f2f954fc2687ee4e844fc3526acaba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::ResetDefaults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado para resetear todos los parámetros a los valores por defecto. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00328">328</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00eea7e32faea8133c59d471f066d49b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::SaveConfig </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado para guardar los parámetros a un fichero. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00381">381</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeefa5129a88d40e78cacc3f6805c05f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::SizeXChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor en la caja de texto para el ancho en píxeles de la imagen ha variado. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00278">278</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a11f90ef19e08eb0b35388e9bf706a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::SizeYChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado cuando el valor en la caja de texto para el alto en píxeles de la imagen ha variado. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00292">292</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a900b9671c08abdb1910fd82cc72b45f5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::UpdateControls </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que actualiza los controles en función de los parámetros reales. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00105">105</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad56f24f22befaaefeeae819cd8095024"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DialogConfigureCam::UpdatePreview </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Slot llamado para actualizar la vista previa. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8cpp_source.html#l00307">307</a> del archivo <a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de los datos miembro</h2>
+<a class="anchor" id="a9cc87223418d6d2b5c47e0ad1220cf1c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera_controller.html">CameraController</a>* DialogConfigureCam::cameraController</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Controlador de la cámara pasado como argumento. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8h_source.html#l00075">75</a> del archivo <a class="el" href="dialogconfigurecam_8h_source.html">dialogconfigurecam.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5e38fd96928dce2b4f54a79b8d0b7ab0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_camera_parameters.html">CameraParameters</a> DialogConfigureCam::initValues</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Para guardar los parámetros iniciales y restaurarlos en caso de cancelar. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8h_source.html#l00076">76</a> del archivo <a class="el" href="dialogconfigurecam_8h_source.html">dialogconfigurecam.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff4516e95a13f3eca68ed75e2cc2cb2f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTimer* DialogConfigureCam::timerAutoRefresh</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Temporizador para el autorefresco de la vista previa. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8h_source.html#l00077">77</a> del archivo <a class="el" href="dialogconfigurecam_8h_source.html">dialogconfigurecam.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a11e792904c4fd91021022813cff237cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ui::DialogConfigureCam* DialogConfigureCam::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Puntero a la clase que contiene la interfaz gráfica. Esta clase es generada automáticamente por Qt Designer. </p>
+
+<p>Definición en la línea <a class="el" href="dialogconfigurecam_8h_source.html#l00127">127</a> del archivo <a class="el" href="dialogconfigurecam_8h_source.html">dialogconfigurecam.h</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="dialogconfigurecam_8h_source.html">dialogconfigurecam.h</a></li>
+<li>sources/<a class="el" href="dialogconfigurecam_8cpp_source.html">dialogconfigurecam.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_dialog_configure_cam.html">DialogConfigureCam</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

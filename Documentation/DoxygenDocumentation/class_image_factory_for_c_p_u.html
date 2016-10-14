@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase ImageFactoryForCPU</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_image_factory_for_c_p_u.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="class_image_factory_for_c_p_u-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase ImageFactoryForCPU</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementación de <a class="el" href="class_abstract_image_factory.html" title="Factoría abstracta para la creación y duplicado de objetos FullImage, PhaseImage o PhaseLine...">AbstractImageFactory</a> para trabajo con la CPU.  
+ <a href="class_image_factory_for_c_p_u.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="imagefactoryforcpu_8h_source.html">imagefactoryforcpu.h</a>&quot;</code></p>
+<div class="dynheader">
+Diagrama de herencias de ImageFactoryForCPU</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_image_factory_for_c_p_u.png" usemap="#ImageFactoryForCPU_map" alt=""/>
+  <map id="ImageFactoryForCPU_map" name="ImageFactoryForCPU_map">
+<area href="class_abstract_image_factory.html" title="Factoría abstracta para la creación y duplicado de objetos FullImage, PhaseImage o PhaseLine..." alt="AbstractImageFactory" shape="rect" coords="0,0,136,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:aedf64c352f97e844809ad60c649b64c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_factory_for_c_p_u.html#aedf64c352f97e844809ad60c649b64c5">ImageFactoryForCPU</a> ()</td></tr>
+<tr class="memitem:a5167404b173fddfe592629cb7c740cc9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_full_image.html">FullImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_factory_for_c_p_u.html#a5167404b173fddfe592629cb7c740cc9">CreateFullImage</a> (QImage *source, int power2SizeX, int power2SizeY)</td></tr>
+<tr class="memitem:ad887bc80f3146eb74a979d13b7a20ee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_full_image.html">FullImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_factory_for_c_p_u.html#ad887bc80f3146eb74a979d13b7a20ee2">CopyFullImage</a> (<a class="el" href="class_full_image.html">FullImage</a> *input)</td></tr>
+<tr class="memitem:a854d9869ba294f150eabcf73cfb3f687"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_phase_image.html">PhaseImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_factory_for_c_p_u.html#a854d9869ba294f150eabcf73cfb3f687">CreatePhaseImage</a> (float *buffer, int sizeX_in, int sizeY_in)</td></tr>
+<tr class="memitem:a27cb690b6ac9f81d3e0abcd36a25ef69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_phase_image.html">PhaseImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_factory_for_c_p_u.html#a27cb690b6ac9f81d3e0abcd36a25ef69">CopyPhaseImage</a> (<a class="el" href="class_phase_image.html">PhaseImage</a> *input)</td></tr>
+<tr class="memitem:af160e1f1befd6b51db7090cb4fcac420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_phase_line.html">PhaseLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_factory_for_c_p_u.html#af160e1f1befd6b51db7090cb4fcac420">CreatePhaseLine</a> (float *buffer, int size_in)</td></tr>
+<tr class="memitem:ab6f940ee8eca7350e832c68cfb00f35e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_phase_line.html">PhaseLine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_factory_for_c_p_u.html#ab6f940ee8eca7350e832c68cfb00f35e">CopyPhaseLine</a> (<a class="el" href="class_phase_line.html">PhaseLine</a> *input)</td></tr>
+<tr class="inherit_header pub_methods_class_abstract_image_factory"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_abstract_image_factory')"><img src="closed.png" alt="-"/>&nbsp;Métodos públicos heredados desde <a class="el" href="class_abstract_image_factory.html">AbstractImageFactory</a></td></tr>
+<tr class="memitem:a0a9d88010af8f33522b33fa89fa60023 inherit pub_methods_class_abstract_image_factory"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_abstract_image_factory.html#a0a9d88010af8f33522b33fa89fa60023">AbstractImageFactory</a> ()</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Implementación de <a class="el" href="class_abstract_image_factory.html" title="Factoría abstracta para la creación y duplicado de objetos FullImage, PhaseImage o PhaseLine...">AbstractImageFactory</a> para trabajo con la CPU. </p>
+
+<p>Definición en la línea <a class="el" href="imagefactoryforcpu_8h_source.html#l00024">24</a> del archivo <a class="el" href="imagefactoryforcpu_8h_source.html">imagefactoryforcpu.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="aedf64c352f97e844809ad60c649b64c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ImageFactoryForCPU::ImageFactoryForCPU </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+
+<p>Definición en la línea <a class="el" href="imagefactoryforcpu_8cpp_source.html#l00013">13</a> del archivo <a class="el" href="imagefactoryforcpu_8cpp_source.html">imagefactoryforcpu.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="ad887bc80f3146eb74a979d13b7a20ee2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_full_image.html">FullImage</a> * ImageFactoryForCPU::CopyFullImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_full_image.html">FullImage</a> *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Duplica un objeto de la clase <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Objeto origen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Copia del objeto pasado como argumento. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_image_factory.html#a3be99965e69f4371deb0b8cc4e13304c">AbstractImageFactory</a>.</p>
+
+<p>Definición en la línea <a class="el" href="imagefactoryforcpu_8cpp_source.html#l00020">20</a> del archivo <a class="el" href="imagefactoryforcpu_8cpp_source.html">imagefactoryforcpu.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a27cb690b6ac9f81d3e0abcd36a25ef69"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_phase_image.html">PhaseImage</a> * ImageFactoryForCPU::CopyPhaseImage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_phase_image.html">PhaseImage</a> *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Duplica un objeto de la clase <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Objeto origen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Copia del objeto pasado como argumento. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_image_factory.html#a43453897b53dd87c98d85fd58ef0de7f">AbstractImageFactory</a>.</p>
+
+<p>Definición en la línea <a class="el" href="imagefactoryforcpu_8cpp_source.html#l00028">28</a> del archivo <a class="el" href="imagefactoryforcpu_8cpp_source.html">imagefactoryforcpu.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6f940ee8eca7350e832c68cfb00f35e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_phase_line.html">PhaseLine</a> * ImageFactoryForCPU::CopyPhaseLine </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_phase_line.html">PhaseLine</a> *&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Duplica un objeto de la clase <a class="el" href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase.">PhaseLine</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Objeto origen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Copia del objeto pasado como argumento. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_image_factory.html#ad7025cf558f41cb7ca29d66e6a553cf8">AbstractImageFactory</a>.</p>
+
+<p>Definición en la línea <a class="el" href="imagefactoryforcpu_8cpp_source.html#l00036">36</a> del archivo <a class="el" href="imagefactoryforcpu_8cpp_source.html">imagefactoryforcpu.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5167404b173fddfe592629cb7c740cc9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_full_image.html">FullImage</a> * ImageFactoryForCPU::CreateFullImage </td>
+          <td>(</td>
+          <td class="paramtype">QImage *&#160;</td>
+          <td class="paramname"><em>source</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>power2SizeX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>power2SizeY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Crea un objeto del tipo <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> implementado según la factoría concreta a la que se este llamando. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td>Imagen de origen. Dicha imagen sigue siendo responsabilidad del cliente. </td></tr>
+    <tr><td class="paramname">power2SizeX</td><td>Ancho deseado para la <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> creada. Debe ser una potencia de 2. Si no lo es, se redondeará a la siguiente potencia de 2. </td></tr>
+    <tr><td class="paramname">power2SizeY</td><td>Alto deseado para la <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> creada. Debe ser una potencia de 2. Si no lo es, se redondeará a la siguiente potencia de 2. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Objeto <a class="el" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> creado. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_image_factory.html#a4fc59085cedc6cf1a753d492ee52a17b">AbstractImageFactory</a>.</p>
+
+<p>Definición en la línea <a class="el" href="imagefactoryforcpu_8cpp_source.html#l00016">16</a> del archivo <a class="el" href="imagefactoryforcpu_8cpp_source.html">imagefactoryforcpu.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a854d9869ba294f150eabcf73cfb3f687"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_phase_image.html">PhaseImage</a> * ImageFactoryForCPU::CreatePhaseImage </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeX_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeY_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Crea un objeto del tipo <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> implementado según la factoría concreta a la que se este llamando. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Buffer con los datos de la imagen, alineados fila tras fila. El objeto creado toma posesión del buffer, por lo que no debe ser modificado. </td></tr>
+    <tr><td class="paramname">sizeX_in</td><td>Ancho de la imagen cuya información va en el buffer. </td></tr>
+    <tr><td class="paramname">sizeY_in</td><td>Alto de la imagen cuya información va en el buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Objeto <a class="el" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> creado. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_image_factory.html#a7fcc6fe20c666baa9ec5ba5be3e79f03">AbstractImageFactory</a>.</p>
+
+<p>Definición en la línea <a class="el" href="imagefactoryforcpu_8cpp_source.html#l00024">24</a> del archivo <a class="el" href="imagefactoryforcpu_8cpp_source.html">imagefactoryforcpu.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af160e1f1befd6b51db7090cb4fcac420"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_phase_line.html">PhaseLine</a> * ImageFactoryForCPU::CreatePhaseLine </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Crea un objeto del tipo <a class="el" href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase.">PhaseLine</a> implementado según la factoría concreta a la que se este llamando. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Buffer con los datos de la imagen. El objeto creado toma posesión del buffer, por lo que no debe ser modificado. </td></tr>
+    <tr><td class="paramname">size_in</td><td>Número de elementos en el buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>Objeto <a class="el" href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase.">PhaseLine</a> creado. </dd></dl>
+
+<p>Implementa <a class="el" href="class_abstract_image_factory.html#a075a838425ccf59b6bf0e02ca324c311">AbstractImageFactory</a>.</p>
+
+<p>Definición en la línea <a class="el" href="imagefactoryforcpu_8cpp_source.html#l00032">32</a> del archivo <a class="el" href="imagefactoryforcpu_8cpp_source.html">imagefactoryforcpu.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="imagefactoryforcpu_8h_source.html">imagefactoryforcpu.h</a></li>
+<li>sources/<a class="el" href="imagefactoryforcpu_8cpp_source.html">imagefactoryforcpu.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_image_factory_for_c_p_u.html">ImageFactoryForCPU</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

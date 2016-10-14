@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Fichero Fuente headers/abstractcamera.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('abstractcamera_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">abstractcamera.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="abstractcamera_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef ABSTRACTCAMERA_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ABSTRACTCAMERA_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include&lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="sourcepicture_8h.html" title="Clase que representa la imagen de origen, antes de todo el procesado.">sourcepicture.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="cameraparameters_8h.html" title="Clase que contiene los parámetros de configuración de la cámara.">cameraparameters.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">   19</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906dad073d215d2ebee2cdf79adfd620cdfc6">   20</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906dad073d215d2ebee2cdf79adfd620cdfc6">GAIN_MASTER</a> , </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906da4daf714bb1cc1bacb379be58b806dfbb">   21</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906da4daf714bb1cc1bacb379be58b806dfbb">GAIN_RED</a>,     </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906daa22adb6a0ffb2fef0d18c45d64a3b4b3">   22</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906daa22adb6a0ffb2fef0d18c45d64a3b4b3">GAIN_GREEN</a>,   </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906da92eafb7dde9cc550ad2d459910b74442">   23</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906da92eafb7dde9cc550ad2d459910b74442">GAIN_BLUE</a>     </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3">   26</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3">ExposureParameter</a> {</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3aab23878b9f3fc468d983e59d8b37adaa">   27</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3aab23878b9f3fc468d983e59d8b37adaa">EXPOSURE_MAX</a>, </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3a0cd55a1d9701c845038341cde3bacff8">   28</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3a0cd55a1d9701c845038341cde3bacff8">EXPOSURE_MIN</a>, </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3a019387ca37e9e8fbc7b49a6e04cf74e8">   29</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3a019387ca37e9e8fbc7b49a6e04cf74e8">EXPOSURE</a>      </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2">   32</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2">FramerateParameter</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2a2e01930f089f4f57b6cf0148f82c6aae">   33</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2a2e01930f089f4f57b6cf0148f82c6aae">FRAMERATE_MAX</a>,</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2abb3724f60edc46cc9a26f823cf6d0eaf">   34</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2abb3724f60edc46cc9a26f823cf6d0eaf">FRAMERATE_MIN</a>,</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2ab5a73754e943fbf2f6bb1fc17cb060ca">   35</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2ab5a73754e943fbf2f6bb1fc17cb060ca">FRAMERATE</a>     </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049">   38</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049">PixelClockParameter</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049a4d42438613ffdf302e97d599bdc08c9c">   39</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049a4d42438613ffdf302e97d599bdc08c9c">PIXELCLOCK_MAX</a>,</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049a8459985dbbded7ca5e26cc1309c56b4d">   40</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049a8459985dbbded7ca5e26cc1309c56b4d">PIXELCLOCK_MIN</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049a2c067787ba88d6efdb5f09fb3ba47a8f">   41</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049a2c067787ba88d6efdb5f09fb3ba47a8f">PIXELCLOCK</a>     </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">   44</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> {</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6eeae1b757cd7e3917bba81cae6fb19256f5">   45</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6eeae1b757cd7e3917bba81cae6fb19256f5">SIZE_X</a> ,       </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6eea1ad216627b285aa5cc68dff972b47308">   46</a></span>&#160;    <a class="code" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6eea1ad216627b285aa5cc68dff972b47308">SIZE_Y</a>         </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="class_abstract_camera.html">   58</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_abstract_camera.html" title="Clase abstracta que representa una cámara.">AbstractCamera</a>{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="class_abstract_camera.html#a33697f3386e444bfb6a14e74950d93bb">   62</a></span>&#160;    <a class="code" href="class_camera_parameters.html" title="Clase que contiene un set de parámetros para configuración de la cámara.">CameraParameters</a> <a class="code" href="class_abstract_camera.html#a33697f3386e444bfb6a14e74950d93bb">parameters</a>; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">virtual</span> QImage * <a class="code" href="class_abstract_camera.html#ae269a03c21428ff05542a8e0622b32ec">AcquireSourcePicture</a>()=0;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#a7734e79ca0e26ef541de00b0ecd3c5d7">GetSize</a>(<a class="code" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#a6d070efa25c5e92d8d5d9531054d9912">GetMaxSize</a>(<a class="code" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command)=0;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#a59b013421800919602690b3ebf1173d0">GetMinSize</a>(<a class="code" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command)=0;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#a2cca25485b8ba40a6e272202d2f8e548">SetSize</a>(<a class="code" href="abstractcamera_8h.html#ab160e501f43b5cd5ed0279245637e6ee">SizeAxis</a> command,<span class="keywordtype">int</span> value)=0;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#adba4da72e20aab0cf6aa184735eb679b">GetCurrentGain</a>(<a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#a27acb5761b3a9f3f81a30aba36cee1ea">GetMinGain</a>(<a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#a9e85d342c4b8e2616cb0d020ee363942">GetMaxGain</a>(<a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#a87ac9f6902b9c1d7e890cb39df51424d">GetDefaultGain</a>(<a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command)=0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#ab0dc0b5b131c0acae5cacdfe4a3a9a43">SetGain</a>(<a class="code" href="abstractcamera_8h.html#a89c58b2239cd0f1ce3cd48ab21fc906d">GainType</a> command, <span class="keywordtype">int</span> value)=0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_abstract_camera.html#ad3e7708e62461238d1c1d49ae7bff973">GetExposure</a>(<a class="code" href="abstractcamera_8h.html#a884e671669bc438d79137dd670b88ba3">ExposureParameter</a> command);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_abstract_camera.html#a33e11595d9e93b50aae7684456a490af">GetDefaultExposure</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_abstract_camera.html#a77b35e4b08a7e54f83cc467a5b7c2729">SetExposure</a>(<span class="keywordtype">double</span> value)=0;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#a61bd26bd1b9bd36c608e4cccc616c760">GetPixelClock</a>(<a class="code" href="abstractcamera_8h.html#ad3c91938a3fe17cdca9537da74469049">PixelClockParameter</a> command);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#a346554c300a09df4c6a7b0ef581f516f">GetDefaultPixelClock</a>()=0;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_abstract_camera.html#a54d9cf14d5fd355eb32853ccf4c518ba">SetPixelClock</a>(<span class="keywordtype">int</span> value)=0;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_abstract_camera.html#a89e99becf41f99a25ca5bb0d87e670dc">GetFrameRate</a>(<a class="code" href="abstractcamera_8h.html#a5b395edee344a0d796c75217a34cd6e2">FramerateParameter</a> command);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_abstract_camera.html#ab87e4a1e7384987f944ea5e068924067">GetDefaultFrameRate</a>()=0;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="class_abstract_camera.html#aeca7a900638a9c2b7ff95bce935f235f">SetFrameRate</a>(<span class="keywordtype">double</span> value)=0;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="class_camera_parameters.html" title="Clase que contiene un set de parámetros para configuración de la cámara.">CameraParameters</a> <a class="code" href="class_abstract_camera.html#a8653c629f9ef0225364348e9240636be">SetParameters</a>(<a class="code" href="class_camera_parameters.html" title="Clase que contiene un set de parámetros para configuración de la cámara.">CameraParameters</a> parameters_in);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <a class="code" href="class_camera_parameters.html" title="Clase que contiene un set de parámetros para configuración de la cámara.">CameraParameters</a> <a class="code" href="class_abstract_camera.html#ae0baaeafa1e7fe97de95ced0b2a5a4c4">GetParameters</a>();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="class_abstract_camera.html#a65dccc42d704431b22595ba933019493">IsOpen</a>()=0;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;};</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">#endif // ABSTRACTCAMERA_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="abstractcamera_8h.html">abstractcamera.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

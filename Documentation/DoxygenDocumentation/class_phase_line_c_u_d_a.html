@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia de la Clase PhaseLineCUDA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Clases</span></a></li>
+      <li><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
+      <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
+      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_phase_line_c_u_d_a.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="class_phase_line_c_u_d_a-members.html">Lista de todos los miembros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia de la Clase PhaseLineCUDA</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementación de <a class="el" href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase.">PhaseLine</a> utilizando la CPU.  
+ <a href="class_phase_line_c_u_d_a.html#details">Más...</a></p>
+
+<p><code>#include &quot;<a class="el" href="phaselinecuda_8h_source.html">phaselinecuda.h</a>&quot;</code></p>
+<div class="dynheader">
+Diagrama de herencias de PhaseLineCUDA</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_phase_line_c_u_d_a.png" usemap="#PhaseLineCUDA_map" alt=""/>
+  <map id="PhaseLineCUDA_map" name="PhaseLineCUDA_map">
+<area href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase." alt="PhaseLine" shape="rect" coords="0,0,106,24"/>
+</map>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="pub-methods"></a>
+Métodos públicos</h2></td></tr>
+<tr class="memitem:a8e622e636fa60b142704fca857e4ac3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line_c_u_d_a.html#a8e622e636fa60b142704fca857e4ac3a">PhaseLineCUDA</a> (float *deviceBuffer, int size_in)</td></tr>
+<tr class="memitem:a223ef6ebc292deb6ce99342145e0808d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line_c_u_d_a.html#a223ef6ebc292deb6ce99342145e0808d">PhaseLineCUDA</a> (const <a class="el" href="class_phase_line_c_u_d_a.html">PhaseLineCUDA</a> &amp;input)</td></tr>
+<tr class="memitem:a62eb8dadcb10d79a90c799e6a1726354"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line_c_u_d_a.html#a62eb8dadcb10d79a90c799e6a1726354">~PhaseLineCUDA</a> ()</td></tr>
+<tr class="memitem:afc868248ca5e2bfb3dcb132bfc899d90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_data1_d.html">Data1D</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line_c_u_d_a.html#afc868248ca5e2bfb3dcb132bfc899d90">GetData1D</a> (<a class="el" href="class_data1_d.html">Data1D</a> *data1dIn=NULL)</td></tr>
+<tr class="memitem:a695fa33442de78e713e75bfe5c05a91f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line_c_u_d_a.html#a695fa33442de78e713e75bfe5c05a91f">AdditiveInverse</a> ()</td></tr>
+<tr class="memitem:a99a43696e13176033b35688fa2070e45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line_c_u_d_a.html#a99a43696e13176033b35688fa2070e45">RemoveLinearTilt</a> ()</td></tr>
+<tr class="memitem:a1ea312aafc27b6c309a3194f9fdfe8c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line_c_u_d_a.html#a1ea312aafc27b6c309a3194f9fdfe8c4">SetGround</a> ()</td></tr>
+<tr class="memitem:a54e59357c1cdd49b9c777ea47136762d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line_c_u_d_a.html#a54e59357c1cdd49b9c777ea47136762d">OffsetAndMultiply</a> (float offset, float factor)</td></tr>
+<tr class="memitem:a8d3d673953e319b31163f6626da9a832"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line_c_u_d_a.html#a8d3d673953e319b31163f6626da9a832">MakeSymmetric</a> ()</td></tr>
+<tr class="memitem:a8fa6fa6cc5331d484f78adb007099883"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line_c_u_d_a.html#a8fa6fa6cc5331d484f78adb007099883">AbelInversion</a> (float dx, int neighbours)</td></tr>
+<tr class="inherit_header pub_methods_class_phase_line"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_phase_line')"><img src="closed.png" alt="-"/>&nbsp;Métodos públicos heredados desde <a class="el" href="class_phase_line.html">PhaseLine</a></td></tr>
+<tr class="memitem:acba398024277dc0d3125d549abd82403 inherit pub_methods_class_phase_line"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line.html#acba398024277dc0d3125d549abd82403">PhaseLine</a> (float *buffer, int size_in)</td></tr>
+<tr class="memitem:ab180bf84b4db63154a5da9fd8f700753 inherit pub_methods_class_phase_line"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line.html#ab180bf84b4db63154a5da9fd8f700753">~PhaseLine</a> ()</td></tr>
+<tr class="memitem:a4fb56f782bfb739e0ea2e6c25d523eb8 inherit pub_methods_class_phase_line"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line.html#a4fb56f782bfb739e0ea2e6c25d523eb8">GetSize</a> ()</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="inherited"></a>
+Otros miembros heredados</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_phase_line"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_phase_line')"><img src="closed.png" alt="-"/>&nbsp;Atributos protegidos heredados desde <a class="el" href="class_phase_line.html">PhaseLine</a></td></tr>
+<tr class="memitem:ae24c3e14b0f1d9dfe7090aba3e62babc inherit pro_attribs_class_phase_line"><td class="memItemLeft" align="right" valign="top">float *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line.html#ae24c3e14b0f1d9dfe7090aba3e62babc">linearBuffer</a></td></tr>
+<tr class="memitem:a533219cde18c4b10a615d6a4fcd3d096 inherit pro_attribs_class_phase_line"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_phase_line.html#a533219cde18c4b10a615d6a4fcd3d096">size</a></td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Implementación de <a class="el" href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase.">PhaseLine</a> utilizando la CPU. </p>
+<p>La recta estará contenida en la memoria de la GPU, y las operaciones se realizarán con el multiprocesador de la GPU.</p>
+<p>Para realizar estas operaciones utilizará la interfaz definida en <a class="el" href="cudaphaseinterface_8h.html" title="Cabecera para la interfaz de algoritmos aplicables a un objeto de la clase tipo PhaseImage implementa...">cudaphaseinterface.h</a> </p>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8h_source.html#l00026">26</a> del archivo <a class="el" href="phaselinecuda_8h_source.html">phaselinecuda.h</a>.</p>
+</div><h2>Documentación del constructor y destructor</h2>
+<a class="anchor" id="a8e622e636fa60b142704fca857e4ac3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PhaseLineCUDA::PhaseLineCUDA </td>
+          <td>(</td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>deviceBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>size_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deviceBuffer</td><td>Puntero a la zona de memoria de la GPU con los datos a cargar. El puntero y la zona de memoria pasará a ser responsabilidad del objeto creado. </td></tr>
+    <tr><td class="paramname">size_in</td><td>Número de muestras en el buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8cpp_source.html#l00013">13</a> del archivo <a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a223ef6ebc292deb6ce99342145e0808d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PhaseLineCUDA::PhaseLineCUDA </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_phase_line_c_u_d_a.html">PhaseLineCUDA</a> &amp;&#160;</td>
+          <td class="paramname"><em>input</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor de copia del objeto. Crea una copia del objeto pasado como argumento. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input</td><td>Objeto a copiar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8cpp_source.html#l00017">17</a> del archivo <a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62eb8dadcb10d79a90c799e6a1726354"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PhaseLineCUDA::~PhaseLineCUDA </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor. </p>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8cpp_source.html#l00023">23</a> del archivo <a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a>.</p>
+
+</div>
+</div>
+<h2>Documentación de las funciones miembro</h2>
+<a class="anchor" id="a8fa6fa6cc5331d484f78adb007099883"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PhaseLineCUDA::AbelInversion </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>dx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>neighbours</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que calcula la Inversión de Abel horizontalmente de los datos. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dx</td><td>Distancia entre dos pixeles. </td></tr>
+    <tr><td class="paramname">neighbours</td><td>Número de vecinos para calcular la derivada. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_phase_line.html#ad3d4dcc5c00e89451a89e6e87b162f94">PhaseLine</a>.</p>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8cpp_source.html#l00071">71</a> del archivo <a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a695fa33442de78e713e75bfe5c05a91f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PhaseLineCUDA::AdditiveInverse </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que asigna a cada valor de la imagen de la fase su opuesto. </p>
+
+<p>Implementa <a class="el" href="class_phase_line.html#ae2a78ed1e175c9f8ce7ce4d311a51bcd">PhaseLine</a>.</p>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8cpp_source.html#l00051">51</a> del archivo <a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afc868248ca5e2bfb3dcb132bfc899d90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_data1_d.html">Data1D</a> * PhaseLineCUDA::GetData1D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_data1_d.html">Data1D</a> *&#160;</td>
+          <td class="paramname"><em>data1dIn</em> = <code>NULL</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obtiene un objeto tipo <a class="el" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> con los datos de la fase contenidos en el objeto <a class="el" href="class_phase_line.html" title="Clase abstracta que almacena información unidimensional de la fase.">PhaseLine</a>. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data1dIn</td><td>Si este parámetro es nulo, se crea un objeto <a class="el" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> nuevo. Si no lo es, se rellenan los datos en el objeto pasado como parámetro y se devuelve. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="class_phase_line.html#a4f78925c48460c0606a8c9fab5d0ceae">PhaseLine</a>.</p>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8cpp_source.html#l00028">28</a> del archivo <a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8d3d673953e319b31163f6626da9a832"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PhaseLineCUDA::MakeSymmetric </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que simetriza los datos respecto al valor máximo centrando dicho valor. </p>
+
+<p>Implementa <a class="el" href="class_phase_line.html#afb1c3cc7d5b762c27816dc8da3d84502">PhaseLine</a>.</p>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8cpp_source.html#l00067">67</a> del archivo <a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a54e59357c1cdd49b9c777ea47136762d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PhaseLineCUDA::OffsetAndMultiply </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>offset</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>factor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que multiplica por un factor y suma un offset a los datos. </p>
+
+<p>Implementa <a class="el" href="class_phase_line.html#a3727ddcd904eec5b0f56eb983b2b0a13">PhaseLine</a>.</p>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8cpp_source.html#l00063">63</a> del archivo <a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a99a43696e13176033b35688fa2070e45"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PhaseLineCUDA::RemoveLinearTilt </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que elimina la inclinación lineal de los datos, usando un ajuste de mínimos cuadrados. </p>
+
+<p>Implementa <a class="el" href="class_phase_line.html#a47dc1b2a221055d6c47ddd036f0616b2">PhaseLine</a>.</p>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8cpp_source.html#l00055">55</a> del archivo <a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1ea312aafc27b6c309a3194f9fdfe8c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PhaseLineCUDA::SetGround </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Función que establece la base de los datos, eliminando ruido, utilizando el promedio de los valores laterales. </p>
+
+<p>Implementa <a class="el" href="class_phase_line.html#a9ea83857566f27a2d90a2b8c3bac47f5">PhaseLine</a>.</p>
+
+<p>Definición en la línea <a class="el" href="phaselinecuda_8cpp_source.html#l00059">59</a> del archivo <a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
+<li>headers/<a class="el" href="phaselinecuda_8h_source.html">phaselinecuda.h</a></li>
+<li>sources/<a class="el" href="phaselinecuda_8cpp_source.html">phaselinecuda.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_phase_line_c_u_d_a.html">PhaseLineCUDA</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

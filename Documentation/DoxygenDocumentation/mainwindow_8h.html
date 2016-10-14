@@ -1,0 +1,1557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Referencia del Archivo headers/mainwindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('mainwindow_8h.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Clases</a> &#124;
+<a href="#define-members">'defines'</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo mainwindow.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Clase que gestiona la ventana principal del programa.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &lt;QMainWindow&gt;</code><br/>
+<code>#include &lt;QCloseEvent&gt;</code><br/>
+<code>#include &lt;qDebug&gt;</code><br/>
+<code>#include &quot;<a class="el" href="maincontroller_8h_source.html">maincontroller.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="mainwindowlive_8h_source.html">mainwindowlive.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialogmodeselection_8h_source.html">dialogmodeselection.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialogsetreference_8h_source.html">dialogsetreference.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialogconfigurecam_8h_source.html">dialogconfigurecam.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialogsetrectangle_8h_source.html">dialogsetrectangle.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialogsetabel_8h_source.html">dialogsetabel.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialoggetfloat_8h_source.html">dialoggetfloat.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialoggetname_8h_source.html">dialoggetname.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialogpreferences_8h_source.html">dialogpreferences.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="dialoghelp_8h_source.html">dialoghelp.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="algorithmlistwidgetitem_8h_source.html">algorithmlistwidgetitem.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="imagelistwidgetitem_8h_source.html">imagelistwidgetitem.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="spectrogramplot_8h_source.html">spectrogramplot.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="surface3dplot_8h_source.html">surface3dplot.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="parametricsurface3dplot_8h_source.html">parametricsurface3dplot.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="plotdata1d_8h_source.html">plotdata1d.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="graphicsexporter_8h_source.html">graphicsexporter.h</a>&quot;</code><br/>
+</div>
+<p><a href="mainwindow_8h_source.html">Ir al código fuente de este archivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="nested-classes"></a>
+Clases</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_window.html">MainWindow</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clase para el control de la ventana principal del programa, que será madre del resto de ventanas y diálogos.  <a href="class_main_window.html#details">Más...</a><br/></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr class="memitem:a7bc133afa474d4ff906d534b202e4d96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a7bc133afa474d4ff906d534b202e4d96">MW_CAPTION</a>&#160;&#160;&#160;&quot;JetProcessing&quot;</td></tr>
+<tr class="memitem:a102f3b55cfed8ead5a18db6ece23c05f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a102f3b55cfed8ead5a18db6ece23c05f">MW_FILE_MENU</a>&#160;&#160;&#160;&quot;File&quot;</td></tr>
+<tr class="memitem:a448569245f09ddd297c1b56138fade4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a448569245f09ddd297c1b56138fade4d">MW_FILE_LOADP</a>&#160;&#160;&#160;&quot;Load Project&quot;</td></tr>
+<tr class="memitem:aa573e24d2030c61ce5e4e7f7ee37368c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aa573e24d2030c61ce5e4e7f7ee37368c">MW_FILE_SAVEP</a>&#160;&#160;&#160;&quot;Save Project&quot;</td></tr>
+<tr class="memitem:aff1f32787b7639b3e31811ea5dfca317"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aff1f32787b7639b3e31811ea5dfca317">MW_FILE_SAVEPAS</a>&#160;&#160;&#160;&quot;Save Project As&quot;</td></tr>
+<tr class="memitem:aa4cbbdd7156992c52081dd5ec2f6ea83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aa4cbbdd7156992c52081dd5ec2f6ea83">MW_FILE_OUTPUTF</a>&#160;&#160;&#160;&quot;Select Output Folder&quot;</td></tr>
+<tr class="memitem:ad3613e2b4ad814e20b77f11b2a54827f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ad3613e2b4ad814e20b77f11b2a54827f">MW_FILE_EXIT</a>&#160;&#160;&#160;&quot;Exit&quot;</td></tr>
+<tr class="memitem:a01dd140b23ef3edcb8885f395484dd69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a01dd140b23ef3edcb8885f395484dd69">MW_REF_MENU</a>&#160;&#160;&#160;&quot;Reference&quot;</td></tr>
+<tr class="memitem:a7f90b293947eff451a97650eb5d226da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a7f90b293947eff451a97650eb5d226da">MW_REF_SET</a>&#160;&#160;&#160;&quot;Change Reference&quot;</td></tr>
+<tr class="memitem:abbfea3780c66917c4f69569d155f8bbe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#abbfea3780c66917c4f69569d155f8bbe">MW_IMG_MENU</a>&#160;&#160;&#160;&quot;Image&quot;</td></tr>
+<tr class="memitem:ab2689aedcd637312df56d4b23e62243a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ab2689aedcd637312df56d4b23e62243a">MW_IMG_MOVEUP</a>&#160;&#160;&#160;&quot;Move Up&quot;</td></tr>
+<tr class="memitem:ad2c1d781f9c620b9a14b28faf9b20688"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ad2c1d781f9c620b9a14b28faf9b20688">MW_IMG_MOVEDOWN</a>&#160;&#160;&#160;&quot;Move Down&quot;</td></tr>
+<tr class="memitem:abc186c767f6727b2f9eb5b24fcea846f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#abc186c767f6727b2f9eb5b24fcea846f">MW_IMG_DELETE</a>&#160;&#160;&#160;&quot;Delete&quot;</td></tr>
+<tr class="memitem:a4e02f6afe21ac98948c22c60ea9f5119"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a4e02f6afe21ac98948c22c60ea9f5119">MW_IMG_DELETEALL</a>&#160;&#160;&#160;&quot;Delete All&quot;</td></tr>
+<tr class="memitem:a173f83fa8008f073d4e7d365fc7c3022"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a173f83fa8008f073d4e7d365fc7c3022">MW_IMG_LOAD</a>&#160;&#160;&#160;&quot;Process Images from File&quot;</td></tr>
+<tr class="memitem:aeb6b317fe863e794241f5cc619a61b23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aeb6b317fe863e794241f5cc619a61b23">MW_IMG_CAM</a>&#160;&#160;&#160;&quot;Process Image from Camera&quot;</td></tr>
+<tr class="memitem:aacd865df8c8cd2587cbbaf825047cd81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aacd865df8c8cd2587cbbaf825047cd81">MW_ALG_MENU</a>&#160;&#160;&#160;&quot;Algorithm&quot;</td></tr>
+<tr class="memitem:a01dbfb37289a474894231ec1ec6cb7ca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a01dbfb37289a474894231ec1ec6cb7ca">MW_ALG_BEFORE</a>&#160;&#160;&#160;&quot;Add Before&quot;</td></tr>
+<tr class="memitem:ad2b75ecd9d55d607852d86bf20b4004e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ad2b75ecd9d55d607852d86bf20b4004e">MW_ALG_AFTER</a>&#160;&#160;&#160;&quot;Add After&quot;</td></tr>
+<tr class="memitem:ae376ccdce61ca2b856cbc4cab772bcf9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ae376ccdce61ca2b856cbc4cab772bcf9">MW_ALG_MOVEUP</a>&#160;&#160;&#160;&quot;Move Up&quot;</td></tr>
+<tr class="memitem:a8f2e312298078d6bb99870fe28c190ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a8f2e312298078d6bb99870fe28c190ba">MW_ALG_MOVEDOWN</a>&#160;&#160;&#160;&quot;Move Down&quot;</td></tr>
+<tr class="memitem:adcfd7037c066207ea61ad5d722a465b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#adcfd7037c066207ea61ad5d722a465b7">MW_ALG_EDIT</a>&#160;&#160;&#160;&quot;Edit&quot;</td></tr>
+<tr class="memitem:a510ed1a77b340f5d5ff8d3eab0181d13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a510ed1a77b340f5d5ff8d3eab0181d13">MW_ALG_DELETE</a>&#160;&#160;&#160;&quot;Delete&quot;</td></tr>
+<tr class="memitem:aa11c491140b7fff04be8d4b6d8571693"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aa11c491140b7fff04be8d4b6d8571693">MW_ALG_INVERSE</a>&#160;&#160;&#160;&quot;Invert&quot;</td></tr>
+<tr class="memitem:ae5cfab5b55008df88ef7e09b008a2119"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ae5cfab5b55008df88ef7e09b008a2119">MW_ALG_RMHTILT</a>&#160;&#160;&#160;&quot;Remove Horizontal Tilt&quot;</td></tr>
+<tr class="memitem:ae05aa844ce606a0cd59726496a454de2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ae05aa844ce606a0cd59726496a454de2">MW_ALG_RMVTILT</a>&#160;&#160;&#160;&quot;Remove Vertical Tilt&quot;</td></tr>
+<tr class="memitem:ac280dd1b52d878ec95e74f067e9980eb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ac280dd1b52d878ec95e74f067e9980eb">MW_ALG_SETGROUND</a>&#160;&#160;&#160;&quot;Set Ground&quot;</td></tr>
+<tr class="memitem:a7bb32b66c322903dfd397fd6476ba075"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a7bb32b66c322903dfd397fd6476ba075">MW_ALG_OFFSET</a>&#160;&#160;&#160;&quot;Add Offset&quot;</td></tr>
+<tr class="memitem:a8342066281f7bbb09a97052c9e88b74f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a8342066281f7bbb09a97052c9e88b74f">MW_ALG_MULTIPLY</a>&#160;&#160;&#160;&quot;Multiply by...&quot;</td></tr>
+<tr class="memitem:a275cc9d58d39c3f3eb365942c22d9370"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a275cc9d58d39c3f3eb365942c22d9370">MW_ALG_SYMMETRIC</a>&#160;&#160;&#160;&quot;Make Symmetric&quot;</td></tr>
+<tr class="memitem:a4621fc6a78e93e6ce629037b86c35347"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a4621fc6a78e93e6ce629037b86c35347">MW_ALG_ABELINV</a>&#160;&#160;&#160;&quot;Abel Inversion&quot;</td></tr>
+<tr class="memitem:a429f16314cfea62bb5337e5957d65b36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a429f16314cfea62bb5337e5957d65b36">MW_ALG_RECTANGLE</a>&#160;&#160;&#160;&quot;Extract Rectangle&quot;</td></tr>
+<tr class="memitem:a3cff030b461d03c0dd7f1cee2e2e8ec8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a3cff030b461d03c0dd7f1cee2e2e8ec8">MW_ALG_GETLINE</a>&#160;&#160;&#160;&quot;Extract Line&quot;</td></tr>
+<tr class="memitem:a281abc802d4c9004c362a9276acc4aba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a281abc802d4c9004c362a9276acc4aba">MW_ALG_SAVE</a>&#160;&#160;&#160;&quot;Save <a class="el" href="class_algorithm.html">Algorithm</a> List to File&quot;</td></tr>
+<tr class="memitem:a6af20eb2896e04fdd2d2ff7acb2f4d55"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a6af20eb2896e04fdd2d2ff7acb2f4d55">MW_ALG_LOAD</a>&#160;&#160;&#160;&quot;Load <a class="el" href="class_algorithm.html">Algorithm</a> List from File&quot;</td></tr>
+<tr class="memitem:a62c86091207a2dde51bd3a24c5f559bd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a62c86091207a2dde51bd3a24c5f559bd">MW_LM_MENU</a>&#160;&#160;&#160;&quot;Live Mode&quot;</td></tr>
+<tr class="memitem:ae04d8aed7264e211438fc5eadc96f55b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ae04d8aed7264e211438fc5eadc96f55b">MW_LM_START</a>&#160;&#160;&#160;&quot;Start Live Mode&quot;</td></tr>
+<tr class="memitem:a4a9c099acb6ada0c5df83102c8a70814"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a4a9c099acb6ada0c5df83102c8a70814">MW_EXP_MENU</a>&#160;&#160;&#160;&quot;Export Results&quot;</td></tr>
+<tr class="memitem:ac0fc992ab2c6943c37500edef60c4da9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ac0fc992ab2c6943c37500edef60c4da9">MW_EXP_SAVE</a>&#160;&#160;&#160;&quot;Save Image&quot;</td></tr>
+<tr class="memitem:a3c26545e53f93a3a1c8c716dc274ab13"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a3c26545e53f93a3a1c8c716dc274ab13">MW_EXP_SAVES</a>&#160;&#160;&#160;&quot;Save Image for the Series&quot;</td></tr>
+<tr class="memitem:af8602690ad5b05eb3c4712db94d716b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#af8602690ad5b05eb3c4712db94d716b7">MW_EXP_SAVED</a>&#160;&#160;&#160;&quot;Save Data&quot;</td></tr>
+<tr class="memitem:a6be4bf9972080c5e954c15ce716b68b7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a6be4bf9972080c5e954c15ce716b68b7">MW_EXP_SAVEDS</a>&#160;&#160;&#160;&quot;Save Data for the Series&quot;</td></tr>
+<tr class="memitem:a1075ef3c0d1b704db0c1571878f20655"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a1075ef3c0d1b704db0c1571878f20655">MW_EXP_SAVEVIDEO</a>&#160;&#160;&#160;&quot;Save Video for the Series&quot;</td></tr>
+<tr class="memitem:ab6a5e6c2b8eb5c666cbca9dc93f8839c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ab6a5e6c2b8eb5c666cbca9dc93f8839c">MW_EXP_SAVEANIM</a>&#160;&#160;&#160;&quot;Save Animation for the Series&quot;</td></tr>
+<tr class="memitem:a84dc8bc8d685b79d3e7a9a46181f9133"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a84dc8bc8d685b79d3e7a9a46181f9133">MW_CONF_MENU</a>&#160;&#160;&#160;&quot;Configuration&quot;</td></tr>
+<tr class="memitem:aaa5aab50f528ca2a9904b50c9c532bfd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aaa5aab50f528ca2a9904b50c9c532bfd">MW_CONF_CAM</a>&#160;&#160;&#160;&quot;Camera Settings&quot;</td></tr>
+<tr class="memitem:ade01a81234ab9befe84a5f8841ce5c86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ade01a81234ab9befe84a5f8841ce5c86">MW_CONF_PREF</a>&#160;&#160;&#160;&quot;Preferences&quot;</td></tr>
+<tr class="memitem:a84d59e37c5882c18e9e4c7ad8cc65159"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a84d59e37c5882c18e9e4c7ad8cc65159">MW_TAB_SPECT</a>&#160;&#160;&#160;&quot;Spectrogam&quot;</td></tr>
+<tr class="memitem:ac4645ef11b608ab004a905fbf4d50067"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ac4645ef11b608ab004a905fbf4d50067">MW_TAB_2DSURF</a>&#160;&#160;&#160;&quot;3d Surface&quot;</td></tr>
+<tr class="memitem:a7e76b123b4fd567c7004cade350c8b12"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a7e76b123b4fd567c7004cade350c8b12">MW_TAB_PARAM</a>&#160;&#160;&#160;&quot;Parametric&quot;</td></tr>
+<tr class="memitem:ac4c524b9dc5ae201504f3c01d9792d1a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ac4c524b9dc5ae201504f3c01d9792d1a">MW_TAB_1DDATA</a>&#160;&#160;&#160;&quot;Line&quot;</td></tr>
+<tr class="memitem:a02a3371a8bcd6c8a7dbdf27a0de0576f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a02a3371a8bcd6c8a7dbdf27a0de0576f">MW_LABELZ</a>&#160;&#160;&#160;&quot;Label Z&quot;</td></tr>
+<tr class="memitem:ac68825a2c34df159820a8f7a01491472"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ac68825a2c34df159820a8f7a01491472">MW_DFLTLABELZ</a>&#160;&#160;&#160;&quot;Phase&quot;</td></tr>
+<tr class="memitem:a44278cc995aa84e829470ccd718d715c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a44278cc995aa84e829470ccd718d715c">MW_AUTOSCALEZ</a>&#160;&#160;&#160;&quot;Auto Scale Z Axis&quot;</td></tr>
+<tr class="memitem:aef3bdd2db7986576c4f7c406ffec4d77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aef3bdd2db7986576c4f7c406ffec4d77">MW_MINZLABEL</a>&#160;&#160;&#160;&quot;Min Z: &quot;</td></tr>
+<tr class="memitem:aed18b62d1d0a54a5405e0f59bb5cf760"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aed18b62d1d0a54a5405e0f59bb5cf760">MW_MAXZLABEL</a>&#160;&#160;&#160;&quot;Max Z: &quot;</td></tr>
+<tr class="memitem:af6a1a813d5503fb7becc3291325ddbc7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#af6a1a813d5503fb7becc3291325ddbc7">MW_SEQUENCE</a>&#160;&#160;&#160;&quot;Enable Sequence&quot;</td></tr>
+<tr class="memitem:a300a1fd68813c2c5f6b20c76e6d4e974"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a300a1fd68813c2c5f6b20c76e6d4e974">MW_FPSLABEL</a>&#160;&#160;&#160;&quot;FPS: &quot;</td></tr>
+<tr class="memitem:ab9701c20680aa310c847e773461e37f4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ab9701c20680aa310c847e773461e37f4">MW_PARAM_THRES</a>&#160;&#160;&#160;&quot;Threshold Value: &quot;</td></tr>
+<tr class="memitem:aa3ce55221e7961237d379c18beddca7e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aa3ce55221e7961237d379c18beddca7e">MW_LEVELCURV</a>&#160;&#160;&#160;&quot;View Level Curves: &quot;</td></tr>
+<tr class="memitem:a9335b35c5396f02d566da7dcb190d78c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a9335b35c5396f02d566da7dcb190d78c">MW_HELP_MENU</a>&#160;&#160;&#160;&quot;Help&quot;</td></tr>
+<tr class="memitem:a2a1d66ca65c89a17bdfa1eb3285d4e11"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a2a1d66ca65c89a17bdfa1eb3285d4e11">MW_HELP_HELP</a>&#160;&#160;&#160;&quot;Help&quot;</td></tr>
+<tr class="memitem:ad552ec783f8788d63117510f1481f05a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ad552ec783f8788d63117510f1481f05a">MW_HELP_ABOUT</a>&#160;&#160;&#160;&quot;About...&quot;</td></tr>
+<tr class="memitem:a7ac965cbc80e86242a8b21758b23c749"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a7ac965cbc80e86242a8b21758b23c749">MW_STATUS_CAMERA</a>&#160;&#160;&#160;&quot;Camera: &quot;</td></tr>
+<tr class="memitem:aff660504dedbce0f8d89803ad12e34a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aff660504dedbce0f8d89803ad12e34a5">MW_STATUS_CAMON</a>&#160;&#160;&#160;&quot;Detected &quot;</td></tr>
+<tr class="memitem:a2a7c29a80d618eb678b151c6de7d276c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a2a7c29a80d618eb678b151c6de7d276c">MW_STATUS_CAMOFF</a>&#160;&#160;&#160;&quot;Not Detected &quot;</td></tr>
+<tr class="memitem:a5381ea74203e045607d5e353f6cbfdb0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a5381ea74203e045607d5e353f6cbfdb0">MW_STATUS_CALC</a>&#160;&#160;&#160;&quot;Computation Mode: &quot;</td></tr>
+<tr class="memitem:a7e13ea65dc0da3e0bb77835939f04811"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a7e13ea65dc0da3e0bb77835939f04811">MW_STATUS_CALCCUDA</a>&#160;&#160;&#160;&quot;CUDA &quot;</td></tr>
+<tr class="memitem:aecae930a168576428f1d7780fd544dca"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aecae930a168576428f1d7780fd544dca">MW_STATUS_CALCCPU</a>&#160;&#160;&#160;&quot;CPU &quot;</td></tr>
+<tr class="memitem:a265be676b14ae9a8517988154a444142"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a265be676b14ae9a8517988154a444142">MW_STATUS_OUTF</a>&#160;&#160;&#160;&quot;Output Folder: &quot;</td></tr>
+<tr class="memitem:af581b05660a2a4bbb577ff70d5515255"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#af581b05660a2a4bbb577ff70d5515255">MW_ERROR_SAVE</a>&#160;&#160;&#160;&quot;Error Saving&quot;</td></tr>
+<tr class="memitem:aa8d4ee0d1557c92b9efdb630d2286a38"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aa8d4ee0d1557c92b9efdb630d2286a38">MW_ERROR_LOAD</a>&#160;&#160;&#160;&quot;Error Loading&quot;</td></tr>
+<tr class="memitem:ab3540af9ad6fe634dc0842dc279522f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#ab3540af9ad6fe634dc0842dc279522f1">MW_ERROR_LABEL</a>&#160;&#160;&#160;&quot;Error&quot;</td></tr>
+<tr class="memitem:a8b77ae503c7a57997cdcc2fed89dca9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a8b77ae503c7a57997cdcc2fed89dca9d">MW_FAILLOADIMAGE_LABEL</a>&#160;&#160;&#160;&quot;Cannot load the image file: &quot;</td></tr>
+<tr class="memitem:a80a010abba86ce170395e430975f7b8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a80a010abba86ce170395e430975f7b8b">MW_FAILCAMIMAGE_LABEL</a>&#160;&#160;&#160;&quot;Cannot take the picture&quot;</td></tr>
+<tr class="memitem:a7e1c89f5487dcc85c1b6755df8ffaf5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a7e1c89f5487dcc85c1b6755df8ffaf5d">MW_FAILSAVEPROJ_LABEL1</a>&#160;&#160;&#160;&quot;Cannot save the project file &quot;</td></tr>
+<tr class="memitem:a7bc9fcdcef2b12b205f6189e14a0a0f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a7bc9fcdcef2b12b205f6189e14a0a0f6">MW_FAILSAVEPROJ_LABEL2</a>&#160;&#160;&#160;&quot;. \nMake sure the current user has write permissions for that directory and the temporary folder &quot;</td></tr>
+<tr class="memitem:a714de217d216689b80995b99d1bdc969"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a714de217d216689b80995b99d1bdc969">MW_FAILLOADPROJ_LABEL1</a>&#160;&#160;&#160;&quot;Cannot load the project file &quot;</td></tr>
+<tr class="memitem:a75d8582357ff1fdf1187a276feacfd33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a75d8582357ff1fdf1187a276feacfd33">MW_FAILLOADPROJ_LABEL2</a>&#160;&#160;&#160;&quot; completely. \nMake sure the file is not corrupt and the current user has write permissions for the temporary folder: &quot;</td></tr>
+<tr class="memitem:aeaf02f6d78d26e607c0af0fc849974f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#aeaf02f6d78d26e607c0af0fc849974f0">MW_ERROR_SERIES</a>&#160;&#160;&#160;&quot;There was a problem saving in the folder &quot;</td></tr>
+<tr class="memitem:a03e3075e08815f4de3282491121e43d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a03e3075e08815f4de3282491121e43d8">MW_CONFIRM</a>&#160;&#160;&#160;&quot;Confirmation&quot;</td></tr>
+<tr class="memitem:a3c581bf22ad0e36b3be3cf303a6f4176"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a3c581bf22ad0e36b3be3cf303a6f4176">MW_REMOVEIMAGES</a>&#160;&#160;&#160;&quot;Click on \&quot;Ok\&quot; to permanently remove every image in the list&quot;</td></tr>
+<tr class="memitem:af733de3e79d4480a57cb0af739fd4fcc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#af733de3e79d4480a57cb0af739fd4fcc">MW_QUESTION</a>&#160;&#160;&#160;&quot;Question&quot;</td></tr>
+<tr class="memitem:a32b96d6b20e89bc09a1c1f5166ba1077"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a32b96d6b20e89bc09a1c1f5166ba1077">MW_CLOSEPROJECT</a>&#160;&#160;&#160;&quot;Do you wanna save the current project?&quot;</td></tr>
+<tr class="memitem:a4bb9f6811c9b750502b753235e4ccdba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a4bb9f6811c9b750502b753235e4ccdba">MW_OFDIALOGTITLE</a>&#160;&#160;&#160;&quot;Select a working directory for the output files&quot;</td></tr>
+<tr class="memitem:a106a530378b5b1d756da00c42848c929"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a106a530378b5b1d756da00c42848c929">MW_ABOUT_TITLE</a>&#160;&#160;&#160;&quot;About Jet Processing&quot;</td></tr>
+<tr class="memitem:a37f6b0dd2ef10531b3b5713f270c6276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mainwindow_8h.html#a37f6b0dd2ef10531b3b5713f270c6276">MW_ABOUT_BODY</a>&#160;&#160;&#160;&quot;Jet Processing was developed by Álvaro Sánchez González \                            \nduring spring and summer of 2012 as a final project for \                            \nTechnical Engineering in Computer Systems\                            \nAll Rights Reserved&quot;</td></tr>
+</table>
+<a name="details" id="details"></a><h2>Descripción detallada</h2>
+<div class="textblock"><p>Clase que gestiona la ventana principal del programa. </p>
+<dl class="section author"><dt>Autor</dt><dd>Álvaro Sánchez González <a href="#" onclick="location.href='mai'+'lto:'+'alv'+'ar'+'osg'+'@u'+'sal'+'.e'+'s'; return false;">alvar<span style="display: none;">.nosp@m.</span>osg@<span style="display: none;">.nosp@m.</span>usal.<span style="display: none;">.nosp@m.</span>es</a> </dd></dl>
+<dl class="section date"><dt>Fecha</dt><dd>Mon Jul 23 2012</dd></dl>
+<p>Copyright (c) 2012 Álvaro Sánchez González </p>
+
+<p>Definición en el archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+</div><h2>Documentación de los 'defines'</h2>
+<a class="anchor" id="a37f6b0dd2ef10531b3b5713f270c6276"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ABOUT_BODY&#160;&#160;&#160;&quot;Jet Processing was developed by Álvaro Sánchez González \                            \nduring spring and summer of 2012 as a final project for \                            \nTechnical Engineering in Computer Systems\                            \nAll Rights Reserved&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00126">126</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a106a530378b5b1d756da00c42848c929"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ABOUT_TITLE&#160;&#160;&#160;&quot;About Jet Processing&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00125">125</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4621fc6a78e93e6ce629037b86c35347"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_ABELINV&#160;&#160;&#160;&quot;Abel Inversion&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00055">55</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2b75ecd9d55d607852d86bf20b4004e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_AFTER&#160;&#160;&#160;&quot;Add After&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00042">42</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a01dbfb37289a474894231ec1ec6cb7ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_BEFORE&#160;&#160;&#160;&quot;Add Before&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00041">41</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a510ed1a77b340f5d5ff8d3eab0181d13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_DELETE&#160;&#160;&#160;&quot;Delete&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00046">46</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adcfd7037c066207ea61ad5d722a465b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_EDIT&#160;&#160;&#160;&quot;Edit&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00045">45</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3cff030b461d03c0dd7f1cee2e2e8ec8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_GETLINE&#160;&#160;&#160;&quot;Extract Line&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00057">57</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa11c491140b7fff04be8d4b6d8571693"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_INVERSE&#160;&#160;&#160;&quot;Invert&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00048">48</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6af20eb2896e04fdd2d2ff7acb2f4d55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_LOAD&#160;&#160;&#160;&quot;Load <a class="el" href="class_algorithm.html">Algorithm</a> List from File&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00060">60</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aacd865df8c8cd2587cbbaf825047cd81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_MENU&#160;&#160;&#160;&quot;Algorithm&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00039">39</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f2e312298078d6bb99870fe28c190ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_MOVEDOWN&#160;&#160;&#160;&quot;Move Down&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00044">44</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae376ccdce61ca2b856cbc4cab772bcf9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_MOVEUP&#160;&#160;&#160;&quot;Move Up&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00043">43</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8342066281f7bbb09a97052c9e88b74f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_MULTIPLY&#160;&#160;&#160;&quot;Multiply by...&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00053">53</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bb32b66c322903dfd397fd6476ba075"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_OFFSET&#160;&#160;&#160;&quot;Add Offset&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00052">52</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a429f16314cfea62bb5337e5957d65b36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_RECTANGLE&#160;&#160;&#160;&quot;Extract Rectangle&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00056">56</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae5cfab5b55008df88ef7e09b008a2119"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_RMHTILT&#160;&#160;&#160;&quot;Remove Horizontal Tilt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00049">49</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae05aa844ce606a0cd59726496a454de2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_RMVTILT&#160;&#160;&#160;&quot;Remove Vertical Tilt&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00050">50</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a281abc802d4c9004c362a9276acc4aba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_SAVE&#160;&#160;&#160;&quot;Save <a class="el" href="class_algorithm.html">Algorithm</a> List to File&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00059">59</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac280dd1b52d878ec95e74f067e9980eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_SETGROUND&#160;&#160;&#160;&quot;Set Ground&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00051">51</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a275cc9d58d39c3f3eb365942c22d9370"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ALG_SYMMETRIC&#160;&#160;&#160;&quot;Make Symmetric&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00054">54</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a44278cc995aa84e829470ccd718d715c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_AUTOSCALEZ&#160;&#160;&#160;&quot;Auto Scale Z Axis&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00084">84</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bc133afa474d4ff906d534b202e4d96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_CAPTION&#160;&#160;&#160;&quot;JetProcessing&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00018">18</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a32b96d6b20e89bc09a1c1f5166ba1077"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_CLOSEPROJECT&#160;&#160;&#160;&quot;Do you wanna save the current project?&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00122">122</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaa5aab50f528ca2a9904b50c9c532bfd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_CONF_CAM&#160;&#160;&#160;&quot;Camera Settings&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00074">74</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a84dc8bc8d685b79d3e7a9a46181f9133"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_CONF_MENU&#160;&#160;&#160;&quot;Configuration&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00073">73</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ade01a81234ab9befe84a5f8841ce5c86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_CONF_PREF&#160;&#160;&#160;&quot;Preferences&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00075">75</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a03e3075e08815f4de3282491121e43d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_CONFIRM&#160;&#160;&#160;&quot;Confirmation&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00119">119</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac68825a2c34df159820a8f7a01491472"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_DFLTLABELZ&#160;&#160;&#160;&quot;Phase&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00083">83</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab3540af9ad6fe634dc0842dc279522f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ERROR_LABEL&#160;&#160;&#160;&quot;Error&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00110">110</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8d4ee0d1557c92b9efdb630d2286a38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ERROR_LOAD&#160;&#160;&#160;&quot;Error Loading&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00109">109</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af581b05660a2a4bbb577ff70d5515255"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ERROR_SAVE&#160;&#160;&#160;&quot;Error Saving&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00108">108</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeaf02f6d78d26e607c0af0fc849974f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_ERROR_SERIES&#160;&#160;&#160;&quot;There was a problem saving in the folder &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00117">117</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a9c099acb6ada0c5df83102c8a70814"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_EXP_MENU&#160;&#160;&#160;&quot;Export Results&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00065">65</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0fc992ab2c6943c37500edef60c4da9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_EXP_SAVE&#160;&#160;&#160;&quot;Save Image&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00066">66</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab6a5e6c2b8eb5c666cbca9dc93f8839c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_EXP_SAVEANIM&#160;&#160;&#160;&quot;Save Animation for the Series&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00071">71</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af8602690ad5b05eb3c4712db94d716b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_EXP_SAVED&#160;&#160;&#160;&quot;Save Data&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00068">68</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6be4bf9972080c5e954c15ce716b68b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_EXP_SAVEDS&#160;&#160;&#160;&quot;Save Data for the Series&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00069">69</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c26545e53f93a3a1c8c716dc274ab13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_EXP_SAVES&#160;&#160;&#160;&quot;Save Image for the Series&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00067">67</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1075ef3c0d1b704db0c1571878f20655"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_EXP_SAVEVIDEO&#160;&#160;&#160;&quot;Save Video for the Series&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00070">70</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a80a010abba86ce170395e430975f7b8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FAILCAMIMAGE_LABEL&#160;&#160;&#160;&quot;Cannot take the picture&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00112">112</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b77ae503c7a57997cdcc2fed89dca9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FAILLOADIMAGE_LABEL&#160;&#160;&#160;&quot;Cannot load the image file: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00111">111</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a714de217d216689b80995b99d1bdc969"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FAILLOADPROJ_LABEL1&#160;&#160;&#160;&quot;Cannot load the project file &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00115">115</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a75d8582357ff1fdf1187a276feacfd33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FAILLOADPROJ_LABEL2&#160;&#160;&#160;&quot; completely. \nMake sure the file is not corrupt and the current user has write permissions for the temporary folder: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00116">116</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e1c89f5487dcc85c1b6755df8ffaf5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FAILSAVEPROJ_LABEL1&#160;&#160;&#160;&quot;Cannot save the project file &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00113">113</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7bc9fcdcef2b12b205f6189e14a0a0f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FAILSAVEPROJ_LABEL2&#160;&#160;&#160;&quot;. \nMake sure the current user has write permissions for that directory and the temporary folder &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00114">114</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3613e2b4ad814e20b77f11b2a54827f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FILE_EXIT&#160;&#160;&#160;&quot;Exit&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00025">25</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a448569245f09ddd297c1b56138fade4d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FILE_LOADP&#160;&#160;&#160;&quot;Load Project&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00021">21</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a102f3b55cfed8ead5a18db6ece23c05f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FILE_MENU&#160;&#160;&#160;&quot;File&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00020">20</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa4cbbdd7156992c52081dd5ec2f6ea83"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FILE_OUTPUTF&#160;&#160;&#160;&quot;Select Output Folder&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00024">24</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa573e24d2030c61ce5e4e7f7ee37368c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FILE_SAVEP&#160;&#160;&#160;&quot;Save Project&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00022">22</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff1f32787b7639b3e31811ea5dfca317"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FILE_SAVEPAS&#160;&#160;&#160;&quot;Save Project As&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00023">23</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a300a1fd68813c2c5f6b20c76e6d4e974"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_FPSLABEL&#160;&#160;&#160;&quot;FPS: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00089">89</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad552ec783f8788d63117510f1481f05a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_HELP_ABOUT&#160;&#160;&#160;&quot;About...&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00096">96</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a1d66ca65c89a17bdfa1eb3285d4e11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_HELP_HELP&#160;&#160;&#160;&quot;Help&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00095">95</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9335b35c5396f02d566da7dcb190d78c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_HELP_MENU&#160;&#160;&#160;&quot;Help&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00094">94</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aeb6b317fe863e794241f5cc619a61b23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_IMG_CAM&#160;&#160;&#160;&quot;Process Image from Camera&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00037">37</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abc186c767f6727b2f9eb5b24fcea846f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_IMG_DELETE&#160;&#160;&#160;&quot;Delete&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00034">34</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4e02f6afe21ac98948c22c60ea9f5119"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_IMG_DELETEALL&#160;&#160;&#160;&quot;Delete All&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00035">35</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a173f83fa8008f073d4e7d365fc7c3022"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_IMG_LOAD&#160;&#160;&#160;&quot;Process Images from File&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00036">36</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abbfea3780c66917c4f69569d155f8bbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_IMG_MENU&#160;&#160;&#160;&quot;Image&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00030">30</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2c1d781f9c620b9a14b28faf9b20688"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_IMG_MOVEDOWN&#160;&#160;&#160;&quot;Move Down&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00033">33</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab2689aedcd637312df56d4b23e62243a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_IMG_MOVEUP&#160;&#160;&#160;&quot;Move Up&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00032">32</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a02a3371a8bcd6c8a7dbdf27a0de0576f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_LABELZ&#160;&#160;&#160;&quot;Label Z&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00082">82</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3ce55221e7961237d379c18beddca7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_LEVELCURV&#160;&#160;&#160;&quot;View Level Curves: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00092">92</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a62c86091207a2dde51bd3a24c5f559bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_LM_MENU&#160;&#160;&#160;&quot;Live Mode&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00062">62</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae04d8aed7264e211438fc5eadc96f55b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_LM_START&#160;&#160;&#160;&quot;Start Live Mode&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00063">63</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aed18b62d1d0a54a5405e0f59bb5cf760"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_MAXZLABEL&#160;&#160;&#160;&quot;Max Z: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00086">86</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aef3bdd2db7986576c4f7c406ffec4d77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_MINZLABEL&#160;&#160;&#160;&quot;Min Z: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00085">85</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4bb9f6811c9b750502b753235e4ccdba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_OFDIALOGTITLE&#160;&#160;&#160;&quot;Select a working directory for the output files&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00123">123</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ab9701c20680aa310c847e773461e37f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_PARAM_THRES&#160;&#160;&#160;&quot;Threshold Value: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00091">91</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af733de3e79d4480a57cb0af739fd4fcc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_QUESTION&#160;&#160;&#160;&quot;Question&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00121">121</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a01dd140b23ef3edcb8885f395484dd69"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_REF_MENU&#160;&#160;&#160;&quot;Reference&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00027">27</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7f90b293947eff451a97650eb5d226da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_REF_SET&#160;&#160;&#160;&quot;Change Reference&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00028">28</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3c581bf22ad0e36b3be3cf303a6f4176"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_REMOVEIMAGES&#160;&#160;&#160;&quot;Click on \&quot;Ok\&quot; to permanently remove every image in the list&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00120">120</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af6a1a813d5503fb7becc3291325ddbc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_SEQUENCE&#160;&#160;&#160;&quot;Enable Sequence&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00088">88</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5381ea74203e045607d5e353f6cbfdb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_STATUS_CALC&#160;&#160;&#160;&quot;Computation Mode: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00102">102</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aecae930a168576428f1d7780fd544dca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_STATUS_CALCCPU&#160;&#160;&#160;&quot;CPU &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00104">104</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e13ea65dc0da3e0bb77835939f04811"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_STATUS_CALCCUDA&#160;&#160;&#160;&quot;CUDA &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00103">103</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7ac965cbc80e86242a8b21758b23c749"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_STATUS_CAMERA&#160;&#160;&#160;&quot;Camera: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00098">98</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a7c29a80d618eb678b151c6de7d276c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_STATUS_CAMOFF&#160;&#160;&#160;&quot;Not Detected &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00100">100</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aff660504dedbce0f8d89803ad12e34a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_STATUS_CAMON&#160;&#160;&#160;&quot;Detected &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00099">99</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a265be676b14ae9a8517988154a444142"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_STATUS_OUTF&#160;&#160;&#160;&quot;Output Folder: &quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00106">106</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4c524b9dc5ae201504f3c01d9792d1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_TAB_1DDATA&#160;&#160;&#160;&quot;Line&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00080">80</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac4645ef11b608ab004a905fbf4d50067"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_TAB_2DSURF&#160;&#160;&#160;&quot;3d Surface&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00078">78</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7e76b123b4fd567c7004cade350c8b12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_TAB_PARAM&#160;&#160;&#160;&quot;Parametric&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00079">79</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a84d59e37c5882c18e9e4c7ad8cc65159"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MW_TAB_SPECT&#160;&#160;&#160;&quot;Spectrogam&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Etiqueta. </p>
+
+<p>Definición en la línea <a class="el" href="mainwindow_8h_source.html#l00077">77</a> del archivo <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="mainwindow_8h.html">mainwindow.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,3552 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 12 (filtered)">
+<title>Jet Processing: User's manual</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Courier;
+	panose-1:2 7 4 9 2 2 5 2 4 4;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+@font-face
+	{font-family:"\@MS Gothic";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+h1
+	{mso-style-link:"Título 1 Car";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+h2
+	{mso-style-link:"Título 2 Car";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:18.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;
+	font-style:italic;}
+h3
+	{mso-style-link:"Título 3 Car";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:150%;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	font-weight:normal;
+	text-decoration:underline;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	font-weight:bold;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:12.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:48.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:84.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:96.0pt;
+	margin-bottom:.0001pt;
+	line-height:150%;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Encabezado Car";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"Pie de página Car";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	font-style:italic;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:24.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:-24.0pt;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"Texto de globo Car";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	line-height:150%;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";}
+span.MsoPlaceholderText
+	{color:gray;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:36.0pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:36.0pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";}
+p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
+	{margin-top:24.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Ttulo1Car
+	{mso-style-name:"Título 1 Car";
+	mso-style-link:"Título 1";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+span.Ttulo2Car
+	{mso-style-name:"Título 2 Car";
+	mso-style-link:"Título 2";
+	font-family:"Cambria","serif";
+	font-weight:bold;
+	font-style:italic;}
+span.Ttulo3Car
+	{mso-style-name:"Título 3 Car";
+	mso-style-link:"Título 3";
+	font-family:"Cambria","serif";
+	text-decoration:underline;}
+span.TextodegloboCar
+	{mso-style-name:"Texto de globo Car";
+	mso-style-link:"Texto de globo";
+	font-family:"Tahoma","sans-serif";}
+p.NormalIng, li.NormalIng, div.NormalIng
+	{mso-style-name:NormalIng;
+	mso-style-link:"NormalIng Car";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	color:black;}
+span.NormalIngCar
+	{mso-style-name:"NormalIng Car";
+	mso-style-link:NormalIng;
+	font-family:"Times New Roman","serif";
+	color:black;}
+p.Cuadrculavistosa-nfasis11, li.Cuadrculavistosa-nfasis11, div.Cuadrculavistosa-nfasis11
+	{mso-style-name:"Cuadrícula vistosa - Énfasis 11";
+	mso-style-link:"Cuadrícula vistosa - Énfasis 1 Car";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:0cm;
+	text-align:center;
+	line-height:150%;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	color:black;
+	font-style:italic;}
+span.Cuadrculavistosa-nfasis1Car
+	{mso-style-name:"Cuadrícula vistosa - Énfasis 1 Car";
+	mso-style-link:"Cuadrícula vistosa - Énfasis 11";
+	font-family:"Times New Roman","serif";
+	color:black;
+	font-style:italic;}
+p.TituloIng3, li.TituloIng3, div.TituloIng3
+	{mso-style-name:TituloIng3;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+	color:black;
+	text-decoration:underline;}
+p.Sinespaciado1, li.Sinespaciado1, div.Sinespaciado1
+	{mso-style-name:"Sin espaciado1";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.PiedepginaCar
+	{mso-style-name:"Pie de página Car";
+	mso-style-link:"Pie de página";
+	font-family:"Times New Roman","serif";}
+span.EncabezadoCar
+	{mso-style-name:"Encabezado Car";
+	mso-style-link:Encabezado;
+	font-family:"Times New Roman","serif";}
+p.Cdigo, li.Cdigo, div.Cdigo
+	{mso-style-name:Código;
+	mso-style-link:"Código Car";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:35.45pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	line-height:150%;
+	font-size:10.0pt;
+	font-family:Courier;}
+span.CdigoCar
+	{mso-style-name:"Código Car";
+	mso-style-link:Código;
+	font-family:Courier;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection5
+	{page:WordSection5;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=ES link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='margin:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:115%'><b><span lang=EN-US style='font-size:26.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal align=center style='margin:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:115%'><b><span lang=EN-US style='font-size:26.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>Jet Processing</span></b></p>
+
+<p class=MsoNormal align=center style='margin:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:115%'><span style='font-family:"Times New Roman","serif"'><img
+width=301 height=301 src="UsersManual_archivos/image001.png"></span></p>
+
+<p class=MsoNormal align=center style='margin:0cm;margin-bottom:.0001pt;
+text-align:center;line-height:115%'><i><span lang=EN-US style='font-size:26.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>User’s Manual</span></i></p>
+
+<p class=MsoTocHeading><span lang=EN-US style='color:windowtext'>Contents</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoToc1><a
+href="#_Toc335656942"><span lang=EN-US>1.</span><span style='font-size:11.0pt;
+line-height:150%;color:windowtext;font-weight:normal;text-decoration:none'>       </span><span
+lang=EN-US>Introduction to JetProcessing</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>9</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc335656943"><span lang=EN-US>2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-weight:normal;
+text-decoration:none'>       </span><span lang=EN-US>Configuration and
+installation</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>11</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656944"><span lang=EN-US>2.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Hardware requirements</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>11</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656945"><span lang=EN-US>2.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Step-by-Step installation</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>12</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656946"><span lang=EN-US>2.2.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Executing the installer file</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>12</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656947"><span lang=EN-US>2.2.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Welcome screen</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>12</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656948"><span lang=EN-US>2.2.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Selecting the version to install</span><span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656949"><span lang=EN-US>2.2.4.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Selecting the installation folder</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>14</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656950"><span lang=EN-US>2.2.5.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Confirmation screen</span><span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>14</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656951"><span lang=EN-US>2.2.6.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Installing screen</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656952"><span lang=EN-US>2.2.7.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Installation completed screen</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656953"><span lang=EN-US>2.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>JetProcessing after the
+installation</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>16</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656954"><span lang=EN-US>2.4.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Uninstalling</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>17</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656955"><span lang=EN-US>2.4.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Automatic uninstallation (recommended)</span><span style='color:
+windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>17</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656956"><span lang=EN-US>2.4.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Manual uninstallation</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>18</span></a></p>
+
+<p class=MsoToc1><a href="#_Toc335656957"><span lang=EN-US>3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-weight:normal;
+text-decoration:none'>       </span><span lang=EN-US>User’s manual</span><span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656958"><span lang=EN-US>3.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Opening the program</span><span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656959"><span lang=EN-US>3.1.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Mode selection window</span><span style='color:windowtext;
+display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656960"><span lang=EN-US>3.1.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Opening the program for the first time</span><span style='color:
+windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656961"><span lang=EN-US>3.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Setting the reference
+phase</span><span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>20</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656962"><span lang=EN-US>3.2.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Selecting the image</span><span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>20</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656963"><span lang=EN-US>3.2.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Setting size</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>21</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656964"><span lang=EN-US>3.2.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Setting the origin of coordinates and a mask</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>22</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656965"><span lang=EN-US>3.2.4.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Setting the Fourier mask</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>23</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656966"><span lang=EN-US>3.2.5.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Result</span><span style='color:windowtext;display:none;text-decoration:
+none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>24</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656967"><span lang=EN-US>3.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Pre-processing and adding
+an image</span><span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>25</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656968"><span lang=EN-US>3.3.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Pre-processing an image from the camera</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>26</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656969"><span lang=EN-US>3.3.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Pre-processing images from file</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>26</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656970"><span lang=EN-US>3.3.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Image list</span><span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>26</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656971"><span lang=EN-US>3.4.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Processing an image:
+Different algorithms</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>27</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656972"><span lang=EN-US>3.4.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Invert</span><span style='color:windowtext;display:none;text-decoration:
+none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>28</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656973"><span lang=EN-US>3.4.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Remove horizontal Tilt</span><span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>28</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656974"><span lang=EN-US>3.4.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Remove vertical Tilt</span><span style='color:windowtext;display:
+none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>29</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656975"><span lang=EN-US>3.4.4.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Set ground</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>30</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656976"><span lang=EN-US>3.4.5.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Add offset</span><span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>31</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656977"><span lang=EN-US>3.4.6.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Multiply by</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>32</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656978"><span lang=EN-US>3.4.7.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Make symmetric</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>33</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656979"><span lang=EN-US>3.4.8.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Abel inversion</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>33</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656980"><span lang=EN-US>3.4.9.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Extract rectangle</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>35</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656981"><span lang=EN-US>3.4.10.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>       </span><span
+lang=EN-US>Extract line</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>36</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656982"><span lang=EN-US>3.5.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Processing an image:
+Algorithm list</span><span style='color:windowtext;display:none;text-decoration:
+none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>37</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656983"><span lang=EN-US>3.5.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Add algorithm</span><span style='color:windowtext;display:none;
+text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>38</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656984"><span lang=EN-US>3.5.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Save algorithm list</span><span style='color:windowtext;display:
+none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>38</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656985"><span lang=EN-US>3.5.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Load algorithm list</span><span style='color:windowtext;display:
+none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>39</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656986"><span lang=EN-US>3.5.4.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Managing the algorithm list</span><span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>39</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656987"><span lang=EN-US>3.6.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Results viewer</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>39</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656988"><span lang=EN-US>3.6.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Label for the Z axis</span><span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>40</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656989"><span lang=EN-US>3.6.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Z axis scaling</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>40</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656990"><span lang=EN-US>3.6.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Enable sequence</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>41</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656991"><span lang=EN-US>3.6.4.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Spectogram</span><span style='color:windowtext;display:none;
+text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>41</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656992"><span lang=EN-US>3.6.5.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>3D surface</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>43</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656993"><span lang=EN-US>3.6.6.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Parametric surface</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>44</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656994"><span lang=EN-US>3.6.7.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Line</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>45</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335656995"><span lang=EN-US>3.7.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Exporting results</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>46</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656996"><span lang=EN-US>3.7.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Selecting output folder</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>46</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656997"><span lang=EN-US>3.7.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Save data</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>46</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656998"><span lang=EN-US>3.7.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Save data for the series</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>47</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335656999"><span lang=EN-US>3.7.4.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Save image</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>48</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657000"><span lang=EN-US>3.7.5.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Save image for the series</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>48</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657001"><span lang=EN-US>3.7.6.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Save video for the series</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>49</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657002"><span lang=EN-US>3.7.7.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Save animation for the series</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>49</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335657003"><span lang=EN-US>3.8.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Camera</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>49</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657004"><span lang=EN-US>3.8.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Camera configuration</span><span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>49</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657005"><span lang=EN-US>3.8.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Camera simulator</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>51</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335657006"><span lang=EN-US>3.9.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>        </span><span lang=EN-US>Live Mode</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>51</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657007"><span lang=EN-US>3.9.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Navigation buttons</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>52</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657008"><span lang=EN-US>3.9.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Graphics</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>53</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657009"><span lang=EN-US>3.9.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Frames per second (FPS)</span><span style='color:windowtext;
+display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>53</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657010"><span lang=EN-US>3.9.4.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Apply algorithms</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>54</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657011"><span lang=EN-US>3.9.5.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Auto update axes</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>54</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657012"><span lang=EN-US>3.9.6.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Restart axes range values</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>54</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657013"><span lang=EN-US>3.9.7.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>         </span><span
+lang=EN-US>Renew reference</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>55</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335657014"><span lang=EN-US>3.10.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>     </span><span lang=EN-US>Projects</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>55</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657015"><span lang=EN-US>3.10.1.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>       </span><span
+lang=EN-US>Save state</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>55</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657016"><span lang=EN-US>3.10.2.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>       </span><span
+lang=EN-US>Load project</span><span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>56</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657017"><span lang=EN-US>3.10.3.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>       </span><span
+lang=EN-US>Save project</span><span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>56</span></a></p>
+
+<p class=MsoToc3><a href="#_Toc335657018"><span lang=EN-US>3.10.4.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;text-decoration:none'>       </span><span
+lang=EN-US>Save project as</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>57</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335657019"><span lang=EN-US>3.11.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>     </span><span lang=EN-US>Program preferences</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>57</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335657020"><span lang=EN-US>3.12.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>     </span><span lang=EN-US>Status bar</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>58</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335657021"><span lang=EN-US>3.13.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>     </span><span lang=EN-US>Help</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>58</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335657022"><span lang=EN-US>3.14.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>     </span><span lang=EN-US>Example projects</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>59</span></a></p>
+
+<p class=MsoToc2><a href="#_Toc335657023"><span lang=EN-US>3.15.</span><span
+style='font-size:11.0pt;line-height:150%;color:windowtext;font-style:normal;
+text-decoration:none'>     </span><span lang=EN-US>About JetProcessing</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>59</span></a></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;line-height:normal'><span lang=EN-US>&nbsp;</span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:right'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoTof><b><span lang=EN-US style='font-size:14.0pt;line-height:150%;
+font-family:"Cambria","serif"'>Index of Figures</span></b></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoTof><a href="#_Toc335657024"><span lang=EN-US>Figure 1. Main window
+after opening the application</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>9</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657025"><span lang=EN-US>Figure 2. Main window
+with a loaded project</span><span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>10</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657026"><span lang=EN-US>Figure 3. Installer
+file</span><span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>12</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657027"><span lang=EN-US>Figure 4. Welcome
+screen</span><span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657028"><span lang=EN-US>Figure 5. Version
+selection screen</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657029"><span lang=EN-US>Figure 6. Install
+folder selection screen</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>14</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657030"><span lang=EN-US>Figure 7.
+Confirmation screen</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657031"><span lang=EN-US>Figure 8. Installing
+screen</span><span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657032"><span lang=EN-US>Figure 9. End of
+installation screen</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>16</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657033"><span lang=EN-US>Figure 10.
+JetProcessing project files icon</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>17</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657034"><span lang=EN-US>Figure 11.
+Uninstalling confirmation screen</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>17</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657035"><span lang=EN-US>Figure 12.
+Uninstalling screen</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>17</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657036"><span lang=EN-US>Figure 13. End of
+uninstallation</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>18</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657037"><span lang=EN-US>Figure 14. Mode
+selection screen</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>19</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657038"><span lang=EN-US>Figure 15. Reference
+image selection screen</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>20</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657039"><span lang=EN-US>Figure 16. Setting
+size screen</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>21</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657040"><span lang=EN-US>Figure 17. Setting
+the mask and origin of coordinates screen</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>23</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657041"><span lang=EN-US>Figure 18. Setting
+the Fourier Mask screen</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>24</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657042"><span lang=EN-US>Figure 19. Result for
+the reference phase</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>25</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657043"><span lang=EN-US>Figure 20. Image list</span><span
+style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>27</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657044"><span lang=EN-US>Figure 21. Inversion
+algorithm, before and after</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>28</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657045"><span lang=EN-US>Figure 22. Horizontal
+linear regression slope formula</span><span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>28</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657046"><span lang=EN-US>Figure 23. Removing
+horizontal linear tilt formula</span><span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>29</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657047"><span lang=EN-US>Figure 24. Removing
+horizontal tilt algorithm, before and after</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>29</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657048"><span lang=EN-US>Figure 25. Vertical
+linear regression slope formula</span><span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>29</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657049"><span lang=EN-US>Figure 26. Removing
+vertical linear tilt formula</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>30</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657050"><span lang=EN-US>Figure 27. Removing
+vertical tilt algorithm, before and after</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>30</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657051"><span lang=EN-US>Figure 28. Set ground
+formula</span><span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>31</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657052"><span lang=EN-US>Figure 29. Set ground
+algorithm, before and after</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>31</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657053"><span lang=EN-US>Figure 30. Offset
+selection dialog</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>31</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657054"><span lang=EN-US>Figure 31. Add offset
+algorithm, before and after</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>32</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657055"><span lang=EN-US>Figure 32. Factor
+selection dialog</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>32</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657056"><span lang=EN-US>Figure 33. Multiply
+by algorithm, before and after</span><span style='color:windowtext;display:
+none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>33</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657057"><span lang=EN-US>Figure 34. Make
+symmetric algorithm, before and after</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>33</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657058"><span lang=EN-US>Figure 35. Abel
+inversion formula</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>34</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657059"><span lang=EN-US>Figure 36. Neighbours
+number selection dialog</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>34</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657060"><span lang=EN-US>Figure 37. Abel
+inversion algorithm, before and after</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>35</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657061"><span lang=EN-US>Figure 38. Rectangle
+selection dialog</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>35</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657062"><span lang=EN-US>Figure 39. Rectangle
+selection algorithm, before and after</span><span style='color:windowtext;
+display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>36</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657063"><span lang=EN-US>Figure 40. Line
+selection dialog</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>37</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657064"><span lang=EN-US>Figure 41. Algorithm
+list</span><span style='color:windowtext;display:none;text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>38</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657065"><span lang=EN-US>Figure 42. Results
+viewer</span><span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>40</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657066"><span lang=EN-US>Figure 43. Manual
+scaling graphics</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>41</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657067"><span lang=EN-US>Figure 44.
+Spectrogram graphic</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>42</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657068"><span lang=EN-US>Figure 45. Zooming in
+the spectrogram</span><span style='color:windowtext;display:none;text-decoration:
+none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>42</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657069"><span lang=EN-US>Figure 46. 3D surface
+graphic</span><span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>43</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657070"><span lang=EN-US>Figure 47. Parametric
+surface graphic</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>45</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657071"><span lang=EN-US>Figure 48. Phase line
+graphic</span><span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>45</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657072"><span lang=EN-US>Figure 49. Series
+label selection dialog</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>48</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657073"><span lang=EN-US>Figure 50. Series
+label selection dialog</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>48</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657074"><span lang=EN-US>Figure 51. Camera
+configuration dialog</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>50</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657075"><span lang=EN-US>Figure 52. Live mode
+window</span><span style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>52</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657076"><span lang=EN-US>Figure 53. Navigation
+buttons</span><span style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>52</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657077"><span lang=EN-US>Figure 54. Graphics
+selection on the live mode</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>53</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657078"><span lang=EN-US>Figure 55. Frames per
+second selection box</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>53</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657079"><span lang=EN-US>Figure 56. Effective
+frames per second rate</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>53</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657080"><span lang=EN-US>Figure 57. Apply
+algorithms on the live mode</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>54</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657081"><span lang=EN-US>Figure 58. Auto
+update axes checkbox</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>54</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657082"><span lang=EN-US>Figure 59. Restart
+axes range values button</span><span style='color:windowtext;display:none;
+text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>54</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657083"><span lang=EN-US>Figure 60. Renew
+reference button</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>55</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657084"><span lang=EN-US>Figure 61. Caption
+bar for an unsaved project</span><span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>56</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657085"><span lang=EN-US>Figure 62. Caption
+bar for a saved project</span><span style='color:windowtext;display:none;
+text-decoration:none'> </span><span
+style='color:windowtext;display:none;text-decoration:none'>56</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657086"><span lang=EN-US>Figure 63. Program
+preferences dialog</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>57</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657087"><span lang=EN-US>Figure 64. Status bar</span><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>58</span></a></p>
+
+<p class=MsoTof><a href="#_Toc335657088"><span lang=EN-US>Figure 65. Help
+navigation buttons</span><span style='color:windowtext;display:none;text-decoration:
+none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>58</span></a></p>
+
+<h1 style='line-height:normal'><span lang=EN-US><br clear=all style='page-break-before:
+always'>
+</span></h1>
+
+</div>
+
+<b><span lang=EN-US style='font-size:16.0pt;font-family:"Cambria","serif"'><br
+clear=all style='page-break-before:right'>
+</span></b>
+
+<div class=WordSection3>
+
+<h1 style='margin-left:36.0pt;text-indent:-18.0pt'><a name="_Toc335656942"><span
+lang=EN-US>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Introduction to JetProcessing</span></a></h1>
+
+<p class=MsoNormal><span lang=EN-US>JetProcessing is an application conceived
+to process optical interference images obtained in an interferometry system
+with a laser passing through an object or substance in order to get a good
+image of the object/substance in both: real-time online with the system, and
+offline, after the experiments. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>The name, JetProcessing, comes from one of
+its uses which is obtaining and processing an image of a gas-jet target,
+transparent to the eyes, but visible through the program when it’s properly
+configured.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=567
+height=346 src="UsersManual_archivos/image002.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657024"><span lang=EN-US>Figure </span></a><span lang=EN-US>1</span><span lang=EN-US>. Main window after opening the application</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=567
+height=346 src="UsersManual_archivos/image003.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657025"><span lang=EN-US>Figure </span></a><span lang=EN-US>2</span><span lang=EN-US>. Main window with a loaded project</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Through this manual, we will always talk
+about a gas-jet target, but the techniques can be used the same way for other
+different kinds of targets that let the laser pass across them.</span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:right'>
+</span>
+
+<div class=WordSection4>
+
+<h1 style='margin-left:36.0pt;text-indent:-18.0pt'><a name="_Toc335138399"></a><a
+name="_Ref334465358"></a><a name="_Ref334465356"></a><a name="_Toc335656943"><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Configuration and installation</span></a><span lang=EN-US> </span></h1>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656944"></a><a
+name="_Ref335256544"><span lang=EN-US>2.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Hardware requirements</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>To get everything out the program, the next
+hardware requirements are necessary:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Have a NVIDIA video card compatible with the
+tool CUDA® available, for parallel processing with the GPU multiprocessor. The
+list of compatible cards can be found at: </span><a
+href="http://developer.nvidia.com/cuda/cuda-gpus"><span lang=EN-US>http://developer.nvidia.com/cuda/cuda-gpus</span></a><span
+lang=EN-US>. It’s also necessary having a compatible controller for the card.
+In most of cases that can be satisfied just by updating the regular driver. For
+further information, consult the manual for the specific card.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Have a CCD camera compatible with the uEye API
+available, controller version 4.02, to take the pictures. A compatible camera
+list can be found at </span><a href="http://www.ids-imaging.com/index.php"><span
+lang=EN-US>http://www.ids-imaging.com/index.php</span></a><span lang=EN-US>.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>However, those two requirements are not
+strictly necessary:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Instead of the CUDA card, the program is also
+prepared to work with the CPU, although the processing will be much slower
+(About 10-20 times slower). That difference would be almost negligible during
+the regular work, but it would slow down drastically the number of frames per
+second that can be processed in the live mode.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>If there is no compatible CCD camera available,
+the program could be used to process the images taken by another camera, after
+the experiment. However, in that case, the live mode or the camera configuration
+dialog couldn’t be used. If for any reason, somebody wants to take a glance at
+that functionality with no compatible camera, we have developed a camera
+simulator that behaves like a regular camera, taking the images from a
+directory. For further information about this, consult the chapter </span><span lang=EN-US>3.8.2</span><span lang=EN-US>.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656945"><span
+lang=EN-US>2.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Step-by-Step installation</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>The application comes with an installer
+executable file, to help the user.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The installation steps are the following:</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656946"></a><a
+name="_Toc335138402"><span lang=EN-US style='text-decoration:none'>2.2.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Executing the installer file</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>Find the installer file
+“JetProcessingInstaller.exe” in your file system, and run it, by
+double-clicking on the icon, or pressing the right mouse button, and find
+open/run.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=406 height=280 src="UsersManual_archivos/image004.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657026"></a><a name="_Toc335138481"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>3</span><span lang=EN-US>. </span><span
+lang=EN-US>Installer file</span></p>
+
+<p class=MsoNormal><span lang=EN-US>If the operating system asks for
+administrator execution permission, grant it.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656947"><span
+lang=EN-US style='text-decoration:none'>2.2.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Welcome screen</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>A welcome screen will be shown. Press
+“Next” button to continue with the installation process or, “Exit” to leave it.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=341 height=260 src="UsersManual_archivos/image005.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657027"></a><a name="_Toc335138482"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>4</span><span lang=EN-US>. </span><span
+lang=EN-US>Welcome screen</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656948"><span
+lang=EN-US style='text-decoration:none'>2.2.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Selecting the version to install</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>Choose one out of the two versions to
+install:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=366 height=279 src="UsersManual_archivos/image006.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657028"></a><a name="_Toc335138483"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>5</span><span lang=EN-US>. </span><span
+lang=EN-US>Version selection screen</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Full: Install a complete version of the program,
+with every feature, including 65 interference images for the camera simulator. About
+470 MB.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Reduced: Install a reduced version of the
+program, with a lower number of interference pictures for the camera simulator,
+specifically 8. About 140 MB. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>After selecting the version, press on
+“Next” to continue with the installation process, “Back” to return to the
+previous step, or “Exit” to leave it.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656949"><span
+lang=EN-US style='text-decoration:none'>2.2.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Selecting the installation folder</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>In this step, the installing directory can
+be chosen. However, we recommend using the suggested directory.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=328 height=251 src="UsersManual_archivos/image007.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657029"></a><a name="_Toc335138484"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>6</span><span lang=EN-US>. </span><span
+lang=EN-US>Install folder selection screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press on “Next” to continue with the
+installation process, “Back” to return to the previous step, or “Exit” to leave
+it.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656950"><span
+lang=EN-US style='text-decoration:none'>2.2.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Confirmation screen</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>After selecting the directory, a
+confirmation screen will appear.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=308 height=234 src="UsersManual_archivos/image008.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657030"></a><a name="_Toc335138485"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>7</span><span lang=EN-US>. </span><span
+lang=EN-US>Confirmation screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press on “Start” to proceed with the
+installation, “Back” to return to the previous step, or “Exit” to leave it.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656951"><span
+lang=EN-US style='text-decoration:none'>2.2.6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Installing screen</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>At this point a progress bar of the
+installation will be shown. </span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=309 height=236 src="UsersManual_archivos/image009.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657031"></a><a name="_Toc335138486"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>8</span><span lang=EN-US>. </span><span
+lang=EN-US>Installing screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press on “Cancel” to interrupt the
+installation process.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656952"><span
+lang=EN-US style='text-decoration:none'>2.2.7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Installation completed screen</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>After the progress bar has reached its end,
+the program will show the final screen. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press on the button “View help file” to
+open the help for the application.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=332 height=254 src="UsersManual_archivos/image010.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657032"></a><a name="_Toc335138487"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>9</span><span lang=EN-US>. </span><span
+lang=EN-US>End of installation screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Checking the checkbox “Launch JetProcessing
+(With Camera Simulator)” will open an instance of the program with the camera
+simulator working after closing the installer.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press on “Exit” to exit the installer and
+finish the installation process.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656953"><span
+lang=EN-US>2.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>JetProcessing after the installation</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>The elements created after installing the
+application are the following:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Desktop links: A couple of desktop links will be
+created: JetProcessing.lnk and JetProcessing (With Camera Simulator).lnk. The
+second one will open the program with the camera simulator activated.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Start menu: An entry “JetProcessing” will be
+created in the start menu, with links to the program, the user’s manual, and
+the uninstaller. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>Other elements that will be created are:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Program files in the directory chosen during the
+installation.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Registry entries to associate the extension
+“.jpp” to the program (Without simulator) and to the project icon.</span></p>
+
+<p class=MsoCaption><img border=0 width=52 height=52
+src="UsersManual_archivos/image011.jpg"><span lang=EN-US><br>
+<a name="_Toc335657033"></a><a name="_Toc335138488">Figure </a></span><span lang=EN-US>10</span><span lang=EN-US>. </span><span lang=EN-US>JetProcessing
+project files icon</span><span lang=EN-US><br>
+<br>
+</span></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Once the application has been executed for the
+first time, two configuration files will be saved in the local application
+configuration data for the user (#LocalAppData#), inside a folder named after
+the program, with the program preferences and the camera settings.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656954"><span
+lang=EN-US>2.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Uninstalling</span></a></h2>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656955"></a><a
+name="_Toc335138411"><span lang=EN-US style='text-decoration:none'>2.4.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Automatic uninstallation (recommended)</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>To auto-uninstall the application, go to
+Start menu</span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US>JetProcessing</span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US>Uninstall JetProcessing.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Confirm on the first screen by pressing
+“Accept”:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=313 height=108 src="UsersManual_archivos/image012.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657034"></a><a name="_Toc335138489"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>11</span><span lang=EN-US>. </span><span
+lang=EN-US>Uninstalling confirmation screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The program will be uninstalled by removing
+all the created elements:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=304 height=125 id="Imagen 25" src="UsersManual_archivos/image013.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657035"></a><a name="_Toc335138490"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>12</span><span lang=EN-US>. </span><span
+lang=EN-US>Uninstalling screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>And will show the end screen (Press “Accept”
+to exit):</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=346 height=125 src="UsersManual_archivos/image014.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657036"></a><a name="_Toc335138491"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>13</span><span lang=EN-US>. </span><span
+lang=EN-US>End of uninstallation</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656956"><span
+lang=EN-US style='text-decoration:none'>2.4.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Manual uninstallation</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>If for any reason the user wants to perform
+a manual uninstallation, the elements that should be removed are the following:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Installation folder chosen during the
+installation process.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Folder “JetProcessing” at the local application
+configuration data for the current user (#LocalAppData#).</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Links at the desktop: “JetProcessing.lnk” and
+“JetProcessing (With Camera Simulator).lnk”.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Start menu entry: JetProcessing.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The next registry entries:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>HKEY_CLASSES_ROOT\.jpp</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>HKEY_CLASSES_ROOT\JetProcessing Project</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:72.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US>HKEY_CLASSES_ROOT\JetProcessing Project File</span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif"'><br
+clear=all style='page-break-before:right'>
+</span>
+
+<div class=WordSection5>
+
+<h1 style='margin-left:36.0pt;text-indent:-18.0pt'><a name="_Toc335656957"><span
+lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>User’s manual</span></a></h1>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656958"><span
+lang=EN-US>3.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Opening the program</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>After opening the program, you will find
+the next elements:</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656959"><span
+lang=EN-US style='text-decoration:none'>3.1.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Mode selection window</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>JetProcessing is conceived to work using
+the NVIDIA CUDA tool for a parallel and faster image processing.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>This window will only be shown in case the
+program detects that CUDA is available, and will let the user choose between
+the CUDA or the CPU mode.</span></p>
+
+<p class=MsoCaption><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoCaption><span style='font-style:normal'><img border=0 width=325
+height=182 src="UsersManual_archivos/image015.jpg"></span><span lang=EN-US><br>
+<a name="_Toc335657037"></a><a name="_Toc335138494">Figure </a></span><span lang=EN-US>14</span><span lang=EN-US>. </span><span lang=EN-US>Mode selection
+screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Choose the first option to use CUDA tool
+(recommended) or the second option to perform the calculations always with the
+CPU.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>If the user checks the checkbox “Remember
+this selection”, the selected mode will be used by default in the next
+executions. To get back the dialog, look up the section </span><span lang=EN-US>3.11</span><span lang=EN-US>.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press on “Continue” or double click the
+chosen option.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656960"><span
+lang=EN-US style='text-decoration:none'>3.1.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Opening the program for the first time</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>While opening the program for the first
+time, the default values will be set, and the program will ask for an output
+directory. For more information about this consult </span><span
+lang=EN-US>3.7.1</span><span lang=EN-US>, </span><span
+lang=EN-US>3.7.3</span><span lang=EN-US> and </span><span
+lang=EN-US>3.7.5</span><span lang=EN-US>.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656961"><span
+lang=EN-US>3.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Setting the reference phase</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>For the kind of interference images that
+can be processed using JetProcessing, it’s always necessary setting up a
+reference image taken when the target is out of the system, and also some pre-processing
+parameters.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>This process is very important in order to
+get good results.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To set up a reference, go to Reference </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Change
+Reference, press Ctrl+R, or click on the icon </span><img border=0 width=40
+height=40 src="UsersManual_archivos/image016.png"> <span lang=EN-US>in the tool
+box.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656962"></a><a
+name="_Toc335138419"><span lang=EN-US style='text-decoration:none'>3.2.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Selecting the image</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The first step is selecting the reference
+image:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=493 height=467 src="UsersManual_archivos/image017.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657038"></a><a name="_Toc335138495"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>15</span><span lang=EN-US>. </span><span
+lang=EN-US>Reference image selection screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The available elements are:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Get Image From File: Let the user pick up a file
+with the image.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Get Image From Camera: Take an image from the
+camera as reference.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Camera Settings: Will show the camera
+configuration dialog. Look up </span><span lang=EN-US>3.8.1</span><span
+lang=EN-US>.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Width (mm) and Height (mm): Textbox for the user
+to introduce the real size in millimeters of the picture. This information will
+help to set the axes range values properly.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Save Picture to File: Let the user save the
+current image to a file.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press “Next” to continue.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656963"></a><a
+name="_Toc335138420"><span lang=EN-US style='text-decoration:none'>3.2.2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Setting size</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The second step lets the user make some
+operations with the image.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=567 height=344 src="UsersManual_archivos/image018.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657039"></a><a name="_Toc335138496"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>16</span><span lang=EN-US>. </span><span
+lang=EN-US>Setting size screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The available elements are the following:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Horizontal Mirror: Performs a horizontal flip.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Vertical Mirror: Performs a vertical flip.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>No Rotation, Rotate 90º, Rotate 180º and Rotate
+270º: Rotates the image clockwise.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Width (pixels) and Height (pixels): Set an adequate
+power-of-two dimensions for the image, necessary to perform the FFT algorithm.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result of applying the operations will
+be shown in a preview on the right.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press “Next” to continue.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656964"></a><a
+name="_Toc335138421"><span lang=EN-US style='text-decoration:none'>3.2.3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Setting the origin of coordinates and a mask</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>Now, the user should select the image area
+where the interference pattern is, and also the origin of coordinates.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The available elements are the following:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Save Values to File: Let the user save the
+parameters to a  “.msk1” file.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Load Values from File: Let the user load the
+parameters from a “.msk1” file.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Origin Coordinates (x, y): Origin of coordinates
+position. To change it, modify the spinbox values, or press double-click on the
+left image.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Mask Coordinates (X min, X max, Y min, Y max):
+For the area with the interference pattern. To change it modify the spinbox
+values, or press right-click and drag on the left image. A preview of the
+select area is shown on the right image.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=567 height=375 src="UsersManual_archivos/image019.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657040"></a><a name="_Toc335138497"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>17</span><span lang=EN-US>. </span><span
+lang=EN-US>Setting the mask and origin of coordinates screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>For more convenience the left preview can
+be zoomed in and out using the mouse wheel and shifted by clicking and
+dragging.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press “Next” to continue.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656965"><span
+lang=EN-US style='text-decoration:none'>3.2.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Setting the Fourier mask</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The user should select a mask for the
+Fourier transform that will be used to filter the image in frequency.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The available elements are the following:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Save Values to File: Lets the user save the
+parameters to a  “.msk2” file.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Load Values from File: Lets the user load the
+parameters from a “.msk2” file.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Mask Coordinates (X min, X max, Y min, Y max):
+For the area with the interference pattern. To change it, modify the spinbox values
+or press right-click and drag on the left image. A preview of the select area
+is shown on the right image.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Preview Gain: Gain which is applied to the
+Fourier transform image. Modify it to improve the quality of the image.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>For more convenience the left preview can
+be zoomed in and out using the mouse wheel and shifted by clicking and
+dragging.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=567 height=406 src="UsersManual_archivos/image020.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657041"></a><a name="_Toc335138498"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>18</span><span lang=EN-US>. </span><span
+lang=EN-US>Setting the Fourier Mask screen</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press “Next” to continue.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656966"><span
+lang=EN-US style='text-decoration:none'>3.2.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Result</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>At this point, when all the parameters have
+been fixed, the program will show a phase image for the interest area of the
+reference.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Note that the phase takes values from 0 and
+2Pi. The actual reference image used to process the imaged will be just like
+that, but with a continuous phase, taking values between -2Pi·n and 2Pi·m.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=399 height=358 id="Imagen 17" src="UsersManual_archivos/image021.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657042"></a><a name="_Toc335138499"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>19</span><span lang=EN-US>. </span><span
+lang=EN-US>Result for the reference phase</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Press “Finish” to end the process.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656967"></a><a
+name="_Toc335138424"><span lang=EN-US>3.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Pre-processing and adding </span></a><span
+lang=EN-US>an image</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>To obtain a first image for the gas-jet,
+it’s necessary to pre-process the interference image with the reference phase
+image.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The first steps are the same for both
+pictures, the reference and the image with the gas-jet:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Modify it and change the size to a power-of-two
+size.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Apply a mask to black out everything except for
+the interest area.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Perform the Fourier transform.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Filter the phase frequencies with the second
+mask.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Perform the inverse Fourier transform.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Get the phase for the interest area.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Make the phase continuous.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>And finally:</span></p>
+
+<p class=MsoListParagraph style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Subtract to the phase image with the gas-jet,
+the phase image for the reference.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Once this process is finished, the first
+image for the gas-jet will be obtained and added to the image list, with a
+preview.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656968"></a><a
+name="_Toc335138425"><span lang=EN-US style='text-decoration:none'>3.3.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Pre-processing an image from the camera</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>To pre-process and add an image from the
+camera, go to the menu Image </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Process Image from Camera, press I+C, or click on the icon  </span><img
+border=0 width=39 height=39 src="UsersManual_archivos/image022.png"><span
+lang=EN-US> in the toolbox.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Obviously this will only be possible if
+there is a compatible camera connected.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656969"></a><a
+name="_Toc335138426"><span lang=EN-US style='text-decoration:none'>3.3.2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Pre-proce</span></a><span lang=EN-US>ssing images from file</span></h3>
+
+<p class=MsoNormal><span lang=EN-US>To pre-process and add one or more
+interference files, go to the menu Image </span><span lang=EN-US
+style='font-family:Wingdings'>à</span><span lang=EN-US> Process Images from
+File, press I+L, or click on the icon    </span><img border=0 width=40
+height=40 src="UsersManual_archivos/image023.png"><span lang=EN-US> in the
+toolbox.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656970"><span
+lang=EN-US style='text-decoration:none'>3.3.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Image list</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>When an image is pre-processed is also added
+to the image list on the right.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>That list shows the name and the preview
+for every image.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=212 height=320 id="Imagen 26" src="UsersManual_archivos/image024.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657043"></a><a name="_Toc335138500"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>20</span><span lang=EN-US>. </span><span
+lang=EN-US>Image list</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The operations that can be performed regarding
+this list are:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Change the name for an image: selecting the
+target image by pressing on it, and pressing again; or pressing the F2 key.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Move up the selected image: go to the menu Image
+</span><span lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US>
+Move Up, press I+UpArrow, or press the button “Move Up”.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Move down the selected image: go to the menu
+Image </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Move Down, press I+DownArrow, or press the button “Move Down”.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Delete the selected image: go to the menu Image </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Delete,
+press I+Del, or press the button “Delete”.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Delete every image: go to the menu Image </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Delete All, press
+Ctrl+Shift+Del. A confirmation dialog will be shown.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656971"></a><a
+name="_Toc335138428"><span lang=EN-US>3.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Processing an image: </span></a><span
+lang=EN-US>Different algorithms</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>Once an image has been pre-processed, the
+gas-jet image is available. However this image is no usually very clear, and
+should be processed in order to remove the noise and other defects.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>This process consists in applying to the
+image different algorithms and operations. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>The algorithms that can be used are the
+following:</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656972"><span
+lang=EN-US style='text-decoration:none'>3.4.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Invert</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This operation inverts the image.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result is the following:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=566 height=216 src="UsersManual_archivos/image025.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657044"></a><a name="_Toc335138501"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>21</span><span lang=EN-US>. </span><span
+lang=EN-US>Inversion algorithm, before and after</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It can be applied to a phase image but
+also, to a phase line.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656973"></a><a
+name="_Toc335138430"><span lang=EN-US style='text-decoration:none'>3.4.2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Remove horizontal Tilt</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This algorithm removes the horizontal tilt
+using a least square method.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It obtains the optimal slope for every
+horizontal line using:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif"'><img
+width=185 height=66 src="UsersManual_archivos/image026.png"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><a
+name="_Toc335657045"></a><a name="_Toc335138502"><span lang=EN-US>Figure </span></a><span lang=EN-US>22</span><span lang=EN-US>. </span><span lang=EN-US>Horizontal linear
+regression slope formula</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Then it calculates the mean value for the
+slope and removes the tilt applying the next formula:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif"'><img
+width=295 height=63 src="UsersManual_archivos/image027.png"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><a
+name="_Toc335657046"></a><a name="_Toc335138503"><span lang=EN-US>Figure </span></a><span lang=EN-US>23</span><span lang=EN-US>. </span><span lang=EN-US>Removing
+horizontal linear tilt formula</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result is the following:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=567 height=441 id="Imagen 5" src="UsersManual_archivos/image028.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657047"></a><a name="_Toc335138504"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>24</span><span lang=EN-US>. Removing
+horizontal tilt algorithm</span><span lang=EN-US>, before and after</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It can be applied to a phase image but
+also, to a phase line.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656974"></a><a
+name="_Toc335138431"><span lang=EN-US style='text-decoration:none'>3.4.3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Remove vertical Tilt</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This algorithm removes the vertical tilt
+using a least square method.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It obtains the optimal slope for every
+vertical line using:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif"'><img
+width=185 height=66 src="UsersManual_archivos/image029.png"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><a
+name="_Toc335657048"></a><a name="_Toc335138505"><span lang=EN-US>Figure </span></a><span lang=EN-US>25</span><span lang=EN-US>. </span><span lang=EN-US>Vertical linear
+regression slope formula</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Then it calculates the mean value for the
+slope and removes the tilt applying the next formula:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif"'><img
+width=294 height=63 src="UsersManual_archivos/image030.png"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><a
+name="_Toc335657049"></a><a name="_Toc335138506"><span lang=EN-US>Figure </span></a><span lang=EN-US>26</span><span lang=EN-US>. </span><span lang=EN-US>Removing vertical
+linear tilt formula</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result is the following:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=566 height=222 src="UsersManual_archivos/image031.jpg"></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=566 height=190 src="UsersManual_archivos/image032.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657050"></a><a name="_Toc335138507"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>27</span><span lang=EN-US>. </span><span
+lang=EN-US>Removing vertical tilt algorithm, before and after</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656975"></a><a
+name="_Toc335138432"><span lang=EN-US style='text-decoration:none'>3.4.4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Set ground</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This algorithm removes negative noise by
+setting the ground of the image. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>It obtains a ground value, b, by averaging
+the values of the left and right vertical lines, where there is supposed not to
+be gas-jet.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Then it applies the next formula:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif"'><img
+width=247 height=63 src="UsersManual_archivos/image033.png"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><a
+name="_Toc335657051"></a><a name="_Toc335138508"><span lang=EN-US>Figure </span></a><span lang=EN-US>28</span><span lang=EN-US>. </span><span lang=EN-US>Set ground formula</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result is the following:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=568 height=215 src="UsersManual_archivos/image034.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657052"></a><a name="_Toc335138509"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>29</span><span lang=EN-US>. </span><span
+lang=EN-US>Set ground algorithm, before and after</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It can be applied to a phase image but
+also, to a phase line.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656976"></a><a
+name="_Toc335138433"><span lang=EN-US style='text-decoration:none'>3.4.5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Add offset</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The only purpose of this operation is
+adding a value to every point in the image. This could be useful to set some
+adequate range for the image.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>When adding this operation, a dialog box
+will appear asking for the offset value:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=379 height=109 id="Imagen 18" src="UsersManual_archivos/image035.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657053"></a><a name="_Toc335138510"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>30</span><span lang=EN-US>. </span><span
+lang=EN-US>Offset selection dialog</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result is the following:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=566 height=200 id="Imagen 27" src="UsersManual_archivos/image036.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657054"></a><a name="_Toc335138511"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>31</span><span lang=EN-US>. Add
+offset algorithm</span><span lang=EN-US>, before and after</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It can be applied to a phase image but
+also, to a phase line.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656977"></a><a
+name="_Toc335138434"><span lang=EN-US style='text-decoration:none'>3.4.6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Multiply by</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The only purpose of this operation is
+multiplying every point in the image by a given value. This could be useful to
+set some adequate range for the image.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>When adding this operation, a dialog box
+will appear asking for the factor value:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=379 height=109 id="Imagen 28" src="UsersManual_archivos/image037.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657055"></a><a name="_Toc335138512"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>32</span><span lang=EN-US>. </span><span
+lang=EN-US>Factor selection dialog</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result is the following:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=566 height=206 id="Imagen 31" src="UsersManual_archivos/image038.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657056"></a><a name="_Toc335138513"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>33</span><span lang=EN-US>. </span><span
+lang=EN-US>Multiply by algorithm, before and after</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It can be applied to a phase image but
+also, to a phase line.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656978"></a><a
+name="_Toc335138435"><span lang=EN-US style='text-decoration:none'>3.4.7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Make symmetric</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This operation converts any image to a
+horizontally symmetric image.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It takes place in two steps:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The algorithm searches each horizontal line to
+find the maximum.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Then, for every horizontal line, it moves the
+maximum to the center of the image, and average left and right side for each
+point. Since the maximum was not originally centered, when in the averaging
+process it’s necessary to go out of the image, the algorithm uses the nearest
+border value instead.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result is the following:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=568 height=229 src="UsersManual_archivos/image039.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657057"></a><a name="_Toc335138514"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>34</span><span lang=EN-US>. </span><span
+lang=EN-US>Make symmetric algorithm, before and after</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It can be applied to a phase image but also,
+to a phase line.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656979"></a><a
+name="_Toc335138436"><span lang=EN-US style='text-decoration:none'>3.4.8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Abel inversion</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This operation evaluates the following
+integral for every horizontal line.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:12.0pt;line-height:150%;font-family:"Calibri","sans-serif"'><img
+width=222 height=70 src="UsersManual_archivos/image040.png"></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><a
+name="_Toc335657058"></a><a name="_Toc335138515"><span lang=EN-US>Figure </span></a><span lang=EN-US>35</span><span lang=EN-US>. </span><span lang=EN-US>Abel inversion
+formula</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Note that the integral has units, so the
+result will have units too: m<sup>-1</sup>.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The Abel inversion supposes that the
+original image is showing an accumulation of a variable through a structure
+with cylindrical symmetry, like the accumulated phase of the rays of a laser
+crossing through the gas-jet. That is why making the image symmetric before
+applying Abel inversion is recommended.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Given that conditions, the Abel inversion
+returns the value of the variable in a section that cuts lengthwise the
+structure, in this case the gas-jet.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>This operation can be used, for example, to
+obtain the refraction index of the gas on every point, multiplying the result
+of the Abel inversion by the wavelength used, dividing it by 2·Pi and adding 1.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>When this algorithm is added to the list, a
+dialog will appear, asking for the number of neighbours to evaluate de
+derivative. This number should be increased in case the result shows too much
+noise.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=567 height=114 id="Imagen 33" src="UsersManual_archivos/image041.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657059"></a><a name="_Toc335138516"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>36</span><span lang=EN-US>. </span><span
+lang=EN-US>Neighbours number selection dialog</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result is the following:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=567 height=210 src="UsersManual_archivos/image042.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657060"></a><a name="_Toc335138517"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>37</span><span lang=EN-US>. </span><span
+lang=EN-US>Abel inversion algorithm, before and after</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It can be applied to a phase image but
+also, to a phase line.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656980"></a><a
+name="_Toc335138437"><span lang=EN-US style='text-decoration:none'>3.4.9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Extract rectangle</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This operation extracts a rectangle from a
+zone with special interest for the user.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>A dialog will appear:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=302 height=310 id="Imagen 37" src="UsersManual_archivos/image043.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657061"></a><a name="_Toc335138518"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>38</span><span lang=EN-US>. </span><span
+lang=EN-US>Rectangle selection dialog</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The user must select the interest area by
+modifying the spinbox values, or pressing and dragging with the left mouse
+button. The mouse wheel can be used to zoom in or out.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The result is the following:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=566 height=430 id="Imagen 40" src="UsersManual_archivos/image044.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657062"></a><a name="_Toc335138519"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>39</span><span lang=EN-US>. </span><span
+lang=EN-US>Rectangle selection algorithm, before and after</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656981"></a><a
+name="_Toc335138438"><span lang=EN-US style='text-decoration:none'>3.4.10.</span><span
+lang=EN-US>Extract line</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This operation extracts a phase line from a
+zone with special interest for the user.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>A dialog will appear, letting the user to select
+the beginning and the end of the line, by clicking and dragging with the left
+mouse button, or modifying the spinbox values.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Once the line is fixed, the user can move
+the beginning or the end by clicking and dragging on them; or the whole line by
+clicking and dragging on the center of it. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>The mouse wheel can be used to zoom in or
+out.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>There is a right preview too, showing the
+section values for the currently selected line.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=336 height=345 id="Imagen 41" src="UsersManual_archivos/image045.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657063"></a><a name="_Toc335138520"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>40</span><span lang=EN-US>. Line
+selection dialog</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656982"></a><a
+name="_Toc335138439"><span lang=EN-US>3.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Processing an image: </span></a><span
+lang=EN-US>Algorithm list</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>Now that every available algorithm has been
+explained it’s time to learn about how to add and apply some algorithms to an
+image.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The algorithm list is on the left of the
+window, and contains all the algorithms that will be applied sequentially to
+the images.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It will be applied either the whole list,
+or either until the current selected algorithm (Look up </span><span lang=EN-US>3.11</span><span lang=EN-US>).</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The algorithm list looks like:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=219 height=377 id="Imagen 45" src="UsersManual_archivos/image046.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657064"></a><a name="_Toc335138521"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>41</span><span lang=EN-US>.</span><span
+lang=EN-US> Algorithm list</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656983"><span
+lang=EN-US style='text-decoration:none'>3.5.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Add algorithm</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>To add an algorithm to the list, the user
+must first select in the combo box the kind of algorithm that he wants to add
+and press on “Add Before” or “Add After” to add if before or after the selected
+algorithm.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>If certain algorithm has configurable
+parameters, a dialog window will appear to set them up.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656984"><span
+lang=EN-US style='text-decoration:none'>3.5.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Save algorithm list</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>An algorithm list can be saved in an “.alg”
+file.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To do it, go to the menu Algorithm </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Save
+Algorithm List to File, press A+S, or click on the icon </span><img border=0
+width=49 height=49 id="Imagen 46" src="UsersManual_archivos/image047.png"> <span
+lang=EN-US>in the toolbox.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656985"><span
+lang=EN-US style='text-decoration:none'>3.5.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Load algorithm list</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>An algorithm list can be also loaded from
+an “.alg” file.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To do it, go to the menu Algorithm </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Load
+Algorithm List from File, press A+L, or click on the icon </span><img border=0
+width=41 height=41 id="Imagen 47" src="UsersManual_archivos/image048.png"> <span
+lang=EN-US>in the toolbox.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Before loading the new algorithm list form
+file, the previous list will be deleted.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656986"><span
+lang=EN-US style='text-decoration:none'>3.5.4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Managing the algorithm list</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>Other operations that can be performed on
+the algorithm list are:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Move the selected algorithm up: through the menu
+Algorithm </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Move Up, pressing A+UpArrow, or pressing the button “Move Up”.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Move the selected algorithm down: through the
+menu Algorithm </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Move Down, pressing A+DownArrow, or pressing the button “Move
+Down”.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Edit the selected algorithm up: through the menu
+Algorithm </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Edit, pressing A+E, or pressing the button “Edit”.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Delete the selected algorithm up: through the
+menu Algorithm </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Delete, pressing A+Del, or pressing the button “Delete”.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656987"><span
+lang=EN-US>3.6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Results viewer</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>The central area of the main window is the
+results viewer that looks like:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=399 height=412 id="Imagen 48" src="UsersManual_archivos/image049.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657065"></a><a name="_Toc335138522"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>42</span><span lang=EN-US>. </span><span
+lang=EN-US>Results viewer</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656988"></a><a
+name="_Toc335138445"><span lang=EN-US style='text-decoration:none'>3.6.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Label for the Z axis</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>It’s a textbox containing the label for the
+dependent variable “Z”.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656989"><span
+lang=EN-US style='text-decoration:none'>3.6.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Z axis scaling</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>There are two different scaling modes:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Auto scaling for the Z axis (“Auto Scale Z Axis”
+enabled): The maximum and minimum values for the dependent variable are set
+depending on the maximum and minimum values for the current image.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Manual scaling (“Auto Scale Z Axis” disabled): The
+user manually enters the maximum and minimum values for the dependent variable,
+getting results as in the following example: </span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=287 height=298 id="Imagen 49" src="UsersManual_archivos/image050.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657066"></a><a name="_Toc335138523"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>43</span><span lang=EN-US>. </span><span
+lang=EN-US>Manual scaling graphics</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656990"><span
+lang=EN-US style='text-decoration:none'>3.6.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Enable sequence</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This option, when enabled, lets the user
+watch a sequence movie with the selected graphic for the images currently in
+the list. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>The spinbox “FPS” lets the user decide the
+frames per second rate of the movie.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656991"></a><a
+name="_Ref335256625"><span lang=EN-US style='text-decoration:none'>3.6.4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Spectogram</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The first kind of available graphic is the
+spectrogram. This spectrogram shows the independent variables in the X and Y
+axes, and use a colors code, with a legend on the right, for the dependent
+variable:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=397 height=354 id="Imagen 54" src="UsersManual_archivos/image051.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657067"></a><a name="_Toc335138524"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>44</span><span lang=EN-US>. </span><span
+lang=EN-US>Spectrogram graphic</span></p>
+
+<p class=MsoNormal><span lang=EN-US>There are many options to control this kind
+of graphic:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Enable or disable the level curves. These curves
+divide the scale in 10 equally distributed fragments.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Zoom-in by clicking and dragging with the left
+mouse button.</span></p>
+
+<p class=MsoListParagraphCxSpLast align=center style='text-align:center'><img
+border=0 width=313 height=266 id="Imagen 56"
+src="UsersManual_archivos/image052.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657068"></a><a name="_Toc335138525"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>45</span><span lang=EN-US>. </span><span
+lang=EN-US>Zooming in the spectrogram</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Zoom-out step by step by clicking with the right
+mouse button.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Shift the image by pressing and dragging with
+the mouse wheel. </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Return to the initial view by pressing Ctrl+RightClick.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>When a line is selected, the graphic shows
+the image just until the selection the line.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656992"></a><a
+name="_Toc335138449"></a><a name="_Ref332903529"><span lang=EN-US
+style='text-decoration:none'>3.6.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>3D surface</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The second kind of graphic is a 3D surface.
+It shows a 3D view of the surface, using the X and Y axes for the independent
+variables and the Z axis for the dependent variable:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=388 height=352 id="Imagen 57" src="UsersManual_archivos/image053.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657069"></a><a name="_Toc335138526"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>46</span><span lang=EN-US>. </span><span
+lang=EN-US>3D surface graphic</span></p>
+
+<p class=MsoNormal><span lang=EN-US>There are many options to control this kind
+of graphic:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Rotate the graphic by clicking and dragging.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Zoom the Graphics using the mouse wheel.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Shifting the graphic by clicking and dragging
+while the Ctrl button is pressed.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Rotate the graphic in a different direction by
+clicking and dragging while the Shift button is pressed.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>When a line is selected, the graphic shows
+the image just until the selection the line.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656993"></a><a
+name="_Toc335138450"></a><a name="_Ref332903531"><span lang=EN-US
+style='text-decoration:none'>3.6.6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Parametric surface</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The third kind of existing graphic is the
+parametrical surface. It shows an image of the gas-jet like a surface in a
+three dimensional space too. The difference: now, both axes ,X and Y ,
+represent the first independent variable, and the Z axis represents the second
+independent variable. This graphic supposes that the image represents a
+cylindrical symmetric object, and shows the surface where the dependent
+variable reaches a certain value called “threshold”. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>There are many options to control this kind
+of graphic:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Change the threshold value in the correspondent
+textbox.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Rotate the graphic by clicking and dragging.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Zoom the Graphics using the mouse wheel.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Shifting the graphic by clicking and dragging
+while the Ctrl button is pressed.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Rotate the graphic in a different direction by
+clicking and dragging while the Shift button is pressed.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=396 height=361 id="Imagen 58" src="UsersManual_archivos/image054.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657070"></a><a name="_Toc335138527"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>47</span><span lang=EN-US>. </span><span
+lang=EN-US>Parametric surface graphic</span></p>
+
+<p class=MsoNormal><a name="_Toc335138451"></a><a name="_Ref332903532"><span
+lang=EN-US>When a line is selected, the graphic shows the image just until the
+selection the line.</span></a></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656994"></a><a
+name="_Ref335389345"><span lang=EN-US style='text-decoration:none'>3.6.7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Line</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>And the list kind of available graphic
+represents phase lines, so it would only be enabled when a line is selected in
+the algorithm list.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It represents the independent variable in
+the horizontal axis, and the dependent variable along the vertical axis.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It also shows the values of the beginning
+and end points when the line was extracted.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>There are many options to control this kind
+of graphic:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Zoom-in by clicking and dragging with the left
+mouse button.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Zoom-out step by step by clicking with the right
+mouse button.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Shift the image by pressing and dragging with
+the mouse wheel. </span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Return to the initial view by pressing
+Ctrl+RightClick.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=389 height=350 id="Imagen 59" src="UsersManual_archivos/image055.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657071"></a><a name="_Toc335138528"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>48</span><span lang=EN-US>. </span><span
+lang=EN-US>Phase line graphic</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656995"><span
+lang=EN-US>3.7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Exporting results</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>Reaching good results is important, but
+it’s also very important having a good way to export/save those results.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>This application lets the user choose among
+several options explained in the next chapters.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656996"></a><a
+name="_Toc335138453"></a><a name="_Ref332821030"><span lang=EN-US
+style='text-decoration:none'>3.7.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Selecting output folder</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The user should find an output folder. This
+folder will be used as a default directory for the exports. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>To find the folder, go to the menu File </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Select
+Output Folder, press Ctrl+O, or click on the icon </span><img border=0
+width=36 height=36 src="UsersManual_archivos/image056.png"> <span lang=EN-US>in
+the toolbox.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656997"></a><a
+name="_Toc335138454"><span lang=EN-US style='text-decoration:none'>3.7.2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Save data</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This option saves the data for the current
+image represented in the view, so it can be used out of the program with
+external software like MATLAB®.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>For a phase line, the first column
+represents the independent variable, and the second column represents the
+dependent variable, as following:</span></p>
+
+<p class=Cdigo>-2.600354e+00     6.966785e-01</p>
+
+<p class=Cdigo>-2.400327e+00     7.082317e-01</p>
+
+<p class=Cdigo>-2.200300e+00     7.188846e-01</p>
+
+<p class=Cdigo>-2.000272e+00     7.286259e-01</p>
+
+<p class=Cdigo>-1.800245e+00     7.374325e-01</p>
+
+<p class=Cdigo><span lang=EN-US>-1.600218e+00     7.452854e-01</span></p>
+
+<p class=Cdigo><span lang=EN-US>-1.400191e+00     7.521675e-01</span></p>
+
+<p class=Cdigo><span lang=EN-US>-1.200163e+00     7.580559e-01</span></p>
+
+<p class=Cdigo><span lang=EN-US>-1.000136e+00     7.629296e-01</span></p>
+
+<p class=Cdigo><span lang=EN-US>.</span></p>
+
+<p class=Cdigo><span lang=EN-US>.</span></p>
+
+<p class=Cdigo><span lang=EN-US>.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>For a phase image, the first column
+represents the independent variable X, the second column represents the
+independent variable Y and the third column represents the dependent variable,
+as following:</span></p>
+
+<p class=Cdigo>-9.791151e+00     -5.160000e+01     4.154086e-03</p>
+
+<p class=Cdigo>-9.589380e+00     -5.160000e+01     1.488143e-02</p>
+
+<p class=Cdigo>-9.387610e+00     -5.160000e+01     2.564687e-02</p>
+
+<p class=Cdigo>-9.185841e+00     -5.160000e+01     3.645432e-02</p>
+
+<p class=Cdigo>-8.984071e+00     -5.160000e+01     4.729223e-02</p>
+
+<p class=Cdigo>-8.782301e+00     -5.160000e+01     5.817211e-02</p>
+
+<p class=Cdigo>-8.580531e+00     -5.160000e+01     6.907496e-02</p>
+
+<p class=Cdigo>.</p>
+
+<p class=Cdigo>.</p>
+
+<p class=Cdigo>.</p>
+
+<p class=Cdigo>-9.791151e+00     -5.139915e+01     3.747642e-03</p>
+
+<p class=Cdigo>-9.589380e+00     -5.139915e+01     1.432240e-02</p>
+
+<p class=Cdigo>-9.387610e+00     -5.139915e+01     2.493906e-02</p>
+
+<p class=Cdigo>-9.185841e+00     -5.139915e+01     3.559011e-02</p>
+
+<p class=Cdigo>-8.984071e+00     -5.139915e+01     4.627544e-02</p>
+
+<p class=Cdigo><span lang=EN-US>-8.782301e+00     -5.139915e+01     5.699128e-02</span></p>
+
+<p class=Cdigo><span lang=EN-US>-8.580531e+00     -5.139915e+01     6.774148e-02</span></p>
+
+<p class=Cdigo><span lang=EN-US>.</span></p>
+
+<p class=Cdigo><span lang=EN-US>.</span></p>
+
+<p class=Cdigo><span lang=EN-US>.</span></p>
+
+<p class=Cdigo><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To save the data, go to the menu Export
+Results </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Save Data, press S+D, or click on the icon </span><img border=0
+width=39 height=39 src="UsersManual_archivos/image057.png"> <span lang=EN-US>in
+the toolbox.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656998"></a><a
+name="_Ref335256681"></a><a name="_Toc335138455"><span lang=EN-US
+style='text-decoration:none'>3.7.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Save data for the series</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>In this case, the same information as indicated
+in the previous chapter will be saved, but for the whole series instead of a
+single image.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To do it, go to the menu Export Results </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Save Data
+for the Series, press Ctrl+S+D, or click on the icon </span><img border=0
+width=40 height=40 id="Imagen 3" src="UsersManual_archivos/image058.png"> <span
+lang=EN-US>in the toolbox.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>A dialog will be shown, so the user can
+choose a name for the series. The results will be automatically saved in the
+output directory, inside a new folder with the series name.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=465 height=109 src="UsersManual_archivos/image059.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657072"></a><a name="_Toc335138529"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>49</span><span lang=EN-US>. </span><span
+lang=EN-US>Series label selection dialog</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335656999"></a><a
+name="_Toc335138456"><span lang=EN-US style='text-decoration:none'>3.7.4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Save image</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This option saves the current graphic
+represented in the view to an image file.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To do it, go to the menu Export Results </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Save Image, press
+S+G, or click on the icon </span><img border=0 width=47 height=47
+src="UsersManual_archivos/image060.png"> <span lang=EN-US>in the toolbox.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657000"></a><a
+name="_Ref335256684"></a><a name="_Toc335138457"><span lang=EN-US
+style='text-decoration:none'>3.7.5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Save image for the series</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>In this case, the same information as indicated
+in the previous chapter will be saved, but for the whole series instead of a
+single image.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To do it, go to the menu Export Results </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Save Image
+for the Series, press Ctrl+S+G, or click on the icon </span><img border=0
+width=46 height=46 src="UsersManual_archivos/image061.png"> <span lang=EN-US>in
+the toolbox. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>A dialog will be shown, so the user can
+choose a name for the series. The results will be automatically saved in the
+output directory, inside a new folder with the series name.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=465 height=109 id="Imagen 4" src="UsersManual_archivos/image059.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657073"></a><a name="_Toc335138530"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>50</span><span lang=EN-US>. </span><span
+lang=EN-US>Series label selection dialog</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657001"></a><a
+name="_Toc335138458"><span lang=EN-US style='text-decoration:none'>3.7.6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Save video for the series</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The same way the graphics can be saved for
+the whole series of images, the program can export those images to an AVI video
+file.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To do it, go to the menu Export Results </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Save Video
+for the Series, press S+V, or click on the icon </span><img border=0 width=40
+height=40 src="UsersManual_archivos/image062.png"> <span lang=EN-US>in the
+toolbox. </span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657002"></a><a
+name="_Toc335138459"><span lang=EN-US style='text-decoration:none'>3.7.7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Save animation for the series</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The application is also able to create a
+GIF animation file with the images for the series. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>Para generate the animation and save it, go
+to the menu Export Results </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Save Animation for the Series, press S+A, or click on the icon </span><img
+border=0 width=38 height=38 src="UsersManual_archivos/image063.png"> <span
+lang=EN-US>in the toolbox. </span></p>
+
+<p class=MsoNormal><span lang=EN-US>For series longer than 50 images GIF format
+is not an adequate format anymore and the option is disabled.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657003"></a><a
+name="_Toc335138460"><span lang=EN-US>3.8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Camera</span></a><span lang=EN-US> </span></h2>
+
+<p class=MsoNormal><span lang=EN-US>Considering the program can process an
+image real-time, it’s obviously necessary have a compatible camera connected to
+the computer (or a camera simulator, look up </span><span
+lang=EN-US>3.8.2</span><span lang=EN-US>) to do it.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It’s possible to save every image taken
+with the camera as it is by activating an option in the program preferences
+(look up </span><span lang=EN-US>3.11</span><span lang=EN-US>).</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657004"></a><a
+name="_Ref335256705"><span lang=EN-US style='text-decoration:none'>3.8.1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Camera configuration</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>To access the camera configuration dialog go
+to the menu, Configuration </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Camera Settings, press Ctrl+C, or click on the icon </span><img
+border=0 width=40 height=40 src="UsersManual_archivos/image064.png"> <span
+lang=EN-US>in the toolbox.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>A screen like the following will be shown:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=567 height=313 src="UsersManual_archivos/image065.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657074"></a><a name="_Toc335138531"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>51</span><span lang=EN-US>. </span><span
+lang=EN-US>Camera configuration dialog</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The available elements are the next:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Buttons “Save to File” and “Load from File”: They
+let the user save/load the camera parameters to/from an INI file.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Button “Reset Defaults”: Sets the default values
+for the parameters.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Pixel Clock: the higher this value is, the
+faster the reading of the image from the CCD cell will be.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Frame Rate: Frames per second that the camera is
+configured to take. Do not mix up with the images processed per second rate in
+the live mode.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Exposure: Time exposure for the camera in milliseconds.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Master, Red, Green, and Blue Gain: Gain values
+for the image or a single color channel of the image. </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Width and Height in pixels for the images taken.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Preview: It shows an image taken using the
+current configuration.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Button “Refresh Preview”: Renew the preview
+image.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Checkbox “Auto Refresh”: While activated the
+preview is periodically renewed.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Button “OK”: Saves the changes and leaves the
+dialog.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Button “Cancel”: Discards the changes and leaves
+the dialog.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The camera configuration will be saved when
+closing the program for the next executions.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657005"></a><a
+name="_Ref335256508"><span lang=EN-US style='text-decoration:none'>3.8.2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Camera simulator</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>Since there is not always an available compatible
+camera, the application includes a camera simulator with let the user take a
+glance at the functionality that needs a camera.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To make use of that, the program must be
+run by using the link Jet Processing (With Simulator), or by command line with
+the next arguments:</span></p>
+
+<p class=Cdigo><span lang=EN-US>JetProcessing.exe -cs</span></p>
+
+<p class=MsoNormal><span lang=EN-US>or</span></p>
+
+<p class=Cdigo><span lang=EN-US>JetProcessing.exe -CameraSimulator</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Once the simulator is loaded, the program
+will be running the same way it would do with a compatible camera connected.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The images taken by the simulator will be
+the ones that, when the program is starting, are in a folder named
+CameraSimulator, next to the executable file in the installation program. The
+accepted formats are BMP, PNG and JPG.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657006"></a><a
+name="_Toc335138463"><span lang=EN-US>3.9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Live Mode</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>The live mode lets, once a reference image
+and parameters have been set, take and process images from the camera on-line
+with the interferometry system, in order to see a real-time gas-jet image on
+the screen.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=333 height=281 id="Imagen 2" src="UsersManual_archivos/image066.jpg"></p>
+
+<p class=MsoCaption><a name="_Toc335657075"></a><a name="_Toc335138532"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>52</span><span lang=EN-US>. </span><span
+lang=EN-US>Live mode window</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To access this mode, make sure there is a
+camera connected and, go to the menu Live Mode </span><span lang=EN-US
+style='font-family:Wingdings'>à</span><span lang=EN-US> Start Live Mode, press
+L, or click on the icon </span><img border=0 width=39 height=39
+src="UsersManual_archivos/image067.png"> <span lang=EN-US>in the toolbox.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657007"><span
+lang=EN-US style='text-decoration:none'>3.9.1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Navigation buttons</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The navigation buttons control the live
+mode.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=104 height=32 id="Imagen 6" src="UsersManual_archivos/image068.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657076"></a><a name="_Toc335138533"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>53</span><span lang=EN-US>. </span><span
+lang=EN-US>Navigation buttons</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The first button starts the process of taking a
+processing images, and hence, the gas-jet visualization.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The second button stops the process.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The third button enables/disables the recording
+of the images. If the button is pressed, the pre-processed images will be saved
+with the current date and time for the image list in the main window.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The process status can be checked on the
+status bar:</span></p>
+
+<p class=MsoListParagraphCxSpFirst align=left style='text-align:left;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><img border=0
+width=49 height=20 id="Imagen 9" src="UsersManual_archivos/image069.png"><span
+lang=EN-US>: The live mode is stopped.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle align=left style='text-align:left;
+text-indent:-18.0pt'><span lang=EN-US style='font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><img border=0
+width=57 height=17 id="Imagen 10" src="UsersManual_archivos/image070.png"><span
+lang=EN-US>: The live mode is running.</span></p>
+
+<p class=MsoListParagraphCxSpLast align=left style='text-align:left;text-indent:
+-18.0pt'><span lang=EN-US style='font-family:Wingdings'>§<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><img border=0
+width=72 height=15 id="Imagen 11" src="UsersManual_archivos/image071.png"><span
+lang=EN-US>: The live mode is running and the results are being saved.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657008"><span
+lang=EN-US style='text-decoration:none'>3.9.2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Graphics</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The available graphic representations for
+the live mode are the same graphics existing on the main window. Look up </span><span lang=EN-US>3.6.4</span><span lang=EN-US>, </span><span
+lang=EN-US>3.6.5</span><span lang=EN-US>, </span><span
+lang=EN-US>3.6.6</span><span lang=EN-US> y </span><span
+lang=EN-US>3.6.7</span><span lang=EN-US>.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To switch among the different types use the
+following toolbox:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=136 height=30 id="Imagen 7" src="UsersManual_archivos/image072.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657077"></a><a name="_Toc335138534"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>54</span><span lang=EN-US>. </span><span
+lang=EN-US>Graphics selection on the live mode</span><span lang=EN-US> </span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657009"><span
+lang=EN-US style='text-decoration:none'>3.9.3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Frames per second (FPS)</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>One of the most important parameters in the
+live mode is the images taken and processed per second rate.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To change this parameter, use the spinbox
+“FPS”:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=97 height=31 id="Imagen 8" src="UsersManual_archivos/image073.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657078"></a><a name="_Toc335138535"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>55</span><span lang=EN-US>. </span><span
+lang=EN-US>Frames per second selection box</span></p>
+
+<p class=MsoNormal><span lang=EN-US>This value will be limited by the exposure
+time. For example, for a 200 ms exposure time, it will be impossible to take
+more than 5 images per second. However, usually that limit is ideal, and the
+real limit is lower because of the getting the image buffer and processing time.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To be aware of that difference, when the
+live mode is running, the real frames per second rate will be shown on the
+status bar:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=103 height=15 id="Imagen 12" src="UsersManual_archivos/image074.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657079"></a><a name="_Toc335138536"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>56</span><span lang=EN-US>. </span><span
+lang=EN-US>Effective frames per second rate</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657010"></a><a
+name="_Toc335138467"><span lang=EN-US style='text-decoration:none'>3.9.4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Apply algorithms</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>The checkbox “Apply Algorithms” determines
+whether the algorithm list is being applied to the image in the live mode or
+not. If the checkbox is disabled the images will be simply pre-processed.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=107 height=22 id="Imagen 13" src="UsersManual_archivos/image075.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657080"></a><a name="_Toc335138537"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>57</span><span lang=EN-US>. </span><span
+lang=EN-US>Apply algorithms on the live mode</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657011"></a><a
+name="_Toc335138468"><span lang=EN-US style='text-decoration:none'>3.9.5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Auto update axes</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>One of the issues of the live mode is that
+it’s impossible to know in advance what magnitude of values are going to be
+measured for the dependent variable, and that makes difficult the election for
+the range of the axes.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=120 height=23 id="Imagen 14" src="UsersManual_archivos/image076.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657081"></a><a name="_Toc335138538"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>58</span><span lang=EN-US>. </span><span
+lang=EN-US>Auto update axes checkbox</span></p>
+
+<p class=MsoNormal><span lang=EN-US>There are two different ways to solve this
+issue:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>With the checkbox enabled, the graphics will set
+their ranges with every image. This could seem a good option, but it implies a
+re-scaling after every image that may create a bad qualitative perception.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>With the checkbox disabled, the axes ranges will
+only grow to fit the current image and every previous image. This is the best
+option to compare in a qualitative way the images on the graphics.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657012"></a><a
+name="_Toc335138469"><span lang=EN-US style='text-decoration:none'>3.9.6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Restart axes range values</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>Although disabling the auto-scaling is
+usually the best option, there is a common issue related to that: if a noisy
+image appears, the ranges will grow too much.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=146 height=30 id="Imagen 15" src="UsersManual_archivos/image077.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657082"></a><a name="_Toc335138539"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>59</span><span lang=EN-US>. </span><span
+lang=EN-US>Restart axes range values button</span></p>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To solve that, the program includes this
+button, to restart the range growing process.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657013"></a><a
+name="_Toc335138470"><span lang=EN-US style='text-decoration:none'>3.9.7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Renew reference</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>And finally, the live mode includes a
+button than allows a quick reference image renewal. It must be used when the
+live mode is stopped and the target is out of the interferometry system.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=110 height=29 id="Imagen 16" src="UsersManual_archivos/image078.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657083"></a><a name="_Toc335138540"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>60</span><span lang=EN-US>. </span><span
+lang=EN-US>Renew reference button</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The program will take a new reference
+picture to replace the previous one, keeping the same parameters.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657014"></a><a
+name="_Toc335138471"><span lang=EN-US>3.10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>Pro</span></a><span lang=EN-US>jects</span></h2>
+
+<p class=MsoNormal><span lang=EN-US>Saving a project lets the user save the
+application state to a “.jpp” file.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>A project contains:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The reference image.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The pre-processing parameters.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The algorithm list.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The image list.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The camera configuration.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>The view options.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657015"><span
+lang=EN-US style='text-decoration:none'>3.10.1.</span><span lang=EN-US>Save
+state</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>Just by simply looking at the main window
+caption, it’s possible to know whether the current project is saved or not. If
+the project is currently not saved, an asterisk will appear next to the project
+name as following:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=392 height=54 id="Imagen 19" src="UsersManual_archivos/image079.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657084"></a><a name="_Toc335138541"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>61</span><span lang=EN-US>. </span><span
+lang=EN-US>Caption bar for an unsaved project</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Otherwise, if the project is saved, there
+will be no asterisk:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=385 height=26 id="Imagen 20" src="UsersManual_archivos/image080.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657085"></a><a name="_Toc335138542"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>62</span><span lang=EN-US>. </span><span
+lang=EN-US>Caption bar for a saved project</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657016"><span
+lang=EN-US style='text-decoration:none'>3.10.2.</span><span lang=EN-US>Load
+project</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>There are several ways to load a previously
+saved “.jpp” project:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>From the application: go to the menu File </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Load
+Project, press Ctrl+L, or click on the icon </span><img border=0 width=35
+height=35 id="Imagen 21" src="UsersManual_archivos/image081.png"> <span
+lang=EN-US>in the toolbox.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>From out the application: double-click the
+project file, right-click the project file and click on “Open”, or right-click
+the project file and click “Open With”, and then find JetProcessing.exe.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>Running the program from the command line as:</span></p>
+
+<p class=Cdigo><span lang=EN-US>JetProcessing.exe MyProject.jpp</span></p>
+
+<p class=MsoNormal><span lang=EN-US>Note that opening the project using the
+last two options will create a new instance of the application with the camera
+simulator disabled.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657017"><span
+lang=EN-US style='text-decoration:none'>3.10.3.</span><span lang=EN-US>Save
+project</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>To save a “.jpp” project, go to the menu
+File </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Save Project, press Ctrl+S, or click on the icon </span><img
+border=0 width=40 height=40 id="Imagen 22"
+src="UsersManual_archivos/image082.png"> <span lang=EN-US>in the toolbox.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>If the project was already saved to a file,
+the application will simply update the same file. On the other hand, if the
+project wasn’t associated to a file jet, the program will show a dialog to find
+the destination project file.</span></p>
+
+<h3 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657018"><span
+lang=EN-US style='text-decoration:none'>3.10.4.</span><span lang=EN-US>Save
+project as</span></a></h3>
+
+<p class=MsoNormal><span lang=EN-US>This option lets the user choose the output
+file for a project, no matter if it was saved before or not.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To do it, go to the menu File </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Save Project
+As.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657019"></a><a
+name="_Ref335256644"></a><a name="_Ref335256575"></a><a name="_Ref335256488"><span
+lang=EN-US>3.11.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Program preferences</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>The program preferences let the user modify
+the program behavior, keeping the changes for the next executions of the
+application.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>To access these preferences, go to the menu
+Configuration </span><span lang=EN-US style='font-family:Wingdings'>à</span><span
+lang=EN-US> Preferences o press Ctrl+P.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=517 height=275 id="Imagen 29" src="UsersManual_archivos/image083.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657086"></a><a name="_Toc335138543"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>63</span><span lang=EN-US>. </span><span
+lang=EN-US>Program preferences dialog</span></p>
+
+<p class=MsoNormal><span lang=EN-US>The options to configure are the following:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>“Show mode selection dialog when the program
+starts”: It enables or disables the calculation mode selection dialog while
+starting the program.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>“Apply algorithms only until selected
+algorithm”: If this option is disabled, the algorithm list will be always
+applied entirely. Otherwise, only the Algorithms until the selected algorithm
+on the list will be applied.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>“Default format for the output graphics image
+files”: There are three options: “.png”, “.jpg” y “.bmp”.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>“Save Images using the size of the view”: If
+this option is enabled, the images will be saved as seen on the view.
+Otherwise, the images will be save using a custom size determined by the
+spinboxes “Width” and ”Height”.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Wingdings'>§<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US>“Save camera pictures to folder “CameraPics” in the
+output directory”: If this option is enabled, the pictures taken by the camera
+will be saved on a folder “CameraPics” in the output directory formatted as “.bmp”.
+The image name will contain the date and time, and if it was a reference image,
+it will include the string “_ref”. Note that saving every image to a file can
+slow down the live mode process, and also generate a huge amount of images.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657020"><span
+lang=EN-US>3.12.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Status bar</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>The status bar shows information about the
+execution state of the program.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>It presents the calculation mode, the
+camera connection status, and the output folder.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>An example of it:</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=491 height=19 id="Imagen 32" src="UsersManual_archivos/image084.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657087"></a><a name="_Toc335138544"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>64</span><span lang=EN-US>. </span><span
+lang=EN-US>Status bar</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657021"><span
+lang=EN-US>3.13.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Help</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>To access the help, go to the menu Help </span><span
+lang=EN-US style='font-family:Wingdings'>à</span><span lang=EN-US> Help, press
+F1.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>There are available navigation buttons to
+go back, home, and forward.</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><img border=0
+width=157 height=50 id="Imagen 1" src="UsersManual_archivos/image085.png"></p>
+
+<p class=MsoCaption><a name="_Toc335657088"></a><a name="_Toc335138545"><span
+lang=EN-US>Figure </span></a><span lang=EN-US>65</span><span lang=EN-US>. </span><span
+lang=EN-US>Help navigation buttons</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657022"><span
+lang=EN-US>3.14.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+lang=EN-US>Example projects</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>In the installation directory a folder
+“ExampleProjects” can be found, containing three different example projects:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=EN-US>ProjectForCameraSimulator.jpp:</span></b><span
+lang=EN-US> It’s a project prepared to work along with the camera simulator. It
+contains the reference image and the proper parameters to successfully process
+the images provided by the simulator.</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+lang=EN-US style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=EN-US>ProjectTimeSequence.jpp:</span></b><span
+lang=EN-US> This project shows an image sequence for the gas-jet during the
+process of opening and closing the valve.</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span lang=EN-US
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span lang=EN-US>RefractiveIndex.jpp: </span></b><span
+lang=EN-US>This project includes the algorithm list to calculate and show the
+refractive index for a gas-jet.</span></p>
+
+<h2 style='margin-left:54.0pt;text-indent:-36.0pt'><a name="_Toc335657023"></a><a
+name="_Toc335138480"><span lang=EN-US>3.15.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US>About JetProcessing</span></a></h2>
+
+<p class=MsoNormal><span lang=EN-US>JetProcessing was designed and developed by
+Álvaro Sánchez González during the spring and summer of 2012, under the
+supervision of Guillermo González Talaván and Francisco Valle Brozas, as a
+final project for the degree Technical Engineering in Computer Systems, within
+the context of the Optics Area inside the Applied Physics Department of the
+University of Salamanca.</span></p>
+
+<p class=MsoNormal><span lang=EN-US>All rights reserved.</span></p>
+
+</div>
+
+</body>
+
+</html>

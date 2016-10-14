@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Jet Processing: Fichero Fuente headers/maincontroller.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="appiconsmall.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Jet Processing
+   </div>
+   <div id="projectbrief">Procesado de Imágenes de Interferometría con CUDA</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.1.2 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('maincontroller_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">maincontroller.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="maincontroller_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef MAINCONTROLLER_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define MAINCONTROLLER_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="maincontroller_8h.html#a6e1cba0884bce867d47184c1d82c9eec">   15</a></span>&#160;<span class="preprocessor">#define MC_DFLTLABELZ &quot;Phase&quot;           </span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QImage&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;QRect&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;QFileInfo&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;QFile&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;QDir&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;QTextStream&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;QDateTime&gt;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;QDebug&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;QDesktopServices&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cameracontroller_8h.html" title="Clase controlador para la cámara.">cameracontroller.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="spectrogramplot_8h.html" title="Clase para la representación de datos bidimensionales en un espectrograma.">spectrogramplot.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cudageneralpurpose_8h.html" title="Cabecera con funciones de uso general relacionadas con el uso de CUDA.">cudageneralpurpose.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="abstractimagefactory_8h.html" title="Factoría abstracta para la creación y duplicado de objetos FullImage, PhaseImage o PhaseLine...">abstractimagefactory.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imagefactoryforcuda_8h.html" title="Implementación de AbstractImageFactory para trabajo con la CUDA.">imagefactoryforcuda.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imagefactoryforcpu_8h.html" title="Implementación de AbstractImageFactory para trabajo con la CPU.">imagefactoryforcpu.h</a>&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="algorithmsequencecontroller_8h.html" title="Fichero que define la clase que controla y gestiona la lista de algoritmos que se deben aplicar al pr...">algorithmsequencecontroller.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imagesequencecontroller_8h.html" title="Fichero que define la clase que controla y gestiona la lista de imagenes de la fase guardadas en el p...">imagesequencecontroller.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="programsettings_8h.html" title="Clase que contiene las preferencias del programa.">programsettings.h</a>&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fullimage_8h.html" title="Clase abstracta que representa la imagen en las primeras etapas del procesado, antes de obtener la fa...">fullimage.h</a>&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="phaseimage_8h.html" title="Clase abstracta que contiene la imagen bidimensional de la fase durante las etapas intermedias del pr...">phaseimage.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="data2d_8h.html" title="Clase que que contiene una estructura de datos bidimensional.">data2d.h</a>&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="zipaux_8h.html" title="Clase que facilita la compresión de un grupo de ficheros en un fichero .zip y viceversa, utilizando la biblioteca quazip.">zipaux.h</a>&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_main_controller.html">   50</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_main_controller.html" title="Controlador principal del programa.">MainController</a>{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="class_main_controller.html#ad9f642416c7aecbe4186894c702d886f">   53</a></span>&#160;    <a class="code" href="class_camera_controller.html" title="Clase que se encarga de manejar y gestionar la cámara, del tipo que sea.">CameraController</a> * <a class="code" href="class_main_controller.html#ad9f642416c7aecbe4186894c702d886f">cameraController</a>;            </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="class_main_controller.html#adc068f312e03f898bd4e389908f56606">   55</a></span>&#160;    <a class="code" href="class_program_settings.html" title="Clase que contiene las preferencias persistentes del programa.">ProgramSettings</a> <a class="code" href="class_main_controller.html#adc068f312e03f898bd4e389908f56606">programSettings</a>;                </div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="class_main_controller.html#a748b76ac0f8371813be5ea7d3b42114e">   56</a></span>&#160;    QString <a class="code" href="class_main_controller.html#a748b76ac0f8371813be5ea7d3b42114e">currentProject</a>;                         </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="class_main_controller.html#a40685e64d05e7ea5eb4dea8606f22d7a">   57</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a40685e64d05e7ea5eb4dea8606f22d7a">currentProjectSaved</a>;                       </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="class_main_controller.html#a93538fa18b9a27f3a31aec97b115c32d">   59</a></span>&#160;    <a class="code" href="class_algorithm_sequence_controller.html" title="Clase que controla y conoce una lista de algoritmos.">AlgorithmSequenceController</a> <a class="code" href="class_main_controller.html#a93538fa18b9a27f3a31aec97b115c32d">algController</a>;      </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="class_main_controller.html#ae3a2f2b3114673bb721741aa3269f33a">   60</a></span>&#160;    <a class="code" href="class_image_sequence_controller.html" title="Clase que controla y conoce una lista de imágenes de la fase.">ImageSequenceController</a> <a class="code" href="class_main_controller.html#ae3a2f2b3114673bb721741aa3269f33a">imgController</a>;          </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="class_main_controller.html#afdc8679e38b995c3a96954b0e1ee8663">   62</a></span>&#160;    QImage * <a class="code" href="class_main_controller.html#afdc8679e38b995c3a96954b0e1ee8663">refSourceQImage</a>;                       </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="class_main_controller.html#a794c6a8248e0a77a35d8fe0d387fb65e">   63</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a794c6a8248e0a77a35d8fe0d387fb65e">sourceHMirror</a>;                             </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="class_main_controller.html#a215692c93b0df4246cf9fd64a99e5dec">   64</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a215692c93b0df4246cf9fd64a99e5dec">sourceVMirror</a>;                             </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="class_main_controller.html#a3b8329cc3fcfa9a00fc81580ec6260b7">   65</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_main_controller.html#a3b8329cc3fcfa9a00fc81580ec6260b7">sourceRotation</a>;                             </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="class_main_controller.html#aa3af06399240e0a3d44aa52b8eae82a3">   66</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_main_controller.html#aa3af06399240e0a3d44aa52b8eae82a3">fullImageSizeX</a>;                             </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="class_main_controller.html#a7f587fe22b71c6cc6180c8414815ad7d">   67</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_main_controller.html#a7f587fe22b71c6cc6180c8414815ad7d">fullImageSizeY</a>;                             </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="class_main_controller.html#aad36e7654cbb695f0139977b60569fa0">   68</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#aad36e7654cbb695f0139977b60569fa0">pixelsMmX</a>;                                </div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="class_main_controller.html#a898b9cb14419eacf5689edf795d2eec3">   69</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#a898b9cb14419eacf5689edf795d2eec3">pixelsMmY</a>;                                </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="class_main_controller.html#af8655f2cb57df1fcdfb67921a15bd5b5">   71</a></span>&#160;    <a class="code" href="class_abstract_image_factory.html" title="Factoría abstracta para la creación y duplicado de objetos FullImage, PhaseImage o PhaseLine...">AbstractImageFactory</a> * <a class="code" href="class_main_controller.html#af8655f2cb57df1fcdfb67921a15bd5b5">imageFactory</a>;            </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="class_main_controller.html#ab9cdb24dfd643f18117c82c0e039704d">   73</a></span>&#160;    <a class="code" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> * <a class="code" href="class_main_controller.html#ab9cdb24dfd643f18117c82c0e039704d">refFullImage</a>;                       </div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="class_main_controller.html#aaea95a2ffaf2bfe25d287ba634b080c4">   74</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#aaea95a2ffaf2bfe25d287ba634b080c4">refFullImageUpdated</a>;                       </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="class_main_controller.html#a93ea1095da007ced176bfcb055bed683">   76</a></span>&#160;    <a class="code" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> * <a class="code" href="class_main_controller.html#a93ea1095da007ced176bfcb055bed683">refFullImageFourier</a>;                </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="class_main_controller.html#a5f3fc39e52b2aa5b57ae18d03dcd2399">   77</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a5f3fc39e52b2aa5b57ae18d03dcd2399">refFullImageFourierUpdated</a>;                </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="class_main_controller.html#a2cc0abc75091df773dcebd1e11cd6b6f">   80</a></span>&#160;    QImage * <a class="code" href="class_main_controller.html#a2cc0abc75091df773dcebd1e11cd6b6f">refFullImageFourierAbsolute</a>;           </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="class_main_controller.html#a5f961ca5a4246674721b53f6f3799e13">   81</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a5f961ca5a4246674721b53f6f3799e13">refFullImageFourierAbsoluteUpdated</a>;        </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="class_main_controller.html#a4c006da1ab9cabac102a2a559b3ee983">   83</a></span>&#160;    <a class="code" href="class_full_image.html" title="Clase abstracta que almacena la imagen tomada tras aplicarle las transformaciones iniciales...">FullImage</a> * <a class="code" href="class_main_controller.html#a4c006da1ab9cabac102a2a559b3ee983">refFullImageInverse</a>;                </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="class_main_controller.html#af931742a45e6d8312f28b0d2ef78e3a8">   84</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#af931742a45e6d8312f28b0d2ef78e3a8">refFullImageInverseUpdated</a>;                </div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="class_main_controller.html#a6ae195b2d27f1d9ba1c92eae6ab78256">   86</a></span>&#160;    <a class="code" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> * <a class="code" href="class_main_controller.html#a6ae195b2d27f1d9ba1c92eae6ab78256">refPhaseImage</a>;                     </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="class_main_controller.html#aa4d672e75406a29fa83959901cb80b8d">   87</a></span>&#160;    <a class="code" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> * <a class="code" href="class_main_controller.html#aa4d672e75406a29fa83959901cb80b8d">refPhaseImageScanned</a>;              </div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="class_main_controller.html#ab2354e7ab5a6c03e9aa5da6e3db5a087">   88</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#ab2354e7ab5a6c03e9aa5da6e3db5a087">refPhaseImageUpdated</a>;                      </div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="class_main_controller.html#aa81b63a0e7402e09f606fe5e1c16cab4">   90</a></span>&#160;    QPoint <a class="code" href="class_main_controller.html#aa81b63a0e7402e09f606fe5e1c16cab4">originPoint</a>;                             </div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="class_main_controller.html#a3773bdd6fa6667adf0936482f8a2a5a1">   91</a></span>&#160;    QRect <a class="code" href="class_main_controller.html#a3773bdd6fa6667adf0936482f8a2a5a1">fullImageMask</a>;                            </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="class_main_controller.html#a7ca30be396a7ee67cdc2532579db9526">   92</a></span>&#160;    QRect <a class="code" href="class_main_controller.html#a7ca30be396a7ee67cdc2532579db9526">fullImageFourierMask</a>;                     </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="class_main_controller.html#a853ef79a4f95ca75cf0bf4476d4e00fa">   94</a></span>&#160;    QString <a class="code" href="class_main_controller.html#a853ef79a4f95ca75cf0bf4476d4e00fa">zLabel</a>;                                 </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="class_main_controller.html#abdbbe8e29eff76f8c6d4f65929b5c388">   95</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#abdbbe8e29eff76f8c6d4f65929b5c388">autoScaleAxes</a>;                             </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="class_main_controller.html#a383117e847a453a0232e0ec816149612">   96</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#a383117e847a453a0232e0ec816149612">minZValue</a>;                                </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="class_main_controller.html#ae08fd14074dca0d10ab7411e338ecced">   97</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#ae08fd14074dca0d10ab7411e338ecced">maxZValue</a>;                                </div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="code" href="class_main_controller.html#ab5b407446ad3685308034cc062bf1e31">   98</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#ab5b407446ad3685308034cc062bf1e31">sequenceFPS</a>;                              </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="class_main_controller.html#a9325cab7db8a1a42ace8796399fbb27a">   99</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a9325cab7db8a1a42ace8796399fbb27a">viewLevelCurves</a>;                           </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="code" href="class_main_controller.html#acffb3a57574fb5bab0a071ce4412d1f5">  100</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#acffb3a57574fb5bab0a071ce4412d1f5">threshold</a>;                                </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="class_main_controller.html#a42332a8acfa68b07914c564936bd721f">  102</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a42332a8acfa68b07914c564936bd721f">applyAlgorithmsLive</a>;                       </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="code" href="class_main_controller.html#a1025d14979f37123a0d55bc84d244ebf">  103</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a1025d14979f37123a0d55bc84d244ebf">autoScaleAxesLive</a>;                         </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="code" href="class_main_controller.html#a4326500beda9237487677e9ed602a573">  104</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#a4326500beda9237487677e9ed602a573">thresholdLive</a>;                            </div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="class_main_controller.html#a3ceaa87e0596285a6d3b9465c4445ec0">  105</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#a3ceaa87e0596285a6d3b9465c4445ec0">liveFPS</a>;                                  </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="class_main_controller.html#afc816e394f59614efba13d0657a0a351">MainController</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="class_main_controller.html#a8ed70b648628569c41bf45778ea0c1e7">~MainController</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="class_program_settings.html" title="Clase que contiene las preferencias persistentes del programa.">ProgramSettings</a> <a class="code" href="class_main_controller.html#af779f03ad5aa841227af3a5be7e5e2a9">GetProgramSettings</a>();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a5dfd822b0735c1c73d55f904b8a5cb0b">SetProgramSettings</a>(<a class="code" href="class_program_settings.html" title="Clase que contiene las preferencias persistentes del programa.">ProgramSettings</a> settings);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a5299c34d2a72ba5b4f1d12a5f03583cf">GetFirstExecution</a>();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#af65880b5e3067d0b113a45b997e301dd">SetMode</a>(<a class="code" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a> mode);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <a class="code" href="programsettings_8h.html#a653d7cca1949637009283d5882a570bb">CalcMode</a> <a class="code" href="class_main_controller.html#a4e11616b03b96052a3576acf6d16f7f1">GetMode</a>();</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a14d8a11166fd99c5a571e9b292319be8">SetDefaultMode</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#ada48d592e2914a15bb3860e833c91cfa">GetDefaultMode</a>();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a24b05e12bab8df141c7879544f5aef15">GetApplyUntilCurrentAlgorithm</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#aa494966f34ea1a68b6538960ab1c064e">GetSaveGraphicsViewSize</a>();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    QSize <a class="code" href="class_main_controller.html#a35480704226cb116559dfda15aca39b2">GetSaveGraphicsCustomSize</a>();</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    QString <a class="code" href="class_main_controller.html#aae5099fb76d49d10edc0fe74717aee3c">GetSaveGraphicsDefaultFormat</a>();</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    QString <a class="code" href="class_main_controller.html#a7073aa48750200b636e2c9594c9afd6f">GetOutputFolder</a>();</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    QString <a class="code" href="class_main_controller.html#a0bcff87fd89bf8335f1c62265c9e8008">GetCurrentProject</a>();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a9d4156a2eaf9c31bc4a602c2ba9b3129">GetCurrentProjectSaved</a>();</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    QImage * <a class="code" href="class_main_controller.html#abb69619858db20b5f6ad9602ffc79a45">GetRefSourceQImage</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    QString <a class="code" href="class_main_controller.html#af0dc1c4a0771471d9ee488d2ad57a6df">GetZLabel</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a3bc506b4345e26409f59d64a91c70213">GetAutoScaleAxes</a>();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#a1926e11ebcb4bb427cccc5570118e8d2">GetMinZValue</a>();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#ae875d637fc69f6de090010223f9b6d9c">GetMaxZValue</a>();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#aae71373a15d2dc6c343fddb66ed1c175">GetSequenceFPS</a>();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#af7c6fb99e0ad43418ae1f1a7a0659f85">GetViewLevelCurves</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#a6bc6c86baf78f2aae47bf2411bca1be5">GetThreshold</a>();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a6b7dfac919b8d9aa036b4de39907dfdb">GetApplyAlgorithmsLive</a>();</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#ad4ddfc997ca7b10f8c46ce3ea7fcbcbf">GetAutoScaleAxesLive</a>();</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#a2f6c3ede624349e1da5bde1e548e3d76">GetThresholdLive</a>();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#ae4b20d025c64bef7291ff3d9c86cd59d">GetLiveFPS</a>();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a5df10cf6339eaebcc5a701c79186778d">GetSourceHMirror</a>();</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a6e39145f13b075b9e122e6f62f2a55d8">GetSourceVMirror</a>();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_main_controller.html#af6126b0fc0a2ea939b767d4c311889fc">GetSourceRotation</a>();</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_main_controller.html#afac2d2d2174cb75bd7914eb5d3383d8c">GetFullImageSizeX</a>();</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_main_controller.html#aa06218b794881ab0b735c4cf038e21e2">GetFullImageSizeY</a>();</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#a06849947c07f86f631a7609b048ba3e3">GetPixelsMmX</a>();</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#a17916d2636071671f2d30ffa5ff57bdd">GetPixelsMmY</a>();</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    QPoint <a class="code" href="class_main_controller.html#aa9c0078503ce37b253d7703d3fe3ec97">GetOriginPoint</a>();</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    QRect <a class="code" href="class_main_controller.html#aa67b9de8cd0a6f4f85e5472270e00bb3">GetFullImageMask</a>();</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    QRect <a class="code" href="class_main_controller.html#a9bd4b4c17404fef3be596cd7ad1bfa6f">GetFullImageFourierMask</a>();</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    QImage * <a class="code" href="class_main_controller.html#a0f9c708a96d3a17575c0dfe93c8b49b2">GetRefFullImageFourier</a>(<span class="keywordtype">int</span> gain);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a> * <a class="code" href="class_main_controller.html#a5728422eec50543dbf7fdd8a463a4e42">GetRefPhaseData2D</a>();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="class_algorithm_sequence_controller.html" title="Clase que controla y conoce una lista de algoritmos.">AlgorithmSequenceController</a> <a class="code" href="class_main_controller.html#ae389114ab34062fdf513c9d45324e940">GetAlgorithmSequenceController</a>();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="class_image_sequence_controller.html" title="Clase que controla y conoce una lista de imágenes de la fase.">ImageSequenceController</a> <a class="code" href="class_main_controller.html#a6c27439f4e6d42c3357afb9ba393321b">GetImageSequenceController</a>();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <a class="code" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a> * <a class="code" href="class_main_controller.html#a121636f3d753f10e4794b18905f6a950">GetPhaseData2D</a>(<span class="keywordtype">int</span> index,<span class="keywordtype">int</span> nAlg=-1);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    <a class="code" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> * <a class="code" href="class_main_controller.html#af0a092f021d9d85e99cecb11e7e835af">GetPhaseData1D</a>(<span class="keywordtype">int</span> index,<span class="keywordtype">int</span> nAlg=-1);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    QImage <a class="code" href="class_main_controller.html#a315b627d21b644fbd657bb04c3474050">GetPhaseQImage</a>(<span class="keywordtype">int</span> index,<span class="keywordtype">int</span> nAlg);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a9bf48337989b0172ba6a27376ac9400f">SetOutputFolder</a>(QString value);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#aff0cb6afe9a3b45be077bab7cdb5e684">SetZLabel</a>(QString value);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#ad954431f3e22789542abb4c65f338a5f">SetAutoScaleAxes</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#aaa191b23083fb8ec45764ccc04725eea">SetMinZValue</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a50469187791d3a37390bf8e3f883bb22">SetMaxZValue</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a98c297f60e807c97b889c9bfdab127e4">SetSequenceFPS</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#ad889d9a64eec0b5813c1bf322acdf8f1">SetViewLevelCurves</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a87685bb58ea65c7a4b99b633c3e19140">SetThreshold</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a7c346ea1c6557e7a9bec7f3906c03d93">SetApplyAlgorithmsLive</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a362ac3652c9bfcc692c9b109e2dfa835">SetAutoScaleAxesLive</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#ab23450a3392a207475b0876e9bcb8bdc">SetThresholdLive</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#aa2726df2a2398cab36a95648b6f2e9c8">SetLiveFPS</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a0a8c2833fbdcfbf67c7cd5894ded187d">SetSourceHMirror</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#aaaadaf4ced7cb619d505316b2cb0699f">SetSourceVMirror</a>(<span class="keywordtype">bool</span> value);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_main_controller.html#a34a96f766320945d24a3e602c8198f68">SetSourceRotation</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_main_controller.html#ae0aff528fd43ebab2a1c9389f7d3bacf">SetFullImageSizeX</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_main_controller.html#aa3535336f818167abbc335b74bfe1034">SetFullImageSizeY</a>(<span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#a739cea34764476c4f2d56ebef3937983">SetPixelsMmX</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_main_controller.html#abf6c1408a87a1bbb3df682fe879f4fe3">SetPixelsMmY</a>(<span class="keywordtype">float</span> value);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#aea7775ac353da6c2bce6015d80b35395">SetOriginPoint</a>(QPoint value);</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a2dec3367805db438b1ccfe16e51c5602">SetFullImageMask</a>(QRect value);</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#aece907a456e2d0f9c6d541e0d1a94cf0">SetFullImageFourierMask</a>(QRect value);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#aa5c0a216b1b8db1018ff7f317f047fdf">SetAlgorithmSequenceController</a>(<a class="code" href="class_algorithm_sequence_controller.html" title="Clase que controla y conoce una lista de algoritmos.">AlgorithmSequenceController</a> value, <span class="keywordtype">bool</span> unSave=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a9f854db64f752a0db450e7d641c0aa92">SetImageSequenceController</a>(<a class="code" href="class_image_sequence_controller.html" title="Clase que controla y conoce una lista de imágenes de la fase.">ImageSequenceController</a> value, <span class="keywordtype">bool</span> unSave=<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#afa611b1bff80b63ef5e3facc93127d13">DeleteImage</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#afc4d4f8536c57980d2981fd272260d7d">CameraIsReady</a>();</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <a class="code" href="class_camera_controller.html" title="Clase que se encarga de manejar y gestionar la cámara, del tipo que sea.">CameraController</a> * <a class="code" href="class_main_controller.html#a0d70f9e83642b9b70c7cfff5a689f3d2">GetCameraController</a>();</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a2f2ad893ce7365d93c9ac3f0df340f12">LoadRefImageFromFile</a>(QString filePath);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a7367c9ff901d350b5b733b15e428c4dd">LoadRefImageFromCamera</a>();</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#ad91b19833c8bd92ff0cc3948ccec7278">AddImageFromFile</a>(QString filePath);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a06b365fd4d22caa272ae6cdc0bb3a429">AddImageFromCamera</a>();</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="class_data2_d.html" title="Clase que que contiene una información de fase bidimensional.">Data2D</a> * <a class="code" href="class_main_controller.html#a17e3d677f323ab255635f150931d652a">ProcessImageFromCamera</a>(<span class="keywordtype">bool</span> save,<span class="keywordtype">bool</span> applyAlg);</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <a class="code" href="class_data1_d.html" title="Clase que que contiene una información de fase unidimensional.">Data1D</a> * <a class="code" href="class_main_controller.html#a9015804f134f86ad0d344a00c7e9f9ac">ProcessImageFromCamera1D</a>(<span class="keywordtype">bool</span> save);</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a1b5514916909824a14f92ef70d1c66f1">LoadProject</a>(QString filePath);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a2b934fea7324960ea0c121dc22d374f0">SaveProject</a>(QString filePath);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#adf78f83d8248ca8a447cca197c8c7a67">MarkProjectUnsaved</a>();</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a1572377eec46ca6df659d1ebe06b15bd">LoadFullImageMaskOperationsAndSize</a>(QString filePath);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a0c487eb6ca29ed8f28f38c7ee5a05757">SaveFullImageMaskOperationsAndSize</a>(QString filePath);</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a01185a23115fe5d336663be7cb1b11f3">LoadFullImageMaskParameters</a>(QString filePath);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#ac5c8bea99ad6045fc6d5b7906bf9def0">SaveFullImageMaskParameters</a>(QString filePath);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a79d5c45de3bedaded9bb0f8af743709c">LoadFullImageMaskFourierParameters</a>(QString filePath);</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a980b4d86584f7643094e8bd204f6d309">SaveFullImageMaskFourierParameters</a>(QString filePath);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a22af4053eccc6af9023d8f71d642c4ce">LoadViewOptions</a>(QString filePath);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a456018a9d65a75d394d7e6ecf9992c18">SaveViewOptions</a>(QString filePath);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    QString <a class="code" href="class_main_controller.html#a82837d7a394d44fbe9b86ae0f97f3540">GetDefaultNameForExport2D</a>(<span class="keywordtype">int</span> imgNum);</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    QString <a class="code" href="class_main_controller.html#aa0417abd31a98b280bc22e430fa84e4d">GetDefaultNameForExport1D</a>(<span class="keywordtype">int</span> imgNum);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#ad69008e56cd489f21a824472ab51d43e">ExportSingleData2D</a>(QString filePath,<span class="keywordtype">int</span> imgNum,<span class="keywordtype">int</span> algNum);</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a4bc4fdc06bd398d39e16d625063e650d">ExportSingleData1D</a>(QString filePath,<span class="keywordtype">int</span> imgNum,<span class="keywordtype">int</span> algNum);</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a791d1583055955c254fdeeef332fb52f">ExportSeriesData2D</a>(QString label,<span class="keywordtype">int</span> algNum);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_main_controller.html#a8bbae82fcc6fe33f2da846e08a97e961">ExportSeriesData1D</a>(QString label,<span class="keywordtype">int</span> algNum);</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#ab10de9ca7fd8db01def436056aabbf9e">LoadPersistentSettings</a>();</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a97c9d9b983dbce6b300828361e4a0151">SavePersistentSettings</a>();</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a97a05bc8f2217ae20b87a589e0b4814e">CalculateRefFullImage</a>();</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#adbf514143b0c4f01122e9998680506b8">CalculateRefFullImageFourier</a>();</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a60a61a75be6c21faf39409aeb3bf03b5">CalculateRefFullImageFourierAbsolute</a>(<span class="keywordtype">int</span> gainIn);</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a1b1fb3fcee8c3661d45e31d6a5d9a0e2">CalculateRefFullImageInverse</a>();</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#aa335b654c4f329a82c48b12cddcb663f">CalculateRefPhaseImage</a>();</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#aef02e7f3bb82a3f68257e8d522d6e7b3">CalculatePhaseImage</a>(<span class="keywordtype">int</span> index,<span class="keywordtype">int</span> nAlg=-1);</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;    <a class="code" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> * <a class="code" href="class_main_controller.html#aea245ce03e96c4d25fa5ea42cf66324d">ProcessSourcePictureImage</a>(QImage auxImage);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#ac77c1167e494e429dfe3805b88d2c718">AddPhaseImage</a>(<a class="code" href="class_phase_image.html" title="Clase abstracta que almacena la imagen de la fase.">PhaseImage</a> * phaseImage, QString label);</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_main_controller.html#a18eeb17d6c84e6f888777e4ae46c2248">SavePictureToFileDated</a>(QImage * auxImage, QString extraLabel=<span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;};</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;<span class="preprocessor">#endif // MAINCONTROLLER_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_7f57b1e41c5acd0e859ae5f3a2b075a9.html">headers</a></li><li class="navelem"><a class="el" href="maincontroller_8h.html">maincontroller.h</a></li>
+    <li class="footer">Generado por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.1.2 </li>
+  </ul>
+</div>
+</body>
+</html>
